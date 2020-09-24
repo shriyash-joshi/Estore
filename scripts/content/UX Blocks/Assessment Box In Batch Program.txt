@@ -1,0 +1,14 @@
+[row col_bg="rgb(255, 255, 255)" width="custom" custom_width="420px" padding="20px 20px 10px 20px" class="assessment-box"]
+
+[col span__sm="12" margin="0px 0px 30px 0px" bg_color="rgb(255, 255, 255)"]
+
+<h5 >Assess before you enroll</h5>
+<p>Want to know the chances of getting the best out of the program? Take a self assessment to check the scores and proceed to enroll.</p>
+<a href="[acf field='assessment_url']" class="button alert lowercase expand" style="border-radius:4px;padding:7px 26px 1px 26px;">
+    <span>Start Assessment</span>
+</a>
+
+
+[/col]
+
+[/row]

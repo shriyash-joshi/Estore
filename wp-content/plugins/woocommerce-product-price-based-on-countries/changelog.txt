@@ -1,0 +1,548 @@
+= 2.0.10 (2020-08-04) =
+* Fixed: Plugin causes an error on the "Hand-picked Products" block. Thanks @blogjunkie
+
+= 2.0.9 (2020-07-07) =
+* Added: Tested up WooCommerce 4.3.
+* Tweak: Improve the compatibility with the PayPal Express Checkout by WooCommerce 2.0+ payment method.
+* Tweak: Limit the number of pricing zones displayed on the System Status Report.
+
+= 2.0.8 (2020-05-28) =
+* Added: Tested up WooCommerce 4.2.
+* Fixed: Compatibility issue with WooCommerce Dynamic Pricing by Lucas Stark.
+* Fixed: Checkout issue on PayPal Express Checkout by WooCommerce 2.0+ payment method.
+* Fixed: Geolocation cache support via AJAX does not refresh the "content shortcode" when there are no products on the page.
+
+= 2.0.7 (2020-05-22) =
+* Added: Geolocation cache support via AJAX compatible with Variation Swatches for WooCommerce Pro by Emran Ahmed.
+* Added: Geolocation cache support via AJAX compatible with Flatsome Infinite Scroll.
+* Fixed: PHP error - Undefined function on WooCommerce < 3.6
+* Fixed: Incorrect domain path.
+
+= 2.0.6 (2020-05-14) =
+* Fixed: Deprecated use of "implode" in the pricing zones table.
+* Added: Improve compatibility with WooCommerce UPS Shipping method.
+
+= 2.0.5 (2020-05-01) =
+* Added: Tested up WooCommerce 4.1.
+* Fixed: The option "Convert by exchange rate" of coupons is not saved on coupon update.
+* Fixed: The geolocation test detects false positives.
+* Tweak: Admin notices improvements.
+* Tweak: Improve compatibility with object cache plugins.
+
+= 2.0.4 (2020-04-21) =
+* Fixed: Issue on the "caching support" option that could affect to discount plugins.
+* Fixed: Geolocation function only returns countries included in the allowed countries option.
+* Tweak: New admin notice after update the "caching support" option.
+* Dev: new filter wc_price_based_country_free_shipping_exchange_rate.
+
+= 2.0.3 (2020-04-16) =
+* Fixed: Bug on WooCommerce Admin (Analytics) query.
+* Fixed: Compatibility issues with WooCommerce Dynamic Pricing & Discounts by RightPress.
+
+= 2.0.2 (2020-04-11) =
+* Fixed: Bug reading the "sale date from" and "sale date to" fields when the value is empty.
+* Fixed: Bug calculating the coupon amount by the exchange rate.
+* Fixed: The geolocation test fails when the external IP is a IP6.
+* Tweak: Display all countries of the pricing zones in the country switcher widget.
+* Dev: new filter wc_price_based_country_allow_all_countries.
+
+= 2.0.1 (2020-04-09) =
+* Fixed: PHP error - undefined function wcpbc_get_overwrite_meta_keys in the "WPML" integration.
+
+= 2.0.0 (2020-04-09) =
+* Required WooCommerce 3.4 or higher.
+* Added: Compatibility with "WooCommerce Admin".
+* Added: Compatibility with "WooCommerce Blocks".
+* Added: Improvements in the product price synchronization: DB updates in the background. No more timeout errors.
+* Added: Remove the frontend JavaScript that refreshes the minicart on country switcher change.
+* Added: Replace the font spinner by a pure CSS spinner (to improve the page load time).
+* Added: Cache the AJAX geolocation response when the site is using a object cache.
+* Fixed: Force mini cart refresh when the pricing zone change by extending the cart hash.
+* Fixed: Refresh the minicart on checkout page when the country change.
+* Fixed: The product shortcode cache does not store a value by pricing zone.
+
+= 1.8.25 (2020-03-16) =
+* Tweak: Additional check to prevent a JavaScript error when the Cookies jQuery plugin is not set.
+
+= 1.8.24 (2020-03-11) =
+* Tweak: Tested up WooCommerce 4.0
+* Fixed: The option "Convert by exchange rate" of coupons is not saved on coupon update.
+* Fixed: Warning on install fuction when WooCommerce is not active.
+* Fixed: Remove empty row from the System Status table.
+
+= 1.8.23 (2020-03-03) =
+* Fixed: Bug on WC update GeoIP database WC < 3.9.
+* Fixed: Error on the function that updates database to 1.6.
+* Tweak: Improvements on the geolocation AJAX function to prevent issues with wrong HTML in the product pages.
+
+= 1.8.22 (2020-01-29) =
+* Fixed: Bug on WooCommerce Status report.
+* Tweak: Remove WC update GeoIP database hooks for WC < 3.9.
+
+= 1.8.21 (2020-01-27) =
+* Added: DB-IP lite database geolocation for WC < 3.9
+* Fixed: GeoIP check in the WooCommerce status report.
+
+= 1.8.20 (2020-01-23) =
+* Added: Updated compatibility with WooCommerce 3.9
+
+= 1.8.19 (2020-01-09) =
+* Added: Support for WooCommerce 3.9
+* Tweak: Updated the text of the warning that is displayed when the MaxMind database does not exist.
+* Tweak: Improve the frontend javascript to prevent other javascript errors stop the geolocation function.
+
+= 1.8.18 (2019-12-05) =
+* Fixed: Set the manual sale price dates in the WordPress timezone.
+* Fixed: Update the price by exchange rates after the CSV import process.
+
+= 1.8.17 (2019-11-26) =
+* Fixed: Enabled PayFast setup when exists a pricing zone with ZAR currency.
+* Fixed: Bug on manual sale price dates by pricing zone.
+
+= 1.8.16 (2019-11-14) =
+* Added: Tested up to WordPress 5.3
+* Fixed: Set the order currency on WooCommerce PayPal Checkout Payment Gateway transactions.
+
+= 1.8.15 (2019-11-04) =
+* Added: Support for WooCommerce 3.8
+* Added: Integration with Google Product Feed by Ademti Software.
+* Fixed: Convert amounts of Dynamic Pricing general rules.
+* Fixed: Price display issue in the subscription plans of "All Products for WooCommerce Subscriptions" by SomewhereWarm.
+* Fixed: Typo error on the name of funcion "wcpbc_pricing_input".
+
+= 1.8.14 (2019-10-07) =
+* Fixed: Error on currency conversion of the fixed prices of Dynamic Pricing by Lucas Stark
+
+= 1.8.13 (2019-10-01) =
+* Fixed: Compatibility issue with discount plugins when the zone price is equal to the default price.
+* Fixed: Bug on the admin notice module.
+
+= 1.8.12 (2019-09-20) =
+* Fixed: Check the test country is a string before display the test mode notice.
+* Tweak: Display notices in the WordPress dashboard.
+* Dev: New action wc_price_based_country_settings_zone_saved.
+
+= 1.8.11 (2019-08-13) =
+* Added: WooCoomerce 3.7 compatibility.
+
+= 1.8.10 (2019-08-06) =
+* Fixed: other_countries_text index is undefined on the country selector widget.
+* Fixed: 'WCPBC_Admin_Notices' does not have a method warning.
+* Dev: Prevent that the filter wc_price_based_country_shortcode_atts overrides the default shortcode attributes.
+
+= 1.8.9 (2019-07-04) =
+* Fixed: Double discount in cart related to discount plugins.
+* Fixed: Switchers don't work on the checkout page.
+* Dev: New filter to allow to third-party adding product type supported.
+
+= 1.8.8 (2019-06-06) =
+* Fixed: Products with sale price zero use the regular price instead of the zero sale price.
+* Tweak: A tool (WooCommerce > Status > Tools) to updates the database to the latest version.
+
+= 1.8.7 (2019-05-21) =
+* Fixed: Store notice of the "Test mode" option displays a plain HTML.
+* Fixed: empty_no_zero function detects "false" as a empty value different to zero.
+
+= 1.8.6 (2019-05-14) =
+* Fixed: Duplicate variable products when order by price.
+* Fixed: Minor bugs.
+* Tweak: Use a javascript file instead of an inline script for the country selector.
+* Dev:   New JavaScript events.
+
+= 1.8.5 (2019-05-03) =
+* Fixed: "No products were found matching your selection." error on WC 3.6.
+
+= 1.8.4 (2019-05-02) =
+* Fixed: WC 3.6 and external products issue.
+* Fixed: Compatible with discount plugins for WC 3.6.
+* Fixed: Order products by price does not work.
+* Fixed: Error on "order by price" main query.
+* Fixed: Refresh the Ajax geolocation transient after the pricing zone update.
+
+= 1.8.3 (2019-04-19) =
+* Fixed: Shipping calculator form does not change the pricing zone.
+* Fixed: Removed the stock check from the synchronization variable product prices with children.
+* Fixed: Variable Subscription products page does not load.
+* Added: Cache the geolocation AJAX response to improve performance.
+* Tweak: Improve compatibilty with plugins and themes which uses AJAX to load content.
+* Tweak: Force display of price in the geolocation AJAX function to fix plugins conflict.
+
+= 1.8.1 (2019-04-10) =
+* Added: Warning to users who uses a deprecated version of the Pro add-on.
+* Added: get_regions as deprecated function.
+
+= 1.8.0 (2019-04-09) =
+* Added: Compatible with WooCommerce 3.6.
+* Added: New option to allow users to disable the tax adjustment based on location when the prices are entering with tax included.
+* Added: Test to detect geolocation problems in system report.
+* Added: New constant to allow users uses the remote_addr as customer IP.
+* Added: New interface for pricing zone table.
+* Tweak: Country switcher template compatible with defer script attribute.
+* Tweak: Button to unselect Eurozone form the countries list of the pricing zone.
+* Fixed: Minor security issues.
+* Dev: Adapt code to the WordPress code standards.
+* Dev: New admin frawework.
+
+= 1.7.21 (2019-02-21) =
+* Fixed: Bug with WooCommerce 3.5.5 that prevented saving zones.
+
+= 1.7.20 (2019-01-23) =
+* Fixed: "Hide notice" button only works in WooCommerce admin pages.
+
+= 1.7.19 (2019-01-03) =
+* Tweak: AJAX geolocation javascript improve to better compatibility with customizations of the price HTML.
+* Tweak: Check wc_admin_screen before load admin javascript.
+
+= 1.7.18 (2018-11-27) =
+* Fixed: Order by price does not work.
+
+= 1.7.17 (2018-11-20) =
+* Tweak: Frontend Javascript compatible with JQuery versions prior to 1.12.
+
+= 1.7.16 (2018-11-15) =
+* Fixed: Javascript error on AJAX pricing geolocation.<br />https://wordpress.org/support/topic/dynamic-prices-not-loading-on-archive-page/
+* Fixed: Error on loading coupons of type percent.
+* Tweak: Code improvements.
+
+= 1.7.15 (2018-10-12) =
+* Added: New core functions.
+
+= 1.7.14 (2018-10-04) =
+* Fixed: Bug on "is_exchange_rate" function that affects to round to nearest.
+* Fixed: Bulk delete zones action does not work.
+* Tweak: Add tax info to to WooCommerce System Report.
+
+= 1.7.13 (2018-10-02) =
+* Added: WooCommerce tested up to 3.5
+* Fixed: The get_price function return a wrong price for variable products.<br />https://wordpress.org/support/topic/wrong-price-for-variable-products/
+* Tweak: Improvements on AJAX geolocate function.
+
+= 1.7.12 (2018-09-06) =
+* Fixed: Check the correct WC version before get cart content total.
+* Fixed: Some errors do not display after zone update.
+* Tweak: Improvements on AJAX geolocate script.
+* Tweak: Removed URL parameter after update GeoIP database action.
+* Tweak: Added 'Dismiss' text to dismissible notices.
+
+= 1.7.11 (2018-08-23) =
+* Fixed: Uncaught Error: Call to a member function get_billing_country() on null.<br />https://wordpress.org/support/topic/error-on-flatsome-theme/.
+* Fixed: Action button messages move down in the settings page.
+* Fixed: Get real IP fail on the wooocommerce status report.
+* Tweak: New hook to allow filter "is admin AJAX".
+
+= 1.7.10 (2018-07-02) =
+* Fixed: Change AJAX Geolocation method to POST to prevent cache issues.
+* Tweak: Call AJAX pricing geolocation on each AJAX request to improve compatibility with plugins and themes.
+* Tweak: Add Geolocation debug info to WooCommerce System Report.
+
+= 1.7.9 (2018-06-19) =
+* Added: Spinner to AJAX Geolocation.
+* Tweak: Re-style setting zone page.
+* Fixed: Bug on get_zone function.
+
+= 1.7.8 (2018-06-04) =
+* Fixed: Set the correct country when the customer lands on the order payment page.
+* Fixed: Warning: Non-static method be called statically on tracker class.
+
+= 1.7.7 (2018-06-01) =
+* Fixed: Ajax geolocation does not refresh the widgets when the cache date is before the widget update.
+* Tweak: Don't display the "MaxMind database does not exists" alert when Cloudflare Geolocation is enabled.
+* Added: An easy way to update to MaxMind Geolocation database when it does not exists.
+* Added: Improvements on country switcher template.
+* Added: Tax settings in the WooCommerce status report.
+
+= 1.7.6 (2018-05-24) =
+* Fixed: Change country on cart shipping calculator does not update product pricing.
+
+= 1.7.5 (2018-05-15) =
+* Fixed: Product variations with a wrong 'product type' taxonomy are updated with 'nothing' as price method.
+* Tweak: Set public get_zone_from_order method.
+
+= 1.7.4 (2018-05-08) =
+* Fixed: PHP Parse error on class-admin-notices.<br />https://wordpress.org/support/topic/syntax-error-in-class-wcpbc-admin-notices-php-causes-500-error-in-wp-dashboard/
+* Fixed: Ajax geolocation support does not work on homepage for some page builders.
+* Tweak: Update order meta with zone pricing data.
+* Tweak: WooCommerce tested up to 3.4
+
+= 1.7.3 (2018-04-17) =
+* Fixed: Notice dismissible button does not work.
+* Fixed: Compatible with WC2.5.
+* Tweak: Upgrade notice.
+
+= 1.7.2 (2018-04-13) =
+* Fixed: Bug on front-end pricing class.
+* Fixed: Error on admin-notices module on WC version older than 2.6.
+* Fixed: Refresh mini cart totals after country/currency switch.
+* Fixed: Problems with order review refresh on checkout page.
+* Added: Support for "Dynamic Pricing" fixed price and price discount by the exchange rate.
+* Tweak: New admin notices.
+
+= 1.7.1 (2018-03-27) =
+* Fixed: Error "Can’t use function return value in write context" on old PHP versions.
+
+= 1.7.0 (2018-03-27) =
+* Added: New option: Load product price in the background via AJAX to solve the problem with cache and Geolocation.
+* Added: No unnecessary WooCommerce user sessions.
+* Added: "Admin notices" to help users to solve most common problems.
+* Added: Delegate "Cart refresh" to WooCommerce after the country change by Country switcher.
+* Added: Security improvements.
+* Tweak: Style improvements in the back-end.
+
+= 1.6.25 (2018-03-01) =
+* Fixed: Front-end pricing loaded on built-in Woocommerce products export/import.
+
+= 1.6.24 (2018-02-16) =
+* Fixed: Break admin styles.
+
+= 1.6.23 (2018-02-06) =
+* Tweak: Check compatibility with WC 3.3
+
+= 1.6.22 (2017-12-09) =
+* Fixed: Quick edit compatible with WC 3.0+
+* Fixed: On sale dates does not set product on sale.
+* Fixed: Upgrade to pro notice display for variable products.
+
+= 1.6.21 (2017-11-21) =
+* Added: Improvements to manage zones.
+* Added: Improvements to status report.
+* Tweak: Retesting compatibility with WPML
+* Fixed: PHP Notice - Array to string conversion in status report.
+
+= 1.6.20 (2017-10-13) =
+* Fixed: Warning message on WC 3.2 "Indirect modification of overloaded property WC_Shipping_Rate::$taxes".<br />https://wordpress.org/support/topic/just-php-notices-after-last-woo-update-2/
+* Tweak: WC version check.
+
+= 1.6.19 (2017-09-19) =
+* Fixed: All product are on sale.<br />https://wordpress.org/support/topic/all-product-are-on-sale-after-last-update/
+
+= 1.6.18 (2017-09-19) =
+* Fixed: Error on WooCommerce Reports message when only exists one currency.
+* Tweak: Improvements in frontend pricing core function.
+* Tweak: Deprecated hook "wc_price_based_country_stop_princing" replaced with "wc_price_based_country_stop_pricing".
+* Tweak: Improvements in system report.
+* Added: "Select Eurozone" button to settings page.
+
+= 1.6.17 (2017-07-22) =
+* Fixed: Error on edit product when WooCommerce Multilingual is active.
+* Tweak: Add "other countries text" param to "wcpbc_country_selector" shortcode.
+
+= 1.6.15 (2017-07-20) =
+* Fixed: file not found. https://wordpress.org/support/topic/error-message-after-updating-4/
+
+= 1.6.14 (2017-07-19) =
+* Fixed: Hide product data ads in default product types.
+* Fixed: Front-end prices for manual orders are deactivated, so manual orders does discrepancies between prices and currencies.
+
+= 1.6.13 (2017-06-26) =
+* Fixed: No round price set manually.<br />https://wordpress.org/support/topic/total-price-slightly-different-with-version-1-6-12-price-based-on-country/
+* Fixed: Round shipping cost after apply currency conversion.
+* Fixed: Do not echo selected() in country-selector.php.<br />https://wordpress.org/support/topic/do-not-echo-selected-in-country-selector-php/
+* Fixed: Check if class WC_Widget exists before load Country selector widget.
+
+= 1.6.12 (2017-06-10) =
+* Fixed: No round empty prices.
+
+= 1.6.11 (2017-06-10) =
+* Fixed: Wrong subtotal calculation with price by exchange rates and more of 10 items in cart.<br />https://wordpress.org/support/topic/wrong-subtotal-calculation/
+* Added: Code improvements.
+* Added: Integration with Pro Addon.
+
+= 1.6.10 (2017-05-07) =
+* Fixed: Deprecated WooCommerce functions and backward compatibility to 2.6
+
+= 1.6.9 (2017-04-24) =
+* Fixed: Deprecated WooCommerce functions and backward compatibility to 2.6
+* Fixed: Break styles on variations downloadable products.
+* Fixed: Bug on coupons with PHP 7<br />https://wordpress.org/support/topic/using-coupon-leads-to-an-error-with-php-7-1/#post-9051916
+
+= 1.6.8 (2017-04-10) =
+* Added: Support for deprecated WooCommerce functions and backward compatibility to 2.6.
+* Fixed: Bug on array with locale-sensitive sort function.<br />https://wordpress.org/support/topic/fatal-error-add-zone-or-viewedit-zone/
+* Tweak: Apply exchange rates to min order amount on free shipping method. Thanks @mariankadanka.<br />https://wordpress.org/support/topic/convert-free-shipping-costs/#post-8946654
+
+= 1.6.7 (2017-03-10) =
+* Fixed: Broken Dependencies on script wc-price-based-country-frontend.<br />https://wordpress.org/support/topic/prices-not-showing-after-latest-update/page/2/#post-8895976
+* Tweak: Improvements on WooCommerce report support.
+
+= 1.6.6 (2017-02-25) =
+* Fixed: Error when editing a draft variable product.<br />https://wordpress.org/support/topic/fatal-error-2460/
+* Fixed: Post object isn't instance.<br />https://wordpress.org/support/topic/error-trying-to-get-property-of-non-objec/
+* Tweak: Apply exchange rates to coupon minimum and max amounts.
+* Tweak: Load files code improvements.
+
+= 1.6.5 (2016-12-30) =
+* Fixed: Set customer session cookie after headers has been send.
+* Fixed: Sync the variable product prices with it's children when “Hide out of stock items from the catalog” option is enabled.<br />https://wordpress.org/support/topic/variable-product-price-not-showing-in-listing-and-details-page/
+
+= 1.6.4 (2016-12-18) =
+* Fixed: Bug with paypal express checkout by AngellEYE.<br />https://wordpress.org/support/topic/paypal-or-plugin-error/
+* Fixed: Enabled paypal standard in WooCommerce checkout settings when exists a supported country in Zone Pricing.
+
+= 1.6.3 (2016-11-26) =
+* Fixed: 'added_to_cart' javascript event causes a issue with some themes, replace by 'wcpbc_cart_refreshed'.
+* Fixed: Undefined index HTTP_USER_AGENT.<br />https://wordpress.org/support/topic/notice-undefined-index-http_user_agent-2/
+* Fixed: Exchange rate to minimum and maximum spend of coupon usage restriction.<br />https://wordpress.org/support/topic/any-coupon-discount-usage-restriction-support/
+* Tweak: Add plugin info to WooCommerce System Status Report.
+* Added: WooCommerce 2Checkout Gateway by Krokedil Integration
+* Added: Spanish Translation.
+* Added: French Translation.
+* Added: Netherlands translation.
+
+= 1.6.2 (2016-09-24) =
+* Fixed: Price missing for variable products with all variation with manual price.
+* Fixed: Mini Cart not is refreshed on country switcher changes.
+* Tweak: $_SERVER instead of $_POST in check_manual_country_widget function.
+
+= 1.6.1 (2016-09-17) =
+* Fixed: Bug in reports by exchane rate.<br />https://wordpress.org/support/topic/fix-of-reports-support-by-exchange-rate/
+
+= 1.6.0 (2016-09-17) =
+* Added: New core front-end pricing.
+* Added: Schecule sale prices.
+* Added: Currency conversion to all shipping methods.
+* Added: Currency conversion to coupons.
+* Added: Reports support by exchange rate.
+* Fixed: Bulk remove zones not works in settings page.
+* Fixed: Quick edit required reload page.
+* Fixed: Currency Switcher with appropriate locale-sensitive sort orderings.<br />https://wordpress.org/support/topic/order-countries-in-languages-other-than-english/
+* Fixed: Wrong shipping tax<br />https://wordpress.org/support/topic/shipping-with-vat/#post-8162704
+
+= 1.5.12 (2016-07-12) =
+* Fixed: Cart prices not updated after calculate shipping<br />
+https://wordpress.org/support/topic/cart-prices-not-updated-on-calculate-shipping
+* Fixed: Country switcher not works fine when the country is changed in shipping calculator.
+
+= 1.5.11 (2016-06-28) =
+* Fixed: Mysql Database error on WooCommerce free shipping conversion<br />
+https://wordpress.org/support/topic/database-error-222
+* Fixed: Incompatibility with non-latin chars in region name.<br />
+https://wordpress.org/support/topic/i-cant-set-manual-price
+
+= 1.5.10 (2016-06-25) =
+* Fixed: Bug with shippings methods of WooCommerce 2.6
+* Fixed: Bug on price filter of WooCommerce 2.6
+* Fixed: Check if customer has been initialized in woocommerce_currency hook
+* Fixed: Wrong price for variation products when price included tax.
+
+= 1.5.9 (2016-05-17) =
+* Fixed: PHP Fatal error in country switcher template<br />
+https://wordpress.org/support/topic/price-not-showing-for-products
+* Fixed: Not apply currency conversion to free shipping min amount<br />
+https://wordpress.org/support/topic/free-shipping-issue-2?replies=2
+* Tweak: Add "select all" and "select none" tool buttons to region setting page.
+
+= 1.5.8 (2016-04-17) =
+* Fixed: On sale shortcode display a worng price<br />
+https://wordpress.org/support/topic/onsale-shortcode-not-working
+
+= 1.5.7 (2016-03-21) =
+* Fixed: Currency not change on check-out page<br />
+https://wordpress.org/support/topic/changes-currency-on-check-out-page?replies=2
+
+= 1.5.6 (2016-03-19) =
+* Fixed: Cart refresh when Country switcher widget change.
+* Tweak: Remove select button on Country switcher widget.
+
+= 1.5.5 (2016-02-20) =
+* Fixed: Bug in Country switcher widget.
+* Added: Country switcher widget title.
+
+= 1.5.4 (2016-02-14) =
+* Fixed: Non-static method be called statically.<br />
+https://wordpress.org/support/topic/deprecated-15?replies=1#post-8025565
+* Added: Code improvements.
+
+= 1.5.3 (2016-02-05) =
+* Fixed: Wrong name in callback function.<br />
+https://wordpress.org/support/topic/warning-call_user_func_array-expects-parameter-1-to-be-a-valid-callback-7
+
+= 1.5.2 (2016-02-03) =
+* Fixed: Anonymous functions caused a syntax error in settings page.
+
+= 1.5.1 (2016-01-17) =
+* Fixed: Anonymous functions caused a syntax error.<br />
+https://wordpress.org/support/topic/compatibility-issue-19
+
+= 1.5.0 (2016-01-14) =
+* Added: Country Selector Widget.
+* Added: Support to WooCommerce Products on Sale Widget.
+* Added: Code improvements.
+* Added: Option Price based on Billing or Shipping Country.<br />
+https://wordpress.org/support/topic/bug-with-prices-if-the-shipping-and-billing-country-are-different
+* Added: Flat and International Flar Rate Shipping currency conversion.<br />
+https://wordpress.org/support/topic/shipping-price
+* Fixed: Incorrect value for price included tax.<br />
+https://wordpress.org/support/topic/prices-are-to-high
+* Fixed: Country selector Shortcode not works properly.<br />
+https://wordpress.org/support/topic/wcpbc_country_selector-widget-should-return-not-echo
+
+= 1.4.2 =
+* Added: Multicurrency support for WooCommerce Status dashboard Widget.
+* Added: Improved performance for variable product.
+* Fixed: WPML compatiblity - Fields of variable products are not blocked.
+
+= 1.4.1 =
+* Added: Ready for WPML.
+* Fixed: Max And Min Values in Price Filter Widget not works.
+
+= 1.3.5 =
+* Added: Ready for WooCommerce 2.4
+
+= 1.3.4 =
+* Fixed: Country of Base Location not in list of countries.
+* Added: Improved settings page.
+
+= 1.3.3 =
+* Fixed: The manual price is not saved in external/affiliate products.
+* Fixed: The exchange rate only supports dot as decimal separator.
+* Added: Support for WooCommerce Price Filter Widget (beta).
+
+= 1.3.2 =
+* Required: WooCommerce 2.3.0 or or later!
+* Fixed: Incorrect currency conversion for variable products.
+* Added: Integrate with WooCommerce geolocation function.
+* Added: Improved test mode.
+* Added: Radio button to select the price method (calculate by exchange rate or manually) for each product.
+
+= 1.3.1 =
+* Fixed: Price before discount not show for variable products with sale price.
+
+= 1.3.0 =
+* Added: Exchange rate to apply when price leave blank.
+* Added: Hook and template to add a country selector.
+* Fixed minor bugs.
+
+= 1.2.5 =
+* Fixed bug that breaks execution of cron jobs when run from wp-cron.php.
+* Fixed bug: Error in uninstall procedure.
+
+= 1.2.4 =
+* Fixed bug that break style in variable products.
+* Fixed bug: prices not show in variable products.
+
+= 1.2.3 =
+* Added: Sale price by groups of countries.
+* Added: Refresh prices and currency when user changes billing country on checkout page.
+* Fixed minor bugs.
+
+= 1.2.2 =
+* Fixed bug that not show prices per countries group when added a new variation using the "add variation" button.
+* Fixed bug: product variation currency label is wrong.
+
+= 1.2.1 =
+* Fixed bug that not allow set prices in variable products.
+
+= 1.2 =
+* Added: REST service is replaced by GEOIP Database.
+* Added: Improvements in the plugin settings page.
+* Added: Debug mode
+
+= 1.1 =
+* Added: currency identifier per group of countries.
+* Fixed bug in settings page.
+
+= 1.0.1 =
+* Fixed a bug that did not allow to add more than one group of countries.
+
+= 1.0 =
+* Initial release!

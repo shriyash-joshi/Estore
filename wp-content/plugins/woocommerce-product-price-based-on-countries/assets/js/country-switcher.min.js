@@ -1,0 +1,1 @@
+jQuery(function(t){t("body").on("change","select.wcpbc-country-switcher",function(){var c=t(this).val();t('#wcpbc-widget-country-switcher-form input[name="wcpbc-manual-country"]').val(c),t("#wcpbc-widget-country-switcher-form").submit()})});

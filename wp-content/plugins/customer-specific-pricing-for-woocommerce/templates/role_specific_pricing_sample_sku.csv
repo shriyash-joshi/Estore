@@ -1,0 +1,6 @@
+Sku,Role,Min Qty,Flat,%
+PR62,Customer,3,1500,
+PR62,Customer,1,,12
+PR61,Customer,5,,10
+PR60,Customer,8,1500,
+PR62,Subscriber,3,2500,

@@ -1,0 +1,50 @@
+[row class="right-attributes"]
+
+[col span__sm="12" padding="0px 0px 30px 0px"]
+
+[row_inner]
+
+[col_inner span__sm="12"]
+
+<div class="product-section-bg" style="padding: 20px;">
+<table id="program-attributes-table">
+  <tr>
+    <td width="10%"><div id="class"/></td>
+    <td width="40%">Class </td>
+    <td width="20%">:</td>
+    <td width="30%">[acf field='class'] </td>
+  </tr>
+   <tr>
+     <td><div id="certificate"></td>
+    <td >Certificate  </td>
+    <td>:</td>
+    <td>[acf field='certficate'] </td>
+  </tr>
+   <tr>
+     <td><div id="duration"></td>
+    <td>Duration </td>
+    <td>:</td>
+    <td>[acf field='duration'] </td>
+  </tr>
+   <tr>
+     <td><div id="access"></td>
+    <td>Access </td>
+    <td>:</td>
+    <td>[acf field='access_duration'] </td>
+  </tr>
+   <tr>
+     <td><div id="language"></td>
+    <td>Language </td>
+    <td>:</td>
+    <td>[acf field='language'] </td>
+  </tr>
+  </table>
+</div>
+
+[/col_inner]
+
+[/row_inner]
+
+[/col]
+
+[/row]

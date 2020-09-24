@@ -1,0 +1,56 @@
+.csp-action-float{
+	position:fixed;
+	width:50px;
+	height:50px;
+	bottom:30px;
+	right:30px;
+	background-color:transparent;
+	color:#FFF;
+	border-radius:40px;
+	text-align:center;
+	box-shadow: -3px -3px 3px rgb(221, 112, 112);
+	z-index: 999;
+}
+
+.img-animate-feedback {
+	height: 100%;
+}
+
+
+/**CSP Poll Button*/
+.csp-poll-bar {
+  z-index: 999;
+    position: fixed;
+    bottom: 50%;
+    right:0;
+    transform:rotate(270deg);
+	transform-origin: 100% 100%;
+  }
+  
+  .csp-poll-bar a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.5s ease;
+    color: white;
+	  font-size: 18px;
+	  border-radius: 10px 10px 0px 0px;
+  }
+
+  .csp-poll-bar a:hover {
+	  text-decoration: none;
+  }
+  
+  .csp-poll:hover {
+	  scale: 2px;
+	  transform: scale(1.03);
+  }
+  
+  
+  .csp-poll {
+   
+	  transition: all .3s ease-in-out; 
+    background: #960000;
+    color: white;
+  }

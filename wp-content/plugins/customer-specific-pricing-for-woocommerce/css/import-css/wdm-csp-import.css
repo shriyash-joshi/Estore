@@ -1,0 +1,166 @@
+/* 
+    Author     : WisdmLabs
+*/
+#wdm_import_data {
+    width: auto;
+}
+#wdm_import_data > table {
+    table-layout: fixed;
+    /*width: 100%;*/
+    border-collapse: collapse;
+}
+.stick {
+    background-color: #1e8cbe;
+    color: #ffffff;
+}
+.stick > tr {
+    display: block;
+    position: relative; 
+}
+
+.hidePrev{
+    display: none;
+}
+
+.import-export-header{
+    font-weight: bold !important;
+    font-size: 19px !important;
+    color: rgba(35, 40, 45, 0.79);
+}
+
+/*.import-csv-table {
+    display: none;
+}*/
+
+#wdm_import_data tr td, #wdm_import_data tr th {
+    width: 200px;
+    text-align: center;
+   border-bottom: 1px #DAE3FF solid;
+}
+#wdm_import_data tbody {
+    display: block;
+    height: 200px;
+    overflow: auto;
+    width: 100%;
+    border: 1px solid #0074a2;
+    box-sizing: border-box;
+}
+
+
+.input-group {
+    width: 75%;
+    margin: 30px 0px 10px 0px;
+}
+
+.wdm-input-group>label{
+    width:30%;
+    text-align:left;
+    
+}
+.wdm_csp_ul li{
+    margin-bottom: auto;
+    margin-right: 15px;
+}
+
+.wdm_span_label {
+    vertical-align: sub;
+    margin: 5px;
+    font-weight: normal;
+}
+
+#dd_show_import_options{
+    margin-right: 2px;
+}
+
+fieldset.wdm_csp_fieldset {
+    vertical-align: -webkit-baseline-middle;
+    display: unset;
+}
+
+#wdm_import{
+    width:20%;
+    margin-top: 20px;
+   /* background-color: #337ab7;
+  border-color: #204d74;*/
+}
+
+.btn-primary{
+    background-color: #1e8cbe !important;
+  border-color: #0074a2;
+}
+
+.wdm_summary{
+    font-weight: bold;
+}
+
+h3{
+	font-size: 1.3em !important;
+	display: block;
+    font-weight: 600 !important;
+	color: #23282d;
+    margin: 1em 0;
+}
+
+.wdm-import-info{
+	margin-top: 0px;
+}
+
+ul.wdm_csp_ul > li {
+    display: inline-block;
+}
+
+span.import-type {
+    font-style: italic;
+}
+
+/* SKU information message on import tab page. */
+.csp-sku-import-info {
+    display: none;
+    margin-top:25px;
+}
+
+
+
+.wdmcsp-progress-status-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0fr 6fr 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+    .space-top { grid-area: 1 / 1 / 2 / 2;}
+    .import-status { grid-area: 2 / 1 / 3 / 2;}
+    .space-bottom { grid-area: 3 / 1 / 4 / 2;}
+
+.progress {
+    height: 40px !important;
+}
+
+#percent-progress {
+    line-height: 40px;
+    font-size: 16px;
+}
+
+.status-details {
+    font-size: 16px;
+}
+
+.csp-download-report {
+    border-radius: 3px;
+}
+
+.row {
+    padding-top: 3%;
+}
+
+div.wdm-import-notes {
+    padding: 5px;
+border-style: double;
+border-radius: 5px;
+border-color: #ddd;
+background-color: #e2e2e2d9;
+}
+
+.import-message-info {
+    text-align: justify;
+}

@@ -1,0 +1,13 @@
+#woocommerce-product-data {
+    .inside {
+		ul.wc-tabs {
+			padding: 0;
+		}
+		ul.wc-tabs::after {
+			height: 100%;
+		}
+		// .panel-wrap {
+  //  			overflow: visible;
+  //  		}
+	}
+}

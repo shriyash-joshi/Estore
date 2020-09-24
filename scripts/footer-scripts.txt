@@ -1,0 +1,15 @@
+<script>
+jQuery('#apply-promo-click').on('click',function(){
+    jQuery("#coupon-apply").toggle();
+});
+
+jQuery('#uni-dropdown-button').on('click',function(){
+     jQuery('.program-close').attr('title', 'Close');
+      jQuery('#uni-dropdown-content').toggle();
+     jQuery("i", this).toggleClass("icon-angle-down icon-angle-up");
+});
+jQuery('.program-close').on('click',function(){
+      jQuery('#uni-dropdown-content').toggle();
+     jQuery("i", this).toggleClass("icon-angle-down icon-angle-up");
+});
+</script>

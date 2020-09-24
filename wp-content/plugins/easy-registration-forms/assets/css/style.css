@@ -1,0 +1,1517 @@
+.erf-container {
+  position: relative!important
+}
+.erf-container:before {
+  content: " ";
+  display: table
+}
+.erf-container:after {
+  clear: both;
+  content: " ";
+  display: table
+}
+.erf-container .erf-form input,
+.erf-container .erf-form label,
+.erf-container .erf-form select,
+.erf-container .erf-form textarea {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: top;
+  background: 0;
+  height: auto;
+  white-space: normal
+}
+.erf-container .erf-form textarea {
+  min-height: 8em;
+  height: unset!important;
+  white-space: pre-wrap
+}
+.erf-container .erf-error:empty,
+.erf-container p:empty {
+  display: none
+}
+.erf-container .erf-form .form-control,
+.erf-container .erf-form .other-option+label input[type="text"] {
+  background-color: #fff;
+  box-sizing: border-box;
+  color: #333;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: block;
+  float: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-size: inherit;
+  border: 1px solid #ced4da;
+  padding: 6px 10px;
+  height: 38px;
+  width: 100%;
+  line-height: 1.3;
+  outline: 0
+}
+.erf-container select.erf-form .form-control {
+  height: auto
+}
+.erf-container .erf-form .other-option+label input[type="text"] {
+  display: inherit
+}
+.erf-container .erf-form .other-option+label input[type="text"] {
+  margin-left: 10px;
+  height: 1em;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box
+}
+.erforms-form-widget .erf-container .erf-form .form-control,
+.erforms-login-widget .erf-container .erf-form .form-control,
+.erforms-form-widget .erf-container .erf-payment-wrapper,
+.erforms-form-widget .erf-container .fb-rich-text {
+  max-width: 100%
+}
+.erf-container .erf-form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("data:image/svg+xml;utf8,<svgxmlns='http://www.w3.org/2000/svg'width='100'height='100'fill='#ced4da'><polygonpoints='0,0100,050,50'/></svg>") no-repeat;
+  background-size: 12px 20px;
+  background-position: top 14px right 10px
+}
+.erf-layout-two-column.erf-container .erf-form .form-control {
+  max-width: 100%
+}
+.erf-container .erf-form .intl-tel-input {
+  width: 100%;
+  max-width: 100%
+}
+.erf-container .erf-form .form-group {
+  display: block;
+  width: 100%
+}
+.erf-container .erf-form .form-group.erf-hidden {
+  display: none
+}
+.erf-label-inline.erf-container .erf-form .intl-tel-input,
+.erf-label-inline.erf-container .erf-form .form-control {
+  max-width: 70%;
+  width: 70%;
+  display: inline-block
+}
+.erf-label-inline.erf-container .erf-form .intl-tel-input .form-control {
+  width: 100%;
+  max-width: 100%
+}
+.erf-label-inline.erf-container .erf-form .erf-price-total {
+  max-width: 100%;
+  margin-left: 0
+}
+.erf-label-inline.erf-container .fb-rich-text {
+  max-width: 100%
+}
+.erf-container .erf-modal .erf-form .form-control {
+  max-width: 100%
+}
+.erf-container .erf-form select[multiple="1"] {
+  height: auto
+}
+.erf-container .erf-form input[type="checkbox"],
+.erf-container .erf-form input[type="radio"] {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  width: 14px;
+  height: 14px;
+  margin: 4px 5px 0 3px;
+  display: inline-block;
+  vertical-align: top
+}
+.erf-style-flat .erf-form .form-control,
+.erf-style-flat .erf-form .other-option+label input[type="text"] {
+  border-radius: 0!important
+}
+.erf-style-rounded .erf-form .form-control,
+.erf-style-rounded .erf-form .other-option+label input[type="text"] {
+  border-radius: 19px!important;
+  padding: 10px 15px;
+  overflow: hidden
+}
+.erf-style-rounded.erf-label-top.erf-container .erf-form label[class$="-label"] {
+  padding-left: 15px
+}
+.erf-style-rounded-corner .erf-form .form-control,
+.erf-style-rounded-corner .erf-form .other-option+label input[type="text"] {
+  border-radius: 4px!important
+}
+.erf-style-border-bottom .erf-form .form-control,
+.erf-style-border-bottom .erf-form .other-option+label input[type="text"] {
+  border-radius: 0!important;
+  border-bottom: 2px solid #ced4da;
+  border-left: none!important;
+  border-right: none!important;
+  border-top: none!important
+}
+.erf-style-flat .erf-form .fb-button .erf-submit-button,
+.erf-style-border-bottom .erf-form .fb-button .erf-submit-button {
+  border-radius: 0!important
+}
+.erf-style-rounded .erf-form .fb-button .erf-submit-button,
+.erf-style-rounded .erf-form .erf-form-nav .erf-submit-button {
+  border-top-right-radius: 1em;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em
+}
+.erf-style-rounded-corner .erf-form .fb-button .erf-submit-button,
+.erf-style-rounded-corner .erf-form .erf-form-nav .erf-submit-button {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px
+}
+.erf-style-rounded .intl-tel-input .selected-flag {
+  border-top-left-radius: 19px;
+  border-bottom-left-radius: 19px
+}
+.erf-container .erf-form input:hover,
+.erf-container .erf-form textarea:hover,
+.erf-container .erf-form select:hover,
+.erf-container .erf-form input:focus,
+.erf-container .erf-form textarea:focus,
+.erf-container .erf-form select:focus {
+  border: 1px solid #ccc
+}
+.erf-style-border-bottom .erf-form input:hover,
+.erf-style-border-bottom .erf-form textarea:hover,
+.erf-style-border-bottom .erf-form select:hover,
+.erf-style-border-bottom .erf-form input:focus,
+.erf-style-border-bottom .erf-form textarea:focus,
+.erf-style-border-bottom .erf-form select:focus {
+  border: 2px solid #ccc
+}
+.erf-container .erf-form input:focus,
+.erf-container .erf-form textarea:focus,
+.erf-container .erf-form select:focus {
+  -webkit-box-shadow: inherit;
+  box-shadow: inherit
+}
+.erf-container .erf-form input[type="checkbox"]:hover,
+.erf-container .erf-form input[type="checkbox"]:focus,
+.erf-container .erf-form input[type="radio"]:hover,
+.erf-container .erf-form input[type="radio"]:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.erf-container .erf-form input[type="file"]::-webkit-file-upload-button {
+  border: 1px solid #ced4da;
+  background: #ced4da;
+  line-height: 32px;
+  color: #fff;
+  outline: 0
+}
+
+.erf-container.erf-style-rounded .erf-form input[type="file"]::-webkit-file-upload-button {
+  position: relative;
+  top: -2px
+}
+.erf-container.erf-style-rounded .erf-form input[type="file"]::-webkit-file-upload-button {
+  margin-left: -15px;
+  margin-top: 1px;
+  padding-left: 30px
+}
+.erf-container .erf-form input[type="file"]::-webkit-file-upload-button:after {
+  display: block;
+  clear: both;
+  content: ""
+}
+.erf-container .erf-form input[type="file"] {
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ced4da;
+  outline: 0
+}
+.erf-container .erf-form .erf_img_preview {
+  margin-top: 10px;
+  max-width: 250px;
+  height: auto
+}
+.erf-container .erf-form .erf_img_preview a {
+  clear: both;
+  margin-top: 5px;
+  display: block
+}
+.erf-loader {
+  width: 1em;
+  height: 1em;
+  margin-left: 1em;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  border-left-color: transparent
+}
+.erf-loader {
+  -webkit-animation: rotating 1s linear infinite;
+  animation: rotating 1s linear infinite
+}
+@-webkit-keyframes rotating {
+  from {
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg)
+  }
+  to {
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg)
+  }
+}
+@keyframes rotating {
+  from {
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg)
+  }
+  to {
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg)
+  }
+}
+.erf-container,
+.erf-container .erf-form * {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box
+}
+.erf-container .clearfix:after {
+  clear: both;
+  display: block;
+  content: ""
+}
+.erf-container .rendered-form:after {
+  clear: both;
+  display: block;
+  content: ""
+}
+.erf-container .erf-form .erf-form-nav .erf-submit-button {
+  padding: 10px 15px;
+  text-transform: uppercase;
+  line-height: 1.3em;
+  position: relative
+}
+.erf-container .erf-form .form-group,
+.erf-container .erf-form .fb-rich-text {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  white-space: normal;
+  margin: 0
+}
+.erf-container button {
+  border-color: inherit;
+  min-height: 38px;
+  min-width: 100px
+}
+.erf-layout-two-column.erf-container .erf-two-columns {
+  clear: both;
+  width: 100%
+}
+.erf-layout-two-column.erf-container .erf-two-columns .form-group {
+  width: 48%
+}
+.erf-layout-two-column.erf-container .erf-two-columns .form-group:nth-child(odd) {
+  float: left;
+  margin-right: 2%
+}
+.erf-layout-two-column.erf-container .erf-two-columns .form-group:nth-child(even) {
+  float: right;
+  margin-left: 2%
+}
+.erf-layout-two-column.erf-container .intl-tel-input {
+  width: 100%
+}
+.erf-layout-two-column.erf-container.erf-contact .fb-textarea {
+  width: 100%!important;
+  margin: 0!important
+}
+.erf-container .erf-form-nav {
+  padding: 10px 0
+}
+.erf-form-nav.clearfix:empty {
+  display: none
+}
+.erf-container .erf-submit-button .erf-nav-prev,
+.erf-container .erf-form-nav .erf-nav-prev {
+  float: left
+}
+.erf-container .erf-submit-button .erf-nav-next,
+.erf-container .erf-form-nav .erf-nav-next {
+  float: right
+}
+.erf-container .erf-btn-center button {
+  display: inherit;
+  margin: 0 auto
+}
+.erf-container .erf-btn-right button {
+  float: left
+}
+.erf-container .erf-btn-right button {
+  float: right
+}
+.erf-container .erf-button .btn.btn-danger{
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.erf-container .erf-button .btn.btn-danger:hover{
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+.erf-container .erf-button .btn.btn-info{
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+.erf-container .erf-button .btn.btn-info:hover{
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+.erf-container .erf-button .btn.btn-primary{
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;    
+}
+.erf-container .erf-button .btn.btn-primary:hover{
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+.erf-container .erf-button .btn.btn-success{
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.erf-container .erf-button .btn.btn-success:hover{
+  color: #fff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+.erf-container .erf-button .btn.btn-warning{
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.erf-container .erf-button .btn.btn-warning:hover{
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+.erf-layout-two-column.erf-container .erf-form-nav:after,
+.erf-layout-two-column.erf-container .erf-two-columns:after {
+  display: block;
+  clear: both;
+  content: ""
+}
+.erf-layout-two-column.erf-container .fb-rich-text {
+  max-width: 100%
+}
+.erf-label-inline.erf-container .erf-form .checkbox-group,
+.erf-label-inline.erf-container .erf-form .radio-group {
+  width: 70%;
+  display: inline-block
+}
+.erf-password-lost-container .erf-form label[class$="-label"],
+.erf-container .erf-form label[class$="-label"] {
+  float: none;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 5px;
+  display: block;
+  white-space: normal
+}
+.erf-label-top.erf-container .erf-form label[class$="-label"] {
+  display: block;
+  vertical-align: top;
+  line-height: inherit;
+  padding-bottom: 5px
+}
+.erf-label-inline.erf-container .erf-form label[class$="-label"] {
+  display: inline-block;
+  width: 30%;
+  cursor: pointer
+}
+.erf-label-no-label.erf-container .erf-form label[class$="-label"] {
+  display: none
+}
+.erf-label-no-label.erf-container .erf-form .form-group-plans label[class$="-label"] {
+  display: block
+}
+.erf-label-no-label.erf-container .erf-form .intl-tel-input {
+  width: 100%;
+  max-width: 100%
+}
+.erf-container .fb-required,
+.erf-container .erf-required {
+  color: #f00;
+  font-weight: 400;
+  margin-left: 3px
+}
+.erf-container .erf-form .form-group:before {
+  content: " ";
+  display: table
+}
+.erf-container .erf-form .form-group:after {
+  clear: both;
+  content: " ";
+  display: table
+}
+.erf-container .erf-form .erf-disabled,
+.erf-container .erf-form .form-control:disabled,
+.erf-container .erf-form .form-control[readonly] {
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: .4
+}
+.erf-link-disabled {
+  cursor: not-allowed;
+  opacity: .7;
+  pointer-events: none
+}
+.erf-container .erf-form .radio,
+.erf-container .erf-form .checkbox {
+  display: block
+}
+.erf-container .erf-form .radio-inline,
+.erf-container .erf-form .checkbox-inline {
+  display: inline-block;
+  margin-right: 10px
+}
+.erf-container .erf-form .radio input[type="radio"],
+.erf-container .erf-form .checkbox input[type="checkbox"],
+.erf-container .erf-form .radio-inline input[type="radio"],
+.erf-container .erf-form .checkbox-inline input[type="checkbox"] {
+  position: absolute;
+  left: 1px;
+  margin: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 20px;
+}
+.erf-container .erf-form .radio input[type="radio"],
+.erf-container .erf-form .radio-inline input[type="radio"]{
+  -webkit-appearance: radio !important;
+}
+.erf-container .erf-form .checkbox input[type="checkbox"],
+.erf-container .erf-form .checkbox-inline input[type="checkbox"]{
+  -webkit-appearance: checkbox;
+}
+.erf-container .erf-form .radio,
+.erf-container .erf-form .checkbox,
+.erf-container .erf-form .radio-inline,
+.erf-container .erf-form .checkbox-inline {
+  padding-left: 20px;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 5px
+}
+.erf-container .erf-form .radio label,
+.erf-container .erf-form .checkbox label,
+.erf-container .erf-form .radio-inline label,
+.erf-container .erf-form .checkbox-inline label {
+  padding-left: 0;
+  font-weight: inherit
+}
+.erf-container .erf-form select.erf-price,
+.erf-container .erf-form select[multiple="true"] {
+  height: auto
+}
+.erf-container .erf-form .erf-submit-button {
+  display: block;
+  clear: both
+}
+.erf-container .erf-form .erf-form-nav .erf-submit-button {
+  display: inline-block;
+  width: auto!important;
+  clear: none
+}
+.erf-container .erf-form .erf-submit-button .form-group {
+  margin: 0!important;
+  display: block;
+  width: auto!important;
+  padding: 10px 0
+}
+.erf-container .erforms-icon {
+  margin-right: 5px
+}
+.erf-container .erforms-icon.undefined {
+  display: none
+}
+.erf-container .erf-form .tooltip-element {
+  position: relative;
+  visibility: visible;
+  color: #000;
+  background: #fff;
+  width: 12px;
+  height: 12px;
+  border-radius: 8px;
+  display: inline-block;
+  text-align: center;
+  line-height: 12px;
+  margin: 0 5px 0 10px;
+  font-size: 8px;
+  cursor: default;
+  z-index: 1;
+  -webkit-box-shadow: 0 0 0 1px #000;
+  box-shadow: 0 0 0 1px #000
+}
+.erf-container .erf-form .tooltip-element:before,
+.erf-container .erf-form .tooltip-element:after {
+  position: absolute;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000000;
+  pointer-events: none;
+  -webkit-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+  -webkit-transition-delay: 0ms;
+  -o-transition-delay: 0ms;
+  transition-delay: 0ms;
+  font-weight: normal
+}
+.erf-container .erf-form .tooltip-element:before {
+  left: 100%;
+  bottom: 50%;
+  margin-left: -11px;
+  margin-bottom: -6px;
+  content: "";
+  position: absolute;
+  background: 0;
+  border: 6px solid transparent;
+  border-right-color: #383838;
+  z-index: 1000001;
+  font-size: 14px
+}
+.erf-container .erf-form .tooltip-element:after {
+  content: attr(tooltip);
+  left: 100%;
+  bottom: -50%;
+  background: #383838;
+  color: #fff;
+  text-align: left;
+  padding: 8px 10px;
+  line-height: 1.5em;
+  text-shadow: 0 -1px 0 #000;
+  -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  word-break: break-word;
+  white-space: normal;
+  width: 200px;
+  font-size: 12px
+}
+.erf-container .erf-form .tooltip-element:hover:before {
+  -webkit-transform: translateX(8px);
+  -ms-transform: translateX(8px);
+  transform: translateX(8px);
+  opacity: 1;
+  visibility: visible
+}
+.erf-container .erf-form .tooltip-element:hover:after {
+  -webkit-transform: translateX(8px);
+  -ms-transform: translateX(8px);
+  transform: translateX(8px);
+  opacity: 1;
+  visibility: visible
+}
+/*page tabs*/
+.erf-container .erf-page-breaks{
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -ms-flex-align: center;
+      align-items: center;
+      margin: auto;
+      position: relative;
+      z-index: 1;
+      width: 500px;
+      max-width: 100%;
+      margin-top: 30px;
+      margin-bottom: 50px;
+}
+.erf-container .erf-page-breaks:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    opacity: 0.5;
+}
+.page-break {
+    position: relative;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-item-align: center;
+    align-self: center;
+    cursor: pointer;
+    outline: 0;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: -6px;
+    border-radius: 50%;
+    background: currentColor;
+    font-size: .75em;
+    transition: .3s ease all;
+    border: 3px solid #fff;
+}
+.page-break span {
+    position: relative;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+    margin-top: 1em;
+    transition: .3s ease all;
+}
+.page-break.active-page{
+    border: 2px solid #fff;
+    transform: scale(1.1)
+}
+.page-break:not(.active-page) span{
+    opacity: 0;
+}
+/*page tabs*/
+.erf-container .erf-price-total {
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border-top: 1px solid rgba(150, 150, 150, 0.5);
+  border-bottom: 1px solid rgba(150, 150, 150, 0.5)
+}
+.erf-label-inline.erf-container .erf-price-total {
+  display: block
+}
+.erf-label-inline.erf-container .erf-price-total,
+.erf-label-inline.erf-container .parsley-errors-list li,
+.erf-label-inline.erf-container .erf-field-error {
+  margin-left: 30%
+}
+.erf-errors,
+.erf-error-row {
+  display: block;
+  clear: both;
+  width: 100%
+}
+.erf-container .parsley-errors-list li,
+.erf-container .erf-error-row,
+.erf-container .erf-field-error {
+  color: #f00;
+  padding-top: 5px!important;
+  display: block;
+  font-size: 12px;
+  line-height: 1.2em
+}
+.erf_front_administration {
+  display: none
+}
+.erf-login.erf-container .erf-form-login {
+  max-width: 400px
+}
+.erf-login.erf-container .form-group label {
+  display: block;
+  width: 100%
+}
+.erf-container .erf-recaptcha {
+  margin: 20px 0
+}
+.erf-container .erf-recaptcha>div,
+.erf-container.erf-layout-two-column .erf-recaptcha>div {
+  float: left
+}
+.erf-container.erf-label-inline .erf-recaptcha>div {
+  float: right
+}
+.erf-lost-password {
+  float: right
+}
+.erf-container .erf-account-switch {
+  margin: 20px 0
+}
+.erf-container .erf-account-switch a:nth-child(1) {
+  float: left
+}
+.erf-container .erf-account-switch a:nth-child(2) {
+  float: right
+}
+.erf-container .erf-clearfix:after {
+  display: block;
+  clear: both;
+  content: ""
+}
+.erf-login-register-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch
+}
+.erf-login-register-form>div {
+  width: 50%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0
+}
+.erf-login-register-form .erf-container {
+  padding: 0 3em 0 0
+}
+.erf-login-register-form .erf-reg-form-container {
+  padding: 0 0 0 3em
+}
+.erf-login-register-form .erf-container {
+  border-right: 1px solid rgba(150, 150, 150, 0.5)
+}
+.erf-login-register-form.erf-container .erf-form .form-control,
+.erf-login-register-form.erf-container .erf-payment-wrapper {
+  width: 100%
+}
+.erf-container .erf-payment-methods input[type="radio"] {
+  position: relative;
+  top: 3px;
+  margin-top: 0
+}
+.erf-container.erf-login-register-form .erf-form .form-control,
+.erf-container.erf-login-register-form .erf-form .other-option+label input[type="text"],
+.erf-container.erf-login-register-form .erf-payment-wrapper {
+  max-width: 100%
+}
+.erforms-form-widget .erf-login-register-form>div {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  padding: 0;
+  border: 0
+}
+.erf-container .erf-price-total p {
+  margin: 0;
+  line-height: 2em;
+  font-weight: bold;
+  text-align: right
+}
+.erf-container .erf-price-total .erf-total-title {
+  margin-right: 20px
+}
+.erf_form_layout_admin_dialog {
+  display: block;
+  width: 100%!important;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+.erf_form_layout_admin_dialog .erf-control select {
+  width: 100%
+}
+.loader {
+  border: 3px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 3px solid #3498db;
+  width: 20px;
+  height: 20px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite
+}
+@-webkit-keyframes spin {
+  0% {
+	-webkit-transform: rotate(0deg)
+  }
+  100% {
+	-webkit-transform: rotate(360deg)
+  }
+}
+@keyframes spin {
+  0% {
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg)
+  }
+  100% {
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg)
+  }
+}
+#erf_progress {
+  display: inline-block;
+  padding: 10px
+}
+.erf-container .erf-error {
+  color: #f00;
+  padding-top: 5px!important;
+  display: block;
+  font-size: 12px;
+  line-height: 1.2em;
+  margin-bottom: 10px;
+  line-height: 18px
+}
+.erf-hidden {
+  display: none!important
+}
+.erf-container .erf-my-account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+.erf-my-account {
+  padding: 20px 0
+}
+.erf-container .erf-my-account-nav {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+.erf-container .erf-my-account-content {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+.erf-container .erf-my-account-nav,
+.erf-container .erf-my-account-content {
+  padding: 0 10px;
+  margin-bottom: 1em
+}
+.erf-container .erf-my-account-nav ul {
+  list-style-type: none;
+  padding-left: 0;
+  padding-bottom: 0;
+  margin: 0;
+  border-bottom: 2px solid rgba(150, 150, 150, 0.4)
+}
+.erf-container .erf-my-account-nav ul li {
+  position: relative;
+  float: left;
+  margin-bottom: -2px;
+  border-bottom: 2px solid transparent;
+  list-style: none
+}
+.erf-container .erf-my-account-nav .erf-my-account-navigation-link a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-right: 2px;
+  line-height: 1.42857143;
+  border: none!important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: 0
+}
+.erf-container .erf-my-account-nav .erf-my-account-navigation-link:hover,
+.erf-container .erf-my-account-nav .erf-my-account-navigation-link:focus,
+.erf-container .erf-my-account-nav .erf-my-account-navigation-link:focus,
+.erf-container .erf-my-account-nav .erf-my-account-navigation-link-active {
+  border: 0;
+  color: inherit;
+  background: transparent;
+  border-bottom: 2px solid currentColor
+}
+.erf-container .erf-my-account-nav .erf-my-account-navigation-link-active a:hover,
+.erf-container .erf-my-account-nav .erf-my-account-navigation-link-active a:focus .erf-container .erf-my-account-nav .erf-my-account-navigation-link-active a:active {
+  border: inherit;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.erf-container .erf-my-account-nav .erf-my-account-navigation-link-active a:after {
+  content: "";
+  background: currentColor;
+  height: 2px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -1px;
+  -webkit-transition: all 250ms ease 0s;
+  -o-transition: all 250ms ease 0s;
+  transition: all 250ms ease 0s;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0)
+}
+.erf-profile-welcome {
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 1em
+}
+.erf-my-account-titles,
+.erf-my-account-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+.erf-container .erf-my-account-title {
+  font-weight: bold
+}
+.erf-container .erf-my-account-title,
+.erf-container .erf-my-account-detail {
+  padding: 5px;
+  text-align: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+.erf-container .erf-my-account-col-sr {
+  width: 50px
+}
+.erf-container .erf-my-account-col-form-name {
+  width: calc(100% - 350px)
+}
+.erf-container .erf-my-account-col-date {
+  width: 200px
+}
+.erf-container .erf-my-account-col-edit {
+  width: 100px
+}
+.erf-container .erf-profile-logout {
+  margin-top: 30px
+}
+.erf-container .erf-account-pagination {
+  padding: 10px 5px
+}
+.erf-container .erf-account-pagination .erf-pagination {
+  display: block;
+  padding: 5px 30px;
+  border: 1px solid currentColor
+}
+.erf-container .erf-account-pagination .erf-prev {
+  float: left
+}
+.erf-container .erf-account-pagination .erf-next {
+  float: right
+}
+.erf-container .erf-profile-details-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+.erf-container .erf-profile-details-wrap .erf-profile-image {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+.erf-container .erf-profile-details-wrap .erf-profile-image img {
+  width: 128px;
+  height: 128px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center
+}
+.erf-container .erf-profile-details-wrap .erf-profile-details {
+  width: calc(100% - 128px);
+  padding: 10px;
+  padding-left: 50px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+.erf-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+.erf-container .erf-profile-details-row {
+  margin-bottom: 5px
+}
+.erf-container .erf-profile-detail-title {
+  width: 100px;
+  font-weight: bold;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+.erf-container .erf-profile-detail-content {
+  width: calc(100% - 100px);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+.erf-container .erf-form.erf-change-password label {
+  width: 30%;
+  display: inline-block;
+  float: left
+}
+.erf-container .erf-form.erf-change-password input[type="password"] {
+  max-width: 100%;
+  width: 70%;
+  display: inline-block
+}
+.erf-container .erf-form.erf-change-password .form-group label {
+  white-space: normal
+}
+.erf-container .erf-form.erf-change-password .erf-password {
+  margin-bottom: 5px
+}
+.erf-container .erf-form.erf-change-password .pass-strength-visible {
+  position: relative
+}
+.erf-container .erf-form.erf-change-password .pass-graybar {
+  position: absolute;
+  top: 48px;
+  right: 0;
+  width: 70%
+}
+.erf-container .erf-form.erf-change-password .pass-wrapper {
+  width: 70%;
+  float: right
+}
+.erf-container .erf-form.erf-change-password .pass-wrapper .pass-text {
+  font-size: 70%
+}
+.erf-layout-two-column.erf-container .pass-wrapper {
+  width: 100%
+}
+.erf-label-inline.erf-container .pass-wrapper {
+  width: 70%;
+  float: right
+}
+.erf-container .erf-form.erf-change-password .parsley-errors-list {
+  margin-left: 30%
+}
+.erf-container .erf-form.erf-change-password .parsley-errors-list li {
+  color: #f00;
+  padding-top: 5px!important;
+  display: block;
+  font-size: 12px;
+  line-height: 1.2em
+}
+.erf-container span.erf-tag {
+  padding: 5px 15px;
+  margin: 5px 0;
+  display: inline-block;
+  border-radius: 2px
+}
+.erf-container .erf-modal {
+  z-index: 9999999;
+  display: none;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: auto;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.4)
+}
+.erf-container .erf-modal-header {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 0 15px 10px
+}
+.erf-container .erf-modal>div {
+  max-width: 95%;
+  margin: auto;
+  background-color: #fff;
+  position: relative;
+  outline: 0;
+  width: 900px;
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+.erf-container .erf-modal-small>div {
+  max-width: 500px
+}
+.erf-container .erf-modal-close {
+  border: 0;
+  position: absolute;
+  background: transparent;
+  color: currentColor!important;
+  top: 0;
+  right: 0;
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  line-height: 30px;
+  text-align: center;
+  z-index: 1;
+  min-width: auto;
+  cursor: pointer
+}
+.erf-container .erf-modal-header .erf-print-submission {
+  padding: 5px 20px;
+  background: 0;
+  color: currentColor;
+  border: 0;
+  margin-left: 10px;
+  -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2)
+}
+.erf-container .erf-submission-table {
+  text-align: left;
+  margin: 0
+}
+.erf-container .erf-submission-table tr:nth-of-type(odd) {
+  background-color: #f9f9f9
+}
+.erf-container .erf-submission-table tr:nth-of-type(even) {
+  background-color: #fff
+}
+.erf-container .erf-submission-table,
+.erf-container .erf-submission-table tr,
+.erf-container .erf-submission-table th,
+.erf-container .erf-submission-table td {
+  border: none!important
+}
+.erf-container .erf-submission-table th,
+.erf-container .erf-submission-table td {
+  text-align: left;
+  padding: 5px 10px;
+  font-weight: normal;
+  border: 0;
+  outline: 0
+}
+.erf-container .erf-submission-table th label {
+  font-weight: normal
+}
+.erf-container .erf-submission-table th {
+  width: 40%
+}
+.erf-container .erf-submission-table td {
+  width: 60%
+}
+.erf-container .erf-submission-table td img {
+  margin-top: 10px;
+  margin-bottom: 10px
+}
+.erf-container .erf-submission-table td a {
+  border: 0;
+  text-decoration: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: 0
+}
+.erf-container .erf-gdpr {
+  max-width: 60%;
+  position: relative
+}
+.erf-container .erf-gdpr input[type="checkbox"] {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  margin: 0 10px 0 0;
+  z-index: 1
+}
+.erf-layout-two-column.erf-container .erf-gdpr {
+  max-width: 100%
+}
+.erf-container .erf-gdpr-label {
+  margin: 0;
+  display: inline-block;
+  width: auto;
+  max-width: calc(100% - 25px);
+  padding-left: 23px
+}
+.erf-container .erf-gdpr-label * {
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.3em;
+  white-space: normal
+}
+.erf-container .erf-gdpr .parsley-errors-list li,
+.erf-container .erf-gdpr .parsley-errors-list li {
+  margin-left: 30px
+}
+.erf-container .erf-payment-wrapper {
+  padding: 10px;
+  background: rgba(200, 200, 200, 0.1)
+}
+.erf-label-inline.erf-container .erf-payment-wrapper {
+  max-width: 100%
+}
+.erf-layout-two-column.erf-container .erf-payment-wrapper {
+  max-width: 100%
+}
+.erf-container .erf_payment_header h5 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-bottom: 0;
+  font-size: 1.2em
+}
+.erf-container .erf-plan-description {
+  padding-left: 20px;
+  padding-bottom: 5px;
+  font-size: .9em;
+  white-space: normal
+}
+.erf-container .erf-donation-field+.erf-plan-description {
+  padding-left: 0
+}
+.erf-container .erf-form .erf-plans>.form-group-plans {
+  padding: 0;
+  margin-bottom: 0
+}
+.erf-container .erf-form .erf-plans>.form-group-plans:last-child {
+  margin-bottom: 10px
+}
+.erf-layout-two-column.erf-container .erf-two-columns .form-group-plans:nth-child(odd),
+.erf-layout-two-column.erf-container .erf-two-columns .form-group-plans:nth-child(even) {
+  float: none;
+  margin: 0;
+  width: 100%
+}
+.erf-container .erf-form .erf-plans>.form-group-plans label[class$="-label"] {
+  padding: 0;
+  margin: 0
+}
+.erf-label-inline.erf-container .erf-form .form-group-plans label {
+  width: auto;
+  line-height: inherit
+}
+.erf-container .erf-form .checkbox.erf-donation-field {
+  padding-left: 0
+}
+.erf-layout-two-column .erf-reset-password-form,
+.erf-layout-two-column .erf-login-form .form-group {
+  width: 48%
+}
+.erf-layout-two-column .erf-login-form .form-group input[type="text"],
+.erf-layout-two-column .erf-login-form .form-group input[type="password"],
+.erf-layout-two-column .erf-reset-password-form input[type="email"],
+.erforms-form-widget .erf-container.erf-label-no-label.erf-layout-two-column .erf-login-form .form-group,
+.erforms-form-widget .erf-layout-two-column .form-group,
+.erf-layout-two-column .erf-login-form label[class$="-label"][for="rememberme"],
+.erf-layout-two-column .erf-login-form .form-group,
+.erforms-form-widget .erf-label-inline.erf-container .erf-form label[class$="-label"],
+.erforms-form-widget .erf-label-inline.erf-container .erf-form .form-control {
+  max-width: 100%;
+  width: 100%
+}
+@media print {
+  .erf-submission-table,
+  .erf-submission-table tr,
+  .erf-submission-table th,
+  .erf-submission-table td {
+	border: none!important;
+	text-align: left
+  }
+  .erf-submission-table tr:nth-of-type(odd) {
+	background-color: #f9f9f9
+  }
+  .erf-submission-table tr:nth-of-type(even) {
+	background-color: #fff
+  }
+}
+html[dir="rtl"] .erf-container .erf-form .radio,
+html[dir="rtl"] .erf-container .erf-form .checkbox,
+html[dir="rtl"] .erf-container .erf-form .radio-inline,
+html[dir="rtl"] .erf-container .erf-form .checkbox-inline {
+  padding-right: 20px;
+  padding-left: 0
+}
+html[dir="rtl"] .erf-container .erf-form .radio input[type="radio"],
+html[dir="rtl"] .erf-container .erf-form .checkbox input[type="checkbox"],
+html[dir="rtl"] .erf-container .erf-form .radio-inline input[type="radio"],
+html[dir="rtl"] .erf-container .erf-form .checkbox-inline input[type="checkbox"] {
+  left: unset;
+  right: 1px
+}
+html[dir="rtl"] .erf-layout-two-column.erf-container .erf-two-columns .form-group:nth-child(even) {
+  margin-left: 0;
+  margin-right: 2%;
+  float: left
+}
+html[dir="rtl"] .erf-layout-two-column.erf-container .erf-two-columns .form-group:nth-child(odd) {
+  margin-left: 2%;
+  margin-right: 0;
+  float: right
+}
+.erf-container form[erf-multipage] .erf-page,
+.erf-container form:not([erf-multipage]) .rendered-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px
+}
+.erf-container [class*="erf-element-width-"] {
+  padding-left: 15px;
+  padding-right: 15px
+}
+.erf-container form[erf-multipage] .erf-page > .erf-element-width-1,
+.erf-container form:not([erf-multipage]) .rendered-form > .erf-element-width-1 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 8.333333%;
+  flex: 0 0 8.333333%;
+  max-width: 8.333333%
+}
+.erf-container form[erf-multipage] .erf-page > .erf-element-width-2,
+.erf-container form:not([erf-multipage]) .rendered-form > .erf-element-width-2 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 16.666667%;
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%
+}
+.erf-container form[erf-multipage] .erf-page > .erf-element-width-3,
+.erf-container form:not([erf-multipage]) .rendered-form > .erf-element-width-3 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%
+}
+.erf-container form[erf-multipage] .erf-page > .erf-element-width-4,
+.erf-container form:not([erf-multipage]) .rendered-form > .erf-element-width-4 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%
+}
+.erf-container form[erf-multipage] .erf-page > .erf-element-width-5,
+.erf-container form:not([erf-multipage]) .rendered-form > .erf-element-width-5 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 41.666667%;
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%
+}
+.erf-container form[erf-multipage] .erf-page > .erf-element-width-6,
+.erf-container form:not([erf-multipage]) .rendered-form > .erf-element-width-6 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%
+}
+.erf-container form[erf-multipage] .erf-page > .erf-element-width-7,
+.erf-container form:not([erf-multipage]) .rendered-form > .erf-element-width-7 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 58.333333%;
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%
+}
+.erf-container form[erf-multipage] .erf-page > .erf-element-width-8,
+.erf-container form:not([erf-multipage]) .rendered-form > .erf-element-width-8 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 66.666667%;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%
+}
+.erf-container form[erf-multipage] .erf-page > .erf-element-width-9,
+.erf-container form:not([erf-multipage]) .rendered-form > .erf-element-width-9 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 75%;
+  flex: 0 0 75%;
+  max-width: 75%
+}
+.erf-container form[erf-multipage] .erf-page > .erf-element-width-10,
+.erf-container form:not([erf-multipage]) .rendered-form > .erf-element-width-10 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 83.333333%;
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%
+}
+.erf-container form[erf-multipage] .erf-page > .erf-element-width-11,
+.erf-container form:not([erf-multipage]) .rendered-form > .erf-element-width-11 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 91.666667%;
+  flex: 0 0 91.666667%;
+  max-width: 91.666667%
+}
+.erf-container form[erf-multipage] .erf-page > .erf-element-width-12,
+.erf-container form:not([erf-multipage]) .rendered-form > .erf-element-width-12 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%
+}
+@supports(-webkit-overflow-scrolling:touch) {
+  .erf-container .erf-form input[type="file"]::-webkit-file-upload-button {
+	border: 1px solid #ced4da;
+	color: inherit;
+	background: transparent;
+	line-height: 34px;
+	outline: 0
+  }
+}

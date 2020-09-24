@@ -1,0 +1,8 @@
+.amount
+{
+	margin-right: 0;
+}
+div.woocommerce-variation-price span.price, div.summary.entry-summary p.price
+{
+	opacity: 0;
+}

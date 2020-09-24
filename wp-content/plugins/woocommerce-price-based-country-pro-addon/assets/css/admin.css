@@ -1,0 +1,176 @@
+#wcpbc_product_addons_data .wc-metaboxes-wrapper .wc-metaboxes {
+    border-bottom: 0;
+}
+
+.wc-metaboxes-wrapper .wc-metabox table td.wcpbc-product-addon select {
+    width: inherit !important;
+    max-width: 30%;
+    float: none;
+    margin: 0 0 0 0.25em;
+}
+
+.wc-metaboxes-wrapper .wc-metabox table td.wcpbc-product-addon label {
+    display: inherit;
+    line-height: 26px;
+    width: auto;
+    margin: 0;
+}
+
+#wcpbc_product_addons_data .data table {
+    padding: 0;
+    border: 1px solid #ececec;
+}
+
+#wcpbc_product_addons_data .data table thead th {
+    background: #ececec;
+    padding: 5px;
+}
+
+#wcpbc_product_addons_data .data table td {
+    padding: 6px;
+}
+
+#wcpbc_product_addons_data .wcpbc-product-addon-options {
+    display:none;
+}
+
+#wcpbc_product_addons_data .data table td .wcpbc-product-addon-option-label {
+    padding: 6px;
+}
+
+#woocommerce-product-data ul.wc-tabs li.wcpbc_bookings_pricing_tab a::before {
+	content: "\f319" !important;
+}
+
+#wcpbc_bookings_pricing .wcpbc_pricing .table_grid {
+	padding: 15px 9px;
+}
+
+#wcpbc_bookings_pricing .wcpbc_pricing .table_grid td {
+	padding: 9px;
+	width: auto;
+	border-right: 1px solid #DFDFDF;
+	border-bottom: 1px solid #DFDFDF;
+	border-top: 0;
+}
+#wcpbc_bookings_pricing .wcpbc_pricing .table_grid td:last-child {
+	border-right: none;
+}
+
+#wcpbc_bookings_pricing .wcpbc_pricing .table_grid .widefat td p {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+}
+
+#wcpbc_bookings_pricing .cost_modifier {
+	float: left;
+	font-size: 15px;
+	margin-right: 5px;
+	padding: 4px 0;
+}
+
+#woocommerce-product-data .woocommerce_options_panel .woocommerce_booking_resource .wcpbc_booking_resources_pricing {
+	padding: 0;
+	border: none;
+}
+
+/** Accommodation bookings */
+#wcpbc_accommodation_bookings_rates.bookings_extension .table_grid table td span{
+	font-size: 14px;
+}
+
+/* Coupons */
+#general_coupon_data .wcpbc_pricing:first-of-type {
+	border-top: 1px solid #eee;
+}
+
+/* Products Add-ons */
+#wcpbc_product_addons_data.wc-metaboxes-wrapper .wc-metabox h3 {
+	cursor: pointer;
+}
+
+#wcpbc_product_addons_data .wcpbc-pao-addon {
+	border: 1px solid #e5e5e5;
+	background: #fff;
+	clear: both;
+}
+
+#wcpbc_product_addons_data .wcpbc-pao-addon:first-child {
+	margin-top: 0;
+}
+
+#wcpbc_product_addons_data .wcpbc-pao-addon.closed .wc-pao-addon-content {
+	display: none;
+}
+
+#wcpbc_product_addons_data .wcpbc-pao-addon-header {
+	display: block;
+	height: auto;
+	cursor: auto;
+	border-bottom: 1px solid #e5e5e5;
+	padding: 15px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#wcpbc_product_addons_data .wcpbc-pao-addon-header .wcpbc-pao-col1 {
+	height: 30px;
+	line-height: 30px;
+}
+
+#wcpbc_product_addons_data .wcpbc-pao-addon-header h2.wcpbc-pao-addon-name {
+	font-size: 14px;
+	line-height: 1.4;
+	display: inline;
+	margin: 0 5px 0 10px !important;
+	padding: 0 !important;
+}
+
+#wcpbc_product_addons_data .wcpbc-pao-addon-header .wcpbc-pao-addon-type {
+	color: #ccc;
+	font-size: .9em;
+}
+
+#wcpbc_product_addons_data table.wc-metabox-content {
+	display: table;
+	background: #f9f9f9;
+}
+
+#wcpbc_product_addons_data .wc-pao-addon-option-row .wc-pao-addon-content-label {
+	grid-column: 1/8;
+}
+
+#wcpbc_product_addons_data .wc-pao-addon-adjust-price-settings{
+	display: block;
+	margin: 0;
+}
+
+/** German Market **/
+#woocommerce-product-data .wc-metaboxes-wrapper .wcpbc_price_per_unit_variation_options .wc-radios {
+	float: none;
+	padding: 2px 0 2px 0;
+}
+
+#woocommerce-product-data .wc-metaboxes-wrapper .wcpbc_price_per_unit_variation_options .wc-radios li {
+	padding: 0 0 5px;
+}
+#woocommerce-product-data .wc-metaboxes-wrapper .wcpbc_price_per_unit_variation_options .wc-radios li:last-child {
+	margin-right: 0;
+}
+
+/** Dynamic Pricing **/
+#woocommerce-pricing-rules-wrap td.wcpbc_pricing_rule_row_label {
+	text-align: right;
+	background-color: #ececec;
+}
+
+#woocommerce-pricing-rules-wrap select.wcpbc_pricing_rules_price_method {
+	font-size: inherit;
+}
+
+/** Settings **/
+.woocommerce table.form-table .wcpbc_exchange_rate_option + span.description {
+	display: block;
+	margin-top: 8px;
+}

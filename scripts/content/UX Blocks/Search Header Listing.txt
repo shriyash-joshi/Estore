@@ -1,0 +1,16 @@
+[section bg="252" bg_size="original"]
+
+[gap height="20px"]
+
+[row style="small" col_bg="rgb(255, 255, 255)" width="custom" custom_width="800px" class="course-listing"]
+
+[col span__sm="12" align="center"]
+
+[search]
+
+
+[/col]
+
+[/row]
+
+[/section]

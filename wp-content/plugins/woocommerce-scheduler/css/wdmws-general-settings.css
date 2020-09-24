@@ -1,0 +1,26 @@
+.wdm_day_of_week{
+    /*margin-left: 15px !important;*/
+}
+/*#wdm_start_time_hr{
+    margin-left:  10px;
+    margin-right: 10px;
+}
+#wdm_end_time_hr{
+    margin-left:  15px;
+    margin-right: 10px;
+}
+#wdm_start_date{
+    margin-left:  10px;
+    margin-right: 10px;
+}
+#wdm_end_date{
+    margin-left:  15px;
+    margin-right: 10px;
+}*/
+p.submit {
+	display: none !important;
+}
+
+.date_field_width.col-md-2 {
+  width: 25% !important;
+}

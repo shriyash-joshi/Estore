@@ -1,0 +1,111 @@
+/* Form Responsive */
+@media all and (max-width: 979px) {
+  .erf-container .erf-my-account-nav,
+  .erf-container .erf-my-account-content{
+      width: 100%;
+      padding: 0 0 20px;
+  }
+  .erf-container .erf-my-account-col-sr{
+      width: 50px;
+  }
+  .erf-container .erf-my-account-col-date{
+      display: none;
+  }
+  .erf-container .erf-my-account-col-edit{
+      width: 75px;
+  }
+  .erf-container .erf-my-account-col-form-name{
+      width: calc(100% - 125px);
+  }
+  .erf-container .erf-profile-details-wrap .erf-profile-image{
+      width: 128px;
+      height: 128px;
+  }
+  .erf-container .erf-profile-details-wrap .erf-profile-image img{
+      width: 128px;
+      height: 128px;
+  }
+  .erf-container .erf-profile-details-wrap .erf-profile-details{
+      width: calc(100% - 128px);
+  }
+  .erf-container .erf-profile-detail-title{
+      width: 100px;
+  }
+  .erf-container .erf-profile-detail-content{
+      width: calc(100% - 100px);
+  }
+}
+@media all and (max-width: 767px) {
+  .erf-container .erf-payment-wrapper{ max-width: 100%; }
+  .erf-layout-two-column.erf-container .erf-two-columns .form-group{
+      width: 100%;
+  }
+  .erf-layout-two-column .erf-login-form .form-group{
+      width: 100%;
+  }
+  .erf-container .erf-gdpr{
+      max-width: 100%;
+  }
+  .erf-layout-two-column.erf-container .erf-gdpr{
+      max-width: 100%;
+  }
+  .erf-layout-two-column.erf-container .erf-two-columns .form-group:nth-child(odd),
+  .erf-layout-two-column.erf-container .erf-two-columns .form-group:nth-child(even){
+      float: none;
+      margin-right: 0;
+      margin-left: 0;
+  }
+  .erf-layout-two-column.erf-container .erf-form .checkbox-group,
+  .erf-layout-two-column.erf-container .erf-form .radio-group{
+      width: 70%;
+      display: inline-block;
+  }
+  .erf-login-register-form .erf-container,
+  .erf-login-register-form .erf-reg-form-container{
+      width: 100%;
+      padding: 0px 0px;
+  }
+  .erf-login-register-form .erf-container{ margin-bottom: 2em;}
+  .erf-login-register-form .erf-container{
+  border-right: none;
+  }
+  .erf-login-register-form > div{
+      width: 100%;
+  }
+  .erf-container form[erf-multipage] .erf-page > [class*="erf-element-width-"],
+  .erf-container form:not([erf-multipage]) .rendered-form > [class*="erf-element-width-"]{
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%
+  }
+}
+@media all and (max-width: 480px) {
+  .erf-container .erf-form .form-control,
+  .erf-container .erf-form .other-option + label input[type="text"]{
+      max-width: 100%;
+  }
+  .erf-container .erf-form .form-control,
+  .erf-label-top.erf-container .erf-form label[class$="-label"]{
+      max-width: 100%;
+  }
+  .erf-container .erf-profile-details-wrap .erf-profile-details{
+      width: 100%;
+      padding-left: 10px;
+  }
+  .erf-container .erf-payment-wrapper{
+      max-width: 100%;
+  }
+  .erf-container .erf-profile-details-wrap .erf-profile-image{
+      margin: 0 auto;
+  }
+  .erf-container .erf-gdpr{
+  max-width: 100%;
+  }
+  .erf-layout-two-column.erf-container .erf-gdpr{
+      max-width: 100%;
+  }
+  .erf-container .erf-form .erf_img_preview{
+      max-width: 100%;
+  }
+}

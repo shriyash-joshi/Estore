@@ -1,0 +1,242 @@
+<!-- wp:html -->
+[ux_slider]
+
+[ux_banner height="400px" bg="177" bg_overlay="rgba(0,0,0,.5)" bg_pos="0% 0%"]
+
+[text_box width="43" width__sm="63" position_x="5" position_x__sm="10" position_y="50" position_y__sm="50" text_align="left"]
+
+<h2 class="slider-heading">All Your Education &amp; Career Needs Addressed </h2>
+<h2 style="text-align: left;"><b>THE RIGHT WAY!</b></h2>
+<p style="text-align: left;">whether you are parent seeking a clarity for child, or you are student wanting to know what path is best. We have a program custom made for you</p>
+[button text="Tell Me More" letter_case="lowercase" size="large" animate="fadeInUp" radius="11" icon="icon-angle-right" link="http://univariety.local/backend//shop/" class="new-primary"]
+
+
+[/text_box]
+[ux_image id="6070" width="45" position_x="95" position_y="50"]
+
+
+[/ux_banner]
+
+[/ux_slider]
+[section effect="snow" mask="arrow" padding="25px" margin="5px"]
+
+[row h_align="center"]
+
+[col span="7" span__sm="12" align="center"]
+
+[gap height="14px"]
+
+<p><b>Trusted by top schools in the country and 1,00,000+ students</b></p>
+
+[/col]
+
+[/row]
+[row]
+
+[col span__sm="12"]
+
+[ux_gallery ids="335,330,329,331,332" style="vertical" lightbox="false" type="slider" image_size="medium" text_pos="top"]
+
+
+[/col]
+
+[/row]
+
+[/section]
+[block id="6181"]
+
+[section bg_color="rgb(255, 255, 255)" dark="true" padding="0px" height="35px" border="0px 0px 0px 0px" class="home-stats-section"]
+
+[row style="collapse" h_align="center" padding="30px 10px 30px 5px" class="home-stats-section"]
+
+[col span="2" span__sm="6"]
+
+<h3 class="text-center stats-count">50000+</h3>
+<p class="text-center thin-font stats-sub-text">Psychometric Tests Conducted</p>
+
+[/col]
+[col span="2" span__sm="6"]
+
+<h3 class="text-center stats-count">45000+</h3>
+<p class="text-center thin-font stats-sub-text">Strong Alumni Network</p>
+
+[/col]
+[col span="2" span__sm="6"]
+
+<h3 class="text-center stats-count">1,50,000+</h3>
+<p class="text-center thin-font stats-sub-text">Counselling Sessions Conducted</p>
+
+[/col]
+[col span="2" span__sm="6"]
+
+<h3 class="text-center stats-count">350+</h3>
+<p class="text-center thin-font stats-sub-text">Partner Schools and colleges</p>
+
+[/col]
+[col span="2" span__sm="6"]
+
+<h3 class="text-center stats-count">5000+</h3>
+<p class="text-center thi-font stats-sub-text">Community Counellors</p>
+
+[/col]
+
+[/row]
+
+[/section]
+[gap height="37px"]
+
+[section class="advantages-section"]
+
+[row h_align="center"]
+
+[col span="8" span__sm="9" align="center"]
+
+<pstyle="text-align: center;color:#fff">
+<h1 class='white-color'>One Platform, Many Advantages</h1>
+</p>
+<p class='white-color'><span style="font-weight: 400;">Our </span><b>single platform</b><span style="font-weight: 400;"> will help </span><b>parents &amp; students</b><span style="font-weight: 400;"> connect to</span><b> multiple knowledge networks</b><span style="font-weight: 400;"> in a systematic and scientific way. </span></p>
+
+[/col]
+
+[/row]
+[row]
+
+[col span="3" span__sm="6" divider="0" padding="20px 20px 21px 20px" align="center" bg_color="rgb(255, 242, 227)" bg_radius="20" class="advantage"]
+
+[ux_image id="6124" width="31"]
+
+<h3 style="line-height: 22px;text-align: center;">Deep education knowledge</h3>
+<p style="text-align: center;">For the past 10 years, we have worked with 350+ top schools in the country which gives us a long standing industry experience….</p>
+
+[/col]
+[col span="3" span__sm="6" padding="20px 20px 21px 20px" align="center" bg_color="rgb(240, 255, 222)" bg_radius="20" class="advantage"]
+
+[ux_image id="6127" width="31"]
+
+<h3 style="line-height: 22px;text-align: center;">Expert counselor network</h3>
+<p style="text-align: center;">We boast of a strong network of expert counsellors from all around the country. These counsellors have solved 1000s of parent...</p>
+
+[/col]
+[col span="3" span__sm="6" padding="20px 20px 21px 20px" align="center" bg_color="rgb(229, 248, 255)" bg_radius="20" class="advantage"]
+
+[ux_image id="6128" width="31"]
+
+<h3 style="line-height: 22px;text-align: center;">Direct access to top colleges</h3>
+<p style="text-align: center;">Our Student-University program connects students to the admission cell of their dream university.</p>
+
+[/col]
+[col span="3" span__sm="6" padding="20px 20px 21px 20px" align="center" bg_color="rgb(255, 240, 240)" bg_radius="20" class="advantage"]
+
+[ux_image id="6124" width="31"]
+
+<h3 style="line-height: 22px;text-align: center;">Alumni network</h3>
+<p style="text-align: center;">Who better to give a student advice than the people who have been there and done that? Our student-mentor network is 75,000+...</p>
+
+[/col]
+
+[/row]
+[row]
+
+[col span__sm="12" padding="10px 0px 0px 1px" align="center"]
+
+[button text="Know more about univariety" letter_case="lowercase" padding="15px 30px 15px 30px" radius="6" icon="icon-angle-right" icon_reveal="true" class="new-primary"]
+
+
+[/col]
+
+[/row]
+
+[/section]
+[block id="6108"]
+
+[section label="Section Points" bg="6161" padding="13px" padding__sm="40px" padding__md="60px" class="goodbye-section"]
+
+[row style="large" v_align="middle" h_align="center" padding="0px 50px 0px 50px" class="goodbye-section"]
+
+[col span="2" span__sm="12"]
+
+
+[/col]
+[col span="4" span__sm="12" padding="0px 0 0px 0px"]
+
+[gap height="10px"]
+
+<h2 class='white-color' style="font-size:30px;line-height:40px;" >Bid Goodbye To All Career-Related Dilemmas!</h2>
+<h2 class='white-color' style="font-size:30px;line-height:40px;" > Tell Us What You Need Help With.</h2>
+
+[/col]
+[col span="5" span__sm="12"]
+
+[row_inner v_align="equal" h_align="center"]
+
+[col_inner span="6" span__sm="6" padding="30px 0px 0px 0px" align="center" animate="fadeInLeft" class="choose-right-curriculum"]
+
+[ux_image id="6141" width="20"]
+
+<p class='white-color text-center' style="font-size:14px;">Choose The Right Curriculum</p>
+
+[/col_inner]
+[col_inner span="6" span__sm="6" padding="30px 0px 0px 0px" align="center" animate="fadeInDown" class="identify-curriculum"]
+
+[ux_image id="6143" width="28"]
+
+<p class='white-color text-center' style="font-size:14px;">Choose The Right Curriculum</p>
+
+[/col_inner]
+
+[/row_inner]
+[row_inner v_align="equal" h_align="center"]
+
+[col_inner span="6" span__sm="6" padding="30px 0px 0px 0px" align="center" animate="fadeInDown" class="select-subject"]
+
+[ux_image id="6150" width="28"]
+
+<p class="white-color text-center" style="font-size: 14px;">Select a Subject/Stream</p>
+
+[/col_inner]
+[col_inner span="6" span__sm="6" padding="30px 0px 0px 0px" align="center" animate="fadeInLeft" class="increase-chances"]
+
+[ux_image id="6151" width="20"]
+
+<p class='white-color text-center' style="font-size:14px;">Increase Chances Of Getting Into A TOP College</p>
+
+[/col_inner]
+
+[/row_inner]
+[row_inner v_align="equal" h_align="center"]
+
+[col_inner span="6" span__sm="6" padding="30px 0px 0px 0px" align="center" animate="fadeInLeft" class="assistance-with"]
+
+[ux_image id="6154" width="20"]
+
+<p class='white-color text-center' style="font-size:14px;">Assistance With College Applications</p>
+
+[/col_inner]
+[col_inner span="6" span__sm="6" padding="30px 0px 0px 0px" align="center" animate="fadeInDown" class="talk-to-expert"]
+
+[ux_image id="6155" width="22"]
+
+<p class='white-color text-center' style="font-size:14px;">Talk to Expert Counsellor</p>
+
+[/col_inner]
+
+[/row_inner]
+
+[/col]
+
+[/row]
+
+[/section]
+[ux_banner height="214px" height__sm="225px" bg_color="rgb(255, 255, 255)" class="signup-cta"]
+
+[text_box width="30" width__sm="90" position_x="50" position_y="50"]
+
+<p><b style="font-size:26px;color:#000;">Get Guidance &Turn A Career Dream Into REALITY </b></p>
+[button text="Create An Account" letter_case="lowercase" color="success" size="large" padding="10px 50px 10px 50px" radius="5" icon="icon-angle-right" class="new-primary"]
+
+
+[/text_box]
+
+[/ux_banner]
+[block id="6188"]
+<!-- /wp:html -->

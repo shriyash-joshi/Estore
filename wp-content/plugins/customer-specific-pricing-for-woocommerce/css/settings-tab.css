@@ -1,0 +1,27 @@
+.wdm_csp_input.submit {
+    margin-top:2em;
+}
+
+.left_div {
+    padding-left: 0;
+}
+
+.csp-general-settings-head {
+    margin: 1em 0;
+}
+
+.help-text{
+    text-decoration-color: #808080;
+    color: #808080;
+}
+
+input[name='wdm_csp_settings[csp_discription_text]'],
+input[name='wdm_csp_settings[regular_price_display_text]']{
+    width: 70%;
+}
+
+.csp-tab-header {
+    font-weight: bold !important;
+    font-size: 19px !important;
+    color: rgba(35, 40, 45, 0.79);
+}

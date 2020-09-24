@@ -1,0 +1,150 @@
+[
+    {
+        "name": "mpdf/mpdf",
+        "version": "dev-mpdf",
+        "version_normalized": "dev-mpdf",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/baselbers/mpdf.git",
+            "reference": "e65509d36a2e5b14bea72a4a80439c55e6062071"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/baselbers/mpdf/zipball/e65509d36a2e5b14bea72a4a80439c55e6062071",
+            "reference": "e65509d36a2e5b14bea72a4a80439c55e6062071",
+            "shasum": ""
+        },
+        "require": {
+            "ext-mbstring": "*",
+            "php": ">=5.4.0",
+            "setasign/fpdi": "1.6.*"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.7"
+        },
+        "suggest": {
+            "ext-zlib": "Needed for compression of embedded resources, such as fonts"
+        },
+        "time": "2020-06-21T19:52:50+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "classmap": [
+                "mpdf.php",
+                "classes"
+            ]
+        },
+        "scripts": {
+            "post-install-cmd": [
+                "php -r \"chmod('./ttfontdata', 0777);\"",
+                "php -r \"chmod('./tmp', 0777);\"",
+                "php -r \"chmod('./graph_cache', 0777);\""
+            ]
+        },
+        "license": [
+            "GPL-2.0"
+        ],
+        "authors": [
+            {
+                "name": "Ian Back",
+                "role": "Developer"
+            }
+        ],
+        "description": "A PHP class to generate PDF files from HTML with Unicode/UTF-8 and CJK support",
+        "homepage": "http://mpdf.github.io",
+        "keywords": [
+            "pdf",
+            "php",
+            "utf-8"
+        ],
+        "support": {
+            "issues": "https://github.com/mpdf/mpdf/issues",
+            "source": "https://github.com/mpdf/mpdf",
+            "docs": "http://mpdf.github.io"
+        }
+    },
+    {
+        "name": "setasign/fpdi",
+        "version": "1.6.2",
+        "version_normalized": "1.6.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Setasign/FPDI.git",
+            "reference": "a6ad58897a6d97cc2d2cd2adaeda343b25a368ea"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Setasign/FPDI/zipball/a6ad58897a6d97cc2d2cd2adaeda343b25a368ea",
+            "reference": "a6ad58897a6d97cc2d2cd2adaeda343b25a368ea",
+            "shasum": ""
+        },
+        "suggest": {
+            "setasign/fpdf": "FPDI will extend this class but as it is also possible to use \"tecnickcom/tcpdf\" as an alternative there's no fixed dependency configured.",
+            "setasign/fpdi-fpdf": "Use this package to automatically evaluate dependencies to FPDF.",
+            "setasign/fpdi-tcpdf": "Use this package to automatically evaluate dependencies to TCPDF."
+        },
+        "time": "2017-05-11T14:25:49+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "filters/",
+                "fpdi.php",
+                "fpdf_tpl.php",
+                "fpdi_pdf_parser.php",
+                "pdf_context.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jan Slabon",
+                "email": "jan.slabon@setasign.com",
+                "homepage": "https://www.setasign.com"
+            }
+        ],
+        "description": "FPDI is a collection of PHP classes facilitating developers to read pages from existing PDF documents and use them as templates in FPDF. Because it is also possible to use FPDI with TCPDF, there are no fixed dependencies defined. Please see suggestions for packages which evaluates the dependencies automatically.",
+        "homepage": "https://www.setasign.com/fpdi",
+        "keywords": [
+            "fpdf",
+            "fpdi",
+            "pdf"
+        ]
+    },
+    {
+        "name": "xrstf/composer-php52",
+        "version": "v1.0.20",
+        "version_normalized": "1.0.20.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/composer-php52/composer-php52.git",
+            "reference": "bd41459d5e27df8d33057842b32377c39e97a5a8"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/composer-php52/composer-php52/zipball/bd41459d5e27df8d33057842b32377c39e97a5a8",
+            "reference": "bd41459d5e27df8d33057842b32377c39e97a5a8",
+            "shasum": ""
+        },
+        "time": "2016-04-16T21:52:24+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-default": "1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "xrstf\\Composer52": "lib/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ]
+    }
+]

@@ -1,0 +1,217 @@
+# Copyright (C) 2019 lshowcase
+# This file is distributed under the same license as the lshowcase package.
+msgid ""
+msgstr ""
+"Project-Id-Version: lshowcase\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../logos-showcase/lshowcase.php:163, ../logos-showcase/lshowcase.php:174
+msgctxt "lshowcase"
+msgid "$nameplural"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:164
+msgctxt "lshowcase"
+msgid "$name"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:165, ../logos-showcase/lshowcase.php:166, ../logos-showcase/lshowcase.php:167, ../logos-showcase/lshowcase.php:168, ../logos-showcase/lshowcase.php:169, ../logos-showcase/lshowcase.php:170, ../logos-showcase/lshowcase.php:171, ../logos-showcase/lshowcase.php:172, ../logos-showcase/lshowcase.php:173
+msgctxt "lshowcase"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:217, ../logos-showcase/lshowcase.php:741, ../logos-showcase/lshowcase.php:1067, ../logos-showcase/lshowcase.php:1117, ../logos-showcase/shortcode-generator.php:202
+msgid "Categories"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:223, ../logos-showcase/lshowcase.php:748, ../logos-showcase/lshowcase.php:1068, ../logos-showcase/lshowcase.php:1118, ../logos-showcase/shortcode-generator.php:203
+msgid "Tags"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:366
+msgid "Max-width Percentage"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:370
+msgid "Padding"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:382
+msgid "Margin"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:456
+msgid "Use these fields to add custom spacing values to this image. Don't forget to use the unit, like 10px or 1.1em."
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:491
+msgid "URL:"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:492
+msgid "Description:"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:498, ../logos-showcase/lshowcase.php:546, ../logos-showcase/lshowcase.php:1127, ../logos-showcase/lshowcase.php:2580
+msgid "URL"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:506, ../logos-showcase/lshowcase.php:1126
+msgid "Description"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:540
+msgid "Image URL:"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:577
+msgid "URL parameters:"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:583
+msgid "URL parameters"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:734, ../logos-showcase/lshowcase.php:1066, ../logos-showcase/lshowcase.php:2273
+msgid "All"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:1125
+msgid "Image"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:1130
+msgid "Clicks"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:2528
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:2541
+msgid "Order by"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:2551
+msgid "Display entries ordered by"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:2558
+msgid "Category"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:2561
+msgid "Category to display"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:2569
+msgid "Limit"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:2572
+msgid "How many entries to display. Leave blank or '0' to display all"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:2588
+msgid "Image URL Settings"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:2595
+msgid "Style"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:2598
+msgid "Image effect to apply"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:2606
+msgid "Layout"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:2629
+msgid "In what form do you want the images to display"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:2637
+msgid "Show Tooltip"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:2644
+msgid "Display tooltip information on hover"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:2652
+msgid "Show Info"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:2663
+msgid "Display information above or below image"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:2671
+msgid "Show Filter"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:2679
+msgid "Display live filter menu above grid"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:2713
+msgid "Add to Logos Showcase"
+msgstr ""
+
+#: ../logos-showcase/lshowcase.php:2760
+msgid "%s image was added to Logos Showcase."
+msgid_plural "%s images where successfully added to Logos Showcase"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../logos-showcase/lshowcase.php:2797
+msgid "Show All %s"
+msgstr ""
+
+#: ../logos-showcase/ordering-code.php:103
+msgid "To reposition an item, simply drag and drop the row by \"clicking and holding\" it anywhere (outside of the links and form controls) and moving it to its new position."
+msgstr ""
+
+#: ../logos-showcase/ordering-code.php:288
+msgid "Sort by Order"
+msgstr ""
+
+#: ../logos-showcase/ordering-code.php:293
+msgid "Drag & Drop Ordering Activated"
+msgstr ""
+
+#: ../logos-showcase/shortcode-generator.php:400
+msgid "Image Global Padding"
+msgstr ""
+
+#: ../logos-showcase/shortcode-generator.php:412
+msgid "Show %s Filter Menu"
+msgstr ""
+
+#: ../logos-showcase/shortcode-generator.php:662, ../logos-showcase/shortcode-generator.php:701
+msgid "Remember these settings"
+msgstr ""
+
+#: ../logos-showcase/shortcode-generator.php:693
+msgid "Cancel"
+msgstr ""
+
+#: ../logos-showcase/shortcode-generator.php:694
+msgid "Save All Changes"
+msgstr ""
+
+#: ../logos-showcase/shortcode-generator.php:703
+msgid "Click here so the current settings are remembered for the next time you visit the shortcode generator page."
+msgstr ""
+
+#: ../logos-showcase/widget-code.php:315
+msgid "Global Image Padding"
+msgstr ""

@@ -1,0 +1,446 @@
+[ux_slider]
+
+[ux_banner height="400px" bg="177" bg_overlay="rgba(0,0,0,.5)" bg_pos="0% 0%"]
+
+[text_box width="69" width__sm="63" position_x="50" position_x__sm="10" position_y="50" position_y__sm="50"]
+
+<p><b>All Your Education &amp; Career Needs Addressed&nbsp;</b></p>
+<p><b>THE RIGHT WAY!</b></p>
+<p>whether you are parent seeking a clarity for child, or you are student wanting to know what path is best. We have a program custom made for you</p>
+[button text="Tell Me More" letter_case="lowercase" style="outline" size="small" radius="11" link="http://univariety.local/backend//shop/"]
+
+
+[/text_box]
+
+[/ux_banner]
+
+[/ux_slider]
+[section effect="snow" mask="arrow" padding="25px" margin="5px"]
+
+[row h_align="center"]
+
+[col span="7" span__sm="12" align="center"]
+
+[gap height="14px"]
+
+<p><b>Trusted by top schools in the country and 1,00,000+ students</b></p>
+
+[/col]
+
+[/row]
+[row]
+
+[col span__sm="12"]
+
+[ux_gallery ids="335,330,329,331,332" style="vertical" lightbox="false" type="slider" image_size="medium"]
+
+
+[/col]
+
+[/row]
+
+[/section]
+[section label="Hero" bg="150" bg_size="original" bg_color="rgb(235, 229, 229)" padding="0px" padding__sm="40px" padding__md="60px"]
+
+[row v_align="middle" h_align="center"]
+
+[col span="6" span__sm="12" force_first="small"]
+
+[row_inner v_align="equal" h_align="center"]
+
+[col_inner span__sm="10" span__md="12" padding="0px 0px 0px 0px" align="center" animate="fadeInRight" border="32px 0px 0px 0px"]
+
+[ux_image id="149" width="80"]
+
+
+[/col_inner]
+
+[/row_inner]
+
+[/col]
+[col span="6" span__sm="12" padding="80px 2px 0px 0px"]
+
+<p><b>India’s FIRST Ever One-Stop Platform For All Career Guidance Solutions&nbsp;</b></p>
+<p><span style="font-weight: 400;">Univariety is India’s largest career guidance platform. We provide cutting edge ed-tech solutions to parents, students and counsellors.&nbsp;</p>
+<p></span><span style="font-weight: 400;">Our vision is to be the number one ‘Decision Partner’ to every parent in their child’s career journey.</p>
+<p></span><span style="font-weight: 400;">With strong university connections, a community of career counsellors and cutting-edge ed-tech products, we provide end-to-end career guidance services to students &amp; parents.</span></p>
+<p><strong>Please identify who you are to find the most appropriate solutions customized for YOU!</strong></p>
+[gap height="10px"]
+
+[button text="I am a student" letter_case="lowercase" padding="5px 20px 5px 20px" radius="8" depth_hover="1" link="http://univariety.local/backend//student-central/"]
+
+[button text="I am a parent" letter_case="lowercase" padding="5px 20px 5px 20px" radius="8" depth_hover="1"]
+
+[button text="I am a counselor" letter_case="lowercase" padding="5px 20px 5px 20px" radius="8" depth_hover="1"]
+
+
+[/col]
+
+[/row]
+
+[/section]
+[section bg_color="rgb(254, 119, 126)" dark="true" padding="0px" height="35px" border="0px 0px 0px 0px"]
+
+[row style="collapse" h_align="center" padding="30px 10px 30px 10px"]
+
+[col span="2" span__sm="6"]
+
+<h3 class="text-center stats-count">50000+</h3>
+<p class="text-center thin-font">Psychometric Tests Conducted</p>
+
+[/col]
+[col span="2" span__sm="6"]
+
+<h3 class="text-center stats-count">45000+</h3>
+<p class="text-center thin-font">Strong Alumni Network</p>
+
+[/col]
+[col span="2" span__sm="6"]
+
+<h3 class="text-center stats-count">1,50,000+</h3>
+<p class="text-center thin-font">Counselling Sessions Conducted</p>
+
+[/col]
+[col span="2" span__sm="6"]
+
+<h3 class="text-center stats-count">350+</h3>
+<p class="text-center thin-font">Partner Schools and colleges</p>
+
+[/col]
+[col span="2" span__sm="6"]
+
+<h3 class="text-center stats-count">5000+</h3>
+<p class="text-center thi-font">Community Counsellors</p>
+
+[/col]
+
+[/row]
+
+[/section]
+[row h_align="center"]
+
+[col span="8" span__sm="9" align="center"]
+
+[gap height="45px"]
+
+<p style="text-align: center;"><b>One Platform, Many Advantages</b></p>
+<p><span style="font-weight: 400;">Our </span><b>single platform</b><span style="font-weight: 400;"> will help </span><b>parents &amp; students</b><span style="font-weight: 400;"> connect to</span><b> multiple knowledge networks</b><span style="font-weight: 400;"> in a systematic and scientific way. </span></p>
+[divider width="74px" color="rgb(254, 119, 126)"]
+
+
+[/col]
+
+[/row]
+[gap height="37px"]
+
+[section padding="12px"]
+
+[row style="large" width="custom" custom_width="1040px" h_align="center" padding="0px 29px 0px 0px" class="margin0"]
+
+[col span="5" span__sm="12" align="left" max_width="395px"]
+
+<h2 class="fontsize24">Deep education knowledge</h2>
+<p><span style="font-weight: 400;">For the past 10 years, we have worked with 350+ top schools in the country which gives us a long standing industry experience. Through our extensive research &amp; annual surveys conducted with a focus group of 20,000+ parents &amp; students, we have gained immense consumer insights. So, whatever your dilemma, we can help you solve it with our industry expertise and consumer insights.  </span></p>
+
+[/col]
+[col span="1" span__sm="10" align="left" max_width="380px"]
+
+
+[/col]
+[col span="5" span__sm="12" align="left" max_width="381px"]
+
+<h2 class="fontsize24">Expert counselor network</h2>
+<p><span style="font-weight: 400;">We boast of a strong network of expert counsellors from all around the country. These counsellors have solved 1000s of parent and student dilemmas seamlessly through physical and virtual career counselling sessions. Whatever your career dilemma, you will get an answer from our counsellors.</span></p>
+
+[/col]
+
+[/row]
+[row style="large" width="custom" custom_width="1040px" h_align="center" padding="0px 29px 0px 0px" class="margin0"]
+
+[col span="5" span__sm="12" align="left" max_width="380px"]
+
+<h2 class="fontsize24">Alumni network</h2>
+<p><span style="font-weight: 400;">Who better to give a student advice than the people who have been there and done that? Our student-mentor network is 75,000+ strong and comprises ex-school students who are currently studying in top universities or are successful professionals in their chosen field. </span></p>
+
+[/col]
+[col span="1" span__sm="8" align="left" max_width="380px"]
+
+
+[/col]
+[col span="5" span__sm="12" align="left" max_width="381px"]
+
+<h2 class="fontsize24">Direct access to top colleges</h2>
+<p><span style="font-weight: 400;">Our Student-University program connects students to the admission cell of their dream university. This helps them in getting critical information about admission processes, criteria for admission, etc. This connection puts students ahead of their competition. </span></p></p>
+
+[/col]
+
+[/row]
+
+[/section]
+[gap height="20px"]
+
+[row]
+
+[col span__sm="12" padding="10px 0px 0px 1px" align="center"]
+
+[button text="Know more about univariety" letter_case="lowercase" padding="15px 30px 15px 30px" radius="6"]
+
+
+[/col]
+
+[/row]
+[section label="Hero" bg="393" padding="13px" padding__sm="40px" padding__md="60px"]
+
+[row style="large" v_align="middle" h_align="center" padding="0px 50px 0px 50px"]
+
+[col span="6" span__sm="12"]
+
+<p style="text-align: center;"><b>Meet The RIGHT COUNSELLOR <br /></b><b>Make Your DILEMMAS DISAPPEAR<br /></b></p>
+<p><span style="font-weight: 400;">From setting a goal to securing admission in a TOP college, different students and parents have different dilemmas and needs. <br /></span><span style="font-weight: 400;">Our community of 5000+ career counsellors includes those who have expertise in solving different dilemmas. Explore and select the right career counsellor to find solutions. </span></p>
+[gap height="10px"]
+
+[button text="Find The Right Counsellor" letter_case="lowercase" padding="5px 15px 5px 15px" radius="8" depth_hover="1"]
+
+
+[/col]
+[col span="6" span__sm="12" force_first="small"]
+
+[row_inner v_align="equal" h_align="center"]
+
+[col_inner span="6" span__sm="6" animate="fadeInLeft"]
+
+[ux_image id="120"]
+
+
+[/col_inner]
+[col_inner span="6" span__sm="6" animate="fadeInDown"]
+
+[ux_image id="119"]
+
+
+[/col_inner]
+[col_inner span="6" span__sm="6" animate="fadeInUp"]
+
+[ux_image id="118"]
+
+
+[/col_inner]
+[col_inner span="6" span__sm="6" animate="fadeInRight"]
+
+[ux_image id="117"]
+
+
+[/col_inner]
+
+[/row_inner]
+
+[/col]
+
+[/row]
+
+[/section]
+[row style="collapse" width="full-width" class="highlights"]
+
+[col span="5" span__sm="12" align="left"]
+
+[ux_banner height="576px" height__sm="450px" bg="395" bg_size="medium" bg_pos="19% 52%"]
+
+[text_box width="48" width__sm="60" position_x="50" position_y="50" text_align="left"]
+
+<h1><b>Bid Goodbye To All Career-Related Dilemmas!</b></h1>
+<h2> </h2>
+<h1><b>Tell Us What You Need Help With.</b></h1>
+<h2> </h2>
+
+[/text_box]
+
+[/ux_banner]
+
+[/col]
+[col span="7" span__sm="12" padding="50px 70px 50px 70px" align="left"]
+
+[row_inner padding="20px 20px 20px 20px"]
+
+[col_inner span="6" span__sm="12"]
+
+[featured_box img="138" img_width="39" pos="center" font_size="small"]
+
+<h5><strong>Choose The Right Curriculum</strong></h5>
+
+[/featured_box]
+
+[/col_inner]
+[col_inner span="6" span__sm="12"]
+
+[featured_box img="137" img_width="39" pos="center" font_size="small"]
+
+<h5><strong>Identify Ideal Career</strong></h5>
+
+[/featured_box]
+
+[/col_inner]
+
+[/row_inner]
+[row_inner padding="20px 20px 20px 20px"]
+
+[col_inner span="6" span__sm="12"]
+
+[featured_box img="138" img_width="39" pos="center" font_size="small"]
+
+<h5><strong>Select a Subject/Stream</strong></h5>
+
+[/featured_box]
+
+[/col_inner]
+[col_inner span="6" span__sm="12"]
+
+[featured_box img="137" img_width="39" pos="center" font_size="small"]
+
+<h5><strong>Increase Chances Of Getting Into A TOP College</strong></h5>
+
+[/featured_box]
+
+[/col_inner]
+
+[/row_inner]
+[row_inner padding="20px 20px 20px 20px"]
+
+[col_inner span="6" span__sm="12"]
+
+[featured_box img="138" img_width="39" pos="center" font_size="small"]
+
+<h5><strong>Assistance With College Applications</strong></h5>
+
+[/featured_box]
+
+[/col_inner]
+[col_inner span="6" span__sm="12"]
+
+[featured_box img="137" img_width="39" pos="center" font_size="small"]
+
+<h5><strong>Talk to Expert Counsellor</strong></h5>
+
+[/featured_box]
+
+[/col_inner]
+
+[/row_inner]
+
+[/col]
+
+[/row]
+[ux_banner height="232px" height__sm="225px" bg_overlay="rgba(95, 52, 227, 0.68)" class="create-account"]
+
+[text_box width="84" width__sm="90" position_x="50" position_y="50"]
+
+<p><b>Get Guidance &amp; Turn A Career Dream Into REALITY</b></p>
+[gap]
+
+[button text="Create An Account" letter_case="lowercase" color="success" padding="10px 50px 10px 50px" radius="5"]
+
+
+[/text_box]
+
+[/ux_banner]
+[section label="Testimonials" bg_color="rgb(246, 246, 246)" padding="15px"]
+
+[row label="Testimonials" padding="50px 50px 30px 50px" padding__sm="30px 30px 30px 30px"]
+
+[col span__sm="12" bg_color="rgb(255, 255, 255)"]
+
+[title text="Our Customers  Our Brand Ambassadors"]
+
+[ux_slider hide_nav="true" nav_pos="outside" arrows="false" nav_color="dark" bullet_style="square" timer="3000"]
+
+[row_inner label="Testimonial 1" style="large"]
+
+[col_inner span="4" span__sm="12" padding="15px 0px 0px 0px"]
+
+[ux_image id="133" class="circle"]
+
+
+[/col_inner]
+[col_inner span="8" span__sm="12"]
+
+[row_inner_1 style="collapse"]
+
+[col_inner_1 span__sm="12" margin="0px 0px -50px 0px" animate="bounceInUp"]
+
+<h2><span style="font-size: 300%;">"</span></h2>
+
+[/col_inner_1]
+
+[/row_inner_1]
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In est sem, ultrices ornare molestie sit amet, placerat vel arcu. Phasellus quis massa id sem pretium dictum. Donec sed sollicitudin est, sit amet eleifend ipsum. Vivamus nec pretium turpis."</p>
+[gap height="10px"]
+
+<h4 style="margin-bottom: 0px;">Kirstin W. Everton</h4>
+<p><span style="font-size: 80%;">Graphic Designer, Apple</span></p>
+
+[/col_inner]
+
+[/row_inner]
+[row_inner label="Testimonial 2" style="large"]
+
+[col_inner span="4" span__sm="12" padding="15px 0px 0px 0px"]
+
+[ux_image id="132" class="circle"]
+
+
+[/col_inner]
+[col_inner span="8" span__sm="12"]
+
+[row_inner_1 style="collapse"]
+
+[col_inner_1 span__sm="12" margin="0px 0px -50px 0px" animate="bounceInUp"]
+
+<h2><span style="font-size: 300%;">"</span></h2>
+
+[/col_inner_1]
+
+[/row_inner_1]
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In est sem, ultrices ornare molestie sit amet, placerat vel arcu. Phasellus quis massa id sem pretium dictum. Donec sed sollicitudin est, sit amet eleifend ipsum. Vivamus nec pretium turpis."</p>
+[gap height="10px"]
+
+<h4 style="margin-bottom: 0px;">Kimberly Mason</h4>
+<p><span style="font-size: 80%;">Customer Service, Google</span></p>
+
+[/col_inner]
+
+[/row_inner]
+[row_inner label="Testimonial 2" style="large"]
+
+[col_inner span="4" span__sm="12" padding="15px 0px 0px 0px"]
+
+[ux_image id="134" class="circle"]
+
+
+[/col_inner]
+[col_inner span="8" span__sm="12"]
+
+[row_inner_1 style="collapse"]
+
+[col_inner_1 span__sm="12" margin="0px 0px -50px 0px" animate="bounceInUp"]
+
+<h2><span style="font-size: 300%;">"</span></h2>
+
+[/col_inner_1]
+
+[/row_inner_1]
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In est sem, ultrices ornare molestie sit amet, placerat vel arcu. Phasellus quis massa id sem pretium dictum. Donec sed sollicitudin est, sit amet eleifend ipsum. Vivamus nec pretium turpis."</p>
+[gap height="10px"]
+
+<h4 style="margin-bottom: 0px;">Jack Johnson</h4>
+<p><span style="font-size: 80%;">Developer, Uber </span></p>
+
+[/col_inner]
+
+[/row_inner]
+
+[/ux_slider]
+
+[/col]
+
+[/row]
+
+[/section]

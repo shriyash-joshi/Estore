@@ -1,0 +1,32 @@
+{
+  "name": "woocommerce-scheduler",
+  "version": "1.0.3",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-cache": "^1.1.0",
+    "gulp-changed": "^3.2.0",
+    "gulp-image": "^4.4.1",
+    "gulp-image-optimization": "^0.1.3",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-sass": "^4.0.2",
+    "gulp-smushit": "^1.2.0",
+    "gulp-svgo": "^2.1.0",
+    "gulp-uglify": "^3.0.1",
+    "gulp-useref": "^3.1.6"
+  },
+  "dependencies": {
+    "gulp-concat": "^2.6.1",
+    "gulp-minify-css": "^1.2.4",
+    "imagemin-giflossy": "^5.1.10",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^6.0.1",
+    "imagemin-zopfli": "^5.1.0",
+    "jpegtran": "^1.0.5"
+  }
+}

@@ -1,0 +1,63 @@
+<?php
+/**
+ * Spain states
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+$states['ES'] = array(
+	'C'  => __( 'A Coru&ntilde;a', 'erforms' ),
+	'VI' => __( 'Araba/&Aacute;lava', 'erforms' ),
+	'AB' => __( 'Albacete', 'erforms' ),
+	'A'  => __( 'Alicante', 'erforms' ),
+	'AL' => __( 'Almer&iacute;a', 'erforms' ),
+	'O'  => __( 'Asturias', 'erforms' ),
+	'AV' => __( '&Aacute;vila', 'erforms' ),
+	'BA' => __( 'Badajoz', 'erforms' ),
+	'PM' => __( 'Baleares', 'erforms' ),
+	'B'  => __( 'Barcelona', 'erforms' ),
+	'BU' => __( 'Burgos', 'erforms' ),
+	'CC' => __( 'C&aacute;ceres', 'erforms' ),
+	'CA' => __( 'C&aacute;diz', 'erforms' ),
+	'S'  => __( 'Cantabria', 'erforms' ),
+	'CS' => __( 'Castell&oacute;n', 'erforms' ),
+	'CE' => __( 'Ceuta', 'erforms' ),
+	'CR' => __( 'Ciudad Real', 'erforms' ),
+	'CO' => __( 'C&oacute;rdoba', 'erforms' ),
+	'CU' => __( 'Cuenca', 'erforms' ),
+	'GI' => __( 'Girona', 'erforms' ),
+	'GR' => __( 'Granada', 'erforms' ),
+	'GU' => __( 'Guadalajara', 'erforms' ),
+	'SS' => __( 'Gipuzkoa', 'erforms' ),
+	'H'  => __( 'Huelva', 'erforms' ),
+	'HU' => __( 'Huesca', 'erforms' ),
+	'J'  => __( 'Ja&eacute;n', 'erforms' ),
+	'LO' => __( 'La Rioja', 'erforms' ),
+	'GC' => __( 'Las Palmas', 'erforms' ),
+	'LE' => __( 'Le&oacute;n', 'erforms' ),
+	'L'  => __( 'Lleida', 'erforms' ),
+	'LU' => __( 'Lugo', 'erforms' ),
+	'M'  => __( 'Madrid', 'erforms' ),
+	'MA' => __( 'M&aacute;laga', 'erforms' ),
+	'ML' => __( 'Melilla', 'erforms' ),
+	'MU' => __( 'Murcia', 'erforms' ),
+	'NA' => __( 'Navarra', 'erforms' ),
+	'OR' => __( 'Ourense', 'erforms' ),
+	'P'  => __( 'Palencia', 'erforms' ),
+	'PO' => __( 'Pontevedra', 'erforms' ),
+	'SA' => __( 'Salamanca', 'erforms' ),
+	'TF' => __( 'Santa Cruz de Tenerife', 'erforms' ),
+	'SG' => __( 'Segovia', 'erforms' ),
+	'SE' => __( 'Sevilla', 'erforms' ),
+	'SO' => __( 'Soria', 'erforms' ),
+	'T'  => __( 'Tarragona', 'erforms' ),
+	'TE' => __( 'Teruel', 'erforms' ),
+	'TO' => __( 'Toledo', 'erforms' ),
+	'V'  => __( 'Valencia', 'erforms' ),
+	'VA' => __( 'Valladolid', 'erforms' ),
+	'BI' => __( 'Bizkaia', 'erforms' ),
+	'ZA' => __( 'Zamora', 'erforms' ),
+	'Z'  => __( 'Zaragoza', 'erforms' ),
+);

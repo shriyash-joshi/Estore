@@ -1,0 +1,39 @@
+.csp-cd-modal{display:none;color:rgba(22, 22, 22, 0.76);position:fixed;z-index:999;padding-top:240px;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:#000;background-color:rgba(0,0,0,.4)}
+.csp-cd-modal-content{background-color:#fefefe;margin:auto;padding:20px;border:1px solid #888;border-radius:5px;width:60%}
+.csp-cd-modal-close{color:#aaa;float:right;font-size:28px;font-weight:700}
+.csp-cd-modal-close:focus,.csp-cd-modal-close:hover{color:#000;text-decoration:none;cursor:pointer}
+.csp-cd-offer-modal-content{ max-height:220px; overflow-y:auto;}
+.csp-cd-tc {font-size: small;}
+#csp-cd-more{
+    text-decoration: underline;
+    cursor: zoom-in;
+}
+
+div.woocommerce-message.csp-cd-offer {
+    color: #504D4B;
+    background-color: #FFF0DB;
+    border: 1px solid #FF9F1D;    
+}
+
+div.woocommerce-message.csp-cd-congrats {
+    background-color: #E0F7E5;
+    border: 1px solid #00A344;
+    color: #504D4B;
+}
+
+#csp-cd-shop-more{
+    float: right;
+}
+
+button.csp-cd-btn-shop-more
+{
+  border-radius: 5px;
+  border: 1px solid #00A344;
+  font-size: smaller;
+}
+
+button.csp-cd-btn-shop-more-offer{
+    border-radius: 5px;
+    border: 1px solid #FF9F1D;
+    font-size: smaller;
+}

@@ -1,0 +1,67 @@
+[section label="Hero" bg="150" bg_size="original" padding="0px" padding__sm="40px" padding__md="60px"]
+
+[row v_align="middle" h_align="center"]
+
+[col span="6" span__sm="12" padding="80px 2px 0px 0px"]
+
+<h2 style="text-align: left;
+font: Bold 36px/42px Poppins;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;">India’s FIRST Ever One-Stop Platform For All Career Guidance Solutions&nbsp;</h2>
+</p>
+<p><span style="font-weight: 400;">Univariety is India’s largest career guidance platform. We provide cutting edge ed-tech solutions to parents, students and counsellors.&nbsp;</p>
+<p></span><span style="font-weight: 400;">Our vision is to be the number one ‘Decision Partner’ to every parent in their child’s career journey.</p>
+<p></span><span style="font-weight: 400;">With strong university connections, a community of career counsellors and cutting-edge ed-tech products, we provide end-to-end career guidance services to students &amp; parents.</span></p>
+[gap height="10px"]
+
+
+[/col]
+[col span="6" span__sm="12"]
+
+[row_inner v_align="equal" h_align="center"]
+
+[col_inner span__sm="6" padding="0px 0px 0px 0px" align="center" animate="fadeInRight" border="0 0px 0px 0px" class="bg-main-cta"]
+
+<h4 class='white-color' style="font-size:20px;margin-top:30px;margin-bottom:30px;">Please identify who you are to find the most </h4>
+[row_inner_1]
+
+[col_inner_1 span="4" span__sm="12"]
+
+[ux_image_box style="overlay" img="6073" image_radius="5"]
+<a href='/student-central' class="home-cta new-primary button is-large"> <span> I am a </span>
+<h3>Student</h3>
+</a>
+
+[/ux_image_box]
+
+[/col_inner_1]
+[col_inner_1 span="4" span__sm="12"]
+
+[ux_image_box style="overlay" img="6077" image_radius="5"]
+
+<a href="/parent-central"class="home-cta new-primary button is-largeparent-button"><span> I am a </span><h3>Parent</h3></a>
+
+[/ux_image_box]
+
+[/col_inner_1]
+[col_inner_1 span="4" span__sm="12"]
+
+[ux_image_box style="overlay" img="6078" image_radius="5"]
+
+<a href='' " class="home-cta new-primary button is-large counsellor-button"><span> I am a </span><h3>Counsellor</h3></a>
+[/ux_image_box]
+
+[/col_inner_1]
+
+[/row_inner_1]
+
+[/col_inner]
+
+[/row_inner]
+
+[/col]
+
+[/row]
+
+[/section]

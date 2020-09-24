@@ -1,0 +1,191 @@
+[ux_banner height="495px" class="banner-1"]
+
+[text_box width="71" position_x="95" position_y="50"]
+
+[ux_image id="1235"]
+
+
+[/text_box]
+[text_box width="68" position_x="50" position_y="30" text_align="left"]
+
+[button text="Click me" letter_case="lowercase" size="large" radius="10" expand="0" class="new-primary"]
+
+
+[/text_box]
+[text_box width="69" position_x="50" position_y="5"]
+
+<p>A Student’s Partner On The Journey To<br />
+<label class="career-success"> Career Success</label></p>
+
+[/text_box]
+
+[/ux_banner]
+[block id="1280"]
+
+[ux_banner height="641px" class="banner-2"]
+
+[text_box width="40" position_x="50" position_y="50"]
+
+<div class="sc-circle circle1">01<br />
+<label>Hey you, do you want to explore your personality?</label></div>
+<div class="sc-circle circle2">02<br />
+<label>Do you want to experience all career possibilities?</label></div>
+<div class="sc-circle circle3">03<br />
+<label>Do you want to be proactive and take the first-step towards your dream career and college?</label></div>
+
+[/text_box]
+[text_box width="30" position_x="0" position_y="5"]
+
+[ux_image id="1307"]
+
+
+[/text_box]
+[text_box width="30" position_x="100" position_y="10"]
+
+[ux_image id="1308"]
+
+
+[/text_box]
+
+[/ux_banner]
+[section label="Media Right" bg_color="rgb(193, 193, 193)" bg_overlay="rgba(255, 255, 255, 0.85)" padding="60px" class="sc-section-1"]
+
+<h3 class="sc-title">Choose a category below and find the<br />
+RIGHT SOLUTION for you!</h3>
+[row style="large" v_align="middle"]
+
+[col span="2" span__sm="12"]
+
+
+[/col]
+[col span="4" span__sm="12" margin="0px 0px 0px 0px" align="left" color="light"]
+
+<h3>I Want To Discover Who I Am</h3>
+<ul>
+<li>Understand your aptitude &amp; interests</li>
+<li>Dive deep into discovering your potential</li>
+<li>Find out what’s the best career choice for you</li>
+</ul>
+[button text="Show Related Programs" class="new-primary"]
+
+
+[/col]
+[col span="6" span__sm="12"]
+
+[ux_image id="1290" width="60" width__sm="85"]
+
+
+[/col]
+
+[/row]
+
+[/section]
+[section label="Media Left" bg_color="rgb(193, 193, 193)" bg_overlay="rgba(255, 255, 255, 0.85)" padding="60px" class="sc-section-2"]
+
+[row style="large" v_align="middle"]
+
+[col span="6" span__sm="12" align="right"]
+
+[ux_image id="1291" width="60" width__sm="85"]
+
+
+[/col]
+[col span="6" span__sm="12" align="left"]
+
+<h3>I Want To Experience &amp; Discover</h3>
+<ul>
+<li>Experience different online internships</li>
+<li>Expose yourself to different careers</li>
+<li>Discover the right career choice for you</li>
+</ul>
+[button text="Show Related Programs" class="new-primary"]
+
+
+[/col]
+
+[/row]
+
+[/section]
+[section label="Media Right" bg_color="rgb(193, 193, 193)" bg_overlay="rgba(255, 255, 255, 0.85)" padding="60px" class="sc-section-3"]
+
+[row style="large" v_align="middle"]
+
+[col span="2" span__sm="12"]
+
+
+[/col]
+[col span="4" span__sm="12" align="left"]
+
+<h3>I Want To Discover Who I Am</h3>
+<ul>
+<li>Understand your aptitude &amp; interests</li>
+<li>Dive deep into discovering your potential</li>
+<li>Find out what’s the best career choice for you</li>
+</ul>
+[button text="Show Related Programs" class="new-primary"]
+
+
+[/col]
+[col span="6" span__sm="12"]
+
+[ux_image id="1292" width="60" width__sm="85"]
+
+
+[/col]
+
+[/row]
+
+[/section]
+[ux_banner height="300px" bg="1315" class="common-dilemmas-banner"]
+
+[text_box width="95" position_x="50" position_y="20"]
+
+<p><label><strong>Most Common <br />Student Dilemmas & Solutions</strong></label></p>
+
+[/text_box]
+[text_box width="100" position_x="50" position_y="100"]
+
+[ux_image id="1316"]
+
+
+[/text_box]
+[text_box position_x="90" position_y="100" text_align="right"]
+
+[ux_image id="1317" width="40"]
+
+
+[/text_box]
+
+[/ux_banner]
+[ux_slider class="common-dilemmas-slider"]
+
+[row]
+
+[col span__sm="12"]
+
+<div class="sc-common-dilemmas">
+How do I identify the right subject/stream/career for me?</p>
+<div class="mcd-rp">
+<a>Relevant product</a>
+</div>
+</div>
+<div class="sc-common-dilemmas">
+How can I increase my chances of getting into a top college?</p>
+<div class="mcd-rp">
+<a>Relevant product</a>
+</div>
+</div>
+<div class="sc-common-dilemmas">How can I find an expert to help me with college applications?</p>
+<div class="mcd-rp">
+<a>Relevant product</a>
+</div>
+</div>
+
+[/col]
+
+[/row]
+
+[/ux_slider]
+[block id="1191"]
+
+[block id="1186"]

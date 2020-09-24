@@ -1,0 +1,205 @@
+/* Customization Style of SyoTimer */
+/*.timer{
+    text-align: center;
+
+    margin: 30px auto 0;
+    padding: 0 0 10px;
+}
+.timer .table-cell{
+    display: inline-block;
+    border: 1px solid green;
+    padding: 8%;
+}
+.timer .table-cell .tab-val{
+    font-size: 35px;
+    color: #80a3ca;
+    height: 81px;
+    line-height: 81px;
+}
+.timer .table-cell .tab-unit{
+    font-family: Arial, serif;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+#simple_timer.timer .table-cell.day,
+#periodic_timer_days.timer .table-cell.hour{
+    width: 120px;
+    background-image: url(../js/timer_long.png);
+}*/
+
+#left-area ul, .entry-content ul, .comment-content ul, body.et-pb-preview #main-content .container ul
+{
+  list-style-type: none;
+  padding: 0;
+  line-height: 1;
+}
+
+.quiCoundownTimer-wrap {
+  text-align: center;
+}
+.flip-clock-wrapper {
+  margin: 50px 0 0;
+  display: block;
+}
+
+.flip-clock-divider
+{
+  position: relative;
+  display: block;
+  line-height: 1;
+  color: #fff;
+  font-size: 25px;
+  margin-top: 14px;
+}
+.flip-clock-wrapper ul {
+  position: relative;
+}
+.flip-clock-before
+{
+    display: none;
+}
+.flip-clock-active .up
+{
+    display: none;
+}
+
+.flip-clock-wrapper:before,
+.clearfix:before,
+.flip-clock-wrapper:after,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.flip-clock-wrapper:after,
+.clearfix:after {
+    clear: both;
+}
+
+.flip-content-wrap {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    float: left;
+    font-family: 'Aldrich', sans-serif;
+    width: calc(25% - 3px);
+    margin-right: 3px;
+    padding: 25px 0;
+    background-color: #333333;
+}
+
+.flip-content-wrap:last-child {
+  margin-right: 0;
+}
+
+.flip {
+    display: inline-block;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.flip a {
+  color: #fff;
+}
+
+.flip-content-wrap:last-child .flip a {
+  color: #ff00ff;
+}
+.flip-content-wrap:last-child .flip-clock-divider {
+  color: #ff99ff;
+}
+.flip-timer-wrap {
+    line-height: 1;
+}
+
+#quiCoundownTimer ul.flip .inn {
+  font-size: 65px;
+}
+
+#quiCoundownTimer ul.flip {
+  padding: 0;
+}
+
+@media screen and (max-width: 1100px) {
+  .flip {
+    font-size: 40px;
+  }
+  .flip-clock-divider {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .flip {
+    font-size: 35px;
+  }
+  .flip-clock-divider {
+    font-size: 18px;
+    margin-top: 12px;
+  }
+  .flip-content-wrap {
+     padding: 22px 0;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .flip {
+    font-size: 30px;
+  }
+  .flip-clock-divider {
+    font-size: 15px;
+  }
+  .flip-content-wrap {
+     padding: 20px 0;
+     width: calc(25% - 2px);
+     margin-right: 2px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .flip {
+    font-size: 25px;
+  }
+  .flip-clock-divider {
+    font-size: 13px;
+    margin-top: 8px;
+  }
+  .flip-content-wrap {
+    padding: 18px 0;
+    width: calc(25% - 1px);
+    margin-right: 1px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .flip {
+    font-size: 20px;
+  }
+  .flip-clock-divider {
+    font-size: 12px;
+    margin-top: 7px;
+  }
+  .flip-content-wrap {
+     padding: 14px 0;
+  }
+}
+
+@media (min-width: 981px) {
+  .et_right_sidebar #left-area {
+      padding-right: 2.25%;
+      padding-left: 2.25%;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  #quiCoundownTimer ul.flip .inn {
+    font-size: 42px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #quiCoundownTimer ul.flip .inn {
+    font-size: 25px;
+  }
+}

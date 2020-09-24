@@ -1,0 +1,311 @@
+*** WooCommerce Price Based on Country Pro Add-on Changelog ***
+
+2020.06.03 - version 2.8.13
+* Added: Tested up WooCommerce 4.2.
+
+2020.05.07 - version 2.8.12
+* Added: Tested up WooCommerce 4.1.
+* Fixed: Compatibility issue between Product Add-ons and Smart Coupons.
+* Fixed: Remove deprecated function arguments.
+* Tweak: Reduce the shortcodes argument name ("id" and "zone" instand of "product_id" and "zone_slug").
+
+2020.04.13 - version 2.8.11
+* Added: Update compatibility with WooCommerce Bookings.
+
+2020.04.12 - version 2.8.10
+* Fixed: Bug on the WooCommerce in-built Product CSV Importer and Exporter.
+* Dev: New filter  wc_price_based_country_round_to_nearest_ . $context.
+
+2020.04.09 - version 2.8.9
+* Added: Support for Price Based on Country (Basic) 2.0.0.
+
+2020.03.18 - version 2.8.8
+* Fixed: Germanized compatibility - Price per unit does not show on variable products.
+
+2020.03.11 - version 2.8.7
+* Tweak: Tested up WooCommerce 4.0.
+* Added: Support for creating manual orders via WooCommerce REST API.
+* Fixed: Bug on the function that updates the exchange rates from X-Rates.
+
+2020.02.13 - version 2.8.6
+* Fixed: Smart Coupons compatibility - Update the credit balance when the customer uses a coupon.
+
+2020.02.07 - version 2.8.5
+* Fixed: Dynamic Pricing compatibility - Rules by the pricing zone do not display on the product admin page.
+
+2020.01.29 - version 2.8.4
+* Added: Support for WooCommerce 3.9
+
+2019.12.10 - version 2.8.3
+* Fixed: Smart Coupons compatibility - orders with two gift cards generate coupons with the same amounts.
+
+2019.12.04 - version 2.8.2
+* Fixed: Product Add-ons compatibility and Name Your Price compatibility.
+* Fixed: CSV importer does not process the "schedule sale price dates."
+
+2019.11.12 - version 2.8.1
+* Fixed: Smart Coupons compatibility - gift card of any amount generates coupons with zero amount.
+* Fixed: Product Add-ons compatibility - "Load product price in the background" option removes the tooltip from addons of type image.
+
+2019.11.05 - version 2.8.0
+* Added: Support for WooCommerce 3.8
+* Added: Manual amount per pricing zone for the Dynamic Pricing rules.
+* Added: New exchange rate provider Openexchangerates.org
+* Added: Renewal license alert.
+* Fixed: Update pricing zones exchange rate when the shop base currency change.
+* Fixed: Support for the option "Autocalculate unit price" of Germanized for WooCommerce.
+
+2019.09.10 - version 2.7.1
+* Added: Compatibility with Payment Gateway Based Fees by InoPlugs.
+* Added: [symbol-alt] placeholder to the help tips.
+* Fixed: Order by name the currency switcher option.
+* Fixed: Bug on the variable subscription when the parent product is not synchronized.
+* Dev: New filter 'wc_price_based_country_currency_switcher_class' to add CSS classes to the currency switcher.
+* Dev: Change visibility of the WCPBC_Pricing_Zone_Pro::round_to_nearest function to public.
+
+2019.08.09 - version 2.7.0
+* Added: New placeholder [symbol-alt] for currency format to allow display the alternative currency symbol (US$, CA$, ..).
+* Added: Compatibility with WP Job Manager Listing Payments by Astoundify.
+* Added: Compatibility with Germanized for WooCommerce by Vendidero.
+* Added: Compatibility with WooCommerce Smart Coupons by StoreApps.
+* Fixed: Round to nearest 0.50 option selected does not display on the setting page.
+* Tweak: Tested up WC 3.7.
+
+2019.07.11 - version 2.6.3
+* Fixed: Wrong currency on the early renewal of WooCommerce Subscriptions.
+
+2019.06.10 - version 2.6.2
+* Tweak: Update compatibility with German Market by MarketPress - Refresh taxes on AJAX Geolocation.
+
+2019.05.17 - version 2.6.1
+* Fixed: Bug in the currency switcher template.
+
+2019.05.16 - version 2.6.0
+* Added: Shortcode to convert an amount to the current currency.
+* Added: Shortcode to display content based on pricing zone.
+* Added: Compatibility with WooCommerce Name Your Price by Kathy Darling.
+* Added: Support for "fees" in manual orders.
+* Tweak: Improve the function that geolocates the currency format in cache sites.
+* Tweak: Use a javascript file instead of an inline script for the currency switcher template.
+* Fixed: Bug related to backward compatibility with WooCommerce 2.6.
+* Fixed: Zero decimals for pricing zones does not work.
+
+2019.05.02 - version 2.5.4
+* Fixed: Error on save Accommodation Bookings product.
+* Fixed: Apply round rules to sign up fee for variable subscriptions.
+* Tweak: Min basic version required 1.8.4.
+
+2019.04.25 - version 2.5.3
+* Fixed: Product bundles price in the cart compatible with WooCommerce 3.6.
+* Fixed: "Apply the exchange rate to coupon amount" checkbox is displayed .
+* Tweak: New hook to allow change the input step of the exchange rate fee.
+
+2019.04.23 - version 2.5.2
+* Fixed: Sign up fee for variable subscriptions does not display.
+* Fixed: Manual orders compatible with Product Bundles.
+* Fixed: Other countries is removed from the country selector shortcode when "Load product price in background" is active.
+
+2019.04.15 - version 2.5.1
+* Fixed: Product bundles compatible with AJAX geolocation.
+* Fixed: Error on frontend JavaScript.
+* Fixed: Product variations don't save manual values when WooCommerce Subscriptions is active.
+
+2019.04.09 - version 2.5.0
+* Added: Compatible with Price Based on Country Basic 1.8.
+* Tweak: Currency switcher template compatible with defer script attribute.
+
+2019.04.02 - version 2.4.15
+* Fixed: Support for WooCommerce subscriptions coupons types.
+
+2019.03.11 - version 2.4.14
+* Fixed: Support for the "defer" script attribute on the currency switcher template.
+
+2019.03.04 - version 2.4.13
+* Fixed: Update compatibility with Product Add-ons; allow setting price per zone to the "Quantity Based" price type.
+
+2019.02.21 - version 2.4.12
+* Fixed: Bug on frontend Javascript.
+* Tweak: Improve plugin updater class.
+
+2019.01.18 - version 2.4.11
+* Fixed: PHP error on plugin activate on PHP version < 5.6
+
+2019.01.15 - version 2.4.10
+* Added: Content shortcode to display content based on customer's zone.
+* Fixed: PHP Warning message on product admin panel for non-Accommodation Booking products.
+
+2019.01.02 - version 2.4.9
+* Fixed: Variation bulk edit does not update the price meta data.
+
+2018.12.27 - version 2.4.8
+* Added: Compatible with WooCommerce Accommodation Bookings.
+* Fixed: Javascript error on WordPress admin pages.
+
+2018.12.18 - version 2.4.7
+* Added: Coupons amount by pricing zone.
+* Fixed: Product Add-ons 3.0, does not allow to add new options to existing add-ons.
+* Tweak: Improvements on plugin updater.
+
+2018.12.05 - version 2.4.6
+* Fixed: Compatible with WooCommerce Product Add-ons 3.0.4
+
+2018.11.29 - version 2.4.5
+* Added: German Market by marketpress price per unit compatible.
+* Tweak: The exchange rate is different to 1 before the update exchange rate from API.
+
+2018.11.13 - version 2.4.4
+* Fixed: Product bundle not available after import from CSV.
+
+2018.11.09 - version 2.4.3
+* Fixed: WPML String Translation over-writting currency options.
+* Fixed: Wrong currency format preview on setting page.
+
+2018.11.07 - version 2.4.2
+* Added: WooCommerce Product Add-ons 3.0 compatible.
+
+2018.10.17 - version 2.4.1
+* Fixed: Product Add-ons currency format supports to AJAX geolocation.
+
+2018.10.12 - version 2.4.0
+* Added: New classes to get the order in the shop base currency.
+* Added: Built-in integrations compatible with the pricing zone object.
+* Tweak: "Product not found" message in shortcode.
+* Fixed: AJAX geolocation displays product Add-ons without taxes.
+* Fixed: Error getting AffiliateWP exchange rates.
+
+2018.09.09 - version 2.3.4
+* Fixed: Uncaught Error on WC Subscriptions integration.
+
+2018.08.13 - version 2.3.3
+* Fixed: Apply currency exchange rate to manual recurring payments of WooCommerce Subscriptions.
+
+2018.07.23 - version 2.3.2
+* Fixed: Fatal error on PHP < 5.6
+* Fixed: Variable WooCommerce Subscrition product round to nearest issue.
+
+2018.07.02 - version 2.3.1
+* Fixed: Issue with currency symbol on WooCommerce Smart coupons emails.
+* Fixed: Bug on frontend javascript.
+* Tweak: Compatible with AffiliateWP Multi Level Affiliates.
+
+2018.06.19 - version 2.3.0
+* Added: Compatible with CSV Import/Export WooCommerce tool.
+* Added: Round to nearest option for prices calculates by exchange rate.
+* Added: Extra fee option for automatic updates of exchange rate.
+* Added: Compatible with WooCommerce Customer History.
+* Tweak: Replace Yahoo finance exchange rate provider by X-Rates.
+* Tweak: Compatible with WooCommerce Customer History by Brian Richards.
+* Fixed: Don't apply exchange rate to flat rates of AffiliateWP.
+
+2018.06.01 - version 2.2.12
+* Fixed: Load country pricing option for manual order does not work.
+* Tweak: Support for Affiliate WP flat rates.
+* Added: Option to allow remove other countries from the country switcher.
+* Added: Improvements on currency switcher template.
+
+2018.05.22 - version 2.2.11
+* Fixed: Cost of WooCommerce Bookings products with ranges is calculated incorrectly.
+
+2018.05.15 - version 2.2.10
+* Fixed: Bug on yoast seo sitemap.xml for AffiliateWP users.
+
+2018.04.24 - version 2.2.9
+* Added: Integration with AffiliateWP.
+* Tweak: Check enviroment warning.
+* Tweak: Remove fixerio from exchange rate providers.
+
+2018.03.21 - version 2.2.8
+* Fixed: Non-static method PHP warning.
+
+2018.03.19 - version 2.2.7
+* Add: Compatibility with AJAX Geolocation of Price Based on Country Basic 1.7
+* Tweak: Separate translation from the Basic version.
+
+2018.02.12 - version 2.2.6
+* Add: Compatibility with WooCommerce Bookings 1.10.12
+* Tweak: WC 3.3 "Tested up" tag.
+
+2018.02.05 - version 2.2.5
+* Fixed: Undefinded variable on load country pricing for manual orders.
+* Tweak: Move jquery to footer in currency switcher template.
+
+2018.01.26 - version 2.2.4
+* Fixed: Error on license API call.
+
+2018.01.17 - version 2.2.3
+* Fixed: Uncaught error when the license API call fails.
+
+2018.01.10 - version 2.2.2
+* Added: Tool to load country pricing in manual orders.
+
+2018.01.07 - version 2.2.1
+* Added: Support to WooCommerce Composite product.
+* Tweak: Warning notices improvement.
+
+2017.12.29 - version 2.2.0
+ * Added: Plugin code improvement to check is Basic version is loaded.
+ * Added: wcpbc_product_price shortcode.
+ * Added: New class WCPBC_Shortcodes to handle shortcodes.
+ * Fixed: Price filter display [code] text
+
+2017.11.29 - version 2.1.10
+ * Fixed: Product Add-ons display "[code]" instead of currency code after add to cart.
+ * Tweak: Plugin automatic updates improvements.
+
+2017.11.20 - version 2.1.9
+ * Fixed: Error on woocommerce_get_cart_item_from_session for Bookable products.
+ * Fixed: Booking Person types not apply price based on country.
+ * Fixed: Infinite redirection loop in global Products Add-ons page.
+ * Fixed: Product add-on price does not change when user change country.
+ * Added: A filter to change the currency code on currency format option.
+ * Tweak: Add WC Tested tag.
+
+2017.11.08 - version 2.1.8
+ * Fixed: Currency switcher html validation fail.
+ * Fixed: Built-in integration file does not load.
+ * Added: WooCommerce Bookings built-in Integration.
+
+2017.10.07 - version 2.1.7
+ * Fixed: Product Add-ons display "[code]" instead of currency code.
+ * Fixed: "A non-numeric value encountered" warning message on products add-ons with no-value.
+ * Tweak: Automatic update of exchange rates performance improvements.
+ * Tweak: Plugin automatic updates improvements.
+
+2017.09.18 - version 2.1.6
+ * Added: Bulk edit of variation pricing by zone.
+
+2017.08.31 - version 2.1.5
+ * Fixed: Add backward compatibility to WooCommerce 2.6 to Products Add-ons integration.
+ * Tweak: Replace "Yahoo finance" by "FloatRates" as default exchange rate provider.
+
+2017.08.22 - version 2.1.4
+ * Fixed: Currency switcher do not display base currency.
+ * Fixed: Product Bundle integration: update PB meta_keys from when not exists.
+ * Tweak: 'wc_price_based_country_pro_installed' hook.
+
+2017.08.16 - version 2.1.3
+ * Fixed: Class WC_Widget not found.
+
+2017.08.10 - version 2.1.2
+ * Fixed: WooCommerce variable subscription display a wrong price.
+
+2017.07.17 - version 2.1.1
+ * Fixed: Javascript error in non-WooCommerce pages.
+
+2017.07.17 - version 2.1.0
+ * Added: Support to WooCommerce Product Add-Ons.
+ * Added: Currency Switcher Shortcode.
+
+2017.06.27 - version 2.0.3
+ * Fixed: Javascript issue not update regular price with subscription price.
+
+2017.06.22 - version 2.0.2
+ * Fixed: Variable subscriptions with 0 subscription price displays in product page the message: product not available.
+ * Fixed: Synchronization “sign up fee” between variation and parent product.
+ * Fixed: No verify ssl on license activation.
+
+2017.06.14 - version 2.0.1
+ * Fixed: Syntax error in Product Bundle integration
+
+2017.06.10 - version 2.0.0
+ * First Release

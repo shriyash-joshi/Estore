@@ -1,0 +1,1821 @@
+# Copyright (C) 2020 WisdmLabs
+# This file is distributed under the same license as the Customer Specific Pricing for WooCommerce plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Customer Specific Pricing for WooCommerce 4.4.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/customer-specific-pricing-for-woocommerce\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-03-23T13:45:33+01:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.4.0\n"
+"X-Domain: customer-specific-pricing-for-woocommerce\n"
+
+#. Plugin Name of the plugin
+msgid "Customer Specific Pricing for WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://wisdmlabs.com/woocommerce-user-specific-pricing-extension/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Allows administrator to add customer specific pricing, role specific & group specific pricing for Simple & Variable WooCommerce Products."
+msgstr ""
+
+#. Author of the plugin
+msgid "WisdmLabs"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://wisdmlabs.com"
+msgstr ""
+
+#. translators: %s: Plugin Name
+#: customer-specific-pricing-for-woocommerce.php:217
+msgid "%1$s is inactive. requires PHP version 5.6 or greater"
+msgstr ""
+
+#. translators: %1$s:html %2$s:PHP Version %3$s:html
+#: customer-specific-pricing-for-woocommerce.php:223
+msgid " ( Current PHP version is %1$s %2$s %3$s)"
+msgstr ""
+
+#. translators: %1$s:html %2$s:PHP Version %3$s:html
+#: customer-specific-pricing-for-woocommerce.php:246
+msgid "%1$s %2$s is inactive.%3$s Install and activate %4$sWooCommerce%5$s for %6$s to work."
+msgstr ""
+
+#. translators: v%s:Plugin Version Installed
+#: customer-specific-pricing-for-woocommerce.php:377
+msgid "You have recently updated Customer Specific Pricing plugin to v%s. We have added some performance improvements"
+msgstr ""
+
+#: customer-specific-pricing-for-woocommerce.php:378
+msgid "Know more"
+msgstr ""
+
+#: customer-specific-pricing-for-woocommerce.php:379
+msgid "link will open in a new tab"
+msgstr ""
+
+#: customer-specific-pricing-for-woocommerce.php:380
+msgid "Dismiss"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:28
+msgid "No limit on the maximum value will be applied if the max value range in the last field is not defined"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:29
+msgid "Add [difference-amount] worth additional products to the cart and avail [percent-value] discount."
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:30
+msgid "Congratulations you have got [percent-value] discount."
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:31
+#: includes/cart-discount/class-wdm-csp-cd-application.php:693
+msgid "Continue Shopping"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:45
+#: includes/class-wdm-single-view-tabs.php:119
+msgid "Cart Discounts"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:62
+#: includes/category-pricing/category-template.php:68
+#: templates/print_user_specific_pricing_tab_content.php:72
+msgid "Notes"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:65
+msgid "The Cart Discount is calculated on the total price of all the eligible products present in the cart."
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:66
+msgid "In a situation when a valid coupon code is applied to the products which are eligible for cart discount, the final price will be calculated by adding the Coupon Code discount and Cart Value Discount."
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:84
+msgid "Save All"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:109
+msgid "Guest Users"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:145
+msgid "Existing Buyers"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:176
+msgid "First Time Buyers"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:231
+msgid ""
+"Cart discount rules defined above are not applicable on excluded products or categories. \n"
+"        Cart Discounts are not applicable if a User, Role, or a Group is excluded."
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:255
+msgid "Discount Exclusions "
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:264
+msgid "Products"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:273
+msgid "Categories"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:288
+msgid "Users"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:297
+msgid "User Roles"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:312
+msgid "User Groups"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:333
+msgid "You can limit the maximum discount that a user can avail per order."
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:334
+msgid "This button will be shown on the cart page message & will redirect users to the url you specify in 'Shop More Button Link' below"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:335
+msgid "You can change the link to the custom product page link, default is the shop page link"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:336
+msgid "This will be the message displayed when cart total reaches close to the discount range."
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:337
+msgid "This will be the message displayed when cart total gets eligible for the discount & discount gets applied."
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:338
+msgid "This texts will be replaced by the actual values"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:379
+msgid "Maximum Discount Value Allowed "
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:391
+msgid "Shop More Button Text "
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:403
+msgid "Shop More Button Link "
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:415
+msgid "Message Before Discount Application "
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:429
+msgid "Message After Discount Application "
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:478
+msgid "Cart Value Ranges"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:479
+msgid "You can set the cart discount rules based on cart total amount inside the range"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:484
+msgid "Mimimum Cart Value"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:486
+msgid "Maximum Cart Value"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:487
+msgid "% Discount Value"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:576
+#: includes/category-pricing/category-template.php:59
+msgid "Please Wait . . ."
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:603
+msgid "Please fill all the fields to add a new rule"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:604
+msgid "Please specify a discount value"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:605
+msgid "Please specify Max Discount"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:606
+msgid "Max. cart total should must be greater than min"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:607
+msgid "Min cart total should must be greater than prev. max cart total"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:608
+msgid "Please check max discount value entered"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:609
+msgid "Discount value cannot be empty"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:610
+msgid "Minimum value can not be empty here"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:611
+msgid "Maximum value can not be empty here"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:612
+msgid "Specify a value between 0 to 100"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:650
+msgid "Cart Discount Settings"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:657
+msgid "Cart Discount Message Threshold "
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:662
+msgid "Set a percentage of 'Minimum Cart Value' after which  the 'Cart Discount Message' is displayed."
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:667
+msgid "(Eg- If $200 is a 'Minimum Cart Value' and 90% is set as a threshold percentage, then 'Cart Discount Message' will be displayed if total cart value is equal to or above $180.)"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:683
+msgid "Discount Rule to apply"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:688
+msgid "This is to select wether to apply the rule giving max. discount or a rule giving min discount on a Order"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:705
+msgid "Minimum"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:706
+msgid "Maximum"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:713
+msgid "Settings Saved"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:717
+msgid "Save Settings"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:746
+msgid "Select Products To Exclude"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:750
+msgid "Selected Products"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:787
+msgid "Select Product Categories To Exclude"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:792
+msgid "Selected Product Categories"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:828
+msgid "Select users to exclude from getting discounts"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:833
+msgid "Selected Users"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:868
+msgid "Select user roles to exclude from getting discounts"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:873
+msgid "Selected User Roles"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:908
+msgid "Select user groups to exclude from getting discounts"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:913
+msgid "Selected User Groups"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:962
+msgid "Search"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:972
+msgid "Save & close"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cart-discount.php:973
+msgid "Cancel"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cd-application.php:139
+#: includes/cart-discount/class-wdm-csp-cd-application.php:176
+msgid "See More"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cd-application.php:210
+msgid "Offer Details"
+msgstr ""
+
+#. translators: %1$s%%: value of applicable % discount %2$s:minimum cart total required %3$s:Max. cart total text
+#: includes/cart-discount/class-wdm-csp-cd-application.php:219
+msgid "Get %1$s%% discount on a cart value %2$s %3$s"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cd-application.php:225
+msgid "Maximum applicable discount : "
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cd-application.php:235
+msgid "Discount will be applicable on the total of eligible products. following products & categories are <strong>not applicabe</strong> for the discounts<br>"
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cd-application.php:238
+msgid "Products : "
+msgstr ""
+
+#: includes/cart-discount/class-wdm-csp-cd-application.php:244
+msgid "Product Categories : "
+msgstr ""
+
+#: includes/cart-discount/data-store/cart-discount-rules.php:58
+msgid "Start date is later than end date"
+msgstr ""
+
+#: includes/cart-discount/data-store/cart-discount-rules.php:77
+msgid "Minimum price must be greater than 0"
+msgstr ""
+
+#: includes/cart-discount/data-store/cart-discount-rules.php:81
+msgid "Minimum cart total is required"
+msgstr ""
+
+#: includes/cart-discount/data-store/cart-discount-rules.php:86
+msgid "Min cart total is greater than max cart total"
+msgstr ""
+
+#: includes/cart-discount/data-store/cart-discount-rules.php:104
+msgid "Selecting Discount type & value is required"
+msgstr ""
+
+#: includes/cart-discount/data-store/cart-discount-rules.php:107
+msgid "Discount value must be greater than 0"
+msgstr ""
+
+#: includes/cart-discount/data-store/cart-discount-rules.php:110
+msgid "Select % discount value between 0 to 100"
+msgstr ""
+
+#: includes/cart-discount/data-store/cart-discount-rules.php:118
+msgid "Rule Title Is Empty"
+msgstr ""
+
+#: includes/category-pricing/category-template.php:37
+msgid "Category Specific Pricing"
+msgstr ""
+
+#: includes/category-pricing/category-template.php:72
+#: includes/user-specific-pricing/class-wdm-wusp-variable-products-usp.php:82
+#: templates/print_user_specific_pricing_tab_content.php:74
+msgid "If a customer is added more than once, the customer-price combination first in the list will be saved, and other combinations will be removed."
+msgstr ""
+
+#: includes/category-pricing/category-template.php:73
+msgid "When a price field is left blank, the regular price will be displayed for that product."
+msgstr ""
+
+#: includes/category-pricing/category-template.php:74
+msgid "Make sure the minimum quantity is set before saving the prices; adding the minimum quantity will ensure the prices are saved and displayed accordingly."
+msgstr ""
+
+#: includes/category-pricing/category-template.php:75
+msgid "The least price will be applicable to a customer belonging to multiple groups/roles with specific prices."
+msgstr ""
+
+#: includes/category-pricing/category-template.php:76
+msgid "The least price will be applicable for a product belonging to multiple categories with specific prices."
+msgstr ""
+
+#: includes/category-pricing/category-template.php:77
+msgid "The priorities for prices applied to products are as follows"
+msgstr ""
+
+#: includes/category-pricing/category-template.php:79
+msgid "Customer Specific Product Pricing."
+msgstr ""
+
+#: includes/category-pricing/category-template.php:80
+msgid "Role Specific Product Pricing."
+msgstr ""
+
+#: includes/category-pricing/category-template.php:81
+msgid "Group Specific Product Pricing."
+msgstr ""
+
+#: includes/category-pricing/category-template.php:82
+msgid "Customer Specific Category Pricing."
+msgstr ""
+
+#: includes/category-pricing/category-template.php:83
+msgid "Role Specific Category Pricing."
+msgstr ""
+
+#: includes/category-pricing/category-template.php:84
+msgid "Group Specific Category Pricing."
+msgstr ""
+
+#: includes/category-pricing/category-template.php:85
+msgid "Sale price (if any)"
+msgstr ""
+
+#: includes/category-pricing/category-template.php:86
+#: includes/class-wdm-wusp-ajax.php:759
+#: includes/user-specific-pricing/class-wdm-wusp-variable-products-usp.php:91
+#: templates/print_user_specific_pricing_tab_content.php:83
+msgid "Regular Price"
+msgstr ""
+
+#: includes/category-pricing/category-template.php:109
+msgid "User based category pricing"
+msgstr ""
+
+#: includes/category-pricing/category-template.php:128
+msgid "Role based category pricing"
+msgstr ""
+
+#: includes/category-pricing/category-template.php:147
+msgid "Group based category pricing"
+msgstr ""
+
+#: includes/category-pricing/category-template.php:165
+msgid "Save Pricing"
+msgstr ""
+
+#: includes/category-pricing/class-wdm-wusp-category-pricing.php:36
+#: includes/group-specific-pricing/class-wdm-wusp-simple-products-gsp.php:67
+#: includes/group-specific-pricing/class-wdm-wusp-variable-products-gsp.php:116
+#: includes/role-specific-pricing/class-wdm-wusp-simple-products-rsp.php:60
+#: includes/role-specific-pricing/class-wdm-wusp-variable-products-rsp.php:128
+#: includes/single-view/settings/search_setting.php:88
+#: includes/user-specific-pricing/class-wdm-wusp-variable-products-usp.php:135
+#: templates/print_user_specific_pricing_tab_content.php:100
+msgid "Discount Type"
+msgstr ""
+
+#: includes/category-pricing/class-wdm-wusp-category-pricing.php:36
+#: includes/class-wdm-wusp-ajax.php:669
+#: includes/class-wdm-wusp-ajax.php:1465
+#: includes/group-specific-pricing/class-wdm-wusp-variable-products-gsp.php:73
+#: includes/import-export/import/process-import/class-wdm-abstract-process-csv-batches.php:63
+#: includes/role-specific-pricing/class-wdm-wusp-variable-products-rsp.php:58
+#: includes/role-specific-pricing/class-wdm-wusp-variable-products-rsp.php:89
+#: includes/user-specific-pricing/class-wdm-wusp-variable-products-usp.php:65
+#: includes/user-specific-pricing/class-wdm-wusp-variable-products-usp.php:277
+#: templates/print_group_specific_pricing_tab_content.php:26
+#: templates/print_role_specific_pricing_tab_content.php:7
+#: templates/print_user_specific_pricing_tab_content.php:42
+msgid "Flat"
+msgstr ""
+
+#: includes/category-pricing/class-wdm-wusp-category-pricing.php:526
+msgid "Select Role"
+msgstr ""
+
+#: includes/category-pricing/class-wdm-wusp-category-pricing.php:553
+msgid "Select Group"
+msgstr ""
+
+#: includes/class-wdm-apply-usp-product-price.php:80
+msgid "Minimum purchasable quantity for this product is  "
+msgstr ""
+
+#: includes/class-wdm-apply-usp-product-price.php:94
+msgid "Minimum purchasable quantity for this product is "
+msgstr ""
+
+#. translators: %1$s :Product Name, %2$d: minimum purchase quantity
+#: includes/class-wdm-apply-usp-product-price.php:136
+msgid "Minimum purchase quantity for %1$s is %2$d"
+msgstr ""
+
+#: includes/class-wdm-apply-usp-product-price.php:262
+msgid "Show Special Pricing"
+msgstr ""
+
+#: includes/class-wdm-apply-usp-product-price.php:376
+msgid "Minimum purchase quantity for following product/products is changed : "
+msgstr ""
+
+#: includes/class-wdm-apply-usp-product-price.php:427
+#: includes/class-wdm-apply-usp-product-price.php:433
+msgid "Product Total:"
+msgstr ""
+
+#: includes/class-wdm-apply-usp-product-price.php:514
+#: includes/class-wdm-apply-usp-product-price.php:519
+#: includes/class-wdm-apply-usp-product-price.php:1176
+msgid "Quantity Discount"
+msgstr ""
+
+#: includes/class-wdm-apply-usp-product-price.php:608
+msgid " and more :"
+msgstr ""
+
+#: includes/class-wdm-apply-usp-product-price.php:1177
+msgid "and more :"
+msgstr ""
+
+#: includes/class-wdm-plugin-links.php:44
+msgid "Docs"
+msgstr ""
+
+#: includes/class-wdm-plugin-links.php:45
+msgid "Support"
+msgstr ""
+
+#: includes/class-wdm-plugin-links.php:46
+msgid "Changelog"
+msgstr ""
+
+#: includes/class-wdm-product-tables.php:127
+msgid "Quantity Based Special Pricing Options"
+msgstr ""
+
+#: includes/class-wdm-single-view-tabs.php:73
+#: includes/import-export/import/class-wdm-wusp-import.php:90
+msgid "Import Pricing Rules"
+msgstr ""
+
+#: includes/class-wdm-single-view-tabs.php:75
+msgid "Importing . .(Please do not close this window until the  import is finished)"
+msgstr ""
+
+#: includes/class-wdm-single-view-tabs.php:76
+msgid "File Imported Successfully"
+msgstr ""
+
+#: includes/class-wdm-single-view-tabs.php:77
+msgid "Total number of rows found "
+msgstr ""
+
+#: includes/class-wdm-single-view-tabs.php:78
+msgid ". Total number of rows inserted "
+msgstr ""
+
+#: includes/class-wdm-single-view-tabs.php:79
+msgid ", total number of rows updated "
+msgstr ""
+
+#: includes/class-wdm-single-view-tabs.php:80
+msgid ", and total number of rows skipped "
+msgstr ""
+
+#: includes/class-wdm-single-view-tabs.php:83
+msgid "User Specific Sample"
+msgstr ""
+
+#: includes/class-wdm-single-view-tabs.php:84
+msgid "Role Specific Sample"
+msgstr ""
+
+#: includes/class-wdm-single-view-tabs.php:85
+msgid "Group Specific Sample"
+msgstr ""
+
+#. translators: HelpContext
+#: includes/class-wdm-single-view-tabs.php:87
+msgid "%1$sRecords in a Batch%2$s : specifies number of records to process at a time. %3$s %4$sSimultaneous Batches%5$s : specifies number of such batches to process at the same time."
+msgstr ""
+
+#: includes/class-wdm-single-view-tabs.php:116
+#: includes/single-view/class-wdm-single-view.php:73
+msgid "Product Pricing"
+msgstr ""
+
+#: includes/class-wdm-single-view-tabs.php:117
+#: includes/single-view/settings/search_setting.php:27
+msgid "Search By & Delete"
+msgstr ""
+
+#: includes/class-wdm-single-view-tabs.php:118
+msgid "Category Pricing"
+msgstr ""
+
+#: includes/class-wdm-single-view-tabs.php:120
+#: includes/import-export/import/class-wdm-wusp-import.php:115
+msgid "Import"
+msgstr ""
+
+#: includes/class-wdm-single-view-tabs.php:121
+#: includes/import-export/export/class-wdm-wusp-export.php:92
+msgid "Export"
+msgstr ""
+
+#: includes/class-wdm-single-view-tabs.php:122
+msgid "Settings"
+msgstr ""
+
+#: includes/class-wdm-single-view-tabs.php:123
+msgid "Feedback"
+msgstr ""
+
+#: includes/class-wdm-single-view-tabs.php:124
+msgid "What's New"
+msgstr ""
+
+#: includes/class-wdm-single-view-tabs.php:253
+msgid "1-Question Feedback"
+msgstr ""
+
+#: includes/class-wdm-wusp-ajax.php:195
+#: includes/class-wdm-wusp-ajax.php:226
+msgid "There is some error in option selection."
+msgstr ""
+
+#: includes/class-wdm-wusp-ajax.php:247
+#: includes/class-wdm-wusp-ajax.php:484
+#: includes/group-specific-pricing/class-wdm-wusp-simple-products-gsp.php:86
+#: includes/group-specific-pricing/class-wdm-wusp-variable-products-gsp.php:216
+msgid "Activate the 'Groups' Plugin to enjoy the benefits of Group Specific Pricing."
+msgstr ""
+
+#: includes/class-wdm-wusp-ajax.php:264
+msgid "Set Prices"
+msgstr ""
+
+#: includes/class-wdm-wusp-ajax.php:267
+msgid "Edit this rule"
+msgstr ""
+
+#: includes/class-wdm-wusp-ajax.php:268
+msgid "Back"
+msgstr ""
+
+#: includes/class-wdm-wusp-ajax.php:304
+msgid "customer"
+msgstr ""
+
+#: includes/class-wdm-wusp-ajax.php:307
+msgid "role"
+msgstr ""
+
+#: includes/class-wdm-wusp-ajax.php:310
+msgid "group"
+msgstr ""
+
+#: includes/class-wdm-wusp-ajax.php:343
+msgid "Selection List empty."
+msgstr ""
+
+#: includes/class-wdm-wusp-ajax.php:404
+msgid "--Select--"
+msgstr ""
+
+#: includes/class-wdm-wusp-ajax.php:408
+msgid "Select"
+msgstr ""
+
+#: includes/class-wdm-wusp-ajax.php:443
+msgid "Select Product"
+msgstr ""
+
+#: includes/class-wdm-wusp-ajax.php:464
+msgid "Please add Products."
+msgstr ""
+
+#: includes/class-wdm-wusp-ajax.php:495
+#: includes/class-wdm-wusp-ajax.php:753
+#: includes/single-view/settings/query_log_setting.php:58
+#: includes/single-view/settings/search_setting.php:30
+msgid "Customer"
+msgstr ""
+
+#: includes/class-wdm-wusp-ajax.php:505
+#: includes/class-wdm-wusp-ajax.php:751
+#: includes/single-view/settings/query_log_setting.php:60
+#: includes/single-view/settings/search_setting.php:31
+msgid "Role"
+msgstr ""
+
+#: includes/class-wdm-wusp-ajax.php:519
+msgid "Groups"
+msgstr ""
+
+#: includes/class-wdm-wusp-ajax.php:622
+msgid "Some details are not found."
+msgstr ""
+
+#: includes/class-wdm-wusp-ajax.php:752
+#: includes/single-view/settings/query_log_setting.php:62
+#: includes/single-view/settings/search_setting.php:32
+msgid "Group"
+msgstr ""
+
+#: includes/class-wdm-wusp-ajax.php:756
+msgid "Product ID"
+msgstr ""
+
+#: includes/class-wdm-wusp-ajax.php:757
+#: includes/single-view/settings/search_setting.php:85
+msgid "Product Name"
+msgstr ""
+
+#: includes/class-wdm-wusp-ajax.php:760
+msgid "Sale Price"
+msgstr ""
+
+#: includes/class-wdm-wusp-ajax.php:761
+msgid "Flat or Discounts"
+msgstr ""
+
+#: includes/class-wdm-wusp-ajax.php:762
+#: includes/group-specific-pricing/class-wdm-wusp-simple-products-gsp.php:70
+#: includes/group-specific-pricing/class-wdm-wusp-variable-products-gsp.php:119
+#: includes/role-specific-pricing/class-wdm-wusp-simple-products-rsp.php:63
+#: includes/role-specific-pricing/class-wdm-wusp-variable-products-rsp.php:130
+#: includes/single-view/settings/search_setting.php:86
+#: includes/user-specific-pricing/class-wdm-wusp-variable-products-usp.php:138
+#: templates/print_user_specific_pricing_tab_content.php:103
+msgid "Min Qty"
+msgstr ""
+
+#: includes/class-wdm-wusp-ajax.php:763
+#: includes/group-specific-pricing/class-wdm-wusp-simple-products-gsp.php:73
+#: includes/group-specific-pricing/class-wdm-wusp-variable-products-gsp.php:122
+#: includes/role-specific-pricing/class-wdm-wusp-simple-products-rsp.php:66
+#: includes/role-specific-pricing/class-wdm-wusp-variable-products-rsp.php:132
+#: includes/user-specific-pricing/class-wdm-wusp-variable-products-usp.php:141
+#: templates/print_user_specific_pricing_tab_content.php:106
+msgid "Value"
+msgstr ""
+
+#: includes/class-wdm-wusp-ajax.php:780
+#: includes/single-view/settings/query_log_setting.php:71
+msgid "Rule Title"
+msgstr ""
+
+#: includes/class-wdm-wusp-ajax.php:787
+msgid "Rule title will help identify the rules generated for Users/Roles/Groups."
+msgstr ""
+
+#: includes/class-wdm-wusp-ajax.php:799
+#: includes/single-view/settings/general.php:102
+msgid "Update Rule"
+msgstr ""
+
+#: includes/class-wdm-wusp-ajax.php:799
+msgid "Save Rule"
+msgstr ""
+
+#: includes/class-wdm-wusp-ajax.php:1081
+msgid "Unable to delete this product rule as it was assigned to a category-based product rule. Please make changes in the category pricing tab."
+msgstr ""
+
+#: includes/class-wdm-wusp-ajax.php:1092
+msgid "No details saved."
+msgstr ""
+
+#: includes/class-wdm-wusp-ajax.php:1167
+#: includes/class-wdm-wusp-ajax.php:1207
+#: includes/class-wdm-wusp-ajax.php:1270
+#: includes/class-wdm-wusp-ajax.php:1462
+#: includes/single-view/class-wdm-subrule-management.php:703
+msgid "Direct"
+msgstr ""
+
+#: includes/class-wdm-wusp-ajax.php:1505
+msgid "Rule Deleted."
+msgstr ""
+
+#: includes/class-wdm-wusp-ajax.php:1507
+msgid "Please select some Log"
+msgstr ""
+
+#: includes/class-wdm-wusp-functions.php:335
+msgid "Rule could not be created"
+msgstr ""
+
+#: includes/class-wdm-wusp-functions.php:523
+msgid "Processing Product ID "
+msgstr ""
+
+#. translators:
+#: includes/class-wdm-wusp-functions.php:993
+msgid "Rule created successfully. Click %1$s here %2$s to add new rule."
+msgstr ""
+
+#. translators:
+#: includes/class-wdm-wusp-functions.php:996
+msgid "Rule updated successfully. Click %1$s here %2$s to add new rule."
+msgstr ""
+
+#: includes/class-wdm-wusp-functions.php:1003
+msgid "Values may be improper."
+msgstr ""
+
+#: includes/class-wdm-wusp-functions.php:1017
+msgid "Initializing"
+msgstr ""
+
+#: includes/class-wdm-wusp-install.php:391
+msgid "Please try to deactivate and then activate the plugin again."
+msgstr ""
+
+#: includes/csp-api/csp-api.php:112
+msgid "WooCommerce plugin is not active. In order to make the CSP API plugin work, you need to install and activate WooCommerce first."
+msgstr ""
+
+#: includes/csp-api/csp-api.php:127
+msgid "Customer Specific Pricing plugin is not active. In order to make the CSP API plugin work, you need to install and activate Customer Specific Pricing first."
+msgstr ""
+
+#: includes/csp-api/includes/api/class-abstract-csp-mappings.php:65
+msgid "Sorry, you are not allowed to create/ add customer specific pricing."
+msgstr ""
+
+#: includes/csp-api/includes/api/class-abstract-csp-mappings.php:81
+#: includes/csp-api/includes/api/class-abstract-csp-mappings.php:97
+msgid "Sorry, you cannot list resources."
+msgstr ""
+
+#: includes/csp-api/includes/api/class-abstract-csp-mappings.php:112
+msgid "Sorry, you are not allowed to delete these resources."
+msgstr ""
+
+#: includes/csp-api/includes/api/class-abstract-csp-mappings.php:130
+#: includes/csp-api/includes/api/class-abstract-csp-mappings.php:155
+msgid "Sorry, you are not allowed to delete this resource."
+msgstr ""
+
+#: includes/csp-api/includes/api/class-abstract-csp-mappings.php:146
+msgid "Hash is not valid."
+msgstr ""
+
+#: includes/csp-api/includes/api/class-abstract-csp-mappings.php:147
+msgid "Customer mapping already exists."
+msgstr ""
+
+#: includes/csp-api/includes/api/class-abstract-csp-mappings.php:148
+msgid "Group mapping already exists."
+msgstr ""
+
+#: includes/csp-api/includes/api/class-abstract-csp-mappings.php:149
+msgid "Role mapping already exists."
+msgstr ""
+
+#: includes/csp-api/includes/api/class-abstract-csp-mappings.php:150
+msgid "Not a valid user."
+msgstr ""
+
+#: includes/csp-api/includes/api/class-abstract-csp-mappings.php:151
+msgid "Not a valid group."
+msgstr ""
+
+#: includes/csp-api/includes/api/class-abstract-csp-mappings.php:152
+msgid "Not a valid Role."
+msgstr ""
+
+#: includes/csp-api/includes/api/class-abstract-csp-mappings.php:153
+msgid "Not a valid product."
+msgstr ""
+
+#: includes/csp-api/includes/api/class-abstract-csp-mappings.php:154
+msgid "Pairing doesn't exists."
+msgstr ""
+
+#: includes/csp-api/includes/api/class-abstract-csp-mappings.php:156
+msgid "Sorry, you are not allowed to view this resource."
+msgstr ""
+
+#: includes/csp-api/includes/api/class-abstract-csp-mappings.php:157
+msgid "Not a valid set of data."
+msgstr ""
+
+#: includes/csp-api/includes/api/class-abstract-csp-mappings.php:158
+msgid "Invalid Discount Value"
+msgstr ""
+
+#: includes/csp-api/includes/api/class-abstract-csp-mappings.php:174
+msgid "Record updated."
+msgstr ""
+
+#: includes/csp-api/includes/api/class-abstract-csp-mappings.php:175
+msgid "Record added."
+msgstr ""
+
+#: includes/group-specific-pricing/class-wdm-wusp-simple-products-gsp.php:56
+#: includes/group-specific-pricing/class-wdm-wusp-simple-products-gsp.php:84
+#: includes/group-specific-pricing/class-wdm-wusp-variable-products-gsp.php:92
+#: includes/group-specific-pricing/class-wdm-wusp-variable-products-gsp.php:214
+msgid "Group Based Pricing"
+msgstr ""
+
+#: includes/group-specific-pricing/class-wdm-wusp-simple-products-gsp.php:64
+#: includes/group-specific-pricing/class-wdm-wusp-variable-products-gsp.php:113
+msgid "Group Name"
+msgstr ""
+
+#: includes/import-export/class-wdm-wusp-import-export.php:53
+#: includes/import-export/class-wdm-wusp-import-export.php:84
+msgid "User Specific Pricing"
+msgstr ""
+
+#: includes/import-export/class-wdm-wusp-import-export.php:54
+#: includes/import-export/class-wdm-wusp-import-export.php:85
+#: includes/single-view/settings/general.php:39
+msgid "Role Specific Pricing"
+msgstr ""
+
+#: includes/import-export/class-wdm-wusp-import-export.php:55
+#: includes/import-export/class-wdm-wusp-import-export.php:86
+#: includes/single-view/settings/general.php:40
+msgid "Group Specific Pricing"
+msgstr ""
+
+#: includes/import-export/export/class-wdm-wusp-export.php:45
+msgid "Please Assign User Specific Prices to export the CSV file successfully."
+msgstr ""
+
+#: includes/import-export/export/class-wdm-wusp-export.php:46
+msgid "Please Assign Role Specific Prices to export the CSV file successfully."
+msgstr ""
+
+#: includes/import-export/export/class-wdm-wusp-export.php:47
+msgid "Please Assign Group Specific Prices to export the CSV file successfully."
+msgstr ""
+
+#: includes/import-export/export/class-wdm-wusp-export.php:55
+msgid "Export Pricing Rules"
+msgstr ""
+
+#: includes/import-export/export/class-wdm-wusp-export.php:78
+msgid "Export Type :"
+msgstr ""
+
+#: includes/import-export/export/class-wdm-wusp-export.php:98
+msgid "While exporting using SKU, Please make sure all products have SKUs."
+msgstr ""
+
+#: includes/import-export/export/class-wdm-wusp-export.php:102
+msgid "The products which do not have an associated SKU will be skipped during the export operation"
+msgstr ""
+
+#: includes/import-export/export/class-wdm-wusp-export.php:115
+msgid "Export Using"
+msgstr ""
+
+#: includes/import-export/export/class-wdm-wusp-export.php:128
+msgid "Product Id"
+msgstr ""
+
+#: includes/import-export/export/class-wdm-wusp-export.php:134
+msgid "SKU"
+msgstr ""
+
+#: includes/import-export/import/class-wdm-wusp-import.php:51
+msgid "Remove"
+msgstr ""
+
+#: includes/import-export/import/class-wdm-wusp-import.php:52
+msgid "Clear selected files"
+msgstr ""
+
+#. translators: browsLabel
+#: includes/import-export/import/class-wdm-wusp-import.php:54
+msgid "Browse %s"
+msgstr ""
+
+#: includes/import-export/import/class-wdm-wusp-import.php:55
+msgid "Upload"
+msgstr ""
+
+#: includes/import-export/import/class-wdm-wusp-import.php:56
+msgid "Upload selected files"
+msgstr ""
+
+#. translators: msgSizeTooLarge
+#: includes/import-export/import/class-wdm-wusp-import.php:58
+msgid "File \"%1$s\" %2$s exceeds maximum allowed upload size of %3$s. Please retry your upload!"
+msgstr ""
+
+#. translators: msgFilesTooLess
+#: includes/import-export/import/class-wdm-wusp-import.php:60
+msgid "You must select at least %s to upload. Please retry your upload!"
+msgstr ""
+
+#. translators: msgFileNotFound
+#: includes/import-export/import/class-wdm-wusp-import.php:62
+msgid "File \"%s\" not found!"
+msgstr ""
+
+#. translators: msgFileSecured
+#: includes/import-export/import/class-wdm-wusp-import.php:64
+msgid "Security restrictions prevent reading the file \"%s\"."
+msgstr ""
+
+#. translators: msgFileNotReadable
+#: includes/import-export/import/class-wdm-wusp-import.php:66
+msgid "File \"%s\" is not readable."
+msgstr ""
+
+#. translators: msgInvalidFileType
+#: includes/import-export/import/class-wdm-wusp-import.php:68
+msgid "Invalid type for file \"%1$s\". Only \"%2$s\" files are supported."
+msgstr ""
+
+#. translators: msgInvalidFileExtension
+#: includes/import-export/import/class-wdm-wusp-import.php:70
+msgid "Invalid extension for file \"%1$s\". Only \"%2$s\" files are supported."
+msgstr ""
+
+#. translators: msgValidationError
+#: includes/import-export/import/class-wdm-wusp-import.php:72
+msgid "File Upload Error"
+msgstr ""
+
+#. translators: dropZoneTitle
+#: includes/import-export/import/class-wdm-wusp-import.php:74
+msgid "Drag & drop files here %s"
+msgstr ""
+
+#. translators: msgSelected
+#: includes/import-export/import/class-wdm-wusp-import.php:76
+msgid "%s selected"
+msgstr ""
+
+#: includes/import-export/import/class-wdm-wusp-import.php:113
+msgid "Select File"
+msgstr ""
+
+#: includes/import-export/import/class-wdm-wusp-import.php:120
+msgid "If the customer specific price already exists, the existing values will be overwritten by the new values. While importing using SKU please make sure that all products have SKUs before import"
+msgstr ""
+
+#: includes/import-export/import/class-wdm-wusp-import.php:128
+msgid "Recommended Settings for Importing Large Files"
+msgstr ""
+
+#: includes/import-export/import/class-wdm-wusp-import.php:128
+msgid "Help ?"
+msgstr ""
+
+#: includes/import-export/import/class-wdm-wusp-import.php:141
+msgid "Note:"
+msgstr ""
+
+#: includes/import-export/import/class-wdm-wusp-import.php:144
+msgid "For a large CSV file, kindly consider splitting the entries by deciding the number of splits (simultaneous batches) and capacity of each split (records in a batch)."
+msgstr ""
+
+#: includes/import-export/import/class-wdm-wusp-import.php:149
+msgid "Records In a Batch "
+msgstr ""
+
+#: includes/import-export/import/class-wdm-wusp-import.php:152
+msgid "Simultaneous Batches "
+msgstr ""
+
+#: includes/import-export/import/class-wdm-wusp-import.php:174
+msgid "Import Using"
+msgstr ""
+
+#: includes/import-export/import/class-wdm-wusp-import.php:383
+msgid "Please Select valid file type"
+msgstr ""
+
+#: includes/import-export/import/class-wdm-wusp-import.php:479
+msgid "Please Select valid file"
+msgstr ""
+
+#: includes/import-export/import/class-wdm-wusp-import.php:502
+msgid "Processed :"
+msgstr ""
+
+#: includes/import-export/import/class-wdm-wusp-import.php:527
+msgid "Download Report"
+msgstr ""
+
+#: includes/import-export/import/class-wdm-wusp-import.php:534
+msgid "Inserted:"
+msgstr ""
+
+#: includes/import-export/import/class-wdm-wusp-import.php:538
+msgid "Updated:"
+msgstr ""
+
+#: includes/import-export/import/class-wdm-wusp-import.php:542
+msgid "Skipped:"
+msgstr ""
+
+#: includes/import-export/import/class-wdm-wusp-import.php:598
+msgid "Please Activate the Groups Plugin "
+msgstr ""
+
+#: includes/import-export/import/process-import/class-wdm-abstract-process-csv-batches.php:68
+msgid "Flat Price or % or Min Qty Invalid"
+msgstr ""
+
+#: includes/import-export/import/process-import/class-wdm-abstract-process-csv-batches.php:69
+msgid "Invalid SKU"
+msgstr ""
+
+#: includes/import-export/import/process-import/class-wdm-abstract-process-csv-batches.php:69
+msgid "Invalid Product Id"
+msgstr ""
+
+#: includes/import-export/import/process-import/class-wdm-abstract-process-csv-batches.php:70
+msgid "Record could not be inserted"
+msgstr ""
+
+#: includes/import-export/import/process-import/class-wdm-abstract-process-csv-batches.php:71
+msgid "Record Inserted"
+msgstr ""
+
+#: includes/import-export/import/process-import/class-wdm-abstract-process-csv-batches.php:72
+msgid "Record Updated"
+msgstr ""
+
+#: includes/import-export/import/process-import/class-wdm-abstract-process-csv-batches.php:73
+msgid "Record already exists"
+msgstr ""
+
+#: includes/import-export/import/process-import/class-wdm-abstract-process-csv-batches.php:74
+msgid "User does not exist"
+msgstr ""
+
+#: includes/import-export/import/process-import/class-wdm-abstract-process-csv-batches.php:75
+msgid "Record Skipped"
+msgstr ""
+
+#: includes/import-export/import/process-import/class-wdm-abstract-process-csv-batches.php:76
+msgid "Role does not exist"
+msgstr ""
+
+#: includes/import-export/import/process-import/class-wdm-abstract-process-csv-batches.php:77
+msgid "Group does not exist"
+msgstr ""
+
+#: includes/import-export/import/process-import/class-wdm-abstract-process-csv-batches.php:78
+msgid "% Discount not allowed"
+msgstr ""
+
+#: includes/products-archive/class-product-archive.php:50
+#: includes/settings/class-wdm-csp-general-settings.php:108
+msgid "Please log in to see the Special Offers for you"
+msgstr ""
+
+#: includes/products-archive/class-product-archive.php:68
+#: includes/settings/class-wdm-csp-general-settings.php:121
+msgid "Oops! No special offers available currently"
+msgstr ""
+
+#: includes/promotion/init.php:58
+msgid "Refer to our below test results to know more (captured without the use of any caching techniques). On a Storefront theme v2.5.5 & with 25k+ products in a web store, PHP version 7.3.9."
+msgstr ""
+
+#: includes/promotion/init.php:63
+msgid "Load time before the update :"
+msgstr ""
+
+#: includes/promotion/init.php:69
+msgid "Load time After the update :"
+msgstr ""
+
+#: includes/promotion/init.php:80
+msgid "Other Changes & Improvements"
+msgstr ""
+
+#: includes/promotion/init.php:85
+msgid "New filters included"
+msgstr ""
+
+#: includes/promotion/init.php:89
+msgid "A filter to enable the global discounts is included."
+msgstr ""
+
+#: includes/promotion/init.php:93
+#: includes/promotion/init.php:103
+msgid "Documentation"
+msgstr ""
+
+#: includes/promotion/init.php:99
+msgid "A filter to enable importing all the products with the same SKU at once."
+msgstr ""
+
+#: includes/promotion/init.php:108
+msgid "Bug Fixes & Improvements"
+msgstr ""
+
+#: includes/promotion/init.php:112
+msgid "Fixed the issue causing deletion of a customer-specific rule log entry on the deletion of a subrule."
+msgstr ""
+
+#: includes/promotion/init.php:117
+msgid "Fixed the issue generating error while saving the page having special offers shortcode."
+msgstr ""
+
+#: includes/promotion/init.php:122
+msgid "Improvement added where \"null\" is being displayed as a suffix for variable products when there's no suffix specified."
+msgstr ""
+
+#: includes/promotion/init.php:127
+msgid "Fixed the issue with manual order calculation when taxation is enabled."
+msgstr ""
+
+#: includes/role-specific-pricing/class-wdm-wusp-simple-products-rsp.php:50
+#: includes/role-specific-pricing/class-wdm-wusp-variable-products-rsp.php:103
+msgid "Role Based Pricing"
+msgstr ""
+
+#: includes/role-specific-pricing/class-wdm-wusp-simple-products-rsp.php:57
+#: includes/role-specific-pricing/class-wdm-wusp-variable-products-rsp.php:125
+msgid "User Role"
+msgstr ""
+
+#: includes/role-specific-pricing/class-wdm-wusp-variable-products-rsp.php:115
+msgid "Set minimum quantity"
+msgstr ""
+
+#: includes/role-specific-pricing/class-wdm-wusp-variable-products-rsp.php:116
+msgid "Price will be applicable for min quantity and above."
+msgstr ""
+
+#: includes/settings/class-wdm-csp-general-settings.php:50
+msgid "General Settings"
+msgstr ""
+
+#: includes/settings/class-wdm-csp-general-settings.php:68
+msgid "Check this option to display Strike-through Prices (valid for CSP Plugin prices only)."
+msgstr ""
+
+#: includes/settings/class-wdm-csp-general-settings.php:69
+msgid "Check this option to hide Price Total on the product page."
+msgstr ""
+
+#: includes/settings/class-wdm-csp-general-settings.php:70
+msgid "Check this option to apply CSP Plugin discounts on default product Sale Price."
+msgstr ""
+
+#: includes/settings/class-wdm-csp-general-settings.php:71
+msgid "Add custom text (for eg, Read More) for the products that cannot be purchased as a single quantity."
+msgstr ""
+
+#: includes/settings/class-wdm-csp-general-settings.php:72
+msgid "Check this option to display Regular Price on product page along with CSP prices."
+msgstr ""
+
+#: includes/settings/class-wdm-csp-general-settings.php:73
+msgid "A text to be shown in front of the regular price eg. Regular Price : $500"
+msgstr ""
+
+#: includes/settings/class-wdm-csp-general-settings.php:74
+msgid "A text to be shown on the product page describing the pricing options."
+msgstr ""
+
+#: includes/settings/class-wdm-csp-general-settings.php:75
+msgid "Enabling CSP API allows you to manage the CSP pricing rules using Woocommerce Rest API"
+msgstr ""
+
+#: includes/settings/class-wdm-csp-general-settings.php:76
+msgid "A text to be shown on the CSP product archive page if the user is not signed in."
+msgstr ""
+
+#: includes/settings/class-wdm-csp-general-settings.php:77
+msgid "A text to be shown on the CSP product archive page if no CSP priced products are available for the user"
+msgstr ""
+
+#: includes/settings/class-wdm-csp-general-settings.php:88
+msgid "Save changes"
+msgstr ""
+
+#: includes/settings/class-wdm-csp-general-settings.php:99
+msgid "Special Shop Page Settings"
+msgstr ""
+
+#: includes/settings/class-wdm-csp-general-settings.php:100
+msgid "How to create special shop page"
+msgstr ""
+
+#: includes/settings/class-wdm-csp-general-settings.php:105
+msgid "A Message For The Non Logged In User"
+msgstr ""
+
+#: includes/settings/class-wdm-csp-general-settings.php:118
+msgid "No Special Pricing Text"
+msgstr ""
+
+#: includes/settings/class-wdm-csp-general-settings.php:145
+msgid "Show Special Pricing Button Text"
+msgstr ""
+
+#: includes/settings/class-wdm-csp-general-settings.php:171
+msgid "Enable % Discount On Sale Price"
+msgstr ""
+
+#: includes/settings/class-wdm-csp-general-settings.php:200
+msgid "Hide Price Total"
+msgstr ""
+
+#: includes/settings/class-wdm-csp-general-settings.php:230
+msgid "Enable strikethrough"
+msgstr ""
+
+#: includes/settings/class-wdm-csp-general-settings.php:264
+msgid "Show Regular Price"
+msgstr ""
+
+#: includes/settings/class-wdm-csp-general-settings.php:277
+msgid "Regular Price Display Text"
+msgstr ""
+
+#: includes/settings/class-wdm-csp-general-settings.php:305
+msgid "Price Description Text"
+msgstr ""
+
+#: includes/settings/class-wdm-csp-general-settings.php:331
+msgid "Enable API"
+msgstr ""
+
+#: includes/single-view/class-wdm-rule-management.php:92
+msgid "Could not insert rule in the database"
+msgstr ""
+
+#: includes/single-view/class-wdm-rule-management.php:133
+msgid "Could not update rule in the database. Please check if correct data is added in the form."
+msgstr ""
+
+#: includes/single-view/class-wdm-single-view.php:61
+msgid "Set Rules"
+msgstr ""
+
+#: includes/single-view/class-wdm-single-view.php:62
+#: includes/single-view/settings/query_log_setting.php:109
+msgid "Rule Log"
+msgstr ""
+
+#. translators: %s productID
+#. translators: %s Product Id
+#: includes/single-view/class-wdm-subrule-management.php:72
+#: includes/single-view/class-wdm-subrule-management.php:138
+msgid "Price is not valid for Product Id: %s"
+msgstr ""
+
+#: includes/single-view/class-wdm-subrule-management.php:114
+msgid "Could not add subrule in the database. Please check if correct data is added in the form."
+msgstr ""
+
+#: includes/single-view/class-wdm-subrule-management.php:165
+msgid "Could not update subrule in the database. Please check if correct data is added in the form."
+msgstr ""
+
+#: includes/single-view/class-wdm-subrule-management.php:401
+msgid "Could not deactivate pre-existing subrules"
+msgstr ""
+
+#: includes/single-view/class-wdm-subrule-management.php:412
+msgid "There was an error while deactivating subrules."
+msgstr ""
+
+#: includes/single-view/settings/general.php:38
+#: includes/user-specific-pricing/class-wdm-wusp-simple-products-usp.php:79
+msgid "Customer Specific Pricing"
+msgstr ""
+
+#: includes/single-view/settings/general.php:48
+msgid "Select Option"
+msgstr ""
+
+#: includes/single-view/settings/general.php:55
+#: includes/single-view/settings/search_setting.php:46
+msgid "Select any value"
+msgstr ""
+
+#: includes/single-view/settings/general.php:78
+msgid " selection empty."
+msgstr ""
+
+#: includes/single-view/settings/general.php:79
+msgid "product selection empty."
+msgstr ""
+
+#: includes/single-view/settings/general.php:80
+msgid "Hide / Show Columns"
+msgstr ""
+
+#: includes/single-view/settings/general.php:81
+msgid "Invalid Quantity Value"
+msgstr ""
+
+#: includes/single-view/settings/general.php:82
+msgid "Please fill Rule Title."
+msgstr ""
+
+#: includes/single-view/settings/general.php:83
+msgid "Please fill some values, all fields are empty."
+msgstr ""
+
+#: includes/single-view/settings/general.php:84
+msgid "All values should be numeric."
+msgstr ""
+
+#: includes/single-view/settings/general.php:86
+msgid "Values should not be negative."
+msgstr ""
+
+#: includes/single-view/settings/general.php:87
+msgid "There are some errors, do you still want to proceed? This will override all other values."
+msgstr ""
+
+#: includes/single-view/settings/general.php:88
+msgid "Some fields are empty, do you still want to proceed? Empty fields will be ignored."
+msgstr ""
+
+#: includes/single-view/settings/general.php:89
+msgid "Some fields have invalid values, do you still want to proceed? Empty fields will be ignored."
+msgstr ""
+
+#: includes/single-view/settings/general.php:90
+msgid "This will override all values. Do you still want to proceed?"
+msgstr ""
+
+#: includes/single-view/settings/general.php:92
+msgid "Loading.."
+msgstr ""
+
+#: includes/single-view/settings/general.php:93
+msgid "Completed"
+msgstr ""
+
+#: includes/single-view/settings/general.php:99
+msgid " or products selection"
+msgstr ""
+
+#: includes/single-view/settings/general.php:100
+msgid "Change "
+msgstr ""
+
+#: includes/single-view/settings/general.php:103
+msgid "Show all"
+msgstr ""
+
+#: includes/single-view/settings/general.php:104
+msgid "Showing all {0}"
+msgstr ""
+
+#: includes/single-view/settings/general.php:105
+msgid "Empty list"
+msgstr ""
+
+#: includes/single-view/settings/general.php:106
+msgid "filter"
+msgstr ""
+
+#: includes/single-view/settings/general.php:107
+msgid "filtered"
+msgstr ""
+
+#: includes/single-view/settings/general.php:108
+msgid "Move selected"
+msgstr ""
+
+#: includes/single-view/settings/general.php:109
+msgid "Move all"
+msgstr ""
+
+#: includes/single-view/settings/general.php:110
+msgid "Remove all"
+msgstr ""
+
+#: includes/single-view/settings/general.php:111
+msgid "Remove selected"
+msgstr ""
+
+#: includes/single-view/settings/general.php:112
+#: includes/single-view/settings/query_log_setting.php:86
+#: includes/single-view/settings/search_setting.php:97
+msgid "Show _MENU_ entries"
+msgstr ""
+
+#: includes/single-view/settings/general.php:113
+#: includes/single-view/settings/query_log_setting.php:87
+#: includes/single-view/settings/search_setting.php:98
+msgid "Showing _START_ to _END_ of _TOTAL_ entries"
+msgstr ""
+
+#: includes/single-view/settings/general.php:114
+#: includes/single-view/settings/query_log_setting.php:88
+#: includes/single-view/settings/search_setting.php:99
+msgid "No data available in table"
+msgstr ""
+
+#: includes/single-view/settings/general.php:115
+#: includes/single-view/settings/query_log_setting.php:89
+#: includes/single-view/settings/search_setting.php:100
+msgid "Showing 0 to 0 of 0 entries"
+msgstr ""
+
+#: includes/single-view/settings/general.php:116
+#: includes/single-view/settings/query_log_setting.php:90
+#: includes/single-view/settings/search_setting.php:101
+msgid "(filtered from _MAX_ total entries)"
+msgstr ""
+
+#: includes/single-view/settings/general.php:117
+#: includes/single-view/settings/query_log_setting.php:91
+#: includes/single-view/settings/search_setting.php:102
+msgid "No matching records found"
+msgstr ""
+
+#: includes/single-view/settings/general.php:118
+#: includes/single-view/settings/query_log_setting.php:92
+#: includes/single-view/settings/search_setting.php:103
+msgid "Loading..."
+msgstr ""
+
+#: includes/single-view/settings/general.php:119
+msgid "% discount cannot be applied to the product having no price or price 0"
+msgstr ""
+
+#: includes/single-view/settings/general.php:120
+#: includes/single-view/settings/query_log_setting.php:93
+#: includes/single-view/settings/search_setting.php:104
+msgid "Processing..."
+msgstr ""
+
+#: includes/single-view/settings/general.php:121
+#: includes/single-view/settings/query_log_setting.php:94
+#: includes/single-view/settings/search_setting.php:105
+msgid "Search:"
+msgstr ""
+
+#: includes/single-view/settings/general.php:122
+#: includes/single-view/settings/query_log_setting.php:95
+#: includes/single-view/settings/search_setting.php:106
+msgid "First"
+msgstr ""
+
+#: includes/single-view/settings/general.php:123
+#: includes/single-view/settings/query_log_setting.php:96
+#: includes/single-view/settings/search_setting.php:107
+msgid "Previous"
+msgstr ""
+
+#: includes/single-view/settings/general.php:124
+#: includes/single-view/settings/query_log_setting.php:97
+#: includes/single-view/settings/search_setting.php:108
+msgid "Next"
+msgstr ""
+
+#: includes/single-view/settings/general.php:125
+#: includes/single-view/settings/query_log_setting.php:98
+#: includes/single-view/settings/search_setting.php:109
+msgid "Last"
+msgstr ""
+
+#: includes/single-view/settings/general.php:236
+msgid "Edit"
+msgstr ""
+
+#: includes/single-view/settings/general.php:237
+msgid "Clear"
+msgstr ""
+
+#: includes/single-view/settings/query_log_setting.php:42
+#: includes/single-view/settings/query_log_setting.php:75
+msgid "Active"
+msgstr ""
+
+#: includes/single-view/settings/query_log_setting.php:45
+msgid "Inactive"
+msgstr ""
+
+#: includes/single-view/settings/query_log_setting.php:70
+#: includes/single-view/settings/search_setting.php:89
+msgid "Rule No."
+msgstr ""
+
+#: includes/single-view/settings/query_log_setting.php:72
+msgid "Rule Type"
+msgstr ""
+
+#: includes/single-view/settings/query_log_setting.php:73
+msgid "Rule Creation Time"
+msgstr ""
+
+#: includes/single-view/settings/query_log_setting.php:74
+msgid "Rule Modification Time"
+msgstr ""
+
+#: includes/single-view/settings/query_log_setting.php:83
+msgid "Please, select some log."
+msgstr ""
+
+#: includes/single-view/settings/query_log_setting.php:84
+msgid "Please, Save some Rule log. Rule log list empty."
+msgstr ""
+
+#: includes/single-view/settings/query_log_setting.php:85
+msgid "Are you sure, You want to delete this rule?"
+msgstr ""
+
+#: includes/single-view/settings/query_log_setting.php:115
+#: includes/single-view/settings/search_setting.php:63
+msgid "Delete"
+msgstr ""
+
+#: includes/single-view/settings/query_log_setting.php:125
+msgid "No inactive rules found."
+msgstr ""
+
+#: includes/single-view/settings/query_log_setting.php:127
+msgid "No active rules found."
+msgstr ""
+
+#: includes/single-view/settings/search_setting.php:43
+msgid "Search price being applied for a"
+msgstr ""
+
+#: includes/single-view/settings/search_setting.php:87
+msgid "Active Price"
+msgstr ""
+
+#: includes/single-view/settings/search_setting.php:90
+msgid "Source"
+msgstr ""
+
+#: includes/single-view/settings/search_setting.php:91
+msgid "Action"
+msgstr ""
+
+#: includes/single-view/settings/search_setting.php:110
+msgid "Do you want to remove this CSP price?"
+msgstr ""
+
+#: includes/single-view/settings/search_setting.php:111
+msgid "When 'Role' specific pricing is removed, then pricing is removed for all the users belonging to that particular 'Role'. Do you want to remove this CSP price?"
+msgstr ""
+
+#: includes/single-view/settings/search_setting.php:112
+msgid "When 'Group' specific pricing is removed, then pricing is removed for all the users belonging to that particular 'Group'. Do you want to remove this CSP price?"
+msgstr ""
+
+#: includes/single-view/settings/search_setting.php:113
+msgid "When 'Role' or 'Group' specific pricing is removed, then pricing is removed for all the users belonging to that particular 'Role' or 'Group'. Do you want to remove this CSP price?"
+msgstr ""
+
+#: includes/single-view/settings/search_setting.php:114
+msgid "Do you want to remove the selected CSP records?"
+msgstr ""
+
+#: includes/single-view/settings/search_setting.php:115
+msgid "When 'Role' or 'Group' specific pricing is removed, then pricing is removed for all the users belonging to that particular 'Role' or 'Group'. Do you want to remove the selected CSP records?"
+msgstr ""
+
+#: includes/single-view/settings/search_setting.php:116
+msgid "Please, select some records to be removed."
+msgstr ""
+
+#: includes/user-specific-pricing/class-wdm-wusp-variable-products-usp.php:78
+#: includes/user-specific-pricing/class-wdm-wusp-variable-products-usp.php:88
+#: templates/print_user_specific_pricing_tab_content.php:80
+msgid "Customer Specific Price"
+msgstr ""
+
+#: includes/user-specific-pricing/class-wdm-wusp-variable-products-usp.php:80
+msgid "Notes:"
+msgstr ""
+
+#: includes/user-specific-pricing/class-wdm-wusp-variable-products-usp.php:83
+#: templates/print_user_specific_pricing_tab_content.php:75
+msgid "If the price field is left blank, then default product price will be shown."
+msgstr ""
+
+#: includes/user-specific-pricing/class-wdm-wusp-variable-products-usp.php:84
+#: templates/print_user_specific_pricing_tab_content.php:76
+msgid "Please set the min qty before saving. Only then, the discounted amount will be saved and will reflect to the logged in user, role or group."
+msgstr ""
+
+#: includes/user-specific-pricing/class-wdm-wusp-variable-products-usp.php:85
+#: templates/print_user_specific_pricing_tab_content.php:77
+msgid "If a customer belongs to multiple groups (or roles), the least price set for the group (or role) will be applied"
+msgstr ""
+
+#: includes/user-specific-pricing/class-wdm-wusp-variable-products-usp.php:86
+msgid "The priorities are as follows -"
+msgstr ""
+
+#: includes/user-specific-pricing/class-wdm-wusp-variable-products-usp.php:89
+#: templates/print_user_specific_pricing_tab_content.php:81
+msgid "Role Specific Price"
+msgstr ""
+
+#: includes/user-specific-pricing/class-wdm-wusp-variable-products-usp.php:90
+#: templates/print_user_specific_pricing_tab_content.php:82
+msgid "Group Specific Price"
+msgstr ""
+
+#: includes/user-specific-pricing/class-wdm-wusp-variable-products-usp.php:99
+#: templates/print_user_specific_pricing_tab_content.php:89
+msgid "Customer Based Pricing"
+msgstr ""
+
+#: includes/user-specific-pricing/class-wdm-wusp-variable-products-usp.php:132
+#: templates/print_user_specific_pricing_tab_content.php:97
+msgid "Customer Name"
+msgstr ""
+
+#: includes/user-specific-pricing/class-wdm-wusp-variable-products-usp.php:265
+msgid "It seems regular price is not set for variation id(s) : "
+msgstr ""
+
+#: includes/user-specific-pricing/class-wdm-wusp-variable-products-usp.php:266
+msgid ". Please set regular price for specified variation(s)"
+msgstr ""
+
+#: includes/user-specific-pricing/class-wdm-wusp-variable-products-usp.php:267
+msgid "It seems that price/quantity mapped to users, roles or groups are not valid. Please verify it again for variation id : "
+msgstr ""
+
+#: includes/user-specific-pricing/class-wdm-wusp-variable-products-usp.php:275
+#: includes/user-specific-pricing/class-wdm-wusp-variable-products-usp.php:290
+msgid "It seems that price/quantity mapped to users, roles or groups are not valid. Please verify it again."
+msgstr ""
+
+#: includes/user-specific-pricing/class-wdm-wusp-variable-products-usp.php:276
+#: templates/print_user_specific_pricing_tab_content.php:234
+msgid "Add New Customer-Price Pair"
+msgstr ""
+
+#: includes/user-specific-pricing/class-wdm-wusp-variable-products-usp.php:289
+msgid "It seems regular price is not set for the product. Please set the regular price."
+msgstr ""
+
+#: includes/user-specific-pricing/class-wdm-wusp-variable-products-usp.php:291
+msgid "One of your CSP rule include % discount for which entering a regular price is required."
+msgstr ""
+
+#: templates/print_group_specific_pricing_tab_content.php:160
+#: templates/print_user_specific_pricing_tab_content.php:232
+msgid "Add New Pair"
+msgstr ""
+
+#: templates/print_group_specific_pricing_tab_content.php:161
+msgid "Add New Group-Price Pair"
+msgstr ""
+
+#: templates/print_role_specific_pricing_tab_content.php:128
+msgid "Add New Role-Price Pair"
+msgstr ""
+
+#: templates/print_user_specific_pricing_tab_content.php:78
+msgid "The priorities are as follows"
+msgstr ""
+
+#: templates/print_user_specific_pricing_tab_content.php:117
+msgid "Remember to Publish/Update the product to save any changes made."
+msgstr ""
+
+#: templates/print_user_specific_pricing_tab_content.php:233
+msgid "It seems that some values mapped to users, roles or groups are not valid. Please verify it again."
+msgstr ""

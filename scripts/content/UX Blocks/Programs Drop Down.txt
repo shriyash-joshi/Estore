@@ -1,0 +1,99 @@
+[section label="Category Dropdown" bg_color="rgb(255, 255, 255)" padding="8px" class="categories-dropdown"]
+
+[button text="X" style="link" radius="99" title="close" class="program-close"]
+
+[row label="Categories" col_bg="rgb(255,255,255)" v_align="equal" h_align="center" padding="20px 30px 20px 30px" class="categories-row"]
+
+[col span="3" span__sm="12" span__md="8" align="left"]
+
+<h3 class="title">Skill Building Internships</h3>
+<p class="content "><span style="font-size: 90%;">Lorem ipsum dolor sit, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</span></p>
+[gap height="10px"]
+
+<h5 class="dilemmas-title">Dilemmas addressed</h5>
+[gap height="15px"]
+
+<ul class="dilemmas-list">
+<li >Pellentesque nibh magna</li>
+<li >Pellentesque nibh magna</li>
+<li >Pellentesque nibh magna</li>
+<li >Pellentesque nibh magna</li>
+</ul>
+[button text="View Programs" style="link" class="programs-link"]
+
+
+[/col]
+[col span="3" span__sm="12" span__md="8" align="left"]
+
+<h3 class="title">Subject/Stream Selection</h3>
+<p class="content "><span style="font-size: 90%;">Lorem ipsum dolor sit, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</span></p>
+[gap height="10px"]
+
+<h5 class="dilemmas-title">Dilemmas addressed</h5>
+[gap height="15px"]
+
+<ul class="dilemmas-list">
+<li >Pellentesque nibh magna</li>
+<li >Pellentesque nibh magna</li>
+<li >Pellentesque nibh magna</li>
+<li >Pellentesque nibh magna</li>
+</ul>
+[button text="View Programs" style="link" class="programs-link"]
+
+
+[/col]
+[col span="3" span__sm="12" span__md="8" align="left"]
+
+<h3 class="title">Skill Building Internships</h3>
+<p class="content "><span style="font-size: 90%;">Lorem ipsum dolor sit, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</span></p>
+[gap height="10px"]
+
+<h5 class="dilemmas-title">Dilemmas addressed</h5>
+[gap height="15px"]
+
+<ul class="dilemmas-list">
+<li >Pellentesque nibh magna</li>
+<li >Pellentesque nibh magna</li>
+<li >Pellentesque nibh magna</li>
+<li >Pellentesque nibh magna</li>
+</ul>
+[button text="View Programs" style="link" class="programs-link"]
+
+
+[/col]
+[col span="3" span__sm="12" span__md="8" align="left"]
+
+<h3 class="title">Skill Building Internships</h3>
+<p class="content "><span style="font-size: 90%;">Lorem ipsum dolor sit, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</span></p>
+[gap height="10px"]
+
+<h5 class="dilemmas-title">Dilemmas addressed</h5>
+[gap height="10px"]
+
+<ul class="dilemmas-list">
+<li >Pellentesque nibh magna</li>
+<li >Pellentesque nibh magna</li>
+<li >Pellentesque nibh magna</li>
+<li >Pellentesque nibh magna</li>
+</ul>
+[button text="View Programs" style="link" class="programs-link"]
+
+
+[/col]
+
+[/row]
+[gap]
+
+[row]
+
+[col span__sm="12" align="center"]
+
+<p class="lead text-center lead-title">We have an impeccable record of guiding 70,000 + students. Want to be part and make an impact to yourself?</p>
+[button text="join now" letter_case="lowercase" radius="10" class="joinnow"]
+
+
+[/col]
+
+[/row]
+
+[/section]

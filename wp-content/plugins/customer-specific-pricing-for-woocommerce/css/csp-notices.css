@@ -1,0 +1,13 @@
+.csp-notice-structure { width:100%; }
+.csp-notice-image > img{ max-height:55px; }
+.csp-notice-image {width :10%; text-align:left;}
+
+div.csp-after-update-notice{ border-left-color:#ffff00; }
+.csp-update-notice-text { width :80%; text-align:left; }
+.csp-update-notice-dismiss { width :10%; text-align:right; text-decoration:underline; cursor:pointer;}
+
+div.csp-renewal-notice{border-left-color:#ff0000;}
+.csp-renewal-notice-text {width :70%; text-align:left;}
+.csp-renewal-notice-button-div { width :20%; text-align:right; cursor:pointer;}
+.csp-renewal-notice-button{text-align: center; cursor: pointer; border: #6D6D6D 1px solid; box-shadow:-2px -2px 3px rgba(109, 109, 109, 0.568);background-color: #960000c7; color: white; border-radius: 4px; padding:8px; font-weight: 600;}
+.csp-renewal-message-head{font-weight: 600;}

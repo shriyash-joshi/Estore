@@ -1,0 +1,87 @@
+[section label="Testimonials" padding="60px" class="sc-testimonials"]
+
+[row label="Title" style="collapse"]
+
+[col span__sm="12" margin="0px 0px -30px 0px" align="center"]
+
+<h4>Hear It From Students <br /> Who Went From Confusion To Clarity</h4>
+[divider width="50px" color="rgb(46, 54, 255)"]
+
+
+[/col]
+
+[/row]
+[ux_slider style="focus" nav_pos="outside" arrows="false" nav_style="simple" nav_color="dark" timer="4000"]
+
+[row label="Testimonial 1" h_align="center"]
+
+[col span="9" span__sm="12" span__md="10" align="center"]
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In est sem, ultrices ornare molestie sit amet, placerat vel arcu. Phasellus quis massa id sem pretium dictum. Donec sed sollicitudin est, sit amet eleifend ipsum. Vivamus nec pretium turpis.</p>
+[featured_box img="117" img_width="50" pos="center" title="Andy Guscott" font_size="small" class="circle"]
+
+<p>Developer, Google</p>
+
+[/featured_box]
+
+[/col]
+
+[/row]
+[row label="Testimonial 2" h_align="center"]
+
+[col span="9" span__sm="12" span__md="10" align="center"]
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In est sem, ultrices ornare molestie sit amet, placerat vel arcu. Phasellus quis massa id sem pretium dictum. Donec sed sollicitudin est, sit amet eleifend ipsum. Vivamus nec pretium turpis.</p>
+[featured_box img="118" img_width="50" pos="center" title="Kirstin W. Everton" font_size="small" class="circle"]
+
+<p>Graphic Designer, Apple</p>
+
+[/featured_box]
+
+[/col]
+
+[/row]
+[row label="Testimonial 3" h_align="center"]
+
+[col span="9" span__sm="12" span__md="10" align="center"]
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In est sem, ultrices ornare molestie sit amet, placerat vel arcu. Phasellus quis massa id sem pretium dictum. Donec sed sollicitudin est, sit amet eleifend ipsum. Vivamus nec pretium turpis.</p>
+[featured_box img="119" img_width="50" pos="center" title="Mike Lloyd" font_size="small" class="circle"]
+
+<p>UI Designer, Yahoo</p>
+
+[/featured_box]
+
+[/col]
+
+[/row]
+
+[/ux_slider]
+[ux_banner height="500px" class="testimonials-banner"]
+
+[ux_image id="3344" width="6" height="100%" position_x="50" position_y="50" class="image-1"]
+
+[ux_image id="3345" width="6" height="100%" position_x="50" position_y="50" class="image-2"]
+
+[ux_image id="3331" width="6" height="100%" position_x="50" position_y="50" class="image-3"]
+
+[ux_image id="3332" width="6" height="100%" position_x="50" position_y="50" class="image-4"]
+
+[ux_image id="3333" width="6" height="100%" position_x="50" position_y="50" class="image-5"]
+
+[ux_image id="3334" width="6" height="100%" position_x="50" position_y="50" class="image-6"]
+
+[text_box position_x="50" position_y="50"]
+
+<div class="circle1"></div>
+
+[/text_box]
+[text_box position_x="50" position_y="50"]
+
+<div class="circle2"></div>
+
+[/text_box]
+
+[/ux_banner]
+
+[/section]

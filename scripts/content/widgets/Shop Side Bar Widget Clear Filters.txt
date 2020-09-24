@@ -1,0 +1,1 @@
+<a style='font-size:10px;' href='/shop'  class='button secondary is-small lowercase is-right pull-right'>X Clear</a>
