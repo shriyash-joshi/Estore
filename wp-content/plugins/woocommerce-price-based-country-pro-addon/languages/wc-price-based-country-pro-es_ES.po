@@ -1,0 +1,1088 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2018-06-19 10:36+0200\n"
+"PO-Revision-Date: 2018-06-19 10:43+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/abstracts/class-wcpbc-exchange-rates-provider.php:110
+#, php-format
+msgid "Unable to update exchange rate from API: %s"
+msgstr "No se puede actualizar la tasa de cambio desde el API: %s"
+
+#: includes/admin/class-wcpbc-admin-pro.php:59
+#: includes/admin/views/html-region-currency-options.php:58
+msgid "Currency Format"
+msgstr "Formato de moneda"
+
+#: includes/admin/class-wcpbc-admin-pro.php:61
+#, php-format
+msgid "Preview: %s"
+msgstr "Previsualización: %s"
+
+#: includes/admin/class-wcpbc-admin-pro.php:62
+#: includes/admin/views/html-region-currency-options.php:59
+msgid ""
+"Enter the currency format. Supports the following placeholders: [code] = "
+"currency code, [symbol] = currency symbol, [price] = product price."
+msgstr ""
+"Introduce el formato de la moneda. Utiliza [code] para el código de la "
+"moneda, [symbol] para el símbolo de la moneda y [price] para el precio del "
+"producto."
+
+#: includes/admin/class-wcpbc-admin-pro.php:112
+msgid "Exchange rate API"
+msgstr "API para tasa de cambio"
+
+#: includes/admin/class-wcpbc-admin-pro.php:113
+msgid ""
+"This controls which API provider will be used to exchange rates auto-updates."
+msgstr ""
+"Esto controla que provedor de API será usado para auto-actualizar las tasas "
+"de cambio."
+
+#: includes/admin/class-wcpbc-admin-pro.php:163
+msgid "Errors on update exchange rate from API."
+msgstr "Errores durante la actualzación de la tasa de cambio desde el API."
+
+#: includes/admin/class-wcpbc-admin-pro.php:187
+msgid "License"
+msgstr "Licencia"
+
+#: includes/admin/class-wcpbc-admin-pro.php:197
+msgid "Set regular prices"
+msgstr "Introducir precios normales"
+
+#: includes/admin/class-wcpbc-admin-pro.php:198
+msgid "Increase regular prices (fixed amount or percentage)"
+msgstr "Incrementar precios normales (cantidad fija o porcentaje) "
+
+#: includes/admin/class-wcpbc-admin-pro.php:199
+msgid "Decrease regular prices (fixed amount or percentage)"
+msgstr "Reducir precios normales (cantidad fija o porcentaje) "
+
+#: includes/admin/class-wcpbc-admin-pro.php:200
+msgid "Set sale prices"
+msgstr "Establecer precios rebajados "
+
+#: includes/admin/class-wcpbc-admin-pro.php:201
+msgid "Increase sale prices (fixed amount or percentage)"
+msgstr "Incrementar precios rebajados (cantidad fija o porcentaje) "
+
+#: includes/admin/class-wcpbc-admin-pro.php:202
+msgid "Decrease sale prices (fixed amount or percentage)"
+msgstr "Reducir precios rebajados (cantidad fija o porcentaje)"
+
+#: includes/admin/class-wcpbc-admin-pro.php:206
+#, php-format
+msgid "%s Pricing (%s)"
+msgstr "%s Precios (%s)"
+
+#: includes/admin/class-wcpbc-admin-pro.php:298
+msgid "Load country pricing"
+msgstr "Cargar los precios del país"
+
+#: includes/admin/class-wcpbc-admin-pro.php:328
+msgid "Invalid order"
+msgstr "Pedido no válido "
+
+#: includes/admin/class-wcpbc-admin-pro.php:384
+msgid "Enter a value"
+msgstr "Introduce un valor "
+
+#: includes/admin/class-wcpbc-admin-pro.php:385
+msgid "Enter a value (fixed or %)"
+msgstr "Introduce un valor (absoluto o en %) "
+
+#: includes/admin/class-wcpbc-admin-pro.php:386
+msgid ""
+"Load country pricing? This action will change the items price, the order "
+"currency, calculate taxes and update totals based on customer country."
+msgstr ""
+"¿Cargar precios del país? Esta acción cambiará el precio de los productos, "
+"la moneda del pedido, calculará los impuestos y actualizará los totales "
+"basándose en el país del cliente."
+
+#: includes/admin/class-wcpbc-license-settings.php:149
+msgid "License status"
+msgstr "Estado de la licencia"
+
+#: includes/admin/class-wcpbc-license-settings.php:153
+msgid "Toggle activation"
+msgstr "Alternar activación"
+
+#: includes/admin/class-wcpbc-license-settings.php:157
+msgid "License Key"
+msgstr "Clave de Licencia"
+
+#: includes/admin/class-wcpbc-license-settings.php:159
+msgid "Enter your Price Based on Country Pro license key"
+msgstr "Introduce tu Price Based on Country Pro clave de licencia"
+
+#: includes/admin/class-wcpbc-license-settings.php:267
+#, php-format
+msgid "you are %s receiving updates"
+msgstr "Tu %s estás recibiendo actualizaciones"
+
+#: includes/admin/class-wcpbc-license-settings.php:267
+#, php-format
+msgid "%snot%s"
+msgstr "%sno%s"
+
+#: includes/admin/class-wcpbc-license-settings.php:316
+msgid "Deactivate License"
+msgstr "Desactivar Licencia"
+
+#: includes/admin/class-wcpbc-license-settings.php:317
+msgid ""
+"Deactivate your license so you can activate it  on another WooCommerce site"
+msgstr ""
+"Desactive su licencia para poder activarla en otro sitio de WooCommerce"
+
+#: includes/admin/class-wcpbc-license-settings.php:319
+msgid "First add your Price Based on Country license key."
+msgstr "Primero añade tu clave de licencia Price Based on Country"
+
+#: includes/admin/views/bookings/html-person.php:8
+#: includes/admin/views/bookings/html-pricing.php:21
+#: includes/admin/views/bookings/html-resource.php:17
+msgid "Costs for"
+msgstr "Costes para"
+
+#: includes/admin/views/bookings/html-person.php:11
+#: includes/admin/views/bookings/html-pricing.php:23
+#: includes/admin/views/bookings/html-resource.php:19
+msgid "Calculate cost by exchange rate"
+msgstr "Calcular el coste utilizando la tasa de cambio"
+
+#: includes/admin/views/bookings/html-person.php:12
+#: includes/admin/views/bookings/html-pricing.php:24
+#: includes/admin/views/bookings/html-resource.php:20
+msgid "Set cost manually"
+msgstr "Establecer el coste manualmente"
+
+#: includes/admin/views/bookings/html-person.php:16
+#: includes/admin/views/bookings/html-resource.php:24
+msgid "Base Cost"
+msgstr "Base de coste"
+
+#: includes/admin/views/bookings/html-person.php:20
+#: includes/admin/views/bookings/html-resource.php:28
+msgid "Block Cost"
+msgstr "Coste de bloque"
+
+#: includes/admin/views/bookings/html-pricing.php:33
+#: includes/admin/views/bookings/html-pricing.php:72
+msgid "Base cost"
+msgstr "Base de coste"
+
+#: includes/admin/views/bookings/html-pricing.php:34
+msgid "One-off cost for the booking as a whole."
+msgstr ""
+"Introduce un coste para esta regla. Se aplica a la reserva en su totalidad."
+
+#: includes/admin/views/bookings/html-pricing.php:42
+#: includes/admin/views/bookings/html-pricing.php:73
+msgid "Block cost"
+msgstr "Coste de bloque"
+
+#: includes/admin/views/bookings/html-pricing.php:43
+msgid ""
+"This is the cost per block booked. All other costs (for resources and "
+"persons) are added to this."
+msgstr ""
+"Este es el coste por bloque reservado. Todos los otros costes (para los "
+"recursos y las personas) se añaden a este."
+
+#: includes/admin/views/bookings/html-pricing.php:51
+msgid "Display cost"
+msgstr "Mostrar coste"
+
+#: includes/admin/views/bookings/html-pricing.php:52
+msgid ""
+"The cost is displayed to the user on the frontend. Leave blank to have it "
+"calculated for you. If a booking has varying costs, this will be prefixed "
+"with the word \"from:\"."
+msgstr ""
+"El precio que se mostrará al cliente en la tienda. Déjalo en blanco si "
+"quieres que se calcule solo. Si una reserva tiene costes variables, este "
+"valor se mostrará con con \"Desde:\" delante."
+
+#: includes/admin/views/bookings/html-pricing.php:62
+#, php-format
+msgid "Please, %ssave%s product changes before edit range cost by zone."
+msgstr ""
+"Por favor, %sguarda%s los cambios en el producto antes de editar los costes "
+"de rangos por zona."
+
+#: includes/admin/views/bookings/html-pricing.php:70
+msgid "Range type"
+msgstr "Tipo de rango"
+
+#: includes/admin/views/bookings/html-pricing.php:71
+msgid "Range"
+msgstr "Rango"
+
+#: includes/admin/views/bookings/html-pricing.php:72
+msgid "Enter a cost for this rule. Applied to the booking as a whole."
+msgstr ""
+"Introduce un coste para esta regla. Se aplica a la reserva en su totalidad."
+
+#: includes/admin/views/bookings/html-pricing.php:73
+msgid "Enter a cost for this rule. Applied to each booking block."
+msgstr ""
+"Introduce un coste para esta regla. Se aplica a cada bloque de reserva."
+
+#: includes/admin/views/bookings/html-pricing.php:79
+#, php-format
+msgid "You can manage rules from the %sCost%s tab."
+msgstr "Puedes gestionar las reglas desde la pestaña %sCostes%s. "
+
+#: includes/admin/views/bookings/html-pricing.php:99
+#, php-format
+msgid ""
+"No ranges have been found. If you want manage ranges cost by zone, add "
+"ranges on the %1$sCost%2$s tab and %1$ssave%2$s."
+msgstr ""
+"No se han encontrado rangos. Si quieres gestionar costes de rango por zona, "
+"añade rangos en la pestaña %1$sCostes%2$s y %1$sguarda los cambios%2$s."
+
+#: includes/admin/views/html-region-currency-options.php:4
+msgid "Auto update Exchange Rate"
+msgstr "Actualización automática de la Tasa de Cambio"
+
+#: includes/admin/views/html-region-currency-options.php:10
+msgid "Yes, Update exchange rate daily from API provider."
+msgstr ""
+"Si, auctualizar diariamente la tasa de cambio desde el provedor de API."
+
+#: includes/admin/views/html-region-currency-options.php:13
+msgid "No, I will enter exchange rate manually."
+msgstr "No, introduciré la tasa de cambio manualmente."
+
+#: includes/admin/views/html-region-currency-options.php:23
+msgid "Exchange Rate Fee %"
+msgstr "Cuota Tasa de Cambio (%)"
+
+#: includes/admin/views/html-region-currency-options.php:24
+msgid "Enter a fee (percentage) to increment the auto exchange rate."
+msgstr "Introduce una cuota (porcentaje) para incrementar el tasa de cambio."
+
+#: includes/admin/views/html-region-currency-options.php:34
+msgid "Round to Nearest"
+msgstr "Redondear al más cercano."
+
+#: includes/admin/views/html-region-currency-options.php:35
+msgid ""
+"Round up the price by exchange rate to the nearest. The result will be a "
+"multiple of the value that you select."
+msgstr ""
+"Redondear hacia arriba el precio por tasa de cambio al más cercano. El "
+"resultado será un múltiplo del valor que selecciones."
+
+#: includes/admin/views/html-region-currency-options.php:39
+msgid "Deactivate"
+msgstr "Desactivado"
+
+#: includes/admin/views/html-region-currency-options.php:40
+msgid "0.05 ( 1785.42 to 1785.45 )"
+msgstr "0.05 ( 1785.42 a 1785.45 )"
+
+#: includes/admin/views/html-region-currency-options.php:41
+msgid "0.50 ( 1785.42 to 1785.50 )"
+msgstr "0.50 ( 1785.42 a 1785.50 )"
+
+#: includes/admin/views/html-region-currency-options.php:42
+msgid "5 ( 1785.42 to 1790 )"
+msgstr "5 ( 1785.42 a 1790 )"
+
+#: includes/admin/views/html-region-currency-options.php:43
+msgid "50 ( 1785.42 to 1800 )"
+msgstr "50 ( 1785.42 a 1800 )"
+
+#: includes/admin/views/html-region-currency-options.php:44
+msgid "500 ( 1785.42 to 2000 )"
+msgstr "500 ( 1785.42 a 2000 )"
+
+#: includes/admin/views/html-region-currency-options.php:51
+msgid "Currency Options"
+msgstr "Opciones de moneda "
+
+#: includes/admin/views/html-region-currency-options.php:52
+msgid "The following options affect how prices are displayed on the frontend."
+msgstr ""
+"Las siguientes opciones afectan a cómo se muestran los precios en la tienda."
+
+#: includes/admin/views/html-region-currency-options.php:63
+#, php-format
+msgid "Leave empty to use %sdefault currency format%s."
+msgstr "Vacío para usar el %sformato de moneda por defecto%s."
+
+#: includes/admin/views/html-region-currency-options.php:70
+msgid "Thousand Separator"
+msgstr "Separador de miles"
+
+#: includes/admin/views/html-region-currency-options.php:71
+msgid "This sets the thousand separator of displayed prices."
+msgstr "Esto establece el separador de miles de los precios mostrados."
+
+#: includes/admin/views/html-region-currency-options.php:81
+msgid "Decimal Separator"
+msgstr "Separador decimal"
+
+#: includes/admin/views/html-region-currency-options.php:82
+msgid "This sets the decimal separator of displayed prices."
+msgstr "Esto establece el separador decimal de los precios mostrados."
+
+#: includes/admin/views/html-region-currency-options.php:92
+msgid "Number of Decimals"
+msgstr "Número de decimales"
+
+#: includes/admin/views/html-region-currency-options.php:93
+msgid "This sets the number of decimal points shown in displayed prices."
+msgstr "Esto establece el número de decimales de los precios mostrados."
+
+#: includes/admin/views/product-addons/html-addon-panel.php:5
+#, php-format
+msgid ""
+"Before you can edit a zone pricing for add-ons you need to add some add-ons "
+"and %ssave%s."
+msgstr ""
+"Antes de que puedas editar la zona de precios para add-ons tienes que añadir "
+"algún add-on y %sguardar%s."
+
+#: includes/admin/views/product-addons/html-addon-panel.php:10
+msgid "Close all"
+msgstr "Cerrar todo"
+
+#: includes/admin/views/product-addons/html-addon-panel.php:10
+msgid "Expand all"
+msgstr "Expandir todo"
+
+#: includes/admin/views/product-addons/html-addon-panel.php:19
+msgid "Click to toggle"
+msgstr "Haz clic para cambiar"
+
+#: includes/admin/views/product-addons/html-addon-panel.php:31
+msgid "Group"
+msgstr "Grupo"
+
+#: includes/admin/views/product-addons/html-addon-panel.php:33
+msgid "Calculate prices by exchange rate"
+msgstr "Calcular precio aplicando tipo de cambio"
+
+#: includes/admin/views/product-addons/html-addon-panel.php:34
+msgid "Set prices manually"
+msgstr "Establecer precio manualmente"
+
+#: includes/admin/views/product-addons/html-addon-panel.php:43
+msgid "Label"
+msgstr "Etiqueta"
+
+#: includes/admin/views/product-addons/html-addon-panel.php:44
+msgid "Price"
+msgstr "Precio"
+
+#: includes/admin/views/product-addons/html-global-admin-add.php:10
+#: includes/integrations/class-wcpbc-product-addons.php:194
+msgid "Add-ons zone pricing"
+msgstr "Add-ons zona de precios"
+
+#: includes/admin/wc-plugin-api-wrapper.php:66
+msgid ""
+"Error on API request. Please check the log file wc_price_based_country at "
+"WooCommerce Status"
+msgstr ""
+"Error en la solicitud al API. Por favor comprueba el archivo de log "
+"wc_price_based_country en el estado de WooCommerce"
+
+#: includes/class-wcpbc-frontend-currency.php:196
+msgid "Remove \"Other countries\" from switcher."
+msgstr "Eliminar \"Otros países\" del selector."
+
+#: includes/class-wcpbc-widget-currency-switcher.php:26
+msgid "A currency switcher for your store."
+msgstr "Un selector de moneda para tu tienda."
+
+#: includes/class-wcpbc-widget-currency-switcher.php:28
+msgid "WooCommerce Currency Switcher"
+msgstr "WooCommerce Selector de Moneda"
+
+#: includes/class-wcpbc-widget-currency-switcher.php:32
+msgid "Currency"
+msgstr "Moneda"
+
+#: includes/class-wcpbc-widget-currency-switcher.php:33
+msgid "Title"
+msgstr "Título"
+
+#: includes/class-wcpbc-widget-currency-switcher.php:38
+msgid "Currency display style"
+msgstr "Estilo de visualización de la moneda"
+
+#: includes/class-wcpbc-widget-currency-switcher.php:61
+msgid ""
+"Supports the following placeholders: [name] = currency name, [code] = "
+"currency code and [symbol] = currency symbol"
+msgstr ""
+"Utiliza [name] para el nombre de la moneda, [code] para el código de la "
+"moneda y [symbol] para el símbolo de moneda."
+
+#: includes/integrations/class-wcpbc-affiliate-wp.php:110
+msgid "Exchange rates of AffiliateWP currency have been updated."
+msgstr "Las tasas de cambio de la moneda de AffiliateWP han sido actualizadas."
+
+#: includes/integrations/class-wcpbc-affiliate-wp.php:119
+#, php-format
+msgid ""
+"To add compatibility with AffiliateWP, %sPrice Based on Country%s needs to "
+"update the exchange rates."
+msgstr ""
+"Para añadir compatibilidad con AffiliateWP, %sPrice Based on Country"
+"%snecesita actualizar las tasas de cambio."
+
+#: includes/integrations/class-wcpbc-affiliate-wp.php:120
+msgid "Update exchange rates now"
+msgstr "Actualizar tasas de cambio ahora"
+
+#: includes/integrations/class-wcpbc-bookings.php:205
+msgid "Pricing Zone Costs"
+msgstr "Costes por zona de precios"
+
+#: includes/integrations/class-wcpbc-bookings.php:306
+msgid "January"
+msgstr "enero"
+
+#: includes/integrations/class-wcpbc-bookings.php:307
+msgid "February"
+msgstr "febrero"
+
+#: includes/integrations/class-wcpbc-bookings.php:308
+msgid "March"
+msgstr "marzo"
+
+#: includes/integrations/class-wcpbc-bookings.php:309
+msgid "April"
+msgstr "abril"
+
+#: includes/integrations/class-wcpbc-bookings.php:310
+msgid "May"
+msgstr "mayo"
+
+#: includes/integrations/class-wcpbc-bookings.php:311
+msgid "June"
+msgstr "junio"
+
+#: includes/integrations/class-wcpbc-bookings.php:312
+msgid "July"
+msgstr "julio"
+
+#: includes/integrations/class-wcpbc-bookings.php:313
+msgid "August"
+msgstr "agosto"
+
+#: includes/integrations/class-wcpbc-bookings.php:314
+msgid "September"
+msgstr "septiembre"
+
+#: includes/integrations/class-wcpbc-bookings.php:315
+msgid "October"
+msgstr "octubre"
+
+#: includes/integrations/class-wcpbc-bookings.php:316
+msgid "November"
+msgstr "noviembre"
+
+#: includes/integrations/class-wcpbc-bookings.php:317
+msgid "December"
+msgstr "diciembre"
+
+#: includes/integrations/class-wcpbc-bookings.php:320
+msgid "Monday"
+msgstr "lunes"
+
+#: includes/integrations/class-wcpbc-bookings.php:321
+msgid "Tuesday"
+msgstr "martes"
+
+#: includes/integrations/class-wcpbc-bookings.php:322
+msgid "Wednesday"
+msgstr "miércoles"
+
+#: includes/integrations/class-wcpbc-bookings.php:323
+msgid "Thursday"
+msgstr "jueves"
+
+#: includes/integrations/class-wcpbc-bookings.php:324
+msgid "Friday"
+msgstr "viernes"
+
+#: includes/integrations/class-wcpbc-bookings.php:325
+msgid "Saturday"
+msgstr "sábado"
+
+#: includes/integrations/class-wcpbc-bookings.php:326
+msgid "Sunday"
+msgstr "domingo"
+
+#: includes/integrations/class-wcpbc-bookings.php:331
+#, php-format
+msgid "Week %s"
+msgstr "Semana %s"
+
+#: includes/integrations/class-wcpbc-bookings.php:336
+msgid "Date range"
+msgstr "Rango de fechas"
+
+#: includes/integrations/class-wcpbc-bookings.php:337
+msgid "Range of months"
+msgstr "Intervalo de mes"
+
+#: includes/integrations/class-wcpbc-bookings.php:338
+msgid "Range of weeks"
+msgstr "Intervalo de semanas"
+
+#: includes/integrations/class-wcpbc-bookings.php:339
+msgid "Range of days"
+msgstr "Intervalo de días"
+
+#: includes/integrations/class-wcpbc-bookings.php:340
+msgid "Time Range"
+msgstr "Intervalos de tiempo"
+
+#: includes/integrations/class-wcpbc-bookings.php:341
+msgid "Person count"
+msgstr "Número de personas"
+
+#: includes/integrations/class-wcpbc-bookings.php:342
+msgid "Block count"
+msgstr "Número de bloques"
+
+#: includes/integrations/class-wcpbc-bookings.php:343
+msgid "Time Range (all week)"
+msgstr "Intervalo de tiempo (toda la semana)"
+
+#: includes/integrations/class-wcpbc-bookings.php:344
+msgid "Date Range with time"
+msgstr "Rango de fechas y horas"
+
+#: includes/integrations/class-wcpbc-bookings.php:392
+msgid "to"
+msgstr "a"
+
+#: includes/integrations/class-wcpbc-customer-history.php:42
+msgid "Customer Purchase History"
+msgstr ""
+
+#: includes/integrations/woocommerce-subscriptions/class-wcpbc-subscriptions.php:165
+#: includes/integrations/woocommerce-subscriptions/class-wcpbc-subscriptions.php:213
+#, php-format
+msgid "Subscription Price (%s)"
+msgstr ""
+
+#: includes/integrations/woocommerce-subscriptions/class-wcpbc-subscriptions.php:179
+#, php-format
+msgid "Sign-up Fee (%s)"
+msgstr ""
+
+#: includes/integrations/woocommerce-subscriptions/class-wcpbc-subscriptions.php:181
+msgid ""
+"Optionally include an amount to be charged at the outset of the "
+"subscription. The sign-up fee will be charged immediately, even if the "
+"product has a free trial or the payment dates are synced."
+msgstr ""
+
+#: includes/integrations/woocommerce-subscriptions/class-wcpbc-subscriptions.php:209
+#, php-format
+msgid "Sign-up Fee: (%s)"
+msgstr ""
+
+#: woocommerce-price-based-country-pro-addon.php:234
+#, php-format
+msgid ""
+"%sPrice Based on Country Pro%s needs the Basic version to work. Learn how to "
+"install Price Based on Country in the %sGetting Started Guide%s."
+msgstr ""
+"%sPrice Based on Country Pro%s necesita la versión Basic para funcionar. "
+"Aprende como instalar Price Based on Country en la %sGuía de Inicio%s."
+
+#: woocommerce-price-based-country-pro-addon.php:239
+#, php-format
+msgid ""
+"%sPrice Based on Country Pro%s requires WooCommerce to be activated to work. "
+"Learn how to install Price Based on Country in the %sGetting Started Guide%s."
+msgstr ""
+"%sPrice Based on Country Pro%s requiere que WooCommerce esté instalado y "
+"activo. Aprende como instalar Price Based on Country en la %sGuía de inicio"
+"%s."
+
+#: woocommerce-price-based-country-pro-addon.php:244
+#, php-format
+msgid ""
+"Price Based on Country Pro - The minimum WooCommerce version required for "
+"this plugin is %1$s. You are running %2$s."
+msgstr ""
+"Price Based on Country Pro -  La versión mínima de WooCommerce requerida "
+"para este plugin es la %1$s. Tu tienes instalada la %2$s."
+
+#: woocommerce-price-based-country-pro-addon.php:249
+#, php-format
+msgid ""
+"%sPrice Based on Country Pro%s - The minimum Price Based on Country Basic "
+"version required for this plugin is %s. You are running %s."
+msgstr ""
+
+#: woocommerce-price-based-country-pro-addon.php:288
+#, php-format
+msgid ""
+"%1$sWarning!%2$s You didn't set your %1$sWooCommerce Price Based Country Pro "
+"Add-on%2$s license key yet, which means you're missing out on updates and "
+"support! Enter your %3$slicense key%4$s."
+msgstr ""
+"%1$sAtención!%2$s No has configurado tu %1$sWooCommerce Price Based Country "
+"Pro Add-on%2$s clave de licencia aún, esto significa que ¡te estás perdiendo "
+"actualizaciones y asistencia! Introduce tu %3$sclave de licencia%4$s."
+
+#~ msgid "Auto update exchange rate"
+#~ msgstr "Auto actualizar la tasa de cambio"
+
+#~ msgid "Leave empty to use default currency format."
+#~ msgstr "Deja vacío para usar el formato de moneda por defecto."
+
+#~ msgid ""
+#~ "Price Based on Country Pro - The minimum Price Based on Country Basic "
+#~ "version required for this plugin is %1$s. You are running %2$s."
+#~ msgstr ""
+#~ "Price Based on Country Pro -  La versión mínima de  Price Based on "
+#~ "Country Basic requerida para este plugin es la %1$s. Tu tienes instalada "
+#~ "la %2$s."
+
+#~ msgid "Price for"
+#~ msgstr "Precio para"
+
+#~ msgid "Regular price"
+#~ msgstr "Precio normal"
+
+#~ msgid "Sale price"
+#~ msgstr "Precio rebajado"
+
+#~ msgid "Sale price dates"
+#~ msgstr "Fechas del precio rebajado"
+
+#~ msgid "Same as default price"
+#~ msgstr "Como el precio por defecto"
+
+#~ msgid "Set specific dates"
+#~ msgstr "Establecer fechas"
+
+#~ msgid "The sale will end at the beginning of the set date."
+#~ msgstr "La oferta terminará al inicio de la fecha establecida."
+
+#~ msgid "Regular price:"
+#~ msgstr "Precio normal:"
+
+#~ msgid "Sale price:"
+#~ msgstr "Precio rebajado:"
+
+#~ msgid "Sale start date"
+#~ msgstr "Fecha de comienzo de rebaja:"
+
+#~ msgid "Sale end date"
+#~ msgstr "Fecha de fin de rebaja:"
+
+#~ msgid "Zone"
+#~ msgstr "Zona"
+
+#~ msgid "Zones"
+#~ msgstr "Zonas"
+
+#~ msgid "Zone name"
+#~ msgstr "Nombre de la zona"
+
+#~ msgid "Countries"
+#~ msgstr "Países"
+
+#~ msgid "View/Edit"
+#~ msgstr "Ver/Editar"
+
+#~ msgid "Remove zone"
+#~ msgstr "Eliminar zona"
+
+#~ msgid "Rest of the World"
+#~ msgstr "Resto del mundo"
+
+#~ msgid ""
+#~ "This zone is used for countries that aren‘t included in any other zone."
+#~ msgstr ""
+#~ "Esta zona se utiliza para paises que no están incluidos en ninguna zona."
+
+#~ msgid ""
+#~ "Totals in different currency to %s has been calculate by following "
+#~ "exchange rates: %s"
+#~ msgstr ""
+#~ "Totales en monedas diferentes a %s han sido calculados usando las "
+#~ "siguientes tasas de cambio: %s"
+
+#~ msgid ""
+#~ "%sIf you need more accuracy install %sAdvanced Currency Options%s "
+#~ "extension."
+#~ msgstr ""
+#~ "%sSi necesita más precisión instala %sAdvanced Currency Options%s add-on."
+
+#~ msgid "Calculate amount by exchange rate"
+#~ msgstr "Calcular importe utilizando la tasa de cambio"
+
+#~ msgid ""
+#~ "Check this box if for the countries defined in zone pricing the coupon "
+#~ "amount should be calculated using exchange rate."
+#~ msgstr ""
+#~ "Marca esta casilla si para los países definidos en las zonas de precios "
+#~ "el importe del cupón debe ser calculado usando la tasa de cambio."
+
+#~ msgid "About Price Based on Country"
+#~ msgstr "Acerca de Price Based on Country"
+
+#~ msgid "Zone Pricing"
+#~ msgstr "Zonas de precios"
+
+#~ msgid "General options"
+#~ msgstr "Opciones generales"
+
+#~ msgid "General Options"
+#~ msgstr "Opciones Generales"
+
+#~ msgid "Price Based On"
+#~ msgstr "Precio Basado En"
+
+#~ msgid ""
+#~ "This controls which address is used to refresh products prices on "
+#~ "checkout."
+#~ msgstr ""
+#~ "Esto controla que dirección es usada para refrescar los precios en la "
+#~ "página de pedido."
+
+#~ msgid "Customer billing country"
+#~ msgstr "País de facturación del cliente"
+
+#~ msgid "Customer shipping country"
+#~ msgstr "País de envío del cliente"
+
+#~ msgid "Shipping"
+#~ msgstr "Envío"
+
+#~ msgid "Apply exchange rates to shipping cost."
+#~ msgstr "Aplicar tasa de cambio al coste del envío."
+
+#~ msgid "Test mode"
+#~ msgstr "Modo prueba"
+
+#~ msgid "Enabled test mode"
+#~ msgstr "Activar modo prueba"
+
+#~ msgid "Test country"
+#~ msgstr "País test"
+
+#~ msgid "If test mode is enabled, a demo store notice will be displayed."
+#~ msgstr "Si activas modo test, se mostrará un mensaje de aviso en tu tienda."
+
+#~ msgid "Add Zone"
+#~ msgstr "Añadir zona"
+
+#~ msgid "Zone name is required."
+#~ msgstr "El nombre de la zona es obligatorio."
+
+#~ msgid "Add at least one country to the list."
+#~ msgstr "Añade al menos un país a la lista."
+
+#~ msgid "Exchange rate must be nonzero."
+#~ msgstr "Tasa de cambio no puede ser cero."
+
+#~ msgid "Action failed. Please refresh the page and retry."
+#~ msgstr ""
+#~ "Error en la acción. Por favor, actualice la página y vuelva a intentarlo."
+
+#~ msgid "Zone have been deleted."
+#~ msgstr "Zona ha sido eliminada."
+
+#~ msgid "Edit Zone"
+#~ msgstr "Editar Zona"
+
+#~ msgid "Zone Name"
+#~ msgstr "Nombre de la Zona"
+
+#~ msgid "Choose countries&hellip;"
+#~ msgstr "Elige paises&hellip;"
+
+#~ msgid "Select all"
+#~ msgstr "Seleccionar todos"
+
+#~ msgid "Select none"
+#~ msgstr "Seleccionar nada"
+
+#~ msgid "Exchange Rate"
+#~ msgstr "Tasa de Cambio"
+
+#~ msgid "Save Changes"
+#~ msgstr "Guardar cambios"
+
+#~ msgid "Welcome to Price Based on Country %s"
+#~ msgstr "Bienvenido a Price Based on Country %s"
+
+#~ msgid ""
+#~ "Thank you for updating to the latest version. Price Based on Country %s "
+#~ "includes much-needed improvements to make WooCommerce multi-currency."
+#~ msgstr ""
+#~ "Gracias por actualizar a la última version. Price Based on Country %s "
+#~ "incluye muy necesarias mejoras para hacer WooCommerce multi-moneda."
+
+#~ msgid "Version %s"
+#~ msgstr "Versión %s"
+
+#~ msgid "What's New"
+#~ msgstr "¿Qué novedades hay?"
+
+#~ msgid "Credits"
+#~ msgstr "Créditos"
+
+#~ msgid ""
+#~ "Hi!, I’m Oscar Gare, the brain and hands behind Price Based on Country."
+#~ "%sI built Price Based on Country with the goal of help you to sell your "
+#~ "products to anywhere of world without losing the control over prices."
+#~ msgstr ""
+#~ "Hola!, Soy Oscar Gare, la mente y las manos detrás de Price Based on "
+#~ "Country.%sHe desarrollado Price Based on Country con el objetivo de "
+#~ "ayudarte a vender tus productos a cualquier parte del mundo sin que "
+#~ "pierdas el control sobre los precios."
+
+#~ msgid "If you have any questions or just want to say hi, %scontact me!%s"
+#~ msgstr ""
+#~ "Si tienes alguna pregunta o simplemente quieres decirme hola, %scontacta "
+#~ "conmigo!%s"
+
+#~ msgid "Schedule Sale Price"
+#~ msgstr "Programar Precio Rebajado"
+
+#~ msgid ""
+#~ "Schedule the sale prices is a powerful feature included by WooCommerce. "
+#~ "PBC extends this feature to allows you to set different %ssale price dates"
+#~ "%s by zone."
+#~ msgstr ""
+#~ "Programar el precio rebajado es una potente característica incluida por "
+#~ "WooCommerce. PBC extiende esta característica permitiéndote establecer "
+#~ "%sfechas de precio rebajado%s por zona."
+
+#~ msgid "Multi-currency Improvements"
+#~ msgstr "Mejoras multi-moneda"
+
+#~ msgid "Reports"
+#~ msgstr "Informes"
+
+#~ msgid ""
+#~ "The older versions don't support sales reports for multi-currency, "
+#~ "showing a wrong result. Version 1.6 shows sales reports in your base "
+#~ "currency and calculates amounts of orders made in a different currency by "
+#~ "exchange rate."
+#~ msgstr ""
+#~ "Las antiguas versiones no soportaban el informe de ventas con multi "
+#~ "moneda, mostrando un resultado erróneo. La version 1.6 muestra el informe "
+#~ "de ventas en tu moneda base y calcula el importe de los pedidos "
+#~ "realizados en una moneda distinta aplicando el tipo de cambio."
+
+#~ msgid "Coupons"
+#~ msgstr "Cupones"
+
+#~ msgid ""
+#~ "You can choose if the coupon amount should be calculated using exchange "
+#~ "rate. Great for multi-currency stores!"
+#~ msgstr ""
+#~ "Puedes elegir si el importe del cupón debe ser calculado usando la tasa "
+#~ "de cambio. ¡Genial para tiendas multi-moneda!"
+
+#~ msgid "Under the Hood"
+#~ msgstr "Bajo el Capó"
+
+#~ msgid "New Core"
+#~ msgstr "Nuevo Corazón"
+
+#~ msgid ""
+#~ "The plugin core has been rewritten with the goal that make PBC more "
+#~ "compatible with most WooCommerce plugins, especially with discount and "
+#~ "shipping plugins."
+#~ msgstr ""
+#~ "Las partes esenciales del plugin han sido re-codificadas para hacer PBC "
+#~ "compatible con la mayoría de los plugins de WooCommerce, especialmente "
+#~ "con plugins de descuento y envío."
+
+#~ msgid "Developer Friendly"
+#~ msgstr "Amigable para desarrolladores"
+
+#~ msgid ""
+#~ "New filters and actions does the plugin more extendible and adaptable "
+#~ "than ever before. I hope you enjoy using it!"
+#~ msgstr ""
+#~ "Nuevos hooks hacen el plugin más extensible y adaptable que nunca. "
+#~ "¡Espero que disfrutes usandolo!"
+
+#~ msgid "Go to Price Based on Country settings"
+#~ msgstr "Ir a la configuración de Price Based on Country"
+
+#~ msgid "Other countries"
+#~ msgstr "Otros países"
+
+#~ msgid ""
+#~ "%sPrice Based Country%s test mode enabled for testing %s. You should do "
+#~ "tests on private browsing mode. Browse in private with %sFirefox%s, "
+#~ "%sChrome%s and %sSafari%s"
+#~ msgstr ""
+#~ "Modo pruebas de %sPrice Based Country%s está activo para probar %s. Debes "
+#~ "hacer las pruebas en una nueva ventana privada. Navegación privada con"
+#~ "%sFirefox%s, %sChrome%s y %sSafari%s"
+
+#~ msgid ""
+#~ "%sWooCommerce Price Based on Country Database Update Required%s We just "
+#~ "need to update your install to the latest version"
+#~ msgstr ""
+#~ "%sWooCommerce Price Based on Country requiere actualizar la base de datos"
+#~ "%s Solo necesitamos actualizar a la ultima versión"
+
+#~ msgid "Run the updater"
+#~ msgstr "Ejecutar programa de actualización"
+
+#~ msgid ""
+#~ "It is strongly recommended that you backup your database before "
+#~ "proceeding. Are you sure you wish to run the updater now?"
+#~ msgstr ""
+#~ "Es muy recomendable realizar una copia de seguridad de su base de datos "
+#~ "antes de proceder. ¿Está seguro de que desea ejecutar la actualización "
+#~ "ahora mismo?"
+
+#~ msgid ""
+#~ "%sWooCommerce Price Based on Country%s required Geolocation. Go "
+#~ "WooCommerce settings page and set %sDefault Customer Address%s to "
+#~ "%sGeolocate Address%s."
+#~ msgstr ""
+#~ "%sWooCommerce Price Based on Country%s necesita Geolocación. Ve a la "
+#~ "página de ajustes de WooCommerce y establece %sUbicación del cliente por "
+#~ "defecto%s a %sGeolocalizar%s."
+
+#~ msgid "Go WooCommerce General Setting"
+#~ msgstr "Ir a opciones generales de WooCommerce"
+
+#~ msgid "A country switcher for your store."
+#~ msgstr "Un selector de país para tu tienda."
+
+#~ msgid "WooCommerce Country Switcher"
+#~ msgstr "WooCommerce Selector de Páis"
+
+#~ msgid "Country"
+#~ msgstr "País"
+
+#~ msgid "Other countries text"
+#~ msgstr "Texto otros países"
+
+#~ msgid ""
+#~ "%sWooCommerce Price Based Country incompatiblity found!%sWooCommerce "
+#~ "Multilingual Multiple currencies is incompatible with WooCommerce Price "
+#~ "Based on Country. While WooCommerce Multilingual Multiple currencies "
+#~ "option is active can cause unexpected results. Go to %sWooCommerce "
+#~ "Multilingual settings page%s and disables WooCommerce Multilingual Multi "
+#~ "Currency option."
+#~ msgstr ""
+#~ "%sWooCommerce Price Based Country incompatibilidad encontrada!"
+#~ "%sWooCommerce Multilingual Múltiples monedas es incompatible con "
+#~ "WooCommerce Price Based on Country. Mientras la opción de WooCommerce "
+#~ "Multilingual Múltiples monedas esté activa puede causar resultados "
+#~ "inesperados. Ve a la página de configuración de %sWooCommerce Multilingual"
+#~ "%s y desactiva la opción de múltiples monedas de WooCommerce Multilingual."
+
+#~ msgid "No, I will enter enter exchange rate manually."
+#~ msgstr "No, Voy a introducir la tasa de cambio manualmente."
+
+#~ msgid "Error getting data from Yahoo finance API"
+#~ msgstr "Error obteniendo datos desde Yahoo finance API"
+
+#~ msgid ""
+#~ "%1$sWooCommerce Price Based Country Avanced Currency Options is inactive"
+#~ "%2$s. %3$sWooCommerce Price Based Country plugin %4$s must be active for "
+#~ "work. Please %5$sinstall and activate WooCommerce Price Based Country "
+#~ "&raquo;%6$s"
+#~ msgstr ""
+#~ "%1$sWooCommerce Price Based Country Avanced Currency Options está inactivo"
+#~ "%2$s. %3$sWooCommerce Price Based Country plugin %4$s debe ser activado "
+#~ "para funcionar. Por favor %5$sinstala y activa WooCommerce Price Based "
+#~ "Country &raquo;%6$s"
+
+#~ msgid ""
+#~ "%1$sWooCommerce Subscriptions bridge for Price Based Country is inactive"
+#~ "%2$s. %3$sWooCommerce Price Based Country plugin%4$s and WooCommerce "
+#~ "Subscription must be active for work."
+#~ msgstr ""
+#~ "%1$ssWooCommerce Subscriptions bridge for Price Based Country  está "
+#~ "inactivo%2$s. %3$sWooCommerce Price Based Country plugin %4$s y "
+#~ "WooCommerce Subscription deben ser activados para funcionar."
+
+#~ msgid ""
+#~ "%1$sWooCommerce Price Based Country is inactive%2$s. %3$sWooCommerce "
+#~ "plugin %4$s must be active for Price Based Country to work. Please "
+#~ "%5$sinstall and activate WooCommerce &raquo;%6$s"
+#~ msgstr ""
+#~ "%1$sWooCommerce Price Based Country está inactivo%2$s. %3$sWooCommerce "
+#~ "plugin %4$s debe ser activado para que Price Based on Country funcione. "
+#~ "Por favor %5$sinstala y activa WooCommerce &raquo;%6$s"
+
+#~ msgid ""
+#~ "%sWooCommerce Price Based Country%s required Geolocation Address to "
+#~ "determine the customers default address. Go WooCommerce settings page and "
+#~ "set %sDefault Customer Address%s to %sGeolocate Address%s."
+#~ msgstr ""
+#~ "%sWooCommerce Price Based Country%s necesita Geolocación para determinar "
+#~ "la direccto determine the customers default address. Go WooCommerce "
+#~ "settings page and set %sDefault Customer Address%s to %sGeolocate Address"
+#~ "%s."
+
+#~ msgid ""
+#~ "%sPrice Based Country%s test mode enabled%s. You should do tests on "
+#~ "private browsing mode. Browse in private with %sFirefox%s, %sChrome%s and "
+#~ "%sSafari%s"
+#~ msgstr ""
+#~ "%sPrice Based Country%s test mode enabled%s. You should do tests on "
+#~ "private browsing mode. Browse in private with %sFirefox%s, %sChrome%s and "
+#~ "%sSafari%s"
+
+#~ msgid "Check this box if exchange rates also gets applied to shipping cost."
+#~ msgstr ""
+#~ "Marca esta casilla si quieres que al coste del envío se le aplique la "
+#~ "tasa de cambio."
+
+#~ msgid "Test Mode"
+#~ msgstr "Modo Test"
+
+#~ msgid "Enabled/Disabled"
+#~ msgstr "Activar/Desactivar"
+
+#~ msgid "Enabled Test Mode"
+#~ msgstr "Activar Modo Test"
+
+#~ msgid "Zone pricing auto-calculate"
+#~ msgstr "Auto-calcular "
+
+#~ msgid ""
+#~ "If you have any questions or just want to say hi, %scontact me!%s</p>"
+#~ msgstr "Si quieres preguntarme algo o solamente decirme hola, "
+
+#~ msgid "Regular Price"
+#~ msgstr "Precio Regular"
+
+#~ msgid "Sale Price"
+#~ msgstr "Precio Rebajado"

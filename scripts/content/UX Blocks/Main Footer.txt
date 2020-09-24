@@ -1,0 +1,59 @@
+[divider width="100%" height="1px" margin="0px"]
+
+[section label="Footer" bg_color="rgb(119, 119, 119)" padding="0px" class="foot-text"]
+
+[gap height="60px"]
+
+[row label="Columns"]
+
+[col span="3" span__sm="12" span__md="6" force_first="medium"]
+
+<h5 style="color:#fff;" class="uppercase">About Us</h5>
+<p class="gray-text"><span style="font-size: 90%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices urna non est consequat, vel eleifend ligula ornare.</span></p>
+[follow scale="101" facebook="https://www.facebook.com/univariety/" instagram="https://www.instagram.com/theofficialunivariety/" twitter="https://twitter.com/Univariety" linkedin="https://www.linkedin.com/company/univariety/" youtube="https://www.youtube.com/channel/UCpwpzaFC6Dn3xDLrlEiFoUA?view_as=subscriber"]
+
+
+[/col]
+[col span="3" span__sm="12" span__md="6" force_first="medium"]
+
+
+[/col]
+[col span="6" span__sm="12" span__md="12" align="left"]
+
+[row_inner style="small"]
+
+[col_inner span="4" span__sm="12"]
+
+<ul class="footer-links-list">
+<li><span style="font-size: 90%;"><a href="#">About</a></span></li>
+<li><span style="font-size: 90%;"><a href="#">How it works</a></span></li>
+<li><span style="font-size: 90%;"><a href="#">Team</a></span></li>
+</ul>
+
+[/col_inner]
+[col_inner span="4" span__sm="12"]
+
+<ul class="footer-links-list">
+<li><span style="font-size: 90%;"><a href="#">Careers</a></span></li>
+<li><span style="font-size: 90%;"><a href="#">Testimonials</a></span></li>
+<li><span style="font-size: 90%;"><a href="#">Why Univariety</a></span></li>
+</ul>
+
+[/col_inner]
+[col_inner span="4" span__sm="12"]
+
+<ul class="footer-links-list">
+<li><span style="font-size: 90%;"><a href="#">Support</a></span></li>
+<li><span style="font-size: 90%;"><a href="#">FAQs</a></span></li>
+<li><span style="font-size: 90%;"><a href="#">Help Center</a></span></li>
+</ul>
+
+[/col_inner]
+
+[/row_inner]
+
+[/col]
+
+[/row]
+
+[/section]

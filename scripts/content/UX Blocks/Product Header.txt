@@ -1,0 +1,38 @@
+[section bg_color="rgb(30, 200, 249)" padding="0px"]
+
+[row v_align="middle"]
+
+[col span="4" span__sm="12"]
+
+[gap]
+
+<img src="[product_thumbnail]" alt="[acf field='post_title']"/>
+
+[/col]
+[col span="8" span__sm="12"]
+
+<div>
+<h2 style="color: #fff;">[post_title]</h2>
+<p style="color: #fff;">[acf field="tagline"]
+</p>
+</div>
+[row_inner]
+
+[col_inner span="2" span__sm="6"]
+
+<p>[product_ratings]</p>
+
+[/col_inner]
+[col_inner span="3" span__sm="6"]
+
+<div class="video-button-wrapper" style="font-size:76%"><a href='[acf field="intro_video"]' class="button success lowercase open-video is-xlarge" style="border-radius:4px;"> <span>Watch Intro</span></a></div>
+
+[/col_inner]
+
+[/row_inner]
+
+[/col]
+
+[/row]
+
+[/section]

@@ -1,0 +1,40 @@
+#export{
+//background-color: #337ab7;
+//border-color: #204d74;
+}
+
+.import-export-header{
+    font-weight: bold !important;
+    font-size: 19px !important;
+    color: rgba(35, 40, 45, 0.79);
+}
+
+label[for=dd_show_export_options]
+{
+    font-weight:700;
+    /* ...definitions here... */
+}
+
+table.wdm_csp_export_table th {
+	text-align: left;
+    width: 21%;
+}
+
+/* SKU information message on export tab page. */
+.csp-sku-export-info {
+    display: none;
+    margin-top:25px;
+}
+
+ul.wdm_csp_ul > li {
+    display: inline-block;
+}
+
+.wdm_csp_ul li{
+    margin-bottom: auto;
+    margin-right: 15px;
+}
+
+#export {
+    margin-top: 16px;
+}

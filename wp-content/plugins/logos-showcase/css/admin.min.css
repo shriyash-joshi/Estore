@@ -1,0 +1,18 @@
+#preview{padding:20px 5px;background:#FFF}.post-type-lshowcase #postimagediv img{max-width:200px}
+#lshowcase_admin_table,#lshowcase_admin_table_spacing{width:100%}#lshowcase_admin_table td{padding:0 10px;vertical-align:top}
+#lshowcase_admin_table th{text-align:left;padding:0 10px}#lshowcase_admin_table_spacing input{width:60px}
+#lshowcase_admin_table_spacing td{padding:0 5px;vertical-align:top}#lshowcase_admin_table_spacing .howto{padding:15px 0;vertical-align:top}
+#available-widgets [class*=lshowcase] .widget-title:before{content:"\f180"}
+#shortcode_div,#phpcode_div{padding:10px;background-color:#fff;border-left:4px solid #7ad03a;-webkit-box-shadow:0 1px 1px 0 rgba(0,0,0,.1);box-shadow:0 1px 1px 0 rgba(0,0,0,.1);display:block;margin:10px 0}
+.lseditbutton{position:absolute;bottom:0;margin-right:auto;margin-left:auto;left:50%;transform:translate(-50%,0);border:1px solid #f5f5f5;background:#f0f0f0;color:#333;padding:3px 8px;border-radius:3px;display:none;opacity:.5;font-size:.8em}
+.lseditbutton:hover{opacity:1;background:#f0f0f0;cursor:pointer}.lsimgeditcontainer{position:relative}
+.lsimgeditcontainer:hover .lseditbutton{display:block}#lseditsize{position:relative;display:none;background:#FFF;padding:10px;margin-bottom:40px;box-shadow:0 1px 1px 0 rgba(0,0,0,.1)}
+#lseditsize #lssizeclose{position:absolute;top:10px;right:10px;cursor:pointer;display:none}
+.lssavecancel{position:absolute;right:10px;bottom:10px}.lssavecancel div{display:inline-block;margin:3px;line-height:2em}
+.lssavecancel #lssizesave:hover,.lssavecancel #lssizecancel:hover{opacity:1;cursor:pointer}
+.lssavecancel #lssizesave{background:#0085ba;color:#FFF;border-radius:3px;padding:8px 10px;opacity:.9}
+#lssizesave .dashicons{margin:0;padding:0;vertical-align:middle}.lssavecancel #lssizecancel{background:#CCC;color:#FFF;border-radius:3px;padding:8px 10px;opacity:.9}
+.lscurrentsize{padding:10px 5px;font-size:1.2em}#lssizerange,#padding{-webkit-appearance:none;width:50%;height:12px;border-radius:5px;background:#d3d3d3;outline:0;opacity:.7;margin:10px 0;-webkit-transition:.2s;transition:opacity .2s}
+#lssizerange::-webkit-slider-thumb,#padding::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:25px;height:25px;border-radius:50%;background:#4caf50;cursor:pointer}
+#lssizerange::-moz-range-thumb,#padding::-moz-range-thumb{width:25px;height:25px;border-radius:50%;background:#4caf50;cursor:pointer}
+/*# sourceMappingURL=admin.min.css.map */

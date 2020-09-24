@@ -1,0 +1,766 @@
+# Copyright (C) 2020 Oscar Gare
+# This file is distributed under the same license as the WooCommerce Price Based on Country Pro Add-on plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Price Based on Country Pro Add-on 2.8.13\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/woocommerce-price-based-country-pro-addon\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-06-03T06:09:48+00:00\n"
+"PO-Revision-Date: 2020-06-03T06:09:48+00:00\n"
+"X-Generator: WP-CLI 2.0.1\n"
+"X-Domain: wc-price-based-country-pro\n"
+
+#. Plugin Name of the plugin
+msgid "WooCommerce Price Based on Country Pro Add-on"
+msgstr ""
+
+#. Description of the plugin
+msgid "Supercharge Price Based on Country with professionals features"
+msgstr ""
+
+#. Author of the plugin
+msgid "Oscar Gare"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://www.linkedin.com/in/oscargare"
+msgstr ""
+
+#: includes/admin/class-wcpbc-admin-pro.php:72
+msgid "Enter a value"
+msgstr ""
+
+#: includes/admin/class-wcpbc-admin-pro.php:73
+msgid "Enter a value (fixed or %)"
+msgstr ""
+
+#: includes/admin/class-wcpbc-admin-pro.php:74
+msgid "Load country pricing? This action will change the items price, the order currency, calculate taxes and update totals based on customer country."
+msgstr ""
+
+#: includes/admin/class-wcpbc-admin-pro.php:102
+#: includes/admin/views/html-admin-page-pricing-zone-pro.php:69
+msgid "Currency Format"
+msgstr ""
+
+#: includes/admin/class-wcpbc-admin-pro.php:104
+#: includes/admin/views/html-admin-page-pricing-zone-pro.php:80
+msgid "Preview:"
+msgstr ""
+
+#: includes/admin/class-wcpbc-admin-pro.php:105
+#: includes/admin/views/html-admin-page-pricing-zone-pro.php:70
+msgid "Enter the currency format. Supports the following placeholders: [code] = currency code, [symbol] = currency symbol, [symbol-alt] = alternative currency symbol (US$, CA$, ...), [price] = product price."
+msgstr ""
+
+#: includes/admin/class-wcpbc-admin-pro.php:137
+msgid "Exchange rate API"
+msgstr ""
+
+#: includes/admin/class-wcpbc-admin-pro.php:138
+msgid "This controls which API provider will be used to exchange rates auto-updates."
+msgstr ""
+
+#: includes/admin/class-wcpbc-admin-pro.php:213
+msgid "Error updating the exchange rate. The API returned 1 as the exchange rate."
+msgstr ""
+
+#: includes/admin/class-wcpbc-admin-pro.php:216
+msgid "Error updating the exchange rate from API."
+msgstr ""
+
+#: includes/admin/class-wcpbc-admin-pro.php:260
+msgid "License"
+msgstr ""
+
+#: includes/admin/class-wcpbc-admin-pro.php:270
+msgid "Set regular prices"
+msgstr ""
+
+#: includes/admin/class-wcpbc-admin-pro.php:271
+msgid "Increase regular prices (fixed amount or percentage)"
+msgstr ""
+
+#: includes/admin/class-wcpbc-admin-pro.php:272
+msgid "Decrease regular prices (fixed amount or percentage)"
+msgstr ""
+
+#: includes/admin/class-wcpbc-admin-pro.php:273
+msgid "Set sale prices"
+msgstr ""
+
+#: includes/admin/class-wcpbc-admin-pro.php:274
+msgid "Increase sale prices (fixed amount or percentage)"
+msgstr ""
+
+#: includes/admin/class-wcpbc-admin-pro.php:275
+msgid "Decrease sale prices (fixed amount or percentage)"
+msgstr ""
+
+#: includes/admin/class-wcpbc-admin-pro.php:279
+msgid "Pricing"
+msgstr ""
+
+#: includes/admin/class-wcpbc-admin-pro.php:307
+msgid "Action is not allowed!"
+msgstr ""
+
+#: includes/admin/class-wcpbc-admin-pro.php:313
+msgid "Zone does not exist!"
+msgstr ""
+
+#: includes/admin/class-wcpbc-admin-pro.php:401
+msgid "Load country pricing"
+msgstr ""
+
+#: includes/admin/class-wcpbc-admin-pro.php:431
+msgid "Invalid order"
+msgstr ""
+
+#. translators: %s fee amount
+#: includes/admin/class-wcpbc-admin-pro.php:478
+msgid "%s fee"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-pricing-zone-pro.php:12
+msgid "Auto update Exchange Rate"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-pricing-zone-pro.php:18
+msgid "Yes, Update exchange rate daily from API provider."
+msgstr ""
+
+#: includes/admin/views/html-admin-page-pricing-zone-pro.php:21
+msgid "No, I will enter exchange rate manually."
+msgstr ""
+
+#: includes/admin/views/html-admin-page-pricing-zone-pro.php:31
+msgid "Exchange Rate Fee %"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-pricing-zone-pro.php:32
+msgid "Enter a fee (percentage) to increment the auto exchange rate."
+msgstr ""
+
+#: includes/admin/views/html-admin-page-pricing-zone-pro.php:42
+msgid "Round to Nearest"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-pricing-zone-pro.php:43
+msgid "Round up the price by exchange rate to the nearest. The result will be a multiple of the value that you select."
+msgstr ""
+
+#: includes/admin/views/html-admin-page-pricing-zone-pro.php:50
+msgid "Deactivate"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-pricing-zone-pro.php:51
+msgid "0.05 ( 1785.42 to 1785.45 )"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-pricing-zone-pro.php:52
+msgid "0.50 ( 1785.42 to 1785.50 )"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-pricing-zone-pro.php:53
+msgid "5 ( 1785.42 to 1790 )"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-pricing-zone-pro.php:54
+msgid "50 ( 1785.42 to 1800 )"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-pricing-zone-pro.php:55
+msgid "500 ( 1785.42 to 2000 )"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-pricing-zone-pro.php:62
+msgid "Currency Options"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-pricing-zone-pro.php:63
+msgid "The following options affect how prices are displayed on the frontend."
+msgstr ""
+
+#. Translators: HTML tags.
+#: includes/admin/views/html-admin-page-pricing-zone-pro.php:77
+msgid "Leave empty to use %1$sdefault currency format%2$s."
+msgstr ""
+
+#: includes/admin/views/html-admin-page-pricing-zone-pro.php:87
+msgid "Thousand Separator"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-pricing-zone-pro.php:88
+msgid "This sets the thousand separator of displayed prices."
+msgstr ""
+
+#: includes/admin/views/html-admin-page-pricing-zone-pro.php:98
+msgid "Decimal Separator"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-pricing-zone-pro.php:99
+msgid "This sets the decimal separator of displayed prices."
+msgstr ""
+
+#: includes/admin/views/html-admin-page-pricing-zone-pro.php:109
+msgid "Number of Decimals"
+msgstr ""
+
+#: includes/admin/views/html-admin-page-pricing-zone-pro.php:110
+msgid "This sets the number of decimal points shown in displayed prices."
+msgstr ""
+
+#: includes/admin/views/html-admin-page-pricing-zone-pro.php:118
+msgid "Taxes"
+msgstr ""
+
+#. translators: HTML tags.
+#: includes/admin/views/html-notice-renew.php:17
+msgid "Your license key for %1$sPrice Based on Country Pro%2$s has expired. It's time to %1$srenew and save %3$s off%2$s the original price."
+msgstr ""
+
+#. translators: HTML tags.
+#: includes/admin/views/html-notice-renew.php:20
+msgid "Your license key for %1$sPrice Based on Country Pro%2$s is expiring within %3$s days. It's time to %1$srenew and save %4$s off%2$s the original price."
+msgstr ""
+
+#: includes/admin/views/html-notice-renew.php:25
+msgid "Renew your license now"
+msgstr ""
+
+#: includes/admin/views/html-notice-renew.php:26
+msgid "I already renewed my license."
+msgstr ""
+
+#: includes/admin/views/product-addons/html-addon-panel.php:10
+msgid "Flat Fee"
+msgstr ""
+
+#: includes/admin/views/product-addons/html-addon-panel.php:11
+msgid "Quantity Based"
+msgstr ""
+
+#. translators: 1, 2 strong HTML tag.
+#: includes/admin/views/product-addons/html-addon-panel.php:22
+msgid "Before you can edit a zone pricing for add-ons you need to add some add-ons and %1$ssave%2$s."
+msgstr ""
+
+#: includes/admin/views/product-addons/html-addon-panel.php:29
+#: includes/admin/views/product-addons/html-global-admin-add.php:18
+msgid "Zone Pricing Add-on fields"
+msgstr ""
+
+#: includes/admin/views/product-addons/html-addon-panel.php:31
+#: includes/admin/views/product-addons/legacy/html-addon-panel.php:10
+msgid "Expand all"
+msgstr ""
+
+#: includes/admin/views/product-addons/html-addon-panel.php:31
+#: includes/admin/views/product-addons/legacy/html-addon-panel.php:10
+msgid "Close all"
+msgstr ""
+
+#: includes/admin/views/product-addons/html-addon-panel.php:36
+msgid "Please, update the add-ons fields changes before update the zone pricing."
+msgstr ""
+
+#: includes/admin/views/product-addons/html-addon-panel.php:45
+#: includes/admin/views/product-addons/legacy/html-addon-panel.php:19
+msgid "Click to toggle"
+msgstr ""
+
+#: includes/admin/views/product-addons/html-addon-panel.php:88
+#: includes/admin/views/product-addons/legacy/html-addon-panel.php:33
+msgid "Calculate prices by exchange rate"
+msgstr ""
+
+#: includes/admin/views/product-addons/html-addon-panel.php:89
+#: includes/admin/views/product-addons/legacy/html-addon-panel.php:34
+msgid "Set prices manually"
+msgstr ""
+
+#: includes/admin/views/product-addons/html-addon-panel.php:148
+msgid "Limit price range"
+msgstr ""
+
+#: includes/admin/views/product-addons/html-addon-panel.php:154
+msgid "Enter a minimum and maximum value for the limit range."
+msgstr ""
+
+#: includes/admin/views/product-addons/html-addon-panel.php:165
+msgid "This field has not a flat fee price."
+msgstr ""
+
+#: includes/admin/views/product-addons/legacy/html-addon-panel.php:5
+msgid "Before you can edit a zone pricing for add-ons you need to add some add-ons and %ssave%s."
+msgstr ""
+
+#: includes/admin/views/product-addons/legacy/html-addon-panel.php:31
+msgid "Group"
+msgstr ""
+
+#: includes/admin/views/product-addons/legacy/html-addon-panel.php:43
+msgid "Label"
+msgstr ""
+
+#: includes/admin/views/product-addons/legacy/html-addon-panel.php:44
+msgid "Price"
+msgstr ""
+
+#: includes/admin/views/product-addons/legacy/html-global-admin-add.php:10
+#: includes/integrations/class-wcpbc-product-addons.php:376
+msgid "Add-ons zone pricing"
+msgstr ""
+
+#: includes/admin/views/product-addons/html-global-admin-add.php:17
+msgid "Add-on fields"
+msgstr ""
+
+#: includes/admin/views/bookings/html-resource.php:26
+#: includes/admin/views/bookings/html-pricing.php:22
+#: includes/admin/views/bookings/html-person.php:18
+msgid "Costs for"
+msgstr ""
+
+#: includes/admin/views/bookings/html-resource.php:34
+#: includes/admin/views/bookings/html-person.php:26
+msgid "Base Cost"
+msgstr ""
+
+#: includes/admin/views/bookings/html-resource.php:38
+#: includes/admin/views/bookings/html-person.php:30
+msgid "Block Cost"
+msgstr ""
+
+#: includes/admin/views/bookings/html-pricing.php:28
+#: includes/admin/views/bookings/html-pricing.php:71
+msgid "Base cost"
+msgstr ""
+
+#: includes/admin/views/bookings/html-pricing.php:29
+msgid "One-off cost for the booking as a whole."
+msgstr ""
+
+#: includes/admin/views/bookings/html-pricing.php:34
+#: includes/admin/views/bookings/html-pricing.php:72
+msgid "Block cost"
+msgstr ""
+
+#: includes/admin/views/bookings/html-pricing.php:35
+msgid "This is the cost per block booked. All other costs (for resources and persons) are added to this."
+msgstr ""
+
+#: includes/admin/views/bookings/html-pricing.php:40
+msgid "Display cost"
+msgstr ""
+
+#: includes/admin/views/bookings/html-pricing.php:41
+msgid "The cost is displayed to the user on the frontend. Leave blank to have it calculated for you. If a booking has varying costs, this will be prefixed with the word \"from:\"."
+msgstr ""
+
+#. Translators: strong HTML tag.
+#: includes/admin/views/bookings/html-pricing.php:59
+msgid "Please, %1$ssave%2$s product changes before edit range cost by zone."
+msgstr ""
+
+#: includes/admin/views/bookings/html-pricing.php:69
+msgid "Range type"
+msgstr ""
+
+#: includes/admin/views/bookings/html-pricing.php:70
+msgid "Range"
+msgstr ""
+
+#: includes/admin/views/bookings/html-pricing.php:71
+msgid "Enter a cost for this rule. Applied to the booking as a whole."
+msgstr ""
+
+#: includes/admin/views/bookings/html-pricing.php:72
+msgid "Enter a cost for this rule. Applied to each booking block."
+msgstr ""
+
+#. Translators: strong HTML tag.
+#: includes/admin/views/bookings/html-pricing.php:79
+msgid "You can manage rules from the %1$sCost%2$s tab."
+msgstr ""
+
+#. Translators: strong HTML tag.
+#: includes/admin/views/bookings/html-pricing.php:103
+msgid "No ranges have been found. If you want manage ranges cost by zone, add ranges on the %1$sCost%2$s tab and %1$ssave%2$s."
+msgstr ""
+
+#. translators: 1: expired date, 2,3: HTML tags.
+#: includes/admin/class-wcpbc-license-settings.php:139
+msgid "The licence expired on %1$s. %2$sRenew your license now%3$s"
+msgstr ""
+
+#. translators: 1,2: HTML tags.
+#: includes/admin/class-wcpbc-license-settings.php:143
+msgid "The license does not exist or expired more than 30 days ago. %1$sBuy a license%2$s."
+msgstr ""
+
+#: includes/admin/class-wcpbc-license-settings.php:171
+msgid "Unable to activate the license."
+msgstr ""
+
+#: includes/admin/class-wcpbc-license-settings.php:179
+msgid "Unable to activate the license. Check the status log file."
+msgstr ""
+
+#: includes/admin/class-wcpbc-license-settings.php:201
+msgid "Unable to deactivate the license."
+msgstr ""
+
+#: includes/admin/class-wcpbc-license-settings.php:299
+msgid "License status"
+msgstr ""
+
+#: includes/admin/class-wcpbc-license-settings.php:303
+msgid "Toggle activation"
+msgstr ""
+
+#: includes/admin/class-wcpbc-license-settings.php:307
+msgid "License Key"
+msgstr ""
+
+#: includes/admin/class-wcpbc-license-settings.php:309
+msgid "Enter your Price Based on Country Pro license key"
+msgstr ""
+
+#. translators: License status.
+#: includes/admin/class-wcpbc-license-settings.php:374
+msgid "you are %s receiving updates"
+msgstr ""
+
+#. translators: License status.
+#: includes/admin/class-wcpbc-license-settings.php:374
+msgid "%1$snot%2$s"
+msgstr ""
+
+#: includes/admin/class-wcpbc-license-settings.php:422
+msgid "Deactivate License"
+msgstr ""
+
+#: includes/admin/class-wcpbc-license-settings.php:423
+msgid "Deactivate your license so you can activate it  on another WooCommerce site"
+msgstr ""
+
+#: includes/admin/class-wcpbc-license-settings.php:425
+msgid "First add your Price Based on Country license key."
+msgstr ""
+
+#. translators: Expire date.
+#: includes/admin/class-wcpbc-license-settings.php:454
+msgid "Your Price Based on Country Pro license will expire on %s"
+msgstr ""
+
+#: includes/class-wcpbc-widget-currency-switcher.php:22
+msgid "A currency switcher for your store."
+msgstr ""
+
+#: includes/class-wcpbc-widget-currency-switcher.php:24
+msgid "WooCommerce Currency Switcher"
+msgstr ""
+
+#: includes/class-wcpbc-widget-currency-switcher.php:28
+msgid "Currency"
+msgstr ""
+
+#: includes/class-wcpbc-widget-currency-switcher.php:29
+msgid "Title"
+msgstr ""
+
+#: includes/class-wcpbc-widget-currency-switcher.php:34
+msgid "Currency display style"
+msgstr ""
+
+#: includes/class-wcpbc-widget-currency-switcher.php:57
+msgid "Supports the following placeholders: [name] = currency name, [code] = currency code and [symbol] = currency symbol"
+msgstr ""
+
+#: includes/class-wcpbc-shortcodes.php:121
+msgid "Pricing zone not found."
+msgstr ""
+
+#: includes/class-wcpbc-shortcodes.php:125
+msgid "Product not found."
+msgstr ""
+
+#. translators: HTML Tags.
+#: includes/class-wc-product-price-based-country-pro.php:265
+msgid "%1$sPrice Based on Country Pro%2$s needs the Basic version to work. Learn how to install Price Based on Country in the %3$sGetting Started Guide%4$s."
+msgstr ""
+
+#. translators: HTML Tags.
+#: includes/class-wc-product-price-based-country-pro.php:271
+msgid "%1$sPrice Based on Country Pro%2$s requires WooCommerce to be activated to work. Learn how to install Price Based on Country in the %3$sGetting Started Guide%4$s."
+msgstr ""
+
+#. translators: HTML Tags.
+#: includes/class-wc-product-price-based-country-pro.php:277
+msgid "Price Based on Country Pro - The minimum WooCommerce version required for this plugin is %1$s. You are running %2$s."
+msgstr ""
+
+#. translators: HTML Tags.
+#: includes/class-wc-product-price-based-country-pro.php:283
+msgid "%1$sPrice Based on Country Pro%2$s - The minimum Price Based on Country Basic version required for this plugin is %3$s. You are running %4$s."
+msgstr ""
+
+#. translators: HTML Tags.
+#: includes/class-wc-product-price-based-country-pro.php:337
+msgid "%1$sWarning!%2$s You didn't set your license key, which means you're missing out on updates and support! Enter your %3$slicense key%4$s."
+msgstr ""
+
+#. translators: HTML Tags.
+#: includes/class-wc-product-price-based-country-pro.php:386
+msgid "%1$sWarning!%2$s You didn't set your %1$sWooCommerce Price Based Country Pro Add-on%2$s license key yet, which means you're missing out on updates and support! Enter your %3$slicense key%4$s."
+msgstr ""
+
+#: includes/class-wc-product-price-based-country-pro.php:472
+msgid "Once Weekly"
+msgstr ""
+
+#: includes/exchage-rates-providers/class-wcpbc-open-exchange-rates.php:36
+msgid "App ID"
+msgstr ""
+
+#: includes/exchage-rates-providers/class-wcpbc-open-exchange-rates.php:37
+msgid "Open exchange rate App ID."
+msgstr ""
+
+#. translators: HTML tags.
+#: includes/exchage-rates-providers/class-wcpbc-open-exchange-rates.php:39
+msgid "You can find the App ID in your %1$sOpen Exchange Rates dashboard%3$s. If you have not an account, you can open a free Open Exchange Rates account %2$shere%3$s."
+msgstr ""
+
+#: includes/exchage-rates-providers/class-wcpbc-open-exchange-rates.php:52
+msgid "The Open Exchange Rates App ID is required."
+msgstr ""
+
+#. translators: 1: HTML tag, 2: HTML tag, 3: WooCommerce version.
+#: includes/integrations/class-wcpbc-smart-coupons.php:484
+msgid "%1$sPrice Based on Country Pro & WooCommerce Smart Coupons%2$s compatibility requires WooCommerce +3.0. You are running WooCommerce %3$s."
+msgstr ""
+
+#. translators: 1: HTML tag, 2: HTML tag, 3: German Market version.
+#: includes/integrations/class-wcpbc-german-market.php:287
+msgid "%1$sPrice Based on Country Pro & German Market%2$s compatibility requires German Market version +3.8. You are running German Market %3$s."
+msgstr ""
+
+#: includes/integrations/class-wcpbc-dynamic-pricing-pro.php:107
+msgid "Amount for"
+msgstr ""
+
+#: includes/integrations/class-wcpbc-bookings.php:209
+msgid "Pricing Zone Costs"
+msgstr ""
+
+#: includes/integrations/class-wcpbc-bookings.php:307
+msgid "January"
+msgstr ""
+
+#: includes/integrations/class-wcpbc-bookings.php:308
+msgid "February"
+msgstr ""
+
+#: includes/integrations/class-wcpbc-bookings.php:309
+msgid "March"
+msgstr ""
+
+#: includes/integrations/class-wcpbc-bookings.php:310
+msgid "April"
+msgstr ""
+
+#: includes/integrations/class-wcpbc-bookings.php:311
+msgid "May"
+msgstr ""
+
+#: includes/integrations/class-wcpbc-bookings.php:312
+msgid "June"
+msgstr ""
+
+#: includes/integrations/class-wcpbc-bookings.php:313
+msgid "July"
+msgstr ""
+
+#: includes/integrations/class-wcpbc-bookings.php:314
+msgid "August"
+msgstr ""
+
+#: includes/integrations/class-wcpbc-bookings.php:315
+msgid "September"
+msgstr ""
+
+#: includes/integrations/class-wcpbc-bookings.php:316
+msgid "October"
+msgstr ""
+
+#: includes/integrations/class-wcpbc-bookings.php:317
+msgid "November"
+msgstr ""
+
+#: includes/integrations/class-wcpbc-bookings.php:318
+msgid "December"
+msgstr ""
+
+#: includes/integrations/class-wcpbc-bookings.php:321
+msgid "Monday"
+msgstr ""
+
+#: includes/integrations/class-wcpbc-bookings.php:322
+msgid "Tuesday"
+msgstr ""
+
+#: includes/integrations/class-wcpbc-bookings.php:323
+msgid "Wednesday"
+msgstr ""
+
+#: includes/integrations/class-wcpbc-bookings.php:324
+msgid "Thursday"
+msgstr ""
+
+#: includes/integrations/class-wcpbc-bookings.php:325
+msgid "Friday"
+msgstr ""
+
+#: includes/integrations/class-wcpbc-bookings.php:326
+msgid "Saturday"
+msgstr ""
+
+#: includes/integrations/class-wcpbc-bookings.php:327
+msgid "Sunday"
+msgstr ""
+
+#. translators: Week of year.
+#: includes/integrations/class-wcpbc-bookings.php:333
+msgid "Week %s"
+msgstr ""
+
+#: includes/integrations/class-wcpbc-bookings.php:338
+msgid "Date range"
+msgstr ""
+
+#: includes/integrations/class-wcpbc-bookings.php:339
+msgid "Range of months"
+msgstr ""
+
+#: includes/integrations/class-wcpbc-bookings.php:340
+msgid "Range of weeks"
+msgstr ""
+
+#: includes/integrations/class-wcpbc-bookings.php:341
+msgid "Range of days"
+msgstr ""
+
+#: includes/integrations/class-wcpbc-bookings.php:342
+msgid "Time Range"
+msgstr ""
+
+#: includes/integrations/class-wcpbc-bookings.php:343
+msgid "Person count"
+msgstr ""
+
+#: includes/integrations/class-wcpbc-bookings.php:344
+msgid "Block count"
+msgstr ""
+
+#: includes/integrations/class-wcpbc-bookings.php:345
+msgid "Time Range (all week)"
+msgstr ""
+
+#: includes/integrations/class-wcpbc-bookings.php:346
+msgid "Date Range with time"
+msgstr ""
+
+#: includes/integrations/class-wcpbc-bookings.php:393
+msgid "to"
+msgstr ""
+
+#. translators: %s is a currency symbol.
+#: includes/integrations/class-wcpbc-name-your-price.php:151
+#: includes/integrations/class-wcpbc-name-your-price.php:182
+msgid "Suggested Price (%s)"
+msgstr ""
+
+#. translators: %s is a currency symbol.
+#: includes/integrations/class-wcpbc-name-your-price.php:158
+#: includes/integrations/class-wcpbc-name-your-price.php:188
+msgid "Minimum Price (%s)"
+msgstr ""
+
+#. translators: %s is a currency symbol.
+#: includes/integrations/class-wcpbc-name-your-price.php:165
+#: includes/integrations/class-wcpbc-name-your-price.php:194
+msgid "Maximum Price (%s)"
+msgstr ""
+
+#. translators: 1: HTML tag, 2: HTML tag, 3: Name Your Price version.
+#: includes/integrations/class-wcpbc-name-your-price.php:245
+msgid "%1$sPrice Based on Country Pro & Name Your Price%2$s compatibility requires Name Your Price version +2.9.3. You are running Name Your Price %3$s."
+msgstr ""
+
+#: includes/integrations/class-wcpbc-bookings-accommodation.php:76
+msgid "Pricing Zone Rates"
+msgstr ""
+
+#. translators: 1: HTML tag, 2: HTML tag, 3: German Market version.
+#: includes/integrations/class-wcpbc-bookings-accommodation.php:254
+msgid "%1$sPrice Based on Country Pro & WooCommerce Accommodation Bookings%2$s compatibility requires WooCommerce Accommodation Bookings version +1.1.5. You are running Accommodation Bookings %3$s."
+msgstr ""
+
+#: includes/integrations/class-wcpbc-affiliate-wp.php:117
+msgid "Exchange rates of AffiliateWP currency have been updated."
+msgstr ""
+
+#. translators: HTML tags.
+#: includes/integrations/class-wcpbc-affiliate-wp.php:131
+msgid "To add compatibility with AffiliateWP, %1$sPrice Based on Country%2$s needs to update the exchange rates."
+msgstr ""
+
+#: includes/integrations/class-wcpbc-affiliate-wp.php:134
+msgid "Update exchange rates now"
+msgstr ""
+
+#. translators: %s is a currency symbol.
+#: includes/integrations/class-wcpbc-germanized.php:56
+msgid "Regular Base Price (%s)"
+msgstr ""
+
+#. translators: %s is a currency symbol.
+#: includes/integrations/class-wcpbc-germanized.php:62
+msgid "Sale Base Price (%s)"
+msgstr ""
+
+#. translators: %s is a currency symbol.
+#: includes/integrations/class-wcpbc-germanized.php:80
+msgid "Regular Unit Price (%s)"
+msgstr ""
+
+#. translators: %s is a currency symbol.
+#: includes/integrations/class-wcpbc-germanized.php:87
+msgid "Sale Unit Price (%s)"
+msgstr ""
+
+#. translators: 1: HTML tag, 2: HTML tag, 3: Germanized for WooCommerce version.
+#: includes/integrations/class-wcpbc-germanized.php:232
+msgid "%1$sPrice Based on Country Pro & Germanized for WooCommerce%2$s compatibility requires Germanized for WooCommerce +2.3.0. You are running Germanized for WooCommerce %3$s."
+msgstr ""
+
+#. translators: 1: HTML tag, 2: HTML tag, 3: WooCommerce version.
+#: includes/integrations/class-wcpbc-germanized.php:239
+msgid "%1$sPrice Based on Country Pro & Germanized for WooCommerce%2$s compatibility requires WooCommerce +3.0. You are running WooCommerce %3$s."
+msgstr ""
+
+#. Translators: Exchange rate API Name.
+#: includes/abstracts/class-wcpbc-exchange-rates-provider.php:133
+msgid "Unable to update exchange rate from API: %s"
+msgstr ""
+
+#: includes/class-wcpbc-frontend-currency.php:365
+msgid "Remove \"Other countries\" from switcher."
+msgstr ""

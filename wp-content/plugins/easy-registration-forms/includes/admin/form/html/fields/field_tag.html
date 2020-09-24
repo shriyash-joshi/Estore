@@ -1,0 +1,350 @@
+<script type="text/x-template" id="erf_field">
+    <div class="erf-field-config-wrap">
+    <!-----------------------Text Field -------------------------------------------->
+        <div v-if="type=='text'" :class="containerClass" v-bind:class="{erf_new_field:attrs.isNew}">
+            <div class="erf-field-intro" v-if="!showOptions">
+              <div>
+                <span class="erf-drag-handle"></span>
+                <span class="erf-field-label">{{attrs.label}}</span>
+                <span v-if="attrs.required" class="required">*</span>
+              </div>
+              <erf_field_actions v-bind:attrs="attrs" v-bind:field-index="fieldIndex" v-on:edit="onEditField" v-on:duplicate="onDuplicateField" v-on:delete="onDeleteField"/>
+            </div>
+            <div class="form-elements" v-if="showOptions" v-bind:class="{ erf_field_modal: showOptions }">
+              <div class="erf-field-edit-title">{{attrs.label}}</div>
+
+              <div class="erf-element-group">
+                <erf_field_option v-bind:errors="attrs.errors" v-bind:value="attrs.label" type="label"  v-on:update="onUpdate" v-on:label-change="onLabelChange"  />
+                <erf_field_option v-bind:errors="attrs.errors" v-bind:value="attrs.dataRefLabel" type="dataRefLabel"  v-on:update="onUpdate" />
+                <erf_field_option v-bind:value="attrs.description" type="description" v-on:update="onUpdate" />
+              </div>
+              <erf_display_options v-bind:attrs="attrs" v-on:update="onUpdate"/>
+              <erf_validation_options v-bind:attrs="attrs" v-on:update="onUpdate"/>
+              <erf_administrator_options v-bind:attrs="attrs" v-on:update="onUpdate"/>
+              <button class="field-close" @click="hideOptions()"><?php _e('Close','erforms'); ?></button>
+            </div>
+        </div>
+    <!-----------------------Text Field ends here----------------------------------------------->
+    
+    <!-----------------------Formula Field -------------------------------------------->
+        <div v-if="type=='formula'" :class="containerClass" v-bind:class="{erf_new_field:attrs.isNew}">
+            <div class="erf-field-intro" v-if="!showOptions">
+              <div>
+                <span class="erf-drag-handle"></span>
+                <span class="erf-field-label">{{attrs.label}}</span>
+                <span v-if="attrs.required" class="required">*</span>
+              </div>
+              <erf_field_actions v-bind:attrs="attrs" v-bind:field-index="fieldIndex" v-on:edit="onEditField" v-on:duplicate="onDuplicateField" v-on:delete="onDeleteField"/>
+            </div>
+            <div class="form-elements" v-if="showOptions" v-bind:class="{ erf_field_modal: showOptions }">
+              <div class="erf-field-edit-title">{{attrs.label}}</div>
+
+              <div class="erf-element-group">
+                <erf_field_option v-bind:errors="attrs.errors" v-bind:value="attrs.label" type="label"  v-on:update="onUpdate" v-on:label-change="onLabelChange"  />
+                <erf_field_option v-bind:errors="attrs.errors" v-bind:value="attrs.dataRefLabel" type="dataRefLabel"  v-on:update="onUpdate" />
+                <erf_field_option v-bind:errors="attrs.errors" v-bind:value="attrs.expression" type="expression"  v-on:update="onUpdate" width="full" />
+              </div>
+              <erf_administrator_options v-bind:attrs="attrs" v-on:update="onUpdate"/>
+              <button class="field-close" @click="hideOptions()"><?php _e('Close','erforms'); ?></button>
+            </div>
+        </div>
+    <!-----------------------Formula Field ends here----------------------------------------------->
+
+    <!----------------------------- Textarea Field --------------------------------------------->
+        <div v-else-if="type=='textarea'" class="erf-textarea-field">
+            <div class="erf-field-intro" v-if="!showOptions" v-bind:class="{erf_new_field:attrs.isNew}">
+              <div>
+                <span class="erf-drag-handle"></span>
+                <span class="erf-field-label">{{attrs.label}}</span>
+                <span v-if="attrs.required" class="required">*</span>
+              </div>
+             <erf_field_actions v-bind:attrs="attrs" v-bind:field-index="fieldIndex" v-on:edit="onEditField" v-on:duplicate="onDuplicateField" v-on:delete="onDeleteField"/>
+            </div>
+            <div class="form-elements" v-if="showOptions" v-bind:class="{ erf_field_modal: showOptions }">
+              <div class="erf-field-edit-title">{{attrs.label}}</div>
+              <div class="erf-element-group">
+                <erf_field_option v-bind:errors="attrs.errors" v-bind:value="attrs.label" type="label"  v-on:update="onUpdate" v-on:label-change="onLabelChange"></erf_field_option>
+                <erf_field_option v-bind:errors="attrs.errors" v-bind:value="attrs.dataRefLabel" type="dataRefLabel"  v-on:update="onUpdate" />
+                <erf_field_option v-bind:value="attrs.description" type="description" v-on:update="onUpdate"></erf_field_option>
+              </div>
+              <erf_display_options v-bind:attrs="attrs" v-on:update="onUpdate"/>
+              <erf_validation_options v-bind:attrs="attrs" v-on:update="onUpdate"/>
+              <erf_administrator_options v-bind:attrs="attrs" v-on:update="onUpdate"/>
+              <button class="field-close" @click="hideOptions()"><?php _e('Close','erforms'); ?></button>
+            </div>
+        </div>
+      <!-----------------------Textarea Field ends here---------------------------------------->
+
+      <!-----------------------Splitter Field ---------------------------------------->
+        <div v-else-if="type=='splitter'" class="erf-splitter-field" v-bind:class="{erf_new_field:attrs.isNew}">
+            <div class="erf-field-intro"  v-if="!showOptions">
+              <div>
+               <span class="erf-drag-handle"></span>
+               <span class="erf-field-label">{{attrs.label}}</span>
+              </div>
+              <erf_field_actions v-bind:attrs="attrs" v-bind:field-index="fieldIndex" v-on:edit="onEditField" v-on:duplicate="onDuplicateField" v-on:delete="onDeleteField"/>
+            </div>
+            <div class="form-elements" v-if="showOptions" v-bind:class="{ erf_field_modal: showOptions }">
+              <div class="erf-field-edit-title">{{attrs.label}}</div>
+
+              <div class="erf-element-group">
+                <erf_field_option v-bind:value="attrs.label" type="label"  v-on:update="onUpdate"></erf_field_option>
+                <erf_field_option v-bind:value="attrs.dataRefLabel" type="dataRefLabel"  v-on:update="onUpdate"></erf_field_option>
+                <erf_field_option v-bind:value="attrs.className" type="className" v-on:update="onUpdate"></erf_field_option>
+                
+              </div>
+              <button class="field-close" @click="hideOptions()"><?php _e('Close','erforms'); ?></button>
+            </div>
+        </div>
+      <!----------------------- Splitter Field ends here ---------------------------------------->
+
+      <!----------------------- Separator Field -------------------------------------------------->
+      <div v-else-if="type=='separator'" class="erf-separator-field" v-bind:class="{erf_new_field:attrs.isNew}">
+          <div class="erf-field-intro" v-if="!showOptions">
+            <div>
+              <span class="erf-drag-handle"></span>
+              <span class="erf-field-label"><?php _e('Separator','erforms'); ?></span>
+            </div>
+            <erf_field_actions v-bind:attrs="attrs" v-bind:field-index="fieldIndex" v-on:edit="onEditField" v-on:duplicate="onDuplicateField" v-on:delete="onDeleteField"/>
+          </div>
+          <div class="form-elements" v-if="showOptions" v-bind:class="{ erf_field_modal: showOptions }">
+              <div class="erf-field-edit-title"><?php _e('Separator','erforms'); ?></div>
+              <div class="erf-element-group">
+                <erf_field_option type="className" v-bind:value="attrs.className" v-on:update="onUpdate"></erf_field_option>
+                <erf_field_option v-bind:value="attrs.dataRefLabel" type="dataRefLabel"  v-on:update="onUpdate"></erf_field_option>
+              </div>
+              <button class="field-close" @click="hideOptions()"><?php _e('Close','erforms'); ?></button>
+          </div>
+      </div>
+      <!-----------------------Separator Field ends here ---------------------------------------->
+
+      <!-----------------------Date Field  ---------------------------------------->
+        <div v-else-if="type=='date'" v-bind:class="{erf_new_field:attrs.isNew}">
+            <div class="erf-field-intro"  v-if="!showOptions">
+              <div>
+                <span class="erf-drag-handle"></span>
+                <span class="erf-field-label">{{attrs.label}}</span>
+                <span v-if="attrs.required" class="required">*</span>
+              </div>
+              <erf_field_actions v-bind:attrs="attrs" v-bind:field-index="fieldIndex" v-on:edit="onEditField" v-on:duplicate="onDuplicateField" v-on:delete="onDeleteField"/>
+            </div>
+            <div class="form-elements" v-if="showOptions" v-bind:class="{ erf_field_modal: showOptions }">
+              <div class="erf-field-edit-title">{{attrs.label}}</div>
+              <div class="erf-element-group">
+                <erf_field_option v-bind:errors="attrs.errors" type="label"  v-bind:value="attrs.label" v-on:update="onUpdate" v-on:label-change="onLabelChange"></erf_field_option>
+                <erf_field_option v-bind:errors="attrs.errors" v-bind:value="attrs.dataRefLabel" type="dataRefLabel"  v-on:update="onUpdate" />
+                <erf_field_option type="description" v-bind:value="attrs.description" v-on:update="onUpdate"></erf_field_option>
+              </div>
+              <erf_display_options v-bind:attrs="attrs" v-on:update="onUpdate"/>
+              <erf_validation_options v-bind:attrs="attrs" v-on:update="onUpdate"/>
+              <erf_administrator_options v-bind:attrs="attrs" v-on:update="onUpdate"/>
+              <input type="hidden" name="name" v-model="attrs.name" />
+              <button class="field-close" @click="hideOptions()"><?php _e('Close','erforms'); ?></button>
+            </div>
+        </div>
+      <!-----------------------Date Field ends here ---------------------------------------->
+
+      <!------------------------Number field ------------------------------------------------>
+        <div v-else-if="type=='number'" v-bind:class="{erf_new_field:attrs.isNew}">
+            <div class="erf-field-intro"  v-if="!showOptions">
+            <div>
+              <span class="erf-drag-handle"></span>
+              <span class="erf-field-label">{{attrs.label}}</span>
+              <span v-if="attrs.required" class="required">*</span>
+            </div>
+             <erf_field_actions v-bind:attrs="attrs" v-bind:field-index="fieldIndex" v-on:edit="onEditField" v-on:duplicate="onDuplicateField" v-on:delete="onDeleteField"/>
+            </div>
+            <div class="form-elements" v-if="showOptions" v-bind:class="{ erf_field_modal: showOptions }">
+              <div class="erf-field-edit-title">{{attrs.label}}</div>
+              <div class="erf-element-group">
+                <erf_field_option v-bind:errors="attrs.errors" type="label"  v-bind:value="attrs.label" v-on:update="onUpdate" v-on:label-change="onLabelChange"></erf_field_option>
+                <erf_field_option v-bind:errors="attrs.errors" v-bind:value="attrs.dataRefLabel" type="dataRefLabel"  v-on:update="onUpdate" />
+                <erf_field_option type="description" v-bind:value="attrs.description" v-on:update="onUpdate"></erf_field_option>
+              </div>
+              <erf_display_options v-bind:attrs="attrs" v-on:update="onUpdate"/>
+              <erf_validation_options v-bind:attrs="attrs" v-on:update="onUpdate"/>
+              <erf_administrator_options v-bind:attrs="attrs" v-on:update="onUpdate"/>
+              <button class="field-close" @click="hideOptions()"><?php _e('Close','erforms'); ?></button>
+            </div>
+        </div>
+      <!-----------------------Number Field ends here ---------------------------------------->
+
+      <!-----------------------Hidden field ---------------------------------------->
+      <div v-else-if="type=='hidden'" v-bind:class="{erf_new_field:attrs.isNew}">
+          <div class="erf-field-intro"  v-if="!showOptions">
+            <div>
+              <span class="erf-drag-handle"></span>
+              <span class="erf-field-label">{{attrs.label}}</span>
+            </div>
+             <erf_field_actions v-bind:attrs="attrs" v-bind:field-index="fieldIndex" v-on:edit="onEditField" v-on:duplicate="onDuplicateField" v-on:delete="onDeleteField"/>
+          </div>
+          <div class="form-elements" v-if="showOptions" v-bind:class="{ erf_field_modal: showOptions }">
+            <div class="erf-field-edit-title">{{attrs.label}}</div>
+            <div class="erf-element-group">
+              <erf_field_option v-bind:errors="attrs.errors" type="label"  v-bind:value="attrs.label" v-on:update="onUpdate" v-on:label-change="onLabelChange"></erf_field_option>
+              <erf_field_option v-bind:value="attrs.dataRefLabel" type="dataRefLabel"  v-on:update="onUpdate" />
+              <erf_field_option v-bind:errors="attrs.errors" type="name" v-bind:value="attrs.name" v-on:update="onUpdate"></erf_field_option>
+              <erf_field_option type="value" v-bind:value="attrs.value" v-on:update="onUpdate"></erf_field_option>
+            </div>
+              <button class="field-close" @click="hideOptions()"><?php _e('Close','erforms'); ?></button>
+          </div>
+      </div>
+      <!-----------------------Hidden field ends here---------------------------------------->
+
+      <!-----------------------File field---------------------------------------->
+      <div v-else-if="type=='file'" v-bind:class="{erf_new_field:attrs.isNew}">
+          <div class="erf-field-intro"  v-if="!showOptions">
+            <div>
+              <span class="erf-drag-handle"></span>
+              <span class="erf-field-label">{{attrs.label}}</span>
+              <span v-if="attrs.required" class="required">*</span>
+            </div>
+             <erf_field_actions v-bind:attrs="attrs" v-bind:field-index="fieldIndex" v-on:edit="onEditField" v-on:duplicate="onDuplicateField" v-on:delete="onDeleteField"/>
+          </div>
+          <div class="form-elements" v-if="showOptions" v-bind:class="{ erf_field_modal: showOptions }">
+              <div class="erf-field-edit-title">{{attrs.label}}</div>
+              <div class="erf-element-group">
+                <erf_field_option v-bind:errors="attrs.errors" type="label"  v-bind:value="attrs.label" v-on:update="onUpdate" v-on:label-change="onLabelChange"></erf_field_option>
+                <erf_field_option v-bind:errors="attrs.errors" v-bind:value="attrs.dataRefLabel" type="dataRefLabel"  v-on:update="onUpdate" />
+                <erf_field_option type="description" v-bind:value="attrs.description" v-on:update="onUpdate"></erf_field_option>
+              </div>
+              <erf_display_options v-bind:attrs="attrs" v-on:update="onUpdate"/>
+              <erf_validation_options v-bind:attrs="attrs" v-on:update="onUpdate"/>
+              <erf_administrator_options v-bind:attrs="attrs" v-on:update="onUpdate"/>
+              <input type="hidden" name="name" v-model="attrs.name" />
+              <button class="field-close" @click="hideOptions()"><?php _e('Close','erforms'); ?></button>
+          </div>
+      </div>
+      <!-----------------------File field ends here------------------------------------>
+
+      <!-----------------------Heading field------------------------------------>
+      <div v-else-if="type=='header'" v-bind:class="{erf_new_field:attrs.isNew}">
+          <div class="erf-field-intro"  v-if="!showOptions">
+             <div>
+              <span class="erf-drag-handle"></span>
+              <span class="erf-field-label">{{attrs.label}}</span>
+             </div>
+             <erf_field_actions v-bind:attrs="attrs" v-bind:field-index="fieldIndex" v-on:edit="onEditField" v-on:duplicate="onDuplicateField" v-on:delete="onDeleteField"/>
+          </div>
+          <div class="form-elements" v-if="showOptions" v-bind:class="{ erf_field_modal: showOptions }">
+              <div class="erf-field-edit-title">{{attrs.label}}</div>
+              <div class="erf-element-group">
+                <erf_field_option type="label"  v-bind:value="attrs.label" v-on:update="onUpdate"></erf_field_option>
+                <erf_field_option type="dataRefLabel"  v-bind:value="attrs.dataRefLabel" v-on:update="onUpdate"></erf_field_option>
+                <erf_field_option type="headerType" v-bind:value="attrs.subtype" v-on:update="onUpdate"></erf_field_option>
+                <erf_field_option type="className" v-bind:value="attrs.className" v-on:update="onUpdate"></erf_field_option>
+                <erf_field_option type="width" v-bind:value="attrs.width" v-on:update="onUpdate"></erf_field_option>
+              </div>
+              <button class="field-close" @click="hideOptions()"><?php _e('Close','erforms'); ?></button>
+          </div>
+      </div>
+      <!-----------------------Heading field ends here----------------------------------->
+
+      <!-----------------------Button field------------------------------------>
+      <div v-else-if="type=='button'" v-bind:class="{erf_new_field:attrs.isNew}">
+          <div class="erf-field-intro"  v-if="!showOptions">
+             <div>
+              <span class="erf-drag-handle"></span>
+              <span class="erf-field-label">{{attrs.label}}</span>
+             </div>
+             <erf_field_actions v-bind:attrs="attrs" v-bind:field-index="fieldIndex" v-on:edit="onEditField" v-on:duplicate="onDuplicateField" v-on:delete="onDeleteField"/>
+          </div>
+          <div class="form-elements" v-if="showOptions" v-bind:class="{ erf_field_modal: showOptions }">
+              <div class="erf-field-edit-title">{{attrs.label}}</div>
+              <div class="erf-element-group">
+                <erf_field_option type="label"  v-bind:value="attrs.label" v-on:update="onUpdate"></erf_field_option>
+                <erf_field_option v-if="attrs.subtype!='submit'" type="button_type" v-bind:value="attrs.subtype" v-on:update="onUpdate"></erf_field_option>
+                <erf_btn_style_options v-on:update="onUpdate"></erf_btn_style_options>
+                <erf_field_option type="className" v-bind:value="attrs.className" v-on:update="onUpdate"></erf_field_option>
+                <erf_field_option type="dataErfBtnPos" v-bind:value="attrs.dataErfBtnPos" v-on:update="onUpdate"></erf_field_option>
+              </div>
+              <button class="field-close" @click="hideOptions()"><?php _e('Close','erforms'); ?></button>
+          </div>
+      </div>
+      <!-----------------------Button field ends here----------------------------------->
+
+      <!-----------------------Richtext field------------------------------------>
+      <div v-else-if="type=='richtext'" v-bind:class="{erf_new_field:attrs.isNew}">
+          <div class="erf-field-intro" v-if="!showOptions">
+              <div>
+                <span class="erf-drag-handle"></span>
+                <span class="erf-field-label"><?php _e('Rich Text','erforms'); ?></span>
+              </div>
+              <erf_field_actions v-bind:attrs="attrs" v-bind:field-index="fieldIndex" v-on:edit="onEditField" v-on:duplicate="onDuplicateField" v-on:delete="onDeleteField"/>
+          </div>
+          <div class="form-elements" v-if="showOptions">
+              <div class="erf-field-edit-title"><?php _e('Rich Text','erforms'); ?></div>
+              <div class="erf-element-group">
+                <erf_field_option v-bind:value="attrs.dataRefLabel" type="dataRefLabel"  v-on:update="onUpdate"></erf_field_option>
+                <erf_field_option type="className" v-bind:value="attrs.className" v-on:update="onUpdate"></erf_field_option>
+                <erf_field_option type="width" v-bind:value="attrs.width" v-on:update="onUpdate"></erf_field_option>
+                <erf_richtext_options v-bind:errors="attrs.errors" v-bind:value="attrs.label" v-on:update="onUpdate"></erf_richtext_options>
+                <input type="hidden" v-model="attrs.dataRefId"  />
+              </div>
+              <button class="field-close" @click="hideOptions()"><?php _e('Close','erforms'); ?></button>
+          </div>
+      </div>
+      <!-----------------------Richtext field ends here------------------------------------>
+
+  </div>
+</script>
+
+<script type="text/x-template" id="erf_select_field">
+  <!----------------------- Select Field -------------------------------------------------->
+<div v-bind:class="{erf_new_field:attrs.isNew}">
+  <div class="erf-field-intro" v-if="!showOptions">
+    <div>
+      <span class="erf-drag-handle"></span>
+      <span class="erf-field-label">{{attrs.label}}</span>
+      <span v-if="attrs.required" class="required">*</span>
+    </div>
+    <erf_field_actions v-bind:attrs="attrs" v-bind:field-index="fieldIndex" v-on:edit="onEditField"
+      v-on:duplicate="onDuplicateField" v-on:delete="onDeleteField" />
+  </div>
+  <div class="form-elements" v-if="showOptions">
+    <div class="erf-field-edit-title">{{attrs.label}}</div>
+    <div class="erf-element-group">
+      <erf_field_option v-bind:errors="attrs.errors" v-bind:value="attrs.label" type="label" v-on:update="onUpdate"
+        v-on:label-change="onLabelChange" />
+      <erf_field_option v-bind:errors="attrs.errors" v-bind:value="attrs.dataRefLabel" type="dataRefLabel"
+        v-on:update="onUpdate" />
+      <erf_field_option v-bind:value="attrs.description" type="description" v-on:update="onUpdate" />
+      <erf_select_options v-if="showSelectOptions" v-bind:type="attrs.type" v-on:update="onUpdate"
+        v-bind:multiple="attrs.multiple" v-bind:options="attrs.values" v-on:optionAdd="onOptionAdd"
+        v-on:optionRemove="onOptionRemove" v-on:multiple="onMultiple" v-on:optionUpdate="onOptionUpdate" />
+      <div v-if="!showSelectOptions">
+        <?php _e('Options will be populated automatically.','erforms'); ?>
+      </div>
+    </div>
+    <div class="erf-element-group">
+      <legend><?php _e('Display', 'erforms'); ?></legend>
+      <erf_field_option v-if="attrs.type=='checkbox-group' || attrs.type=='radio-group'" v-bind:value="attrs.other"
+        type="other" v-on:update="onUpdate" />
+      <erf_field_option v-if="attrs.type=='select'" v-bind:value="attrs.placeholder" type="placeholder"
+        v-on:update="onUpdate"></erf_field_option>
+      <erf_field_option v-if="attrs.type=='radio-group' || attrs.type=='checkbox-group'" type="inline"
+        v-bind:value="attrs.inline" v-on:update="onUpdate" />
+      <erf_field_option v-bind:value="attrs.className" type="className" v-on:update="onUpdate" />
+
+      <erf_field_option v-if="attrs.type=='country' || attrs.type=='state'" type="value" v-bind:value="attrs.value"
+        v-on:update="onUpdate"></erf_field_option>
+
+      <erf_field_option type="width" v-bind:value="attrs.width" v-on:update="onUpdate"></erf_field_option>
+      <erf_field_option type="icon" v-bind:value="attrs.icon" v-on:update="onUpdate" />
+    </div>
+
+    <div class="erf-element-group">
+      <legend><?php _e('Validations', 'erforms'); ?></legend>
+      <erf_field_option type="required" v-bind:value="attrs.required" v-on:update="onUpdate" />
+    </div>
+    <div class="erf-element-group">
+      <legend><?php _e('Administration', 'erforms'); ?></legend>
+      <erf_user_role_option v-on:update="onUpdate" v-if="attrs.type=='radio-group'" v-bind:value="attrs.user_roles" />
+      <erf_meta_options v-on:update="onUpdate" v-bind:addUserField="attrs.addUserField"
+        v-bind:addUserFieldMap="attrs.addUserFieldMap"></erf_meta_options>
+    </div>
+    <button class="field-close" @click="hideOptions()"><?php _e('Close','erforms'); ?></button>
+  </div>
+</div>
+<!----------------------- Select Field ends here------------------------------------------------>
+</script>

@@ -1,0 +1,1253 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: woocommerce-scheduler\n"
+"POT-Creation-Date: 2019-05-20 16:12+0530\n"
+"PO-Revision-Date: 2019-05-20 16:12+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: piklistfw\n"
+
+#: includes/class-scheduler-admin-functions.php:229
+msgid "I want to"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:233
+msgid "Launch a product on a specific day"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:234
+#: includes/woo-schedule-ajax-methods.php:499
+msgid "Use this option if you want to schedule a product for spesific duration"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:241
+msgid "Make a product available for some duration"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:242
+#: includes/woo-schedule-ajax-methods.php:506
+msgid "Use this option if you want to repeatively schedule a product"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:278
+#: includes/woo-schedule-ajax-methods.php:518
+msgid "I want to keep it available"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:282
+#: includes/woo-schedule-ajax-methods.php:522
+msgid "For the whole time on the selected days"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:283
+#: includes/woo-schedule-ajax-methods.php:523
+msgid ""
+"Use this option if product should be availabe whole days between "
+"availability period"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:289
+#: includes/woo-schedule-ajax-methods.php:529
+msgid "For the specific time on the selected days"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:290
+#: includes/woo-schedule-ajax-methods.php:530
+msgid ""
+"Use this option if product should be available for some time only on each "
+"selected day between availability period"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:321
+#: includes/class-scheduler-admin-functions.php:395
+#: includes/woo-schedule-ajax-methods.php:542
+#: includes/woo-schedule-ajax-methods.php:593
+msgid "Product should be available"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:323
+#: includes/woo-schedule-ajax-methods.php:544
+msgid "From"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:335
+#: includes/class-scheduler-admin-functions.php:405
+#: includes/class-scheduler-admin-functions.php:422
+#: includes/class-scheduler-admin-functions.php:434
+#: includes/woo-schedule-ajax-methods.php:555
+#: includes/woo-schedule-ajax-methods.php:577
+#: includes/woo-schedule-ajax-methods.php:603
+#: includes/woo-schedule-ajax-methods.php:620
+#: includes/woo-schedule-ajax-methods.php:632
+msgid "To"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:352
+#: includes/class-scheduler-admin-functions.php:428
+#: includes/woo-schedule-ajax-methods.php:571
+#: includes/woo-schedule-ajax-methods.php:626
+msgid "Skip During"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:352
+#: includes/woo-schedule-ajax-methods.php:571
+msgid "(Optional)"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:358
+msgid " To "
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:398
+#: includes/woo-schedule-ajax-methods.php:596
+msgid "Between Dates"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:416
+#: includes/woo-schedule-ajax-methods.php:614
+msgid "Between Time"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:428
+#: includes/woo-schedule-ajax-methods.php:626
+msgid "Optional"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:457
+msgid "Launch this Product"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:460
+#: includes/woo-schedule-ajax-methods.php:652
+#: includes/woo-schedule-ajax.php:360
+msgid "On"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:465
+#: includes/woo-schedule-ajax-methods.php:657
+msgid "At"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:496
+#: includes/woo-schedule-ajax-methods.php:672
+msgid "Display & Timer Options"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:500
+msgid " Enable Start Timer"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:501
+#: includes/woo-schedule-ajax-methods.php:677
+msgid "Use this option to show sale start countdown timer on the product page"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:507
+msgid " Enable End Timer"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:508
+#: includes/woo-schedule-ajax-methods.php:684
+msgid "Use this option to show sale end countdown timer on your product page"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:511
+#: includes/woo-schedule-ajax-methods.php:687
+msgid "Start timer won't be available when this option is enabled"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:514
+msgid " Hide Product When Not Available"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:515
+#: includes/woo-schedule-ajax-methods.php:691
+msgid "Use this option to hide your product when it is not available"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:520
+msgid " Cancel"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:521
+#: includes/woo-schedule-ajax-methods.php:699
+msgid "Previous"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:522
+#: includes/woo-schedule-ajax-methods.php:700
+msgid "Next"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:543
+#: includes/woo-schedule-ajax-methods.php:711
+msgid "On Days"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:546
+#: includes/woo-schedule-ajax-methods.php:714
+msgid "Everyday"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:549
+#: includes/woo-schedule-ajax-methods.php:717
+msgid "Mondays"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:552
+#: includes/woo-schedule-ajax-methods.php:720
+msgid "Tuesdays"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:555
+#: includes/woo-schedule-ajax-methods.php:723
+msgid "Wednesdays"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:558
+#: includes/woo-schedule-ajax-methods.php:726
+msgid "Thursdays"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:561
+#: includes/woo-schedule-ajax-methods.php:729
+msgid "Fridays"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:564
+#: includes/woo-schedule-ajax-methods.php:732
+msgid "Saturdays"
+msgstr ""
+
+#: includes/class-scheduler-admin-functions.php:567
+#: includes/woo-schedule-ajax-methods.php:735
+msgid "Sundays"
+msgstr ""
+
+#: includes/class-scheduler-admin-notify-email-settings.php:33
+msgid "Email"
+msgstr ""
+
+#: includes/class-scheduler-admin-notify-email-settings.php:88
+msgid "Unsubscription Page"
+msgstr ""
+
+#: includes/class-scheduler-admin-notify-email-settings.php:89
+msgid ""
+"Page where the user will be redirected to get unsubscribed from the product "
+"notification list."
+msgstr ""
+
+#: includes/class-scheduler-admin-notify-email-settings.php:91
+msgid ""
+"If the unsubscription page is changed, then all the previous unsubscription "
+"link won't work as the page will get changed."
+msgstr ""
+
+#: includes/class-scheduler-admin-notify-email-settings.php:110
+msgid "User Enrollment"
+msgstr ""
+
+#: includes/class-scheduler-admin-notify-email-settings.php:111
+msgid ""
+"This email would be sent when user enrolls for product availability "
+"notification."
+msgstr ""
+
+#: includes/class-scheduler-admin-notify-email-settings.php:116
+msgid "Product Availability"
+msgstr ""
+
+#: includes/class-scheduler-admin-notify-email-settings.php:117
+msgid ""
+"This email would be sent to the customers when product becomes available."
+msgstr ""
+
+#: includes/class-scheduler-admin-notify-email-settings.php:131
+#: includes/class-scheduler-admin-notify-email-settings.php:189
+msgid "Reset template"
+msgstr ""
+
+#: includes/class-scheduler-admin-notify-email-settings.php:135
+msgid "Enrollment Email Settings"
+msgstr ""
+
+#: includes/class-scheduler-admin-notify-email-settings.php:147
+msgid "Send Email on notification enrollment"
+msgstr ""
+
+#: includes/class-scheduler-admin-notify-email-settings.php:148
+msgid "Send email to customer after successful enroll message."
+msgstr ""
+
+#: includes/class-scheduler-admin-notify-email-settings.php:157
+#: includes/class-scheduler-admin-notify-email-settings.php:203
+msgid "Subject Text"
+msgstr ""
+
+#: includes/class-scheduler-admin-notify-email-settings.php:158
+msgid ""
+"Subject that would be added in the email sent to the customer on enrollement."
+msgstr ""
+
+#: includes/class-scheduler-admin-notify-email-settings.php:161
+#: includes/emails/class-scheduler-enrollment-email.php:217
+msgid "Product enrollment successful from [site_title]"
+msgstr ""
+
+#: includes/class-scheduler-admin-notify-email-settings.php:192
+msgid "Notification Email Settings"
+msgstr ""
+
+#: includes/class-scheduler-admin-notify-email-settings.php:204
+msgid ""
+"Subject that would be added in the notification email sent to the customer."
+msgstr ""
+
+#: includes/class-scheduler-admin-notify-email-settings.php:207
+#: includes/emails/class-scheduler-notification-email.php:216
+msgid "Product Notification from [site_title]"
+msgstr ""
+
+#: includes/class-scheduler-admin-notify-email-settings.php:236
+msgid "Available placeholders:"
+msgstr ""
+
+#: includes/class-scheduler-admin-notify-email-settings.php:261
+msgid "Available placeholder:"
+msgstr ""
+
+#: includes/class-scheduler-admin-notify-enrolled-users.php:33
+msgid "Remove"
+msgstr ""
+
+#: includes/class-scheduler-admin.php:154
+msgid "This product is also scheduled on category level."
+msgstr ""
+
+#: includes/class-scheduler-admin.php:161
+msgid "This product will not be shown to public"
+msgstr ""
+
+#: includes/class-scheduler-admin.php:168
+#: includes/class-scheduler-admin.php:222
+msgid ""
+"The Product you are scheduling is out of stock. If you still wish to "
+"continue, you can save and update."
+msgstr ""
+
+#: includes/class-scheduler-admin.php:865
+msgid "Send Email Now?"
+msgstr ""
+
+#: includes/class-scheduler-admin.php:866
+msgid ""
+"Some crons may not be set. Do you want to send the notification email for "
+"those crons now?<br>Please review email template before sending notification "
+"email."
+msgstr ""
+
+#: includes/class-scheduler-admin.php:867
+msgid "Save Settings and Send Mail Now"
+msgstr ""
+
+#: includes/class-scheduler-admin.php:868
+msgid "Save Settings Without Sending Mail"
+msgstr ""
+
+#: includes/class-scheduler-admin.php:869
+msgid "Don't Send Mail and Don't Save Settings"
+msgstr ""
+
+#: includes/class-scheduler-frontend.php:34
+#, php-format
+msgid "Sorry, the selected product &quot;%s&quot; cannot be purchased."
+msgstr ""
+
+#: includes/class-scheduler-frontend.php:214
+msgid ""
+"Sorry, following products have been removed from your cart due to the "
+"unavailability :"
+msgstr ""
+
+#: includes/class-scheduler-handle-unsubscription.php:107
+#, php-format
+msgid "%s is subscribed to our mailing list(s)."
+msgstr ""
+
+#: includes/class-scheduler-handle-unsubscription.php:108
+#, php-format
+msgid "Unsubscribe for %s product."
+msgstr ""
+
+#: includes/class-scheduler-handle-unsubscription.php:109
+msgid "Unsubscribe for all products."
+msgstr ""
+
+#: includes/class-scheduler-handle-unsubscription.php:112
+#, php-format
+msgid "%s is unsubscribed from %s product."
+msgstr ""
+
+#: includes/class-scheduler-handle-unsubscription.php:113
+#, php-format
+msgid "%s is unsubscribed from all products."
+msgstr ""
+
+#: includes/class-scheduler-handle-unsubscription.php:126
+msgid "Unsubscribe"
+msgstr ""
+
+#: includes/class-scheduler-privacy.php:57
+#: includes/class-scheduler-privacy.php:59
+msgid "Notify User"
+msgstr ""
+
+#: includes/class-scheduler-privacy.php:203
+#, php-format
+msgid "Removed from the notification list for the product %s (#%d)."
+msgstr ""
+
+#: includes/class-scheduler-privacy.php:280
+msgid "Enrolled for Notification"
+msgstr ""
+
+#: includes/class-scheduler-privacy.php:294
+msgid "WooCommerce Scheduler"
+msgstr ""
+
+#: includes/emails/class-scheduler-email.php:46
+msgid "unsubscribe"
+msgstr ""
+
+#: includes/woo-schedule-ajax-methods.php:216
+msgid "Schedules For Product Launch"
+msgstr ""
+
+#: includes/woo-schedule-ajax-methods.php:231
+#: includes/woo-schedule-ajax-methods.php:272
+#: includes/woo-schedule-ajax-methods.php:307
+msgid "Id"
+msgstr ""
+
+#: includes/woo-schedule-ajax-methods.php:232
+#: includes/woo-schedule-ajax-methods.php:273
+#: includes/woo-schedule-ajax-methods.php:308
+#: includes/woo-schedule-ajax-methods.php:763
+#: includes/woo-schedule-ajax-methods.php:792
+msgid "Title"
+msgstr ""
+
+#: includes/woo-schedule-ajax-methods.php:233
+msgid "Start Date"
+msgstr ""
+
+#: includes/woo-schedule-ajax-methods.php:234
+msgid "Start Time"
+msgstr ""
+
+#: includes/woo-schedule-ajax-methods.php:235
+#: includes/woo-schedule-ajax-methods.php:278
+#: includes/woo-schedule-ajax-methods.php:313
+#: includes/woo-schedule-ajax-methods.php:768
+#: includes/woo-schedule-ajax-methods.php:797
+msgid "Timers"
+msgstr ""
+
+#: includes/woo-schedule-ajax-methods.php:236
+#: includes/woo-schedule-ajax-methods.php:279
+#: includes/woo-schedule-ajax-methods.php:314
+#: includes/woo-schedule-ajax-methods.php:769
+#: includes/woo-schedule-ajax-methods.php:798
+msgid "Hide Unavailable"
+msgstr ""
+
+#: includes/woo-schedule-ajax-methods.php:237
+#: includes/woo-schedule-ajax-methods.php:280
+#: includes/woo-schedule-ajax-methods.php:315
+#: includes/woo-schedule-ajax-methods.php:770
+#: includes/woo-schedule-ajax-methods.php:799
+#: parts/settings/notify-enroled-users-settings.php:39
+msgid "Action"
+msgstr ""
+
+#: includes/woo-schedule-ajax-methods.php:255
+#: includes/woo-schedule-ajax-methods.php:747
+msgid "Schedules For Whole Time On Selected days"
+msgstr ""
+
+#: includes/woo-schedule-ajax-methods.php:274
+#: includes/woo-schedule-ajax-methods.php:764
+msgid "Start At"
+msgstr ""
+
+#: includes/woo-schedule-ajax-methods.php:275
+#: includes/woo-schedule-ajax-methods.php:765
+msgid "End By"
+msgstr ""
+
+#: includes/woo-schedule-ajax-methods.php:276
+#: includes/woo-schedule-ajax-methods.php:311
+#: includes/woo-schedule-ajax-methods.php:766
+#: includes/woo-schedule-ajax-methods.php:795
+msgid "Selected Days"
+msgstr ""
+
+#: includes/woo-schedule-ajax-methods.php:277
+#: includes/woo-schedule-ajax-methods.php:312
+#: includes/woo-schedule-ajax-methods.php:767
+#: includes/woo-schedule-ajax-methods.php:796
+msgid "Skip Between"
+msgstr ""
+
+#: includes/woo-schedule-ajax-methods.php:290
+#: includes/woo-schedule-ajax-methods.php:776
+msgid "Schedules For Specific Time On Selected days"
+msgstr ""
+
+#: includes/woo-schedule-ajax-methods.php:309
+#: includes/woo-schedule-ajax-methods.php:793
+msgid "Date Duration"
+msgstr ""
+
+#: includes/woo-schedule-ajax-methods.php:310
+#: includes/woo-schedule-ajax-methods.php:794
+msgid "Time Duration"
+msgstr ""
+
+#: includes/woo-schedule-ajax-methods.php:494
+msgid "I want to schedule the "
+msgstr ""
+
+#: includes/woo-schedule-ajax-methods.php:498
+msgid "Launch on a specific day"
+msgstr ""
+
+#: includes/woo-schedule-ajax-methods.php:505
+msgid "make them available for some duration"
+msgstr ""
+
+#: includes/woo-schedule-ajax-methods.php:649
+msgid "Launch these products/categories"
+msgstr ""
+
+#: includes/woo-schedule-ajax-methods.php:676
+msgid "Enable Start Timer"
+msgstr ""
+
+#: includes/woo-schedule-ajax-methods.php:683
+msgid "Enable End Timer"
+msgstr ""
+
+#: includes/woo-schedule-ajax-methods.php:690
+msgid "Hide Product When Not Available"
+msgstr ""
+
+#: includes/woo-schedule-ajax-methods.php:696
+msgid "Reset Schedule"
+msgstr ""
+
+#: includes/woo-schedule-ajax-methods.php:815
+#: includes/woo-schedule-ajax.php:285
+msgid "Wrong selection."
+msgstr ""
+
+#: includes/woo-schedule-ajax-save-methods.php:25
+msgid "Scheduling the product categories, is currently not supported"
+msgstr ""
+
+#: includes/woo-schedule-ajax.php:244 includes/woo-schedule-ajax.php:263
+msgid "Select "
+msgstr ""
+
+#: includes/woo-schedule-ajax.php:255 includes/woo-schedule-ajax.php:591
+msgid "Loading..."
+msgstr ""
+
+#: includes/woo-schedule-ajax.php:255
+msgid "Show Schedules"
+msgstr ""
+
+#: includes/woo-schedule-ajax.php:360
+msgid "Off"
+msgstr ""
+
+#: includes/woo-schedule-ajax.php:402
+msgid "No details saved"
+msgstr ""
+
+#: includes/woo-schedule-ajax.php:446
+msgid "Details Updated"
+msgstr ""
+
+#: includes/woo-schedule-ajax.php:453
+msgid "Selection empty"
+msgstr ""
+
+#: includes/woo-schedule-ajax.php:474
+#, php-format
+msgid "%s Scheduling"
+msgstr ""
+
+#: includes/woo-schedule-ajax.php:589
+msgid "Schedule Details"
+msgstr ""
+
+#: includes/woo-schedule-ajax.php:591
+msgid "Edit Schedules"
+msgstr ""
+
+#: includes/woo-schedule-ajax.php:638
+msgid "Collapse All Tabs"
+msgstr ""
+
+#: includes/woo-schedule-ajax.php:652
+msgid "Product ID incorrect"
+msgstr ""
+
+#: includes/woo-schedule-ajax.php:714
+msgid "Term ID incorrect"
+msgstr ""
+
+#: includes/woo-schedule-ajax.php:734
+msgid "No details saved."
+msgstr ""
+
+#: includes/woo-schedule-ajax.php:1110 includes/woo-schedule-ajax.php:1120
+#: includes/woo-schedule-ajax.php:1145 includes/woo-schedule-ajax.php:1216
+msgid "Something went wrong! Try again later."
+msgstr ""
+
+#: includes/woo-schedule-ajax.php:1129
+msgid "enrolled"
+msgstr ""
+
+#: includes/woo-schedule-ajax.php:1219
+msgid "No record found."
+msgstr ""
+
+#: includes/woo-schedule-ajax.php:1226
+msgid "There is some issue in authentication."
+msgstr ""
+
+#: includes/woo-schedule-functions.php:684
+msgid ""
+"You can set a custom message in Woocommerce->Settings->General->Product "
+"Expiration Message"
+msgstr ""
+
+#: includes/woo-schedule-functions.php:719
+#: woocommerce/single-product/add-to-cart/variation.php:29
+msgid "Available In:"
+msgstr ""
+
+#: includes/woo-schedule-functions.php:721
+#: woocommerce/single-product/add-to-cart/variation.php:31
+msgid "Wil Be Launched In:"
+msgstr ""
+
+#: includes/woo-schedule-functions.php:781
+#: woocommerce/single-product/add-to-cart/variation.php:27
+msgid "Available For:"
+msgstr ""
+
+#: includes/woo-schedule-functions.php:1199
+msgid "Notify Me"
+msgstr ""
+
+#: includes/woo-schedule-functions.php:1224
+msgid "Enter email address:"
+msgstr ""
+
+#: includes/woo-schedule-functions.php:1235
+#: includes/woo-schedule-functions.php:1332
+msgid "You are already enrolled!"
+msgstr ""
+
+#: includes/woo-schedule-functions.php:1289
+#, php-format
+msgid "Get Notification for %s"
+msgstr ""
+
+#: includes/woo-schedule-functions.php:1306
+msgid "Enter Email Address:"
+msgstr ""
+
+#: includes/woo-schedule-functions.php:1310
+msgid "Submit"
+msgstr ""
+
+#: includes/woo-schedule-functions.php:1329
+msgid "Enrolled Successfully."
+msgstr ""
+
+#: includes/woo-schedule-functions.php:1335
+msgid "Email is invalid."
+msgstr ""
+
+#: includes/woo-schedule-functions.php:1338
+msgid "Email is required."
+msgstr ""
+
+#: includes/woo-schedule-functions.php:1577
+msgid "Please specify a valid start date & time for product launch"
+msgstr ""
+
+#: includes/woo-schedule-functions.php:1586
+msgid ""
+"Invalid Schedule Details, You can not schedule a launch for the past date or "
+"time"
+msgstr ""
+
+#: includes/woo-schedule-functions.php:1619
+#: includes/woo-schedule-functions.php:1684
+msgid "Start Time Can not be same as or greater than the end time"
+msgstr ""
+
+#: includes/woo-schedule-functions.php:1626
+msgid "Invalid Schedule, No weekdays selected"
+msgstr ""
+
+#: includes/woo-schedule-functions.php:1680
+msgid "Start date cannot be greater than the end date"
+msgstr ""
+
+#: includes/woo-schedule-functions.php:1689
+msgid "Invalid Schedule, No wekdays are selected."
+msgstr ""
+
+#: includes/woo-schedule-single-view.php:75
+msgid "Don't have access to export"
+msgstr ""
+
+#: includes/woo-schedule-single-view.php:76
+msgid "User List is empty"
+msgstr ""
+
+#: includes/woo-schedule-single-view.php:107
+msgid ""
+"Some crons may not be set. Do you want to send the notification email for "
+"those crons now? Please review email template before sending notification "
+"email."
+msgstr ""
+
+#: includes/woo-schedule-single-view.php:256
+msgid "Loading"
+msgstr ""
+
+#: includes/woo-schedule-single-view.php:257
+msgid "Details updated."
+msgstr ""
+
+#: includes/woo-schedule-single-view.php:258
+msgid "Selection empty."
+msgstr ""
+
+#: includes/woo-schedule-single-view.php:259
+msgid ""
+"This will override all previous products schedule entries, Do you want to "
+"proceed?"
+msgstr ""
+
+#: includes/woo-schedule-single-view.php:260
+msgid ""
+"This will override all previous category schedule entries, Do you want to "
+"proceed?"
+msgstr ""
+
+#: includes/woo-schedule-single-view.php:261
+msgid "This will delete entry, Do you want to proceed?"
+msgstr ""
+
+#: includes/woo-schedule-single-view.php:262
+msgid "Please select"
+msgstr ""
+
+#: includes/woo-schedule-single-view.php:273
+msgid "End time can't be less than start time"
+msgstr ""
+
+#: includes/woo-schedule-single-view.php:274
+msgid "Please Select Time"
+msgstr ""
+
+#: includes/woo-schedule-single-view.php:275
+msgid "Start date must be less than End date"
+msgstr ""
+
+#: includes/woo-schedule-single-view.php:276
+msgid "Please enter all details"
+msgstr ""
+
+#: licensing/class-wdm-add-license-data.php:73
+#: licensing/class-wdm-add-license-data.php:74 licensing/license-page.php:2
+msgid "WisdmLabs License Options"
+msgstr ""
+
+#: licensing/class-wdm-add-license-data.php:144
+msgid "Deactivate"
+msgstr ""
+
+#: licensing/class-wdm-add-license-data.php:150
+msgid "Renew"
+msgstr ""
+
+#: licensing/class-wdm-add-license-data.php:159
+msgid "Activate"
+msgstr ""
+
+#: licensing/class-wdm-add-license-data.php:173
+msgid ""
+"Once you renew the License, you must Deactivate Plugin and then Activate it "
+"again."
+msgstr ""
+
+#: licensing/class-wdm-add-license-data.php:239
+msgid "Your license key is activated("
+msgstr ""
+
+#: licensing/class-wdm-add-license-data.php:243
+msgid "No response from server. Please try again later.("
+msgstr ""
+
+#: licensing/class-wdm-add-license-data.php:244
+msgid ""
+"License Activation Failed. Please try again or contact support on "
+"support@wisdmlabs.com("
+msgstr ""
+
+#: licensing/class-wdm-add-license-data.php:245
+msgid "Please enter license key.("
+msgstr ""
+
+#: licensing/class-wdm-add-license-data.php:246
+#: licensing/class-wdm-add-license-data.php:251
+#, php-format
+msgid ""
+"Your License Key is already activated at : %s Please deactivate the license "
+"from one of the above site(s) to successfully activate it on your current "
+"site.("
+msgstr ""
+
+#: licensing/class-wdm-add-license-data.php:246
+msgid "No Activations Left.("
+msgstr ""
+
+#: licensing/class-wdm-add-license-data.php:247
+msgid "Your license key has Expired. Please, Renew it.("
+msgstr ""
+
+#: licensing/class-wdm-add-license-data.php:248
+msgid "Your License key is disabled("
+msgstr ""
+
+#: licensing/class-wdm-add-license-data.php:249
+msgid "Please enter valid license key("
+msgstr ""
+
+#: licensing/class-wdm-add-license-data.php:250
+msgid ""
+"Please try to activate license again. If it does not activate, contact "
+"support on support@wisdmlabs.com("
+msgstr ""
+
+#: licensing/class-wdm-add-license-data.php:251
+msgid "Site inactive (Press Activate license to activate plugin("
+msgstr ""
+
+#: licensing/class-wdm-add-license-data.php:252
+msgid "License Key is deactivated("
+msgstr ""
+
+#: licensing/class-wdm-add-license-data.php:253
+#, php-format
+msgid ""
+"Following Error Occurred: %s. Please contact support on support@wisdmlabs."
+"com if you are not sure why this error is occurring("
+msgstr ""
+
+#: licensing/class-wdm-add-license-data.php:254
+msgid ""
+"There was an error while connecting to the server. please try again later.("
+msgstr ""
+
+#: licensing/class-wdm-add-license-data.php:295
+msgid "Active"
+msgstr ""
+
+#: licensing/class-wdm-add-license-data.php:300
+msgid "Expired"
+msgstr ""
+
+#: licensing/class-wdm-add-license-data.php:305
+#: licensing/class-wdm-add-license-data.php:312
+msgid "Not Active"
+msgstr ""
+
+#: licensing/class-wdm-send-customer-data.php:149
+msgid "Be a part of WisdmLabs' Product Improvement Plan."
+msgstr ""
+
+#: licensing/license-page.php:28
+msgid ""
+"Allow WisdmLabs to collect non-sensitive diagnostic data and usage "
+"information."
+msgstr ""
+
+#: parts/settings/general-settings.php:15
+msgid "Select Option"
+msgstr ""
+
+#: parts/settings/general-settings.php:18
+msgid "Select Product or Category"
+msgstr ""
+
+#: parts/settings/general-settings.php:19
+#: parts/settings/notify-enroled-users-settings.php:14
+msgid "Products"
+msgstr ""
+
+#: parts/settings/general-settings.php:20
+msgid "Product category"
+msgstr ""
+
+#: parts/settings/global-settings.php:28
+msgid "Single Product Expiration Message"
+msgstr ""
+
+#: parts/settings/global-settings.php:29
+msgid ""
+"Error Message to be shown on the Single Product page when product is "
+"unavailable."
+msgstr ""
+
+#: parts/settings/global-settings.php:43
+msgid "Shop Page Expiration Message"
+msgstr ""
+
+#: parts/settings/global-settings.php:44
+msgid ""
+"Error Message to be shown on the shop page when product is unavailable. Keep "
+"short to fit into limited space. Can also be kept blank to show no error"
+msgstr ""
+
+#: parts/settings/global-settings.php:80
+msgid "Text before the product becomes available"
+msgstr ""
+
+#: parts/settings/global-settings.php:81
+msgid ""
+"Displays text before the product becomes available. This text appears above "
+"the timer on the frontend."
+msgstr ""
+
+#: parts/settings/global-settings.php:83
+msgid "This product will be available in"
+msgstr ""
+
+#: parts/settings/global-settings.php:102
+msgid "Text after the product becomes available"
+msgstr ""
+
+#: parts/settings/global-settings.php:103
+msgid ""
+"Displays text after the product becomes available. This text appears above "
+"the timer on the frontend."
+msgstr ""
+
+#: parts/settings/global-settings.php:105
+msgid "This product will be available only for"
+msgstr ""
+
+#: parts/settings/global-settings.php:116
+msgid "Text before the product launch"
+msgstr ""
+
+#: parts/settings/global-settings.php:117
+msgid ""
+"Displays text before the product is launched. This text appears above the "
+"timer on the frontend."
+msgstr ""
+
+#: parts/settings/global-settings.php:119
+msgid "This product will be launched in"
+msgstr ""
+
+#: parts/settings/global-settings.php:131
+msgid ""
+"Helps you change the font colour of the text displayed before and after the "
+"product becomes available."
+msgstr ""
+
+#: parts/settings/global-settings.php:132
+msgid "Color for Timer Texts"
+msgstr ""
+
+#: parts/settings/global-settings.php:138
+msgid "Base Ring Colour"
+msgstr ""
+
+#: parts/settings/global-settings.php:139
+msgid "Helps you change the base colour of the timer."
+msgstr ""
+
+#: parts/settings/global-settings.php:146
+msgid "Top Ring Colour"
+msgstr ""
+
+#: parts/settings/global-settings.php:147
+msgid "Helps you change the top colour of the timer."
+msgstr ""
+
+#: parts/settings/global-settings.php:156
+msgid "Enable Notify User"
+msgstr ""
+
+#: parts/settings/global-settings.php:157
+msgid ""
+"Enable the Notify User feature. This feature lets the system send "
+"notification email to the subscribed users."
+msgstr ""
+
+#: parts/settings/global-settings.php:171
+msgid ""
+"How's <strong>your experiance</strong> with \"Scheduler for WooCommerce\" "
+"been so far ?"
+msgstr ""
+
+#: parts/settings/global-settings.php:172
+msgid "Fill up this <mark>1-minute</mark> questionnaire to let us know."
+msgstr ""
+
+#: parts/settings/global-settings.php:175
+msgid "Give feedback now "
+msgstr ""
+
+#: parts/settings/global-settings.php:178
+msgid "Remind me later"
+msgstr ""
+
+#: parts/settings/global-settings.php:182
+msgid "Don't ask me again"
+msgstr ""
+
+#: parts/settings/notify-enroled-users-settings.php:15
+msgid "Number of Enrolled Users"
+msgstr ""
+
+#: parts/settings/notify-enroled-users-settings.php:37
+msgid "User Email"
+msgstr ""
+
+#: parts/settings/notify-enroled-users-settings.php:38
+msgid "Enrolled At"
+msgstr ""
+
+#: parts/settings/notify-enroled-users-settings.php:44
+msgid "Export data"
+msgstr ""
+
+#: parts/settings/notify-global-settings.php:16
+msgid "Success Enrollment Message"
+msgstr ""
+
+#: parts/settings/notify-global-settings.php:17
+msgid ""
+"Message to be shown when user is enrolled successfully for the notification "
+"about the product."
+msgstr ""
+
+#: parts/settings/notify-global-settings.php:31
+msgid "'Notify Me' button text"
+msgstr ""
+
+#: parts/settings/notify-global-settings.php:32
+msgid "Text to be shown on the 'Notify Me' button."
+msgstr ""
+
+#: parts/settings/notify-global-settings.php:48
+msgid ""
+"The CSS will take effect only on product page when Notify button is visible."
+msgstr ""
+
+#: parts/settings/notify-global-settings.php:59
+msgid "Allow Guest User Enrollment"
+msgstr ""
+
+#: parts/settings/notify-global-settings.php:60
+msgid "Allow guest user to enroll for the product notification."
+msgstr ""
+
+#: parts/settings/notify-global-settings.php:70
+msgid "Guest Enrollment by"
+msgstr ""
+
+#: parts/settings/notify-global-settings.php:71
+msgid "How guest user is going to provide the email id."
+msgstr ""
+
+#: parts/settings/notify-global-settings.php:75
+msgid "Pop Up"
+msgstr ""
+
+#: parts/settings/notify-global-settings.php:76
+msgid "Field"
+msgstr ""
+
+#: parts/settings/notify-global-settings.php:83
+msgid "Notify Event"
+msgstr ""
+
+#: parts/settings/notify-global-settings.php:84
+msgid ""
+"Select whether the user will be notified only once when the product becomes "
+"available for the first time or user will be notified on every availability "
+"of the product."
+msgstr ""
+
+#: parts/settings/notify-global-settings.php:88
+msgid "Once"
+msgstr ""
+
+#: parts/settings/notify-global-settings.php:89
+msgid "On every availability"
+msgstr ""
+
+#: parts/settings/notify-global-settings.php:96
+msgid "Notify Customers"
+msgstr ""
+
+#: parts/settings/notify-global-settings.php:97
+msgid "Select when user should be notified about the product availability."
+msgstr ""
+
+#: parts/settings/notify-global-settings.php:101
+msgid "As soon as product becomes available"
+msgstr ""
+
+#: parts/settings/notify-global-settings.php:102
+msgid "1 hour before product becomes available"
+msgstr ""
+
+#: parts/settings/notify-global-settings.php:103
+msgid "1 day before product becomes available"
+msgstr ""
+
+#: parts/settings/notify-global-settings.php:104
+msgid "1 week before product becomes available"
+msgstr ""
+
+#: parts/settings/notify-global-settings.php:105
+msgid "Custom Hours"
+msgstr ""
+
+#: parts/settings/notify-global-settings.php:113
+msgid "Enter Custom Hour"
+msgstr ""
+
+#: parts/settings/notify-global-settings.php:114
+msgid "Enter how many hours before the user will be notified."
+msgstr ""
+
+#: parts/settings/other-extension-settings.php:53
+msgid "Click here to know more"
+msgstr ""
+
+#: parts/settings/other-extension-settings.php:70
+msgid "You have all of our extensions. Thank you for your support!"
+msgstr ""
+
+#: parts/settings/other-extension-settings.php:77
+msgid "Browse all our extensions"
+msgstr ""
+
+#: woocommerce-scheduler.php:172
+msgid "Settings"
+msgstr ""
+
+#: woocommerce-scheduler.php:173
+msgid "Scheduler for WooCommerce"
+msgstr ""
+
+#: woocommerce-scheduler.php:183 woocommerce-scheduler.php:184
+msgid "Bulk Schedule"
+msgstr ""
+
+#: woocommerce-scheduler.php:196
+msgid "Enrolled Users and List Users"
+msgstr ""
+
+#: woocommerce-scheduler.php:197
+msgid "Enrolled Users"
+msgstr ""
+
+#: woocommerce-scheduler.php:364 woocommerce-scheduler.php:484
+msgid "Secs"
+msgstr ""
+
+#: woocommerce-scheduler.php:364 woocommerce-scheduler.php:484
+msgid "Mins"
+msgstr ""
+
+#: woocommerce-scheduler.php:364 woocommerce-scheduler.php:484
+msgid "Hrs"
+msgstr ""
+
+#: woocommerce-scheduler.php:364 woocommerce-scheduler.php:484
+msgid "Days"
+msgstr ""
+
+#: woocommerce-scheduler.php:580
+msgid ""
+"You have not selected days. Click cancel to select days. If days are not "
+"selected the products are not visible"
+msgstr ""
+
+#: woocommerce-scheduler.php:581
+msgid "Please enter start time and end time for scheduling the product."
+msgstr ""
+
+#: woocommerce-scheduler.php:582
+msgid "End date must be greater than start date"
+msgstr ""
+
+#: woocommerce-scheduler.php:583
+msgid "End time must be greater than start time"
+msgstr ""
+
+#: woocommerce-scheduler.php:584
+msgid "Start time must be greater than current time"
+msgstr ""
+
+#: woocommerce-scheduler.php:585
+msgid "Day selected '"
+msgstr ""
+
+#: woocommerce-scheduler.php:586
+msgid "The days you have selected for variation id(s) "
+msgstr ""
+
+#: woocommerce-scheduler.php:587
+msgid "' does not lie between selected dates"
+msgstr ""
+
+#: woocommerce-scheduler.php:633
+#, php-format
+msgid ""
+"%s %s is inactive. %s Install and activate %sWoocommerce%s for %s to work."
+msgstr ""
+
+#: woocommerce/single-product/add-to-cart/variation.php:63
+msgid ""
+"You can set a custom message in <br/>Woocommerce->Settings->General->Product "
+"Expiration Message"
+msgstr ""

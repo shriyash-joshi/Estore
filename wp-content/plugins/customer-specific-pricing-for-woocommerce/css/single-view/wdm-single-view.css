@@ -1,0 +1,359 @@
+input.wdm_error {
+    border-color: #ff0000;
+}
+.six-sec-ease-in-out {
+    -webkit-transition: width 6s ease-in-out;
+    -moz-transition: width 6s ease-in-out;
+    -ms-transition: width 6s ease-in-out;
+    -o-transition: width 6s ease-in-out;
+    transition: width 6s ease-in-out;
+}
+
+/*# Common Styling
+------------------------------------------------------------------------------*/
+.nomargin{
+    margin-top: 0;
+}
+
+.hrline{
+    border-bottom: 1px solid #ccc;
+    width: 101.8%;
+}
+
+.clearfix:before {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.rule-vertical-space{
+    margin-bottom: 32px;
+}
+
+.import-export-header,.csp-tab-header {
+    font-weight: bold !important;
+    font-size: 19px !important;
+    color: rgba(35, 40, 45, 0.79);
+}
+
+
+.wdm-csp-single-view-general-wrapper,
+.wdm-csp-single-view-search-wrapper,
+.wdm-csp-query-log-wrapper,
+.wdm-csp-single-view-main-title {
+    padding: 0 7px;
+}
+
+.wdm-csp-query-log-wrapper,
+.wdm-csp-single-view-general-wrapper {
+    padding-top: 15px;
+}
+
+.csp-selection-wrapper-sections {
+    padding-top: 10px;
+}
+
+/*.form-group.wdm-csp-single-view-from-group {
+    margin-bottom: 30px;
+}*/
+
+.wdm-clear {
+    clear: both;
+}
+
+.form-control-wrap {
+    display: inline-block;
+}
+
+.form-control-label {
+    margin-top: 5px;
+}
+
+select.wdm-csp-single-view-form-control {
+    display: inline-block;
+    width: auto;
+    margin-right: 5px;
+}
+
+.wdm-csp-single-view-section-heading + .bootstrap-duallistbox-container {
+    padding-top: 5px;
+}
+
+.bootstrap-duallistbox-container > div > select {
+    min-width: 100%;
+    }
+    
+.bootstrap-duallistbox-container > div > select:hover{
+        color:unset;
+    }
+
+input#wdm_csp_set_price {
+    margin: 15px 10px 15px 0;
+}
+
+.dataTables_wrapper.dt-bootstrap .dataTables_paginate .paginate_button.disabled,
+.dataTables_wrapper.dt-bootstrap .dataTables_paginate .paginate_button.disabled:hover,
+.dataTables_wrapper.dt-bootstrap .dataTables_paginate .paginate_button.disabled:active {
+    border: none;
+}
+
+.dataTables_wrapper.dt-bootstrap .dataTables_paginate .paginate_button {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dataTables_wrapper.dt-bootstrap .dataTables_paginate .paginate_button:hover {
+    border: none;
+    background-color: initial;
+    background: none;
+}
+
+.dataTables_wrapper.dt-bootstrap .pagination > .active > a,
+.dataTables_wrapper.dt-bootstrap .pagination > li > a:hover {
+    z-index: inherit;
+}
+
+.dataTables_wrapper.dt-bootstrap .pagination > .active > a:focus:hover {
+    z-index: 4;
+}
+
+.dataTables_wrapper.dt-bootstrap table.dataTable thead .sorting_desc,
+.dataTables_wrapper.dt-bootstrap table.dataTable thead .sorting_asc,
+.dataTables_wrapper.dt-bootstrap table.dataTable thead .sorting {
+    background-image: none;
+}
+
+/**
+ * Overriding default dataTable CSS
+ */
+table.dataTable tbody th, table.dataTable tbody td {
+    padding: 8px 18px !important;
+}
+/*# General Settings
+------------------------------------------------------------------------------*/
+.select-entity-type{
+    font-weight: bold !important;
+    font-size: inherit !important;
+}
+
+.wdm-csp-single-view-general-wrapper .wdm-csp-single-view-section-heading {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.wdm-csp-single-view-general-wrapper .form-control-wrap-alt {
+    clear: both;
+    width: 100%;
+}
+
+/*# Query Log
+------------------------------------------------------------------------------*/
+
+.wdm-csp-query-log-wrapper th.dt-body-center.sorting_disabled {
+    text-align: center;
+}
+
+/*# Media Queries
+------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 767px) {
+    .dataTables_wrapper div.dataTables_paginate {
+        padding-top: 0.5em;
+    }
+}
+
+/*# wdm_tooltip
+------------------------------------------------------------------------------*/
+
+.wdm_wrapper {
+    color: #fff;
+    display: inline-block;
+    font-weight: 700;
+    position: relative;
+    z-index: 999;
+    cursor: help;
+    /*font-family: "Gill Sans", Impact, sans-serif;*/
+    text-align: center;
+}
+
+.wdm_wrapper:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    bottom: 100%;
+    left: 50%;
+    pointer-events: none;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.wdm_wrapper:hover::after {
+    pointer-events: auto;
+}
+
+.wdm-tooltip-content {
+    position: absolute;
+    z-index: 9991;
+    width: 200px;
+    left: 50%;
+    bottom: 100%;
+    font-size: 1em;
+    text-align: center;
+    font-weight: 400;
+    color: #fffaf0;
+    background: transparent;
+    opacity: 0;
+    margin: 0 0 20px -100px;
+    cursor: default;
+    pointer-events: none;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transition: opacity 0.3s 0.3s;
+    transition: opacity 0.3s 0.3s;
+}
+
+.wdm_wrapper:hover .wdm-tooltip-content {
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.wdm-tooltip-content span {
+    display: block;
+}
+
+.wdm-tooltip-text {
+    border-bottom: 10px solid #0C4865;
+    overflow: hidden;
+    -webkit-transform: scale3d(0,1,1);
+    transform: scale3d(0,1,1);
+    -webkit-transition: -webkit-transform 0.3s 0.3s;
+    transition: transform 0.3s 0.3s;
+}
+
+.wdm_wrapper:hover .wdm-tooltip-text {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+}
+
+.wdm-tooltip-inner {
+    background: rgba(0,115,170,0.95);
+    padding: 20px;
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+    webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+}
+
+.wdm_wrapper:hover .wdm-tooltip-inner {
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.wdm-tooltip-content::after {
+    content: '';
+    bottom: -20px;
+    left: 50%;
+    border: solid transparent;
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: transparent;
+    border-top-color: #0C4865;
+    border-width: 10px;
+    margin-left: -10px;
+}
+
+/* IE can just show/hide with no transition */
+.lte8 .wdm_wrapper .wdm_tooltip {
+    display: none;
+}
+
+.lte8 .wdm_wrapper:hover .wdm_tooltip {
+    display: block;
+}
+span.wdm-required {
+    color: #ff0000;
+    vertical-align: middle;
+}
+
+.wdm-tab-info{
+    margin-bottom: 1%;
+}
+
+.wdm-csp-product-details-list{
+    margin-top:1%;
+}
+
+#wdm_back, #wdm_edit_entries{
+    float:right;
+    margin: 15px 10px 15px 0;
+}
+
+.csp_single_view_value{
+    width:80px;
+}
+
+.csp_single_view_qty{
+    width:80px;
+}
+
+.csp-no-data-error{
+    margin: 5px 0 15px;
+    background: #fff;
+    border-left: 4px solid #dc3232;
+}
+
+.csp-no-data-error p {
+    margin: .5em 0;
+    padding: 1%;
+}
+
+/* Search Delete Page */
+.wdm-csp-rm-record {
+    color: #ff0000de;
+    text-decoration: none;
+    cursor: pointer;
+}
+.wdm-csp-rm-record:hover{
+    color: #ff0000;
+}
+
+.wdm-csp-rm-record.wdm-csp-cat-record {
+    color: #808080;
+    cursor: not-allowed;
+}
+
+.wdm-csp-rm-record.wdm-csp-cat-record:hover {
+    text-decoration: none;
+}
+
+.wdm-csp-single-view-search-wrapper .wdm-remove-sel-csp-price {
+    display: none;
+    margin-right: 5px;
+}
+
+#example_wrapper th.dt-body-center.sorting_disabled {
+    text-align: center;
+}
+
+select.form-control.input-sm {
+    line-height: unset;
+}

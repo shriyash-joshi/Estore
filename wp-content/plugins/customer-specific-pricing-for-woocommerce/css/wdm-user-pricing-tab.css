@@ -1,0 +1,262 @@
+#userSpecificPricingTab_data .wdm_user_pricing_tab_options table tr td,
+#group_specific_pricing_tab_data .wdm_group_pricing_tab_options table tr td{
+       /* padding:5px;*/
+}
+
+
+.wc-metabox-content,.chosen-select{
+    width: 100%;
+}
+#variable_product_options .ui-accordion .ui-accordion-content {
+    padding: 0;
+}
+
+#variable_product_options #group_specific_pricing_tab_data{
+    padding:1em 2.2em;
+}
+
+.csp-accordion select {
+    height: auto;
+}
+
+/*.wdm_variable_product_usp_table td, .wdm_variable_product_role_usp_table td, .wdm_variable_product_gsp_table td {
+    width: 20%;     
+}*/
+
+
+/* Set height for quantity field same as other fields */
+.wdm_variable_product_usp_table input.wdm_qty, .wdm_variable_product_role_usp_table input.wdm_qty, .wdm_variable_product_gsp_table input.wdm_qty, .wdm_simple_product_usp_table input.wdm_qty, .wdm_simple_product_rsp_table input.wdm_qty, .wdm_simple_product_gsp_table input.wdm_qty {
+    height: 24px;
+    width: 100%;
+}
+
+/* Set height for value field same as other fields */
+.wdm_variable_product_usp_table input.wdm_price, .wdm_variable_product_role_usp_table input.wdm_price, .wdm_variable_product_gsp_table input.wdm_price, .wdm_simple_product_usp_table input.wdm_price, .wdm_simple_product_rsp_table input.wdm_price, .wdm_simple_product_gsp_table input.wdm_price {
+    height: 24px;
+    width: 100%;
+}
+
+.wdm_variable_product_usp_table th, .wdm_variable_product_role_usp_table th, .wdm_variable_product_gsp_table th, .wdm_simple_product_usp_table th,
+.wdm_simple_product_rsp_table th, .wdm_simple_product_gsp_table th, .wdm_variable_product_usp_table td, .wdm_variable_product_role_usp_table td, .wdm_variable_product_gsp_table td, .wdm_simple_product_usp_table td,
+.wdm_simple_product_rsp_table td, 
+.wdm_simple_product_gsp_table td {
+    text-align: center !important;
+    padding: 0 6px 6px 1px;
+    vertical-align: top;
+    border: 0;
+    display: inline-block;
+}
+
+.wdm_variable_product_usp_table td, .wdm_variable_product_role_usp_table td, .wdm_variable_product_gsp_table td, .wdm_simple_product_usp_table td,
+.wdm_simple_product_rsp_table td, 
+.wdm_simple_product_gsp_table td {
+    padding: 0 6px 1em 0;
+    margin: 0 1% 0 1%;
+}
+/**
+ * Set 40% width to First column of Customer Based Pricing, Role Based Pricing and Group Based pricing tables 
+ */
+.wdm_variable_product_usp_table tr th:first-child, .wdm_variable_product_role_usp_table tr th:first-child, .wdm_variable_product_gsp_table tr th:first-child, .wdm_simple_product_usp_table th:first-child,.wdm_simple_product_rsp_table th:first-child, .wdm_simple_product_gsp_table th:first-child {
+    width: 30%;
+}
+
+
+.wdm_variable_product_usp_table tr td:first-child, .wdm_variable_product_role_usp_table tr td:first-child, .wdm_variable_product_gsp_table tr td:first-child,.wdm_simple_product_usp_table td:first-child,.wdm_simple_product_rsp_table td:first-child, .wdm_simple_product_gsp_table td:first-child {
+    width: 27%;
+}
+
+/**
+ * Set 20% width to Second column (Discount Type) of Customer Based Pricing, Role Based Pricing and Group Based pricing tables 
+ */
+.wdm_variable_product_usp_table tr th:nth-child(2), .wdm_variable_product_role_usp_table tr th:nth-child(2), .wdm_variable_product_gsp_table tr th:nth-child(2), .wdm_simple_product_usp_table tr th:nth-child(2),.wdm_simple_product_rsp_table tr th:nth-child(2), .wdm_simple_product_gsp_table tr th:nth-child(2) {
+    width: 15%;
+}
+
+
+.wdm_variable_product_usp_table tr td:nth-child(2), .wdm_variable_product_role_usp_table tr td:nth-child(2), .wdm_variable_product_gsp_table tr td:nth-child(2), .wdm_simple_product_usp_table tr td:nth-child(2),.wdm_simple_product_rsp_table tr td:nth-child(2), .wdm_simple_product_gsp_table tr td:nth-child(2) {
+    width: 15%;
+}
+
+/**
+ * Set 20% width to Third column (Price) and fourth column (Quantity) of Customer Based Pricing, Role Based Pricing and Group Based pricing tables 
+ */
+.wdm_variable_product_usp_table tr th:nth-child(3), .wdm_variable_product_role_usp_table tr th:nth-child(3), .wdm_variable_product_gsp_table tr th:nth-child(3), .wdm_simple_product_usp_table tr th:nth-child(3),.wdm_simple_product_rsp_table tr th:nth-child(3), .wdm_simple_product_gsp_table tr th:nth-child(3) {
+    width: 15%;
+}
+
+.wdm_variable_product_usp_table tr th:nth-child(4), .wdm_variable_product_role_usp_table tr th:nth-child(4), .wdm_variable_product_gsp_table tr th:nth-child(4), .wdm_simple_product_usp_table tr th:nth-child(4),.wdm_simple_product_rsp_table tr th:nth-child(4), .wdm_simple_product_gsp_table tr th:nth-child(4) {
+    width: 14%;
+}
+
+.wdm_variable_product_usp_table tr td:nth-child(3), .wdm_variable_product_role_usp_table tr td:nth-child(3), .wdm_variable_product_gsp_table tr td:nth-child(3), .wdm_simple_product_usp_table tr td:nth-child(3),.wdm_simple_product_rsp_table tr td:nth-child(3), .wdm_simple_product_gsp_table tr td:nth-child(3) {
+    width: 12%;
+}
+
+.wdm_variable_product_usp_table tr td:nth-child(4), .wdm_variable_product_role_usp_table tr td:nth-child(4), .wdm_variable_product_gsp_table tr td:nth-child(4), .wdm_simple_product_usp_table tr td:nth-child(4),.wdm_simple_product_rsp_table tr td:nth-child(4), .wdm_simple_product_gsp_table tr td:nth-child(4) {
+    width: 15%;
+}
+
+.wdm_variable_product_usp_table tr td:nth-child(5), .wdm_variable_product_role_usp_table tr td:nth-child(5), .wdm_variable_product_gsp_table tr td:nth-child(5) {
+    margin-right: 0;
+    width: 4%;
+}
+
+.wdm_variable_product_usp_table tr td:nth-child(6), .wdm_variable_product_role_usp_table tr td:nth-child(6), .wdm_variable_product_gsp_table tr td:nth-child(6) {
+    width: 4%;
+}
+
+.wdm_variable_product_usp_table input.wdm_qty, .wdm_variable_product_role_usp_table input.wdm_qty, .wdm_variable_product_gsp_table input.wdm_qty, .wdm_variable_product_usp_table .wdm_price, .wdm_variable_product_role_usp_table .wdm_price, .wdm_variable_product_gsp_table .wdm_price {
+    /*
+     * Setting this important because WooCommerce overrides the width 
+     */
+    min-width: auto !important; 
+}
+
+.wc-metaboxes-wrapper .wc-metabox h3, .wdm-heading
+{
+    padding-left:2.2em !important; 
+}
+.wdm_username, .wdm_groupname{
+        width: 100% !important;
+}
+div#userSpecificPricingTab_data {
+  padding: 1em 2em;
+}
+
+.wdm-heading{
+    border-radius: 0em !important;
+    //border: 1px solid #DFDFDF !important;
+  border: 1px solid #DfDfDf  !important;
+    background-color: #f9f9f9;
+}
+.remove_user_price_pair_row_image, .add_user_price_pair_row_image,
+.remove_group_price_pair_row_image, .add_group_price_pair_row_image {
+        width: 20px;
+        /*vertical-align: middle;*/
+}
+
+.wdm_price {
+        margin-right: 5px !important;
+        width: 100% !important;
+}
+
+.wdm_remove_pair_link,
+.wdm_add_pair_link,
+.wdm_add_role_pair_link,
+.wdm_add_group_pair_link{
+        margin-left: 5px !important;
+        vertical-align: middle;
+        outline: none;
+}
+
+.wdm_remove_pair_link:focus,
+.wdm_add_pair_link:focus,
+.wdm_add_role_pair_link:focus,
+.wdm_add_group_pair_link:focus {
+        outline: none;
+        box-shadow: none;
+}
+
+.chosen-results{
+        width: 90% !important;
+}
+
+.wdm_user_pricing_tab_options p.submit,
+.wdm_group_pricing_tab_options p.submit{
+    float:left !important;
+    padding-left: 0px !important;
+    padding-bottom: 10px !important;
+}
+
+.wdm_user_pricing_tab_options .add_new_row_image{
+    margin-top: 0; 
+}
+
+.add_new_row_image{
+    width: 20px;
+    margin-top: 3%;
+}
+
+.add_new_pair_btn, .add_new_pair_btn_group, .add_new_role_pair_btn{
+    /*margin-left:2% !important;*/
+}
+
+.remove_var_g_csp{
+    color:#ff0000;
+    cursor: pointer;
+}
+.add_var_g_csp{
+    color:#008000;
+    cursor: pointer;
+}
+
+wc-metaboxes-wrapper .wc-metabox.woocommerce_variation h3{
+    color:#ff0000;
+}
+
+.wc-metaboxes-wrapper .wc-metabox.woocommerce_variation h3{
+     padding:0.5em !important;
+    padding-left:2.2em !important;
+}
+
+.wdm_error_ids {
+    font-weight: bold;
+}
+
+.wdm_error{
+    background: #E35152 !important;
+    color: #FFFFFF !important;
+}
+
+/*#userSpecificPricingTab_data tr td:first-child{
+    width:40%;
+}
+*/
+.wdm_error_temp:focus,.wdm_error_temp{
+    border-color: #E35152;
+}
+
+.csp-notes-title {
+    font-weight: bold;
+    text-decoration: underline;
+  color: #337ab7;
+  cursor: pointer;
+}
+
+.csp-notes-content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+  }
+
+.wdm_add_pair_link:focus,
+.wdm_add_role_pair_link:focus, 
+.wdm_add_group_pair_link:focus{
+    outline-style: auto;
+    outline-color: #008000;
+}
+
+.wdm_remove_pair_link:focus {
+    outline-style: auto;
+    outline-color: #ff0000;;
+}
+
+.remove_var_csp, .remove_var_csp_v, .remove_var_g_csp,
+.add_var_csp, .add_var_csp_v, .add_var_g_csp {
+outline:none;
+}
+
+.add_var_csp:focus > img, .add_var_csp_v:focus > img, .add_var_g_csp:focus > img {
+outline: auto;
+outline-color: #008000;
+}
+
+.remove_var_csp:focus > img, .remove_var_csp_v:focus > img, .remove_var_g_csp:focus > img {
+outline: auto;
+outline-color: #ff0000;
+}
+
+.add_var_csp, .add_var_csp_v, .add_var_g_csp {
+    margin-left: 0px !important;
+}

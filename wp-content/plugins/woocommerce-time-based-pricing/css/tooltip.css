@@ -1,0 +1,26 @@
+a.wctbp_tooltip {outline:none; }
+a.wctbp_tooltip strong { font-weight:bold;}
+a.wctbp_tooltip:hover {text-decoration:none;} 
+a.wctbp_tooltip span {
+    z-index:10;
+	display:none; 
+	padding:14px 20px;
+    margin-top:10px; 
+    width:600px;
+	font-style: normal;
+	font-size: 14px;
+}
+a.wctbp_tooltip:hover span{
+    display:block; 
+	position:absolute; 
+   color:white; 
+    background:#a46497 /* url(../css/gradient-bg.png) repeat-x 0 0 */;
+}
+.callout {z-index:20;position:absolute;border:0;top:-14px;left:120px;}
+    
+/*CSS3 extras*/
+a.wctbp_tooltip span
+{
+    border-radius:2px;        
+    box-shadow: 0px 0px 8px 4px #888; 
+}

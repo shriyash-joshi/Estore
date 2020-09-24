@@ -1,0 +1,124 @@
+#wdmws_settings_wdmws_custom_product_expiration_0 {
+    width: 50%;
+}
+
+#wdmws_settings_wdmws_custom_product_shop_expiration_0 {
+	width: 50%;
+}
+
+#wdmws_settings_wdmws_start_timer_text_0 {
+	width: 50%;
+}
+
+#wdmws_settings_wdmws_end_timer_text_0 {
+	width: 50%;
+}
+
+
+/* ToolTip CSS */
+.piklistfw-tooltip.dashicons {
+    float: right;
+}
+
+
+
+/*Feedback modal to be displayed on the settings page*/
+.custom-popup-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.feedback.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 45%;
+  text-align: center;
+  background-image: url('images/wisdmlabs.png');
+  background-repeat: no-repeat;
+  background-position: 50% 35%;
+  background-size: 150px 150px;
+}
+
+.modal_sub_head{
+  font-size: 18px;
+}
+
+.modal_head{
+  font-size: 30px;
+  line-height:normal;
+  color: #2E3638;
+}
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.wdm-flex-container {
+  display: flex;
+  justify-content:center;
+	padding: 5px;
+  flex-wrap: wrap;  
+}
+
+  .flex-item {
+	padding: 10px 40px;
+	text-align: center;
+  }
+  
+  .modal_button {
+	border: none;
+	color: white;
+	padding: 10px 16px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	cursor: pointer;
+  }
+  
+  .button_style {
+  font-size: 16px;
+	background-color: #2E3638; 
+	color: white; 
+	border: none;
+	border-radius:5px;
+  }
+  
+  .button_style:hover {
+	color: white;
+  }
+
+
+.give_feedback {
+    background-color: #73b63b;
+    color: #fff;
+}
+
+#custom-modal > div > span.close{
+  opacity: 1;
+}
+
+.dont-ask-link {
+  text-align: right;
+}

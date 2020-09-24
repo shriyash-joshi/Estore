@@ -1,0 +1,258 @@
+[ux_banner height="500px" class="fc-banner-1"]
+
+[text_box width="44" width__sm="63" position_x="10" position_y="50" text_align="left"]
+
+<h2 class="slider-heading">A Counsellor’s Catapult In Shooting Them Towards</h2>
+<h2 style="text-align: left;"><b>Career Success</b></h2>
+<p style="text-align: left;">Our community of 5,500 trusted career counsellors will help you build a network and grow your business.</p>
+[button text="Tell Me More" class="new-primary"]
+
+
+[/text_box]
+[ux_image id="1472" width="23" margin="10px 0px 0px 0px" position_x="80" position_x__sm="95" position_y="52" position_y__sm="35"]
+
+
+[/ux_banner]
+[row]
+
+[col span="6" span__sm="12" divider="0" align="left" class="fc-banner-col-1"]
+
+<p class="thin-font"><strong><span style="font-size: 80%;">India has the largest student population in the world, accounting for over 350 million students. The nation needs a whooping 1.4 million career counsellors to maintain a globally accepted student-to-counsellor ratio.</span></strong></p>
+<p class="thin-font"><strong><span style="font-size: 80%;">The market size for career assessment and guidance is currently estimated at over Rs 5,000 crore in India and continuously growing.</span></strong></p>
+
+[/col]
+[col span="6" span__sm="12" class="fc-banner-col-2"]
+
+<p><span style="font-size: 140%;"><strong><span style="color: #1f2532;">Today, Career Counselling has become one of the most sought after jobs</span> </strong><span style="color: #82d318;">globally with a 19% employment rate as per industry standards.</span></span></p>
+
+[/col]
+
+[/row]
+[section label="Simple Center" bg_color="rgb(245, 245, 245)" padding="60px" height="300px" class="fc-section-3"]
+
+[row h_align="center"]
+
+[col span="10" span__sm="12" align="center"]
+
+<p data-opacity="0.8">&nbsp;</p>
+<p data-opacity="0.8"><span style="color: #fafafa;">Over the past 11 years, Univariety strived towards changing the counselling space drastically. From an unorganised sector to an extremely well-structured profession, we are proud to have one of largest counselling networks in the country.</span></p>
+[divider width="18em" height="2px" color="rgb(32, 52, 78)"]
+
+[row_inner]
+
+[col_inner span__sm="12"]
+
+<p class="thin-font" data-opacity="0.8"><span style="font-size: 105%; color: #fafafa;">Broaden Your Network With Us</span></p>
+
+[/col_inner]
+
+[/row_inner]
+[row_inner]
+
+[col_inner span="1" span__sm="12"]
+
+
+[/col_inner]
+[col_inner span="5" span__sm="12"]
+
+[message_box bg_color="rgb(32, 52, 78)" padding="25"]
+
+[row_inner_1 v_align="middle" h_align="center"]
+
+[col_inner_1 span="6" span__sm="12"]
+
+<p class="thin-font" data-opacity="0.6"><span style="font-size: 140%;"><strong>Connect With</strong></span></p>
+
+[/col_inner_1]
+[col_inner_1 span="6" span__sm="12" align="center"]
+
+<h1 data-opacity="0.6"><span style="font-size: 140%; color: #ed9531;">5,500</span></h1>
+<p data-opacity="0.6"><span style="color: #ed9531; font-size: 140%;">Counsellors</span></p>
+
+[/col_inner_1]
+
+[/row_inner_1]
+
+[/message_box]
+
+[/col_inner]
+[col_inner span="6" span__sm="12"]
+
+[message_box bg_color="rgb(32, 52, 78)" padding="25"]
+
+[row_inner_1 v_align="middle" h_align="center"]
+
+[col_inner_1 span="5" span__sm="12"]
+
+<p class="thin-font" style="text-align: left;" data-opacity="0.6"><span style="font-size: 140%;"><strong>Get<br> Access To</strong></span></p>
+
+[/col_inner_1]
+[col_inner_1 span="6" span__sm="12" align="center"]
+
+<h1 data-opacity="0.6"><span style="font-size: 140%; color: #ed9531;">1,00,000+</span></h1>
+<p data-opacity="0.6"><span style="color: #ed9531; font-size: 140%;">Counsellors</span></p>
+
+[/col_inner_1]
+
+[/row_inner_1]
+
+[/message_box]
+
+[/col_inner]
+
+[/row_inner]
+[row_inner]
+
+[col_inner span="2" span__sm="12"]
+
+
+[/col_inner]
+[col_inner span="4" span__sm="12"]
+
+<p data-opacity="0.8"><span style="color: #fafafa;">From A Counsellor To A Successful Counsellor With Us</span></p>
+
+[/col_inner]
+[col_inner span="5" span__sm="12"]
+
+[button text="Join The Community" class="new-primary"]
+
+
+[/col_inner]
+[col_inner span="1" span__sm="12"]
+
+
+[/col_inner]
+
+[/row_inner]
+
+[/col]
+
+[/row]
+
+[/section]
+[section label="Media Right" bg_color="rgb(250, 250, 250)" bg_overlay="rgba(255, 255, 255, 0.85)" padding="60px"]
+
+[row style="large" v_align="middle"]
+
+[col span="1" span__sm="12"]
+
+
+[/col]
+[col span="5" span__sm="12" align="left"]
+
+<p class="thin-font"><span style="color: #1f2532;">If you are someone with no prior experience in career counselling, but has a passion for it and wants to pursue it as a career. We have the right solutions for YOU!</span></p>
+<p class="thin-font"><span style="color: #1f2532;"> In 2016, Univariety partnered with <strong>UCLA Extension</strong> to create an <strong>all-in-one guide to Career Counseling</strong>.</span></p>
+[divider width="20em" height="2px"]
+
+<h3>Power your career counselling career with Global Career Counsellor</h3>
+[button text="Know More" class="new-primary"]
+
+
+[/col]
+[col span="4" span__sm="12"]
+
+[ux_image id="1503"]
+
+
+[/col]
+[col span="2" span__sm="12"]
+
+
+[/col]
+
+[/row]
+
+[/section]
+[section label="Simple Center" bg_color="rgb(245, 245, 245)" padding="60px" height="300px" class="fc-section-6"]
+
+[row h_align="center"]
+
+[col span="10" span__sm="12" align="center"]
+
+<h3><span style="color: #fafafa; font-size: 100%;">Why Join Our Community?</span></h3>
+<p><span style="color: #fafafa; font-size: 75%;">Great Discounts On Ed-Tech Products For Your Students</span></p>
+[row_inner]
+
+[col_inner span="10" span__sm="12"]
+
+[ux_products type="row" columns="3" columns__sm="1" columns__md="1" ids="1189,497,496"]
+
+
+[/col_inner]
+
+[/row_inner]
+[row_inner]
+
+[col_inner span="2" span__sm="12"]
+
+
+[/col_inner]
+[col_inner span="2" span__sm="6" align="center"]
+
+[ux_image id="1519" width="43"]
+
+
+[/col_inner]
+[col_inner span="2" span__sm="6" align="center"]
+
+[ux_image id="1520" width="85"]
+
+
+[/col_inner]
+[col_inner span="2" span__sm="6" align="center"]
+
+[ux_image id="1522" width="60"]
+
+
+[/col_inner]
+[col_inner span="2" span__sm="6" align="center"]
+
+[ux_image id="1524" width="65"]
+
+
+[/col_inner]
+[col_inner span="2" span__sm="12"]
+
+
+[/col_inner]
+
+[/row_inner]
+[row_inner]
+
+[col_inner span="2" span__sm="12"]
+
+
+[/col_inner]
+[col_inner span="2" span__sm="6" align="center" color="light"]
+
+<p>Certification From Univariety &amp; UCLA Extension</p>
+
+[/col_inner]
+[col_inner span="2" span__sm="6" align="center" color="light"]
+
+<p>Set Up A Counselling Practice With Ease</p>
+
+[/col_inner]
+[col_inner span="2" span__sm="6" align="center" color="light"]
+
+<p>Training Sessions From Expert Counsellors</p>
+
+[/col_inner]
+[col_inner span="2" span__sm="6" align="center" color="light"]
+
+<p>Steady In-Flow Of Leads</p>
+
+[/col_inner]
+[col_inner span="2" span__sm="12"]
+
+
+[/col_inner]
+
+[/row_inner]
+
+[/col]
+
+[/row]
+
+[/section]
+[block id="1506"]

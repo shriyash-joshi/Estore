@@ -1,0 +1,46 @@
+[section label="Media Right" bg_color="rgb(247, 247, 247)" padding="60px" class="sc-section-5"]
+
+[row style="large" v_align="middle"]
+
+[col span="6" span__sm="12" padding="0px 0px 0px 150px" align="left"]
+
+<h3 style='font-size: 26px;'>Meet The RIGHT COUNSELLOR<br />
+Make Your DILEMMAS DISAPPEAR</h3>
+<p>From setting a goal to securing admission in a TOP college, different students and parents have different dilemmas and needs.</p>
+<p>Our community of 5000+ career counsellors includes those who have expertise in solving different dilemmas. Explore and select the right career counsellor to find solutions.</p>
+[gap height="50px"]
+
+[button text="Find The Right Counsellor" icon="icon-angle-right" class="new-primary"]
+
+
+[/col]
+[col span="6" span__sm="12"]
+
+[ux_banner height="500px" bg_color="rgb(247, 247, 247)"]
+
+[text_box position_x="10" position_x__sm="5" position_y="5" position_y__sm="10"]
+
+[ux_image id="6114" width="35" width__sm="50" height="150%"]
+
+
+[/text_box]
+[text_box position_x="100" position_y="30" position_y__sm="25"]
+
+[ux_image width="45" width__sm="65"]
+
+
+[/text_box]
+[text_box position_x="5" position_x__sm="5" position_y="95" position_y__sm="75"]
+
+[ux_image id="3314" width="57" width__sm="65"]
+
+
+[/text_box]
+
+[/ux_banner]
+
+[/col]
+
+[/row]
+
+[/section]

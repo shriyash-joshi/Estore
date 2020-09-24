@@ -1,0 +1,2646 @@
+[
+    {
+        "key": "group_56a7423656cfb",
+        "title": "WooCommerce Pricing! - Bulk editor",
+        "fields": [
+            {
+                "key": "field_56a7423661025",
+                "label": "Price \/ Discounts rules",
+                "name": "wctbp_period_rules",
+                "type": "repeater",
+                "instructions": "Priority goes top to bottom. Top rules have higher priority.  Rules defined directly on product edit pages have HIGHER PRIORITY that the rules defined here.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "field_56a742366938c",
+                "min": 0,
+                "max": 0,
+                "layout": "row",
+                "button_label": "Add new rule",
+                "sub_fields": [
+                    {
+                        "key": "field_56a742366938c",
+                        "label": "Rule name \/ id",
+                        "name": "wctbp_rule_name_id",
+                        "type": "text",
+                        "instructions": "Type a numeric id or a title for the scheduling rule. This helps to better identify the rule.",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_56a7423669759",
+                        "label": "Select products",
+                        "name": "wctbp_selected_products",
+                        "type": "post_object",
+                        "instructions": "<strong>NOTE:<\/strong> If no products and categories are selected, the pricing rule will be applied to all products.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "post_type": [
+                            "product",
+                            "product_variation"
+                        ],
+                        "taxonomy": "",
+                        "allow_null": 0,
+                        "multiple": 1,
+                        "return_format": "id",
+                        "ui": 1
+                    },
+                    {
+                        "key": "field_56a74236699de",
+                        "label": "Select product categories",
+                        "name": "wctbp_selected_product_categories",
+                        "type": "taxonomy",
+                        "instructions": "<strong>NOTE:<\/strong> If no products and categories are selected, the pricing rule will be applied to all products.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "taxonomy": "product_cat",
+                        "field_type": "multi_select",
+                        "allow_null": 1,
+                        "add_term": 1,
+                        "save_terms": 0,
+                        "load_terms": 0,
+                        "return_format": "id",
+                        "multiple": 0
+                    },
+                    {
+                        "key": "field_56a7423669b25",
+                        "label": "Assignment strategy",
+                        "name": "wctbp_selected_strategy",
+                        "type": "radio",
+                        "instructions": "You can assign a scheduling rule to selected item(s)\/category(ies) or to all excluding the selected ones.",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "all": "For all selected item(s)",
+                            "except": "Except the selected item(s)\/category(ies)"
+                        },
+                        "allow_null": 0,
+                        "other_choice": 0,
+                        "save_other_choice": 0,
+                        "default_value": "all",
+                        "layout": "vertical",
+                        "return_format": "value"
+                    },
+                    {
+                        "key": "field_56a7423669c6a",
+                        "label": "Children categories",
+                        "name": "wctbp_categories_children",
+                        "type": "radio",
+                        "instructions": "If at least one category has been selected, you can decide to apply the scheduling rule also to children categories items",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "layout": "vertical",
+                        "choices": {
+                            "selected_only": "Apply to selected categories only",
+                            "all_children": "Apply to selected categories and all its children"
+                        },
+                        "default_value": "selected_only",
+                        "other_choice": 0,
+                        "save_other_choice": 0,
+                        "allow_null": 0,
+                        "return_format": "value"
+                    },
+                    {
+                        "key": "field_56a7423669dac",
+                        "label": "Time periods",
+                        "name": "wctbp_time_period",
+                        "type": "repeater",
+                        "instructions": "Priority goes bottom to top. Lower rules have higher priority. When a date is reached, the selected post(s)\/product(s) status will be setted according to selected \"Status\" option.",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "min": 0,
+                        "max": 0,
+                        "layout": "block",
+                        "button_label": "Add new period",
+                        "collapsed": "field_56a77db89e48a",
+                        "sub_fields": [
+                            {
+                                "key": "field_56a77db89e48a",
+                                "label": "Prices \/ Discounts value",
+                                "name": "wctbp_prices_per_quantity",
+                                "type": "repeater",
+                                "instructions": "<p>Set prices\/discounts strategies that will depend on item quantity on cart\/stock. Strategies can be configured to change dynamically <strong>ITEM<\/strong>(s) price or to add a discount to the <strong>CART<\/strong>.<\/p>\r\n<p>For each quantity range can be define only ONE <strong>[cart]<\/strong> and ONE <strong>[item]<\/strong> strategies. In case of stacking rules the lower one will have higher priority<\/p>\r\n<p><strong>NOTE: <\/strong>price manipualtion is performed before the taxes are applied to the item base price: The plugin manipulates the item base price and the taxes are calulated to the result.<\/p>",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "collapsed": "field_5719e946eec24",
+                                "min": 0,
+                                "max": 0,
+                                "layout": "block",
+                                "button_label": "Add new price \/ discount rule",
+                                "sub_fields": [
+                                    {
+                                        "key": "field_5719e946eec24",
+                                        "label": "Unique id",
+                                        "name": "wctbp_unique_id",
+                                        "type": "unique_id",
+                                        "instructions": "Ignore this field. It is used by the plugin for internal functions.",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        }
+                                    },
+                                    {
+                                        "key": "field_56a77dee9e48b",
+                                        "label": "Price \/ Discount strategy",
+                                        "name": "wctbp_price_strategy",
+                                        "type": "select",
+                                        "instructions": "",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "choices": {
+                                            "fixed": "[ITEM] Assign a fixed price",
+                                            "percentage": "[ITEM] The price will be a percentage of original price",
+                                            "value_off": "[ITEM] Subtract a fixed value from the item original price",
+                                            "value_add": "[ITEM] Add a fixed value to the item original price",
+                                            "cart_fixed": "[CART] Subtract  a fixed discount value to the cart total",
+                                            "cart_fixed_add_fee": "[CART] Add a fixed fee value to the cart total",
+                                            "cart_percentage": "[CART] Subtract discount percentage based on cart total",
+                                            "cart_percentage_add_fee": "[CART] Add fee percentage based on cart total",
+                                            "cart_free_item": "[CART] The selected number of items will be free"
+                                        },
+                                        "default_value": [
+                                            "fixed"
+                                        ],
+                                        "allow_null": 0,
+                                        "multiple": 0,
+                                        "ui": 0,
+                                        "ajax": 0,
+                                        "return_format": "value",
+                                        "placeholder": ""
+                                    },
+                                    {
+                                        "key": "field_56a77e329e48c",
+                                        "label": "Price \/ Discount value",
+                                        "name": "wctpb_price_value",
+                                        "type": "number",
+                                        "instructions": "<a class=\"wctbp_tooltip\">\r\n<strong>INFO<\/strong>\r\n<span>\r\nIf <strong><i>[ITEM]<\/i> fixed price<\/strong> value has been selected, the following value will rapresent the price.<br\/><br\/>\r\nIn case of <strong><i>[ITEM]<\/i> percentage<\/strong> strategy, the price will be calculated as a percentage of the original price. Ex.: if you choose 40 (it means 40%) and the original price is 150$, the price will be 60$. If you choose 125, and the  150$, the final price will be 187,5$.<br\/><br\/>\r\nIn case of <strong><i>[ITEM]<\/i> subtract\/add value<\/strong> the following value will be subtracted\/added from the original price. Ex.: Item price is 100$ and the value is 20, the item price will be 80$<br\/><br\/>\r\nIn case of <strong><i>[CART]<\/i> fixed discount\/fee <\/strong> if at least one of the items currently in the cart matches one of the selected items\/categories, will be applied the following discount\/added the setted value to the cart total.<br\/><br\/>\r\nIn case of <strong><i>[CART]<\/i> percentage discount\/fee <\/strong> if at least one of the items currently in the cart matches one of the selected items\/categories, will be applied the following percentage discount value\/added he following value to the cart total (the discount\/fee is applied ONLY one time and not for every matching item). Ex.: if you choose 40 for discount (it means 40%) and the current cart total is 150$, discount will be 60$. <br\/><br\/>\r\n<\/span>\r\n<\/a>",
+                                        "required": 1,
+                                        "conditional_logic": [
+                                            [
+                                                {
+                                                    "field": "field_56a77dee9e48b",
+                                                    "operator": "!=",
+                                                    "value": "cart_free_item"
+                                                }
+                                            ]
+                                        ],
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": 1,
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "min": 0,
+                                        "max": "",
+                                        "step": ""
+                                    },
+                                    {
+                                        "key": "field_5e391a794b065",
+                                        "label": "Label",
+                                        "name": "wctpb_cart_label",
+                                        "type": "text",
+                                        "instructions": "Text shown as Fee\/Discount label on cart",
+                                        "required": 1,
+                                        "conditional_logic": [
+                                            [
+                                                {
+                                                    "field": "field_56a77dee9e48b",
+                                                    "operator": "==",
+                                                    "value": "cart_fixed"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "field": "field_56a77dee9e48b",
+                                                    "operator": "==",
+                                                    "value": "cart_fixed_add_fee"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "field": "field_56a77dee9e48b",
+                                                    "operator": "==",
+                                                    "value": "cart_percentage"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "field": "field_56a77dee9e48b",
+                                                    "operator": "==",
+                                                    "value": "cart_percentage_add_fee"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "field": "field_56a77dee9e48b",
+                                                    "operator": "==",
+                                                    "value": "cart_free_item"
+                                                }
+                                            ]
+                                        ],
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "placeholder": "Type a text like \"Fee\" or \"Discount\"",
+                                        "prepend": "",
+                                        "append": "",
+                                        "maxlength": ""
+                                    },
+                                    {
+                                        "key": "field_5a1293880d748",
+                                        "label": "Max fixed discount amount applicable",
+                                        "name": "wctbp_max_discount_value_applicable",
+                                        "type": "number",
+                                        "instructions": "<p>In case of percentage discount, you can set a fixed maximum amount that will applied. For example: if you want that the applied discount has not excede 50$, set this value as 50.<\/p>\r\n<p>Leave empty or 0 to ignore this option<\/p>",
+                                        "required": 0,
+                                        "conditional_logic": [
+                                            [
+                                                {
+                                                    "field": "field_56a77dee9e48b",
+                                                    "operator": "==",
+                                                    "value": "cart_percentage"
+                                                }
+                                            ]
+                                        ],
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "min": 0,
+                                        "max": "",
+                                        "step": ""
+                                    },
+                                    {
+                                        "key": "field_5a1598a1489d9",
+                                        "label": "Free shipping",
+                                        "name": "wctbp_free_shipping",
+                                        "type": "true_false",
+                                        "instructions": "Selected items will setted as \"virtual\", so no additional shipping costs will added.",
+                                        "required": 0,
+                                        "conditional_logic": 0,
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "message": "",
+                                        "default_value": 0,
+                                        "ui": 1,
+                                        "ui_on_text": "",
+                                        "ui_off_text": ""
+                                    },
+                                    {
+                                        "key": "field_57333fff2ece5",
+                                        "label": "Number of free items",
+                                        "name": "wctpb_number_of_free_items",
+                                        "type": "number",
+                                        "instructions": "Select the number of items for which the user will not be charged.",
+                                        "required": 0,
+                                        "conditional_logic": [
+                                            [
+                                                {
+                                                    "field": "field_56a77dee9e48b",
+                                                    "operator": "==",
+                                                    "value": "cart_free_item"
+                                                }
+                                            ]
+                                        ],
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": 1,
+                                        "min": 1,
+                                        "max": "",
+                                        "step": 1,
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": "",
+                                        "readonly": 0,
+                                        "disabled": 0
+                                    },
+                                    {
+                                        "key": "field_571b426359bbc",
+                                        "label": "Apply discount\/fee value per each matching item",
+                                        "name": "wctpb_apply_discount_value_per_each_matching_item",
+                                        "type": "select",
+                                        "instructions": "By default the discount\/fee value is applied only once. Enabling this option the discout value will be applied for every matching item and its quantity.",
+                                        "required": 0,
+                                        "conditional_logic": [
+                                            [
+                                                {
+                                                    "field": "field_56a77dee9e48b",
+                                                    "operator": "==",
+                                                    "value": "cart_fixed"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "field": "field_56a77dee9e48b",
+                                                    "operator": "==",
+                                                    "value": "cart_fixed_add_fee"
+                                                }
+                                            ]
+                                        ],
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "multiple": 0,
+                                        "allow_null": 0,
+                                        "choices": {
+                                            "no": "No",
+                                            "yes": "Yes"
+                                        },
+                                        "default_value": [],
+                                        "ui": 0,
+                                        "ajax": 0,
+                                        "placeholder": "",
+                                        "return_format": "value",
+                                        "disabled": 0,
+                                        "readonly": 0
+                                    },
+                                    {
+                                        "key": "field_571a2b985b73b",
+                                        "label": "Individual use only",
+                                        "name": "wctbp_cart_discount_individual_use_only",
+                                        "type": "select",
+                                        "instructions": "If <strong>Yes<\/strong> value is selected, the configured cart discount cannot be used in conjunction with other cart discounts.",
+                                        "required": 0,
+                                        "conditional_logic": [
+                                            [
+                                                {
+                                                    "field": "field_56a77dee9e48b",
+                                                    "operator": "==",
+                                                    "value": "cart_fixed"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "field": "field_56a77dee9e48b",
+                                                    "operator": "==",
+                                                    "value": "cart_percentage"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "field": "field_56a77dee9e48b",
+                                                    "operator": "==",
+                                                    "value": "cart_free_item"
+                                                }
+                                            ]
+                                        ],
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "multiple": 0,
+                                        "allow_null": 0,
+                                        "choices": {
+                                            "no": "No",
+                                            "yes": "Yes"
+                                        },
+                                        "default_value": [],
+                                        "ui": 0,
+                                        "ajax": 0,
+                                        "placeholder": "",
+                                        "return_format": "value"
+                                    },
+                                    {
+                                        "key": "field_587601a73c018",
+                                        "label": "Give away strategy",
+                                        "name": "wctbp_give_away_strategy",
+                                        "type": "select",
+                                        "instructions": "<p>Free item can be given for fixed <strong>cart quantity range<\/strong>or <strong>recursively every X item<\/strong>.<\/p>\r\n<p><strong>Cart quantity range example:<\/strong> Give 2 items for free if the user buys from 6 to 10 items.<\/p>\r\n<p><strong>Every X item example:<\/strong> Give 1 item for free every 5 items.<\/p>",
+                                        "required": 0,
+                                        "conditional_logic": [
+                                            [
+                                                {
+                                                    "field": "field_56a77dee9e48b",
+                                                    "operator": "==",
+                                                    "value": "cart_free_item"
+                                                }
+                                            ]
+                                        ],
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "multiple": 0,
+                                        "allow_null": 0,
+                                        "choices": {
+                                            "by_cart_quantity_ranges": "By cart quantity range",
+                                            "every_x_items": "Every X items"
+                                        },
+                                        "default_value": [],
+                                        "ui": 0,
+                                        "ajax": 0,
+                                        "placeholder": "",
+                                        "return_format": "value"
+                                    },
+                                    {
+                                        "key": "field_56a77f1f9e48d",
+                                        "label": "Min quantity\/amount",
+                                        "name": "wctpb_min_quantity",
+                                        "type": "number",
+                                        "instructions": "The specified value is included and used as lower extreme of the quantity range. Leave empty for no minimum value.",
+                                        "required": 0,
+                                        "conditional_logic": [
+                                            [
+                                                {
+                                                    "field": "field_56a77dee9e48b",
+                                                    "operator": "!=",
+                                                    "value": "cart_free_item"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "field": "field_587601a73c018",
+                                                    "operator": "!=",
+                                                    "value": "every_x_items"
+                                                }
+                                            ]
+                                        ],
+                                        "wrapper": {
+                                            "width": "49",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "min": "",
+                                        "max": "",
+                                        "step": 1,
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": ""
+                                    },
+                                    {
+                                        "key": "field_56a77f349e48e",
+                                        "label": "Max quantity\/amount",
+                                        "name": "wctpb_max_quantity",
+                                        "type": "number",
+                                        "instructions": "The specified value is included and used as higher extreme of the quantity range. Leave empty for no maximum value.",
+                                        "required": 0,
+                                        "conditional_logic": [
+                                            [
+                                                {
+                                                    "field": "field_56a77dee9e48b",
+                                                    "operator": "!=",
+                                                    "value": "cart_free_item"
+                                                }
+                                            ],
+                                            [
+                                                {
+                                                    "field": "field_587601a73c018",
+                                                    "operator": "!=",
+                                                    "value": "every_x_items"
+                                                }
+                                            ]
+                                        ],
+                                        "wrapper": {
+                                            "width": "49",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": "",
+                                        "min": "",
+                                        "max": "",
+                                        "step": 1,
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": ""
+                                    },
+                                    {
+                                        "key": "field_587605a83c019",
+                                        "label": "Every X items step value",
+                                        "name": "wctbp_every_x_items_vaue",
+                                        "type": "number",
+                                        "instructions": "",
+                                        "required": 1,
+                                        "conditional_logic": [
+                                            [
+                                                {
+                                                    "field": "field_56a77dee9e48b",
+                                                    "operator": "==",
+                                                    "value": "cart_free_item"
+                                                },
+                                                {
+                                                    "field": "field_587601a73c018",
+                                                    "operator": "==",
+                                                    "value": "every_x_items"
+                                                }
+                                            ]
+                                        ],
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "default_value": 1,
+                                        "min": 1,
+                                        "max": "",
+                                        "step": 1,
+                                        "placeholder": "",
+                                        "prepend": "",
+                                        "append": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "field_56c5b16c36040",
+                                "label": "Which value has to be considered? (if any quantity\/amount has been setted)",
+                                "name": "wctbp_quantity_strategy",
+                                "type": "select",
+                                "instructions": "<a class=\"wctbp_tooltip\">\r\n<strong>INFO<\/strong>\r\n<span>\r\nDefine the value has to be consider: Cart quantity (according to the Quantity\/Amount value strategy), Stock left quantity, Amount spent per items (according to the Quantity\/Amount value strategy) or Cart total. <br><br>\r\n<strong>NOTE:<\/strong> if <strong>Stock quantity<\/strong> is choosen and stock managment has not been enabled for an item, the rule will not be applied.  <strong>Total sales<\/strong>, in case of variable products, considers the total sales of the master product (WooCommerce doesn't keep track of single variation sales). Total sales (total_sales) value can be edited by using the <strong>Custom fields<\/strong> meta box on product page.\r\n<\/p><br\/>\r\n<\/span>\r\n<\/a>",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "50",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": {
+                                    "cart": "Cart items quantities",
+                                    "stock": "Stock items quantities",
+                                    "amount_spent": "Amount spent per selected items",
+                                    "cart_total": "Cart total",
+                                    "total_sales": "Total sales"
+                                },
+                                "default_value": [
+                                    "cart"
+                                ],
+                                "allow_null": 0,
+                                "multiple": 0,
+                                "ui": 0,
+                                "return_format": "value",
+                                "ajax": 0,
+                                "placeholder": ""
+                            },
+                            {
+                                "key": "field_5a992424d2bb5",
+                                "label": "Stack rule: apply pricing rule even if other have been applied?",
+                                "name": "wctbp_stack_rule",
+                                "type": "select",
+                                "instructions": "<p>It may happen that another pricing rule has been applied to the product. In this case, would you like to apply this rule?<\/p>\r\n<p><strong>NOTE: <\/strong> the rule will be applied to the price already manipualted by other rules.<\/p>",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "50",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": {
+                                    "no": "No",
+                                    "yes": "Yes"
+                                },
+                                "default_value": [
+                                    "no"
+                                ],
+                                "allow_null": 0,
+                                "multiple": 0,
+                                "ui": 0,
+                                "ajax": 0,
+                                "return_format": "value",
+                                "placeholder": ""
+                            },
+                            {
+                                "key": "field_5c137ece4c860",
+                                "label": "Ignore if a coupon has been applied",
+                                "name": "wctbp_ignore_rule_if_coupon_is_active",
+                                "type": "true_false",
+                                "instructions": "The pricing rules won't be applied in case at least one coupon has been applied.",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "message": "",
+                                "default_value": 0,
+                                "ui": 1,
+                                "ui_on_text": "",
+                                "ui_off_text": ""
+                            },
+                            {
+                                "key": "field_5703c1206d2f1",
+                                "label": "Quantity\/Amount value strategy",
+                                "name": "wctbp_cumulative_category_quantity",
+                                "type": "select",
+                                "instructions": "<a class=\"wctbp_tooltip\">\r\n<strong>INFO<\/strong>\r\n<span><strong>NOTE:<\/strong> For price rules which have <strong>The selected number of items will be free<\/strong> option as Price \/ Discount strategy, will be automatically applied the <i>Single product quantity<\/i>. Other values for this field will be ignored!!<br\/><br\/>\r\n<strong>Single product quantity:<\/strong> by default the plugin considers the single product quantity in cart to check if its price has to be adjusted or if the cart discount has to be aplied.<br\/><br\/>\r\n<strong>Quantity per each selected categories :<\/strong> the plugin will consider a quantity for each selected category (<strong>Select product category(ies)<\/strong> field) as sum of the products quantities belonging to that category (<strong>NOTE: Select product(s) field is ignored<\/strong>). Foreach category quantity matching a time period rule, the plugin will apply the discount\/price adjustment to <strong>ALL<\/strong> products belonging to that category.<br\/><br\/>\r\n<strong>Example:<\/strong> time period rule min quantity: 3. Categories selected in category filter: Category1 and Category2. The customer during the shopping sessions adds 2xProduct1, 2xProduct2 (both belonging to Category1) and 1xProduct3 (belonging to Category2) to the cart. The plugin detects that the sum of the quantity for both Product1 and Product2 is 4 and for Product3 is 1. Therefore it applies the pricing rule only to Product1 and Products2 (and to all products that belongs to Category1).<br\/><br\/>\r\n<strong>Note: <\/strong>do not use this option with products belonging to multiple categories. The plugin will consider only the first category associated to it.<br\/><br\/>\r\n<strong>Sum of quantities for selected product and categories:<\/strong> The plugin will consider quantity as sum of quantities for selected products (<strong>Select product(s)<\/strong> field) and for products belonging to the selected categories (<strong>Select product category(ies)<\/strong> field). If the computed quantity matches a time period rule, discount\/price adjustment will be applied to all the selected products and categories.\r\n<strong>Example:<\/strong> time period rule min quantity: 3. Category selected in category filter: Category1 and Product3. The customer during the shopping sessions adds 2xProduct1, 2xProduct2 (both belonging to Category1) and 1xProduct3 (belonging to Category2) to the cart. For al those product their quantity will be consideres as 6, therfore the rule will be applied to all of them.<br\/><br\/>\r\n<\/span>\r\n<\/a>",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_56c5b16c36040",
+                                            "operator": "==",
+                                            "value": "cart"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "field": "field_56c5b16c36040",
+                                            "operator": "==",
+                                            "value": "amount_spent"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": {
+                                    "no": "Single product quantity",
+                                    "yes": "Quantity per each selected categories (Select product(s) field is ignored)",
+                                    "linked_products": "Sum of all quantities for selected product and categories"
+                                },
+                                "default_value": [],
+                                "allow_null": 0,
+                                "multiple": 0,
+                                "ui": 0,
+                                "return_format": "value",
+                                "ajax": 0,
+                                "placeholder": ""
+                            },
+                            {
+                                "key": "field_5761781cc8ed5",
+                                "label": "User account",
+                                "name": "wctbp_user_account",
+                                "type": "user",
+                                "instructions": "Select specific users to which apply price. Leave empty to apply to all users.",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": 50,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "role": "",
+                                "multiple": 1,
+                                "allow_null": 0,
+                                "return_format": "array"
+                            },
+                            {
+                                "key": "field_56bdc38e7422e",
+                                "label": "User roles",
+                                "name": "wctbp_user_roles",
+                                "type": "role_selector",
+                                "instructions": "Choose user role(s) to which apply price rules. Leave empty to apply to all users.",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": 50,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_value": "name",
+                                "field_type": "checkbox",
+                                "allowed_roles": ""
+                            },
+                            {
+                                "key": "field_57617d9409690",
+                                "label": "User filtering strategy",
+                                "name": "wctbp_user_roles_filtering_strategy",
+                                "type": "select",
+                                "instructions": "Select if the price rule has to be applied to all or except the selected role and selected users (if at least a role has been selected otherwise will be ignored).",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": 50,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "multiple": 0,
+                                "allow_null": 0,
+                                "choices": {
+                                    "all": "For all selected role(s) and user(s)",
+                                    "except": "Except the selected role(s) and user(s)"
+                                },
+                                "default_value": [
+                                    "all"
+                                ],
+                                "ui": 0,
+                                "ajax": 0,
+                                "placeholder": "",
+                                "return_format": "value",
+                                "disabled": 0,
+                                "readonly": 0
+                            },
+                            {
+                                "key": "field_578e2fe0b9aee",
+                                "label": "Hide price for unauthorized users",
+                                "name": "wctbp_hide_price_for_unauthorized_users",
+                                "type": "select",
+                                "instructions": "<p>Price will be hidden and the product(s) will be unpurchasable to unauthorized users in shop and product pages.<\/p> <p>This option will not work for single product <strong>variation<\/strong><\/p>\r\n<p>This option could not work for some themes that <strong>are not properly using<\/strong> all the woocommerce actions to render the \"add to cart\" buttons.<\/p>",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": 50,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "multiple": 0,
+                                "allow_null": 0,
+                                "choices": {
+                                    "no": "No",
+                                    "yes": "Yes"
+                                },
+                                "default_value": [],
+                                "ui": 0,
+                                "ajax": 0,
+                                "placeholder": "",
+                                "return_format": "value",
+                                "disabled": 0,
+                                "readonly": 0
+                            },
+                            {
+                                "key": "field_56a742368e793",
+                                "label": "Day date type",
+                                "name": "wctbp_day_type",
+                                "type": "select",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "multiple": 0,
+                                "allow_null": 0,
+                                "choices": {
+                                    "day_of_the_week": "Day of the week",
+                                    "day_of_the_month": "Day of the month"
+                                },
+                                "default_value": [],
+                                "ui": 0,
+                                "ajax": 0,
+                                "placeholder": "",
+                                "return_format": "value",
+                                "disabled": 0,
+                                "readonly": 0
+                            },
+                            {
+                                "key": "field_56a742368e8d6",
+                                "label": "Days of the week",
+                                "name": "wctbp_days_of_the_week",
+                                "type": "checkbox",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_56a742368e793",
+                                            "operator": "==",
+                                            "value": "day_of_the_week"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": 33,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "layout": "vertical",
+                                "choices": {
+                                    "1": "Monday",
+                                    "2": "Tuesday",
+                                    "3": "Wednesday",
+                                    "4": "Thursday",
+                                    "5": "Friday",
+                                    "6": "Saturday",
+                                    "0": "Sunday"
+                                },
+                                "default_value": [],
+                                "allow_custom": 0,
+                                "save_custom": 0,
+                                "toggle": 1,
+                                "return_format": "value"
+                            },
+                            {
+                                "key": "field_56a742368ea19",
+                                "label": "Days of the month",
+                                "name": "wctbp_days_of_the_month",
+                                "type": "checkbox",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_56a742368e793",
+                                            "operator": "==",
+                                            "value": "day_of_the_month"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": 33,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "layout": "horizontal",
+                                "choices": {
+                                    "1": "1",
+                                    "2": "2",
+                                    "3": "3",
+                                    "4": "4",
+                                    "5": "5",
+                                    "6": "6",
+                                    "7": "7",
+                                    "8": "8",
+                                    "9": "9",
+                                    "10": "10",
+                                    "11": "11",
+                                    "12": "12",
+                                    "13": "13",
+                                    "14": "14",
+                                    "15": "15",
+                                    "16": "16",
+                                    "17": "17",
+                                    "18": "18",
+                                    "19": "19",
+                                    "20": "20",
+                                    "21": "21",
+                                    "22": "22",
+                                    "23": "23",
+                                    "24": "24",
+                                    "25": "25",
+                                    "26": "26",
+                                    "27": "27",
+                                    "28": "28",
+                                    "29": "29",
+                                    "30": "30",
+                                    "31": "31"
+                                },
+                                "default_value": [],
+                                "allow_custom": 0,
+                                "save_custom": 0,
+                                "toggle": 1,
+                                "return_format": "value"
+                            },
+                            {
+                                "key": "field_56a742368eb5c",
+                                "label": "Months",
+                                "name": "wctbp_months",
+                                "type": "checkbox",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": 33,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "layout": "vertical",
+                                "choices": {
+                                    "1": "January",
+                                    "2": "February",
+                                    "3": "March",
+                                    "4": "April",
+                                    "5": "May",
+                                    "6": "June",
+                                    "7": "July",
+                                    "8": "August",
+                                    "9": "September",
+                                    "10": "October",
+                                    "11": "November",
+                                    "12": "December"
+                                },
+                                "default_value": [],
+                                "allow_custom": 0,
+                                "save_custom": 0,
+                                "toggle": 1,
+                                "return_format": "value"
+                            },
+                            {
+                                "key": "field_56a742368ec9f",
+                                "label": "Years",
+                                "name": "wctbp_years",
+                                "type": "checkbox",
+                                "instructions": "Select a year. if empty scheduling rule will be applied to all years",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": 33,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "layout": "vertical",
+                                "choices": {
+                                    "2016": "2016",
+                                    "2017": "2017",
+                                    "2018": "2018",
+                                    "2019": "2019",
+                                    "2020": "2020",
+                                    "2021": "2021",
+                                    "2022": "2022",
+                                    "2023": "2023",
+                                    "2024": "2024",
+                                    "2025": "2025",
+                                    "2026": "2026"
+                                },
+                                "default_value": [],
+                                "allow_custom": 0,
+                                "save_custom": 0,
+                                "toggle": 0,
+                                "return_format": "value"
+                            },
+                            {
+                                "key": "field_56a742368ede1",
+                                "label": "Start hour",
+                                "name": "wctbp_start_hour",
+                                "type": "number",
+                                "instructions": "24h hour format: 0 - 23",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": 50,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": 0,
+                                "min": "00",
+                                "max": 23,
+                                "step": 1,
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_56a742368ef23",
+                                "label": "Start minute",
+                                "name": "wctbp_start_minute",
+                                "type": "number",
+                                "instructions": "0 - 59",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": 50,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": 0,
+                                "min": 0,
+                                "max": 59,
+                                "step": 1,
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_56a742368f1a8",
+                                "label": "End hour",
+                                "name": "wctbp_end_hour",
+                                "type": "number",
+                                "instructions": "24h hour format: 0 - 23",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": 50,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": 23,
+                                "min": "00",
+                                "max": 23,
+                                "step": 1,
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_56a742368f2eb",
+                                "label": "End minute",
+                                "name": "wctbp_end_minute",
+                                "type": "number",
+                                "instructions": "0 - 59",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": 50,
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": 59,
+                                "min": 0,
+                                "max": 59,
+                                "step": 1,
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-pricing-bulk-editor"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_56e67c81bbc18",
+        "title": "WooCommerce Pricing! – General options",
+        "fields": [
+            {
+                "key": "field_56a7423660ede",
+                "label": "Minutes offset",
+                "name": "wctbp_time_offset",
+                "type": "number",
+                "instructions": "WooCommerce Pricing! uses server time to schedule posts. If server time is different from yours,  adjust the \"Minutes offset\" value to syncronize it with your time. If you don't know server time, use the widget added by this plugin in the Wordpress Dashboard",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 0,
+                "min": -1440,
+                "max": 1440,
+                "step": 1,
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_5799e4b7e204a",
+                "label": "Display \"Sale\" badge",
+                "name": "wctpb_display_sale_badge",
+                "type": "select",
+                "instructions": "For items for which configured price is less than the original price will be displayed a <strong>Sale<\/strong> badge.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "multiple": 0,
+                "allow_null": 0,
+                "choices": {
+                    "yes": "Yes",
+                    "no": "No"
+                },
+                "default_value": [],
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "return_format": "value",
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "key": "field_56e67d54eb88b",
+                "label": "Disable shop page ajax \"add to cart\" function",
+                "name": "wctpb_disable_shop_page_ajax_add_to_cart_function",
+                "type": "select",
+                "instructions": "By default WooCommerce Pricing! disable the ajax \"add to cart\" function on shop page. This is done to force reload the page and refresh product page after an \"add to cart\" action, in this way the displayed priced can be updated according to the quantity currently in cart.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "multiple": 0,
+                "allow_null": 0,
+                "choices": {
+                    "yes": "Yes",
+                    "no": "No"
+                },
+                "default_value": [],
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "return_format": "value",
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "key": "field_56e9f902bbd56",
+                "label": "Display old price",
+                "name": "wctpb_display_old_price",
+                "type": "select",
+                "instructions": "By default the plugin will display old price with an line-throught on Shop and Product page.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "multiple": 0,
+                "allow_null": 0,
+                "choices": {
+                    "yes": "Yes",
+                    "no": "No"
+                },
+                "default_value": [],
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "return_format": "value",
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "key": "field_57a867c1e1b3c",
+                "label": "Alternative variable product price range display",
+                "name": "wctpb_use_alternative_variable_product_reange_price_display",
+                "type": "select",
+                "instructions": "Display price as <strong>From {min_price}€<\/strong> instead of <strong>{min_price}€ - {max_price}€<\/strong>",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "multiple": 0,
+                "allow_null": 0,
+                "choices": {
+                    "no": "No",
+                    "yes": "Yes"
+                },
+                "default_value": [],
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "return_format": "value",
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "key": "field_571492c976d0a",
+                "label": "Display items price without tax",
+                "name": "wctpb_display_items_price_without_tax",
+                "type": "select",
+                "instructions": "WooCommerce Pricing! computes the new item price using the item base price and then appling item tax to the result. If you want to not include tax select \"Yes\".",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "no": "No",
+                    "yes": "Yes"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_5e39191ec651d",
+                "label": "Apply taxes to fees",
+                "name": "wctpb_apply_tax_to_cart_discount",
+                "type": "select",
+                "instructions": "Applies taxes to cart fees",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "no": "No",
+                    "yes": "Yes"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_5a85c368111c1",
+                "label": "Product page - Disable live price display",
+                "name": "wctbp_disable_product_page_live_price_display",
+                "type": "select",
+                "instructions": "On product page, item price will be automatically refreshed according the selected product quantity. Using this option you can disable this feature.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "no": "No",
+                    "yes": "Yes"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "return_format": "value",
+                "placeholder": ""
+            },
+            {
+                "key": "field_59788de9db146",
+                "label": "Product page - display total price next to sinlge price",
+                "name": "wctbp_display_total_price_next_single_price",
+                "type": "select",
+                "instructions": "Under the Product name, the plugin will display the total price (according the selected quantity) next to the product per unit.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5a85c368111c1",
+                            "operator": "==",
+                            "value": "no"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "yes": "Yes",
+                    "no": "No"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "return_format": "value",
+                "placeholder": ""
+            },
+            {
+                "key": "field_5a06b73c154d9",
+                "label": "Product page - display discount percentage next to single price",
+                "name": "wctbp_display_discount_percentage_next_single_price",
+                "type": "select",
+                "instructions": "A text displaying the discount percentage applied (or the fixed amount subtracted) will be displayed. Customize the text using the text menu",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5a85c368111c1",
+                            "operator": "==",
+                            "value": "no"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "yes": "Yes",
+                    "no": "No"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "return_format": "value",
+                "placeholder": ""
+            },
+            {
+                "key": "field_5a06b79f154da",
+                "label": "Shop page - display discount percentage next to single price",
+                "name": "wctbp_shop_page_display_discount_percentage_next_single_price",
+                "type": "select",
+                "instructions": "A text displaying the discount percentage applied (or the fixed amount subtracted) will be displayed. Customize the text using the text menu",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "yes": "Yes",
+                    "no": "No"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "return_format": "value",
+                "placeholder": ""
+            },
+            {
+                "key": "field_5a158231f1ce7",
+                "label": "Cart and Checkout pages - Display \"saved amount\" on Item table",
+                "name": "wctbp_display_saved_amount_on_item_table",
+                "type": "select",
+                "instructions": "Will be displayed a line with will show the total amount saved. This amount is the sum of the cart discount and product price reductions applied. The label of this line can be customized via the Text menu.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "no": "No",
+                    "yes": "Yes"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "return_format": "value",
+                "placeholder": ""
+            },
+            {
+                "key": "field_5905cba43345a",
+                "label": "Completely disable \"Hide price for unauthorized users\" feature",
+                "name": "wctbp_disable_hide_price_feature",
+                "type": "true_false",
+                "instructions": "It may happen that some themes are not properly using WooCommerce actions to render the \"add to cart\" buttons on both shop and products page. This may cause duplication button rendering issue. If you are experiencing this kind of issue, completely disable the <strong>Hide price for unauthorized users<\/strong> by using this option.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0,
+                "ui": 1,
+                "ui_on_text": "",
+                "ui_off_text": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-pricing-general-options"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_56e06161f0667",
+        "title": "WooCommerce Pricing! – Product configurator",
+        "fields": [
+            {
+                "key": "field_56e0620ae6a1b",
+                "label": "Configure time periods, quantities, prices and to which user roles apply",
+                "name": "wctbp_time_period",
+                "type": "repeater",
+                "instructions": "Priority goes top to bottom. Top rules have higher priority. When a date is reached, the selected post(s)\/product(s) status will be setted according to selected \"Status\" option.\r\nPRODUCT RULES have higher priority than general rules setted using the \"WooCommerce Pricing! bulk editor\"",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "field_56e12af09ca84",
+                "min": 0,
+                "max": 0,
+                "layout": "block",
+                "button_label": "Add new rule",
+                "sub_fields": [
+                    {
+                        "key": "field_56e12af09ca84",
+                        "label": "Rule name \/ id",
+                        "name": "wctbp_rule_name",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_56e0620ae6a1d",
+                        "label": "Prices \/ Discounts",
+                        "name": "wctbp_prices_per_quantity",
+                        "type": "repeater",
+                        "instructions": "<p>Set prices\/discounts strategies that will depend on item quantity on cart\/stock. Strategies can be configured to change dynamically <strong>ITEM<\/strong>(s) price or to add a discount to the <strong>CART<\/strong>. For each quantity range can be define only ONE <strong>[cart]<\/strong> and ONE <strong>[item]<\/strong> strategies. In case of stacking rules the lower one will have higher priority<\/p>\r\n<p><strong>NOTE: <\/strong>price manipualtion is performed before the taxes are applied to the item base price: The plugin manipulates the item base price and the taxes are calulated to the result.<\/p>",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "collapsed": "field_5719e993acbd2",
+                        "min": 0,
+                        "max": 0,
+                        "layout": "block",
+                        "button_label": "Add new price \/ discount rule",
+                        "sub_fields": [
+                            {
+                                "key": "field_5719e993acbd2",
+                                "label": "Unique id",
+                                "name": "wctbp_unique_id",
+                                "type": "unique_id",
+                                "instructions": "Ignore this field. It is used by the plugin for internal functions.",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                }
+                            },
+                            {
+                                "key": "field_56e0620ae6a1e",
+                                "label": "Price \/ Discount strategy",
+                                "name": "wctbp_price_strategy",
+                                "type": "select",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "choices": {
+                                    "fixed": "[ITEM] Assign a fixed price",
+                                    "percentage": "[ITEM] The price will be a percentage of original price",
+                                    "value_off": "[ITEM] Subtract a fixed value from the item original price",
+                                    "value_add": "[ITEM] Add a fixed value to the item original price",
+                                    "cart_fixed": "[CART] Subtract  a fixed discount value to the cart total",
+                                    "cart_fixed_add_fee": "[CART] Add a fixed fee value to the cart total",
+                                    "cart_percentage": "[CART] Subtract  discount percentage based on cart total",
+                                    "cart_percentage_add_fee": "[CART] Add fee percentage based on cart total",
+                                    "cart_free_item": "[CART] The selected number of items will be free"
+                                },
+                                "default_value": [
+                                    "fixed"
+                                ],
+                                "allow_null": 0,
+                                "multiple": 0,
+                                "ui": 0,
+                                "ajax": 0,
+                                "return_format": "value",
+                                "placeholder": ""
+                            },
+                            {
+                                "key": "field_56e0620ae6a1f",
+                                "label": "Prices \/ Discounts value",
+                                "name": "wctpb_price_value",
+                                "type": "number",
+                                "instructions": "<a class=\"wctbp_tooltip\">\r\n<strong>INFO<\/strong>\r\n<span>\r\nIf <strong><i>[ITEM]<\/i> fixed price<\/strong> value has been selected, the following value will rapresent the price.<br\/><br\/>\r\nIn case of <strong><i>[ITEM]<\/i> percentage<\/strong> strategy, the price will be calculated as a percentage of the original price. Ex.: if you choose 40 (it means 40%) and the original price is 150$, the price will be 60$. If you choose 125, and the  150$, the final price will be 187,5$.<br\/><br\/>\r\nIn case of <strong><i>[ITEM]<\/i> subtract\/add value<\/strong> the following value will be subtracted\/added from the original price. Ex.: Item price is 100$ and the value is 20, the item price will be 80$<br\/><br\/>\r\nIn case of <strong><i>[CART]<\/i> fixed discount\/fee <\/strong> if at least one of the items currently in the cart matches one of the selected items\/categories, will be applied the following discount\/added the setted value to the cart total.<br\/><br\/>\r\nIn case of <strong><i>[CART]<\/i> percentage discount\/fee <\/strong> if at least one of the items currently in the cart matches one of the selected items\/categories, will be applied the following percentage discount value\/added he following value to the cart total (the discount\/fee is applied ONLY one time and not for every matching item). Ex.: if you choose 40 for discount (it means 40%) and the current cart total is 150$, discount will be 60$. <br\/><br\/>\r\n<\/span>\r\n<\/a>",
+                                "required": 1,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_56e0620ae6a1e",
+                                            "operator": "!=",
+                                            "value": "cart_free_item"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": 1,
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "min": 0,
+                                "max": "",
+                                "step": ""
+                            },
+                            {
+                                "key": "field_5e391b7919621",
+                                "label": "Label",
+                                "name": "wctpb_cart_label",
+                                "type": "text",
+                                "instructions": "Text shown as Fee\/Discount label on cart",
+                                "required": 1,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_56e0620ae6a1e",
+                                            "operator": "==",
+                                            "value": "cart_fixed"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "field": "field_56e0620ae6a1e",
+                                            "operator": "==",
+                                            "value": "cart_fixed_add_fee"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "field": "field_56e0620ae6a1e",
+                                            "operator": "==",
+                                            "value": "cart_percentage"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "field": "field_56e0620ae6a1e",
+                                            "operator": "==",
+                                            "value": "cart_percentage_add_fee"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "field": "field_56e0620ae6a1e",
+                                            "operator": "==",
+                                            "value": "cart_free_item"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "Type a text like \"Fee\" or \"Discount\"",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_5a1294aeb4526",
+                                "label": "Max fixed discount amount applicable",
+                                "name": "wctbp_max_discount_value_applicable",
+                                "type": "number",
+                                "instructions": "<p>In case of percentage discount, you can set a fixed maximum amount that will applied. For example: if you want that the applied discount has not excede 50$, set this value as 50.<\/p>\r\n<p>Leave empty or 0 to ignore this option<\/p>",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_56e0620ae6a1e",
+                                            "operator": "==",
+                                            "value": "cart_percentage"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "min": 0,
+                                "max": "",
+                                "step": ""
+                            },
+                            {
+                                "key": "field_5a1598e77843f",
+                                "label": "Free shipping",
+                                "name": "wctbp_free_shipping",
+                                "type": "true_false",
+                                "instructions": "Selected items will setted as \"virtual\", so no additional shipping costs will added.",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "message": "",
+                                "default_value": 0,
+                                "ui": 1,
+                                "ui_on_text": "",
+                                "ui_off_text": ""
+                            },
+                            {
+                                "key": "field_5733409e78330",
+                                "label": "Number of free items",
+                                "name": "wctpb_number_of_free_items",
+                                "type": "number",
+                                "instructions": "Select the number of items for which the user will not be charged.",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_56e0620ae6a1e",
+                                            "operator": "==",
+                                            "value": "cart_free_item"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": 1,
+                                "min": 1,
+                                "max": "",
+                                "step": 1,
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "readonly": 0,
+                                "disabled": 0
+                            },
+                            {
+                                "key": "field_571b43473e2aa",
+                                "label": "Apply discount\/fee value per each matching item",
+                                "name": "wctpb_apply_discount_value_per_each_matching_item",
+                                "type": "select",
+                                "instructions": "By default the discount\/fee value is applied only once. Enabling this option the discout value will be applied for every matching item and its quantity.",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_56e0620ae6a1e",
+                                            "operator": "==",
+                                            "value": "cart_fixed"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "field": "field_56e0620ae6a1e",
+                                            "operator": "==",
+                                            "value": "cart_fixed_add_fee"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "multiple": 0,
+                                "allow_null": 0,
+                                "choices": {
+                                    "no": "No",
+                                    "yes": "Yes"
+                                },
+                                "default_value": [],
+                                "ui": 0,
+                                "ajax": 0,
+                                "placeholder": "",
+                                "return_format": "value"
+                            },
+                            {
+                                "key": "field_571a2cbcbd481",
+                                "label": "Individual use only",
+                                "name": "wctbp_cart_discount_individual_use_only",
+                                "type": "select",
+                                "instructions": "If <strong>Yes<\/strong> value is selected, the configured cart discount cannot be used in conjunction with other cart discounts.",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_56e0620ae6a1e",
+                                            "operator": "==",
+                                            "value": "cart_fixed"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "field": "field_56e0620ae6a1e",
+                                            "operator": "==",
+                                            "value": "cart_percentage"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "field": "field_56e0620ae6a1e",
+                                            "operator": "==",
+                                            "value": "cart_free_item"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "multiple": 0,
+                                "allow_null": 0,
+                                "choices": {
+                                    "no": "No",
+                                    "yes": "Yes"
+                                },
+                                "default_value": [],
+                                "ui": 0,
+                                "ajax": 0,
+                                "placeholder": "",
+                                "return_format": "value",
+                                "disabled": 0,
+                                "readonly": 0
+                            },
+                            {
+                                "key": "field_5876036edbaa5",
+                                "label": "Give away strategy",
+                                "name": "wctbp_give_away_strategy",
+                                "type": "select",
+                                "instructions": "<p>Free item can be given for fixed <strong>cart quantity range<\/strong>or <strong>recursively every X item<\/strong>.<\/p>\r\n<p><strong>Cart quantity range example:<\/strong> Give 2 items for free if the user buys from 6 to 10 items.<\/p>\r\n<p><strong>Every X item example:<\/strong> Give 1 item for free every 5 items.<\/p>",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_56e0620ae6a1e",
+                                            "operator": "==",
+                                            "value": "cart_free_item"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "multiple": 0,
+                                "allow_null": 0,
+                                "choices": {
+                                    "by_cart_quantity_ranges": "By cart quantity range",
+                                    "every_x_items": "Every X items"
+                                },
+                                "default_value": [],
+                                "ui": 0,
+                                "ajax": 0,
+                                "placeholder": "",
+                                "return_format": "value"
+                            },
+                            {
+                                "key": "field_56e0620ae6a20",
+                                "label": "Min quantity\/amount",
+                                "name": "wctpb_min_quantity",
+                                "type": "number",
+                                "instructions": "The specified value is included and used as lower extreme of the quantity range. Leave empty for no minimum value.",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_56e0620ae6a1e",
+                                            "operator": "!=",
+                                            "value": "cart_free_item"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "field": "field_5876036edbaa5",
+                                            "operator": "!=",
+                                            "value": "every_x_items"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "49",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "min": "",
+                                "max": "",
+                                "step": 1,
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": ""
+                            },
+                            {
+                                "key": "field_56e0620ae6a21",
+                                "label": "Max quantity\/amount",
+                                "name": "wctpb_max_quantity",
+                                "type": "number",
+                                "instructions": "The specified value is included and used as higher extreme of the quantity range. Leave empty for no maximum value.",
+                                "required": 0,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_56e0620ae6a1e",
+                                            "operator": "!=",
+                                            "value": "cart_free_item"
+                                        }
+                                    ],
+                                    [
+                                        {
+                                            "field": "field_5876036edbaa5",
+                                            "operator": "!=",
+                                            "value": "every_x_items"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "49",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "min": "",
+                                "max": "",
+                                "step": 1,
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": ""
+                            },
+                            {
+                                "key": "field_587603ebdbaa6",
+                                "label": "Every X items step value",
+                                "name": "wctbp_every_x_items_vaue",
+                                "type": "number",
+                                "instructions": "",
+                                "required": 1,
+                                "conditional_logic": [
+                                    [
+                                        {
+                                            "field": "field_56e0620ae6a1e",
+                                            "operator": "==",
+                                            "value": "cart_free_item"
+                                        },
+                                        {
+                                            "field": "field_5876036edbaa5",
+                                            "operator": "==",
+                                            "value": "every_x_items"
+                                        }
+                                    ]
+                                ],
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": 1,
+                                "min": 1,
+                                "max": "",
+                                "step": 1,
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": ""
+                            }
+                        ]
+                    },
+                    {
+                        "key": "field_56e0620ae6a1c",
+                        "label": "Which quantity has to be considered? (if any quantity has been setted)",
+                        "name": "wctbp_quantity_strategy",
+                        "type": "select",
+                        "instructions": "<a class=\"wctbp_tooltip\">\r\n<strong>INFO<\/strong>\r\n<span>\r\nDefine the value has to be consider: Cart item quantity, Stock left quantity, Amount spent for this item or Cart total. <br><br><strong>NOTE:<\/strong> if <strong>Stock quantity<\/strong> is choosen and stock managment has not been enabled for an item, the rule will not be applied.  <strong>Total sales<\/strong>, in case of variable products, considers the total sales of the master product (WooCommerce doesn't keep track of single variation sales). Total sales (total_sales) value can be edited by using the <strong>Custom fields<\/strong> meta box on product page.<br\/><br\/>\r\n<\/span>\r\n<\/a>",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "cart": "Cart item quantity",
+                            "stock": "Stock item quantity",
+                            "amount_spent": "Amount spent for this item",
+                            "cart_total": "Cart total",
+                            "total_sales": "Total sales"
+                        },
+                        "default_value": [
+                            "cart"
+                        ],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "return_format": "value",
+                        "ajax": 0,
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5a99234854b72",
+                        "label": "Stack rule: apply pricing rule even if other have been applied?",
+                        "name": "wctbp_stack_rule",
+                        "type": "select",
+                        "instructions": "<p>It may happen that another pricing rule has been applied to the product. In this case, would you like to apply this rule?<\/p>\r\n<p><strong>NOTE: <\/strong> the rule will be applied to the price already manipualted by other rules.<\/p>",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "no": "No",
+                            "yes": "Yes"
+                        },
+                        "default_value": [
+                            "no"
+                        ],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "ajax": 0,
+                        "return_format": "value",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5c137dd185612",
+                        "label": "Ignore if a coupon has been applied",
+                        "name": "wctbp_ignore_rule_if_coupon_is_active",
+                        "type": "true_false",
+                        "instructions": "The pricing rules won't be applied in case at least one coupon has been applied.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "message": "",
+                        "default_value": 0,
+                        "ui": 1,
+                        "ui_on_text": "",
+                        "ui_off_text": ""
+                    },
+                    {
+                        "key": "field_56e12569ce090",
+                        "label": "Select product variant(s) to which apply the rule.",
+                        "name": "wctb_selected_product_variants",
+                        "type": "product_variant_selector",
+                        "instructions": "Leave unselected to apply to all",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_value": "id",
+                        "field_type": "select",
+                        "allowed_variants": ""
+                    },
+                    {
+                        "key": "field_576167fff2321",
+                        "label": "User account",
+                        "name": "wctbp_user_account",
+                        "type": "user",
+                        "instructions": "Select specific users to which apply price. Leave empty to apply to all users.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": 50,
+                            "class": "",
+                            "id": ""
+                        },
+                        "role": "",
+                        "multiple": 1,
+                        "allow_null": 0,
+                        "return_format": "array"
+                    },
+                    {
+                        "key": "field_56e0620ae6a22",
+                        "label": "User roles",
+                        "name": "wctbp_user_roles",
+                        "type": "role_selector",
+                        "instructions": "Choose user role(s) to which apply price rules. Leave empty to apply to all users.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": 50,
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_value": "name",
+                        "field_type": "checkbox",
+                        "allowed_roles": ""
+                    },
+                    {
+                        "key": "field_56e0620ae6a23",
+                        "label": "User filtering strategy",
+                        "name": "wctbp_user_roles_filtering_strategy",
+                        "type": "select",
+                        "instructions": "Select if the price rule has to be applied to all or except the selected role and selected users (if at least a role has been selected otherwise will be ignored).",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": 50,
+                            "class": "",
+                            "id": ""
+                        },
+                        "multiple": 0,
+                        "allow_null": 0,
+                        "choices": {
+                            "all": "For all selected role(s) and user(s)",
+                            "except": "Except the selected role(s) and user(s)"
+                        },
+                        "default_value": [
+                            "all"
+                        ],
+                        "ui": 0,
+                        "ajax": 0,
+                        "placeholder": "",
+                        "return_format": "value",
+                        "disabled": 0,
+                        "readonly": 0
+                    },
+                    {
+                        "key": "field_578e30b54bd84",
+                        "label": "Hide price for unauthorized users",
+                        "name": "wctbp_hide_price_for_unauthorized_users",
+                        "type": "select",
+                        "instructions": "<p>Price will be hidden and the product(s) will be unpurchasable to unauthorized users in shop and product pages.<\/p> <p>This option will not work for single product <strong>variation<\/strong><\/p>\r\n<p>This option could not work for some themes that <strong>are not properly using<\/strong> all the woocommerce actions to render the \"add to cart\" buttons.<\/p>",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": 50,
+                            "class": "",
+                            "id": ""
+                        },
+                        "multiple": 0,
+                        "allow_null": 0,
+                        "choices": {
+                            "no": "No",
+                            "yes": "Yes"
+                        },
+                        "default_value": [],
+                        "ui": 0,
+                        "ajax": 0,
+                        "placeholder": "",
+                        "return_format": "value",
+                        "disabled": 0,
+                        "readonly": 0
+                    },
+                    {
+                        "key": "field_56e0620ae6a24",
+                        "label": "Day date type",
+                        "name": "wctbp_day_type",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "multiple": 0,
+                        "allow_null": 0,
+                        "choices": {
+                            "day_of_the_week": "Day of the week",
+                            "day_of_the_month": "Day of the month"
+                        },
+                        "default_value": [],
+                        "ui": 0,
+                        "ajax": 0,
+                        "placeholder": "",
+                        "return_format": "value",
+                        "disabled": 0,
+                        "readonly": 0
+                    },
+                    {
+                        "key": "field_56e0620ae6a25",
+                        "label": "Days of the week",
+                        "name": "wctbp_days_of_the_week",
+                        "type": "checkbox",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_56e0620ae6a24",
+                                    "operator": "==",
+                                    "value": "day_of_the_week"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "layout": "horizontal",
+                        "choices": {
+                            "1": "Monday",
+                            "2": "Tuesday",
+                            "3": "Wednesday",
+                            "4": "Thursday",
+                            "5": "Friday",
+                            "6": "Saturday",
+                            "0": "Sunday"
+                        },
+                        "default_value": [],
+                        "allow_custom": 0,
+                        "save_custom": 0,
+                        "toggle": 1,
+                        "return_format": "value"
+                    },
+                    {
+                        "key": "field_56e0620ae6a26",
+                        "label": "Days of the month",
+                        "name": "wctbp_days_of_the_month",
+                        "type": "checkbox",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_56e0620ae6a24",
+                                    "operator": "==",
+                                    "value": "day_of_the_month"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "layout": "horizontal",
+                        "choices": {
+                            "1": "1",
+                            "2": "2",
+                            "3": "3",
+                            "4": "4",
+                            "5": "5",
+                            "6": "6",
+                            "7": "7",
+                            "8": "8",
+                            "9": "9",
+                            "10": "10",
+                            "11": "11",
+                            "12": "12",
+                            "13": "13",
+                            "14": "14",
+                            "15": "15",
+                            "16": "16",
+                            "17": "17",
+                            "18": "18",
+                            "19": "19",
+                            "20": "20",
+                            "21": "21",
+                            "22": "22",
+                            "23": "23",
+                            "24": "24",
+                            "25": "25",
+                            "26": "26",
+                            "27": "27",
+                            "28": "28",
+                            "29": "29",
+                            "30": "30",
+                            "31": "31"
+                        },
+                        "default_value": [],
+                        "allow_custom": 0,
+                        "save_custom": 0,
+                        "toggle": 1,
+                        "return_format": "value"
+                    },
+                    {
+                        "key": "field_56e0620ae6a27",
+                        "label": "Months",
+                        "name": "wctbp_months",
+                        "type": "checkbox",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "layout": "horizontal",
+                        "choices": {
+                            "1": "January",
+                            "2": "February",
+                            "3": "March",
+                            "4": "April",
+                            "5": "May",
+                            "6": "June",
+                            "7": "July",
+                            "8": "August",
+                            "9": "September",
+                            "10": "October",
+                            "11": "November",
+                            "12": "December"
+                        },
+                        "default_value": [],
+                        "allow_custom": 0,
+                        "save_custom": 0,
+                        "toggle": 1,
+                        "return_format": "value"
+                    },
+                    {
+                        "key": "field_56e0620ae6a28",
+                        "label": "Years",
+                        "name": "wctbp_years",
+                        "type": "checkbox",
+                        "instructions": "Select a year. if empty scheduling rule will be applied to all years",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "layout": "horizontal",
+                        "choices": {
+                            "2016": "2016",
+                            "2017": "2017",
+                            "2018": "2018",
+                            "2019": "2019",
+                            "2020": "2020",
+                            "2021": "2021",
+                            "2022": "2022",
+                            "2023": "2023",
+                            "2024": "2024",
+                            "2025": "2025",
+                            "2026": "2026"
+                        },
+                        "default_value": [],
+                        "allow_custom": 0,
+                        "save_custom": 0,
+                        "toggle": 0,
+                        "return_format": "value"
+                    },
+                    {
+                        "key": "field_56e0620ae6a29",
+                        "label": "Start hour",
+                        "name": "wctbp_start_hour",
+                        "type": "number",
+                        "instructions": "24h hour format: 0 - 23",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": 50,
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": 0,
+                        "min": "00",
+                        "max": 23,
+                        "step": 1,
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_56e0620ae6a2a",
+                        "label": "Start minute",
+                        "name": "wctbp_start_minute",
+                        "type": "number",
+                        "instructions": "0 - 59",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": 50,
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": 0,
+                        "min": 0,
+                        "max": 59,
+                        "step": 1,
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_56e0620ae6a2b",
+                        "label": "End hour",
+                        "name": "wctbp_end_hour",
+                        "type": "number",
+                        "instructions": "24h hour format: 0 - 23",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": 50,
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": 23,
+                        "min": "00",
+                        "max": 23,
+                        "step": 1,
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_56e0620ae6a2c",
+                        "label": "End minute",
+                        "name": "wctbp_end_minute",
+                        "type": "number",
+                        "instructions": "0 - 59",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": 50,
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": 59,
+                        "min": 0,
+                        "max": 59,
+                        "step": 1,
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "product"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_57e00f0e64d53",
+        "title": "WooCommerce Pricing! – Text",
+        "fields": [
+            {
+                "key": "field_57e00e36b5eb7",
+                "label": "Sale badge text",
+                "name": "wctbp_sale_badge_text",
+                "type": "text",
+                "instructions": "Here you can customized the text displayed in the sale badge showed for product with custom pricing rules. <strong>NOTE:<\/strong> if you are using WPML, use the <strong>WPML language selector<\/strong> to switch language and localize text.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "Leave empty to leave the default WooCommerce badge sale text",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_5864d1292fc82",
+                "label": "Product page - after price text",
+                "name": "wctbp_product_page_after_price_text",
+                "type": "text",
+                "instructions": "Textt is appended to the product price text if a pricing rule has been applied. <strong>NOTE:<\/strong> if you are using WPML, use the <strong>WPML language selector<\/strong> to switch language and localize text.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_59788f5741ee7",
+                "label": "Product page - before total price text",
+                "name": "wctbp_product_page_before_total_price_text",
+                "type": "text",
+                "instructions": "Text showed after product price if a pricing rule has been applied and if the <strong>display total price next to sinlge price<\/strong> option has been enabled in the Genaral options menu. <strong>NOTE:<\/strong> if you are using WPML, use the <strong>WPML language selector<\/strong> to switch language and localize text.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "- Total:",
+                "placeholder": "- Total:",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5a05757a46719",
+                "label": "Product page - discount percentage\/amount subtracted text",
+                "name": "wctbp_product_page_discount_percentage_text",
+                "type": "text",
+                "instructions": "<p>Shows the discount applied\/amount subtracted (if any) to the product after the product price.  <strong>{value}<\/strong> is the place holder for the discount percentage applied\/amount subtracted. <strong>NOTE:<\/strong> if you are using WPML, use the <strong>WPML language selector<\/strong> to switch language and localize text.<p><strong>Example:<\/strong> {value} off!<\/p>",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "{value} off!",
+                "placeholder": "{value} off!",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5a0576ba03ad1",
+                "label": "Shop page - discount percentage\/amount subtracted text for simple product",
+                "name": "wctbp_shop_page_discount_percentage_text",
+                "type": "text",
+                "instructions": "<p>Shows the discount applied\/amount subtracted (if any)  to the product after the product price. <strong>{value}<\/strong> is the place holder for the discount percentage applied\/amount subtracted. <strong>NOTE:<\/strong> if you are using WPML, use the <strong>WPML language selector<\/strong> to switch language and localize text.<\/p>\r\n<p><strong>Example:<\/strong> {value} off!<\/p>",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "{value} off!",
+                "placeholder": "{value} off!",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5a057e5c3d781",
+                "label": "Shop page - discount percentage\/amount subtracted text for variable product",
+                "name": "wctbp_shop_page_discount_percentage_variable_product_text",
+                "type": "text",
+                "instructions": "<p>Shows the discount applied\/amount subtracted (if any)  to the product after the product price.  <strong>{value}<\/strong> is the place holder for the <strong>max<\/strong> discount percentage applied\/amount subtracted. <strong>NOTE:<\/strong> if you are using WPML, use the <strong>WPML language selector<\/strong> to switch language and localize text.<\/p>\r\n<p><strong>Example:<\/strong> up to {value} off!<\/p>",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "up to {value} off!",
+                "placeholder": "up to {value} off!",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5a1583924e705",
+                "label": "Shop & Cart pages - Saved amount label",
+                "name": "wctbp_shop_and_cart_pages_saved_amount_label",
+                "type": "text",
+                "instructions": "Label used on product table to display the amout of saved money give by the sum of the cart discounts and product price reductions. <strong>NOTE:<\/strong> if you are using WPML, use the <strong>WPML language selector<\/strong> to switch language and localize text.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "You saved",
+                "placeholder": "You saved",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-pricing-texts"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]

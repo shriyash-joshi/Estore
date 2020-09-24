@@ -1,0 +1,8 @@
+.wdmws-unsubscription-message {
+    color: green;
+    display: none;
+}
+
+#wdmws-error-unsubscription-message {
+    color: red;
+}

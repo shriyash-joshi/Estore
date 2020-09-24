@@ -1,0 +1,60 @@
+.wdmadicon{
+	display: inline-table;
+	margin: 0px !important;
+	padding: 0px !important;
+	vertical-align: middle;
+}
+.wdmadicon img{
+	width: 70px;
+}
+.wdmadmessagediv{
+    display: inline-table;
+    vertical-align: middle;
+    width: 65%;
+	color: #444;
+}
+.wdmadmessagediv p{
+	font-size: 1em;
+}
+.notice-wdmad{
+	border-left-color: #7d8594;
+	padding: 0px;
+	border-left-width: 15px; 
+}
+.wdmadouterdiv{
+	padding: 0px;
+	border-left: 5px solid #940200;
+}
+.wdmadtitle{
+	font-weight: 900;
+	margin-bottom: 2px !important;
+}
+.wdmadmsg{
+	font-weight: 400;
+	margin-top: 2px !important;
+}
+.wdmadmsg span{
+	font-weight: 900;
+}
+.wdmactiondiv{
+	display: inline-table;
+    width: 22%;
+	text-align: right;
+	margin: auto;
+}
+.wdmactionbut{
+	background-color: #eb1c23 !important;
+    box-shadow: none !important;
+    color: #fff !important;
+    font-size: 1.2em !important;
+    font-weight: 900;
+}
+.wdmactionbut:hover{
+	background-color: #fff !important;
+    color: #444 !important;
+}
+@media screen and (max-width: 650px) {
+  .wdmadmessagediv {
+    width: 100%;
+  }
+}

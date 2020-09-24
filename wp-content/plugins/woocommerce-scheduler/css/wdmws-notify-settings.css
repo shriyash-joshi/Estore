@@ -1,0 +1,99 @@
+
+#enrolled-users_wrapper.dataTables_wrapper ~ .submit, #enrolled-users-count_wrapper.dataTables_wrapper + .submit {
+    display: none;
+}
+
+.spinner.wdmws-visible {
+    float: none;
+    vertical-align: top;
+    visibility: visible;
+}
+
+.enrolled-product-name {
+    margin-bottom: 1.7em;
+}
+
+/* ToolTip CSS */
+.piklistfw-tooltip.dashicons {
+    float: right;
+}
+
+#export-data-error {
+    color:red;
+    margin:1em 1em 1em 0;
+}
+
+.wdmws_emails.widefat th {
+    font-weight: 600;
+}
+
+/* Email Settings */
+/* .status-disabled, */
+.status-enabled {
+    font-size: 1.4em;
+    display: block;
+    text-indent: -9999px;
+    position: relative;
+    height: 1em;
+    width: 1em;
+}
+
+.status-enabled::before {
+    font-family: WooCommerce;
+    speak: none;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    margin: 0;
+    text-indent: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    content: "";
+    color: #a46497;
+}
+
+table.wdmws_emails .wdmws-email-settings-table-name {
+    font-weight: 700;
+}
+
+/* Reset template button */
+#reset-enrl-email-template.reset-enrl-email-template,
+#reset-notification-email-template.reset-notification-email-template {
+    margin: 1em 0;
+}
+
+/* Enrolled Users Datatable */
+#enrolled-users-count.dataTable tr, #enrolled-users.dataTable {
+    text-align: left;
+}
+
+.dataTables_paginate .pagination.menu {
+    padding-top: 0;
+}
+
+body.scheduler-for-woocommerce_page_wdmws_settings_enrolled_users{
+    background: #f1f1f1;
+}
+
+/* Send Email Now confirmation */
+.wdmws-send-email-now-modal {
+    margin-top: 1em;
+}
+
+#wdmws_send-email-modal-title  {
+    float: left;
+}
+
+.wdmws-send-email-form-modal {
+    display: flex;
+    flex-direction: column;
+}
+
+form.wdmws-send-email-form-modal button.button {
+    margin: 0.4em 0;
+}

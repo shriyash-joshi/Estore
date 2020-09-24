@@ -1,0 +1,20 @@
+.wdm_message{
+
+box-sizing: border-box;
+color: rgb(255, 0, 0);
+display: block;
+font-family: 'Source Sans Pro', Helvetica, sans-serif;
+font-size: 15px;
+height: 50px;
+line-height: 22.0799999237061px;
+margin-bottom: 24px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+width: 289.90625px;
+word-wrap: break-word;
+}
+
+.hidden_id {
+	display: none;
+}

@@ -1,0 +1,64 @@
+.wp-core-ui .button-primary.hover, .wp-core-ui .button-primary:hover,
+.wp-core-ui .button-primary:disabled, .wp-core-ui .button-primary[disabled]
+{
+	background: #C9A3C1 none repeat scroll 0 0 !important;
+	border-color: #C9A3C1 !important;
+	box-shadow: none !important;
+	font-weight: bold !important;
+	color: #ffffff !important;
+}
+.wp-core-ui .button-primary, .wp-core-ui .button-primary.focus, .wp-core-ui .button-primary:focus 
+{
+	background: #96588a none repeat scroll 0 0;
+	border-color: #96588a ;
+	box-shadow: none;
+	font-weight: bold;
+	text-shadow: none;
+	color: #ffffff;
+}
+input:disabled
+{
+	background-color:#dedede;
+}
+#activation_button
+{
+	display: block;
+	margin-top: 20px;
+}
+.inline-container
+{
+	display:inline-block;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	
+	border: 1px solid #dedede;
+	padding: 20px 30px 30px 20px;
+}
+label
+{
+	color: #96588a;
+	display: block;
+	font-weight: bold;
+	margin-top: 10px;
+	font-size: 14px;
+}
+.activatior_description
+{
+	margin-bottom: 30px;
+	font-size: 16px;
+}
+.field_description
+{
+	margin: 5px 0px 5px 0px;
+}
+.input_field
+{
+	min-width: 400px;
+}
+#status 
+{
+	display: none;
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 20px;
+}

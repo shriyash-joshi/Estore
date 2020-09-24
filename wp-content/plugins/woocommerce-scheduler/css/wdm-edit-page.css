@@ -1,0 +1,21 @@
+body.wp-admin select {
+    height: auto !important;
+}
+
+#general_product_data > div.options_group.pricing.show_if_simple.show_if_external.hidden > p.wdm-clear-schedule > label.wdm-clear-field {
+	margin: 0;
+}
+
+#inventory_product_data > div > p.form-field._manage_stock_field.show_if_simple.show_if_variable > span {
+    display: inline;
+    clear: none;
+}
+
+#inventory_product_data > div.options_group.show_if_simple.show_if_variable > p > span {
+    display: inline;
+    clear: none;	
+}
+
+/*div.wdm_ws_stock {
+	display: none;
+}*/

@@ -1,0 +1,617 @@
+<script type="text/x-template" id="erf_field_option">
+  <div class="erf-half-width" :class="[width == 'full' ? 'erf-full-width' : 'erf-half-width']">
+      <div class="form-group label-wrap" v-if="type=='label'">
+          <label for="erf_field_label">
+              <?php _e('Label', 'erforms'); ?>*
+              <erf_field_helptext v-bind:message="helptext" />
+          </label>
+
+          <div class="input-wrap">
+              <input id="erf_field_label" v-bind:value="value" v-on:input="onUpdate($event.target.value,type)" 
+                    v-on:change="onLabelChange($event.target.value)" type="text" class="fld-label form-control">
+              <span class="field-option-error" v-if="errors && errors[type]">{{errors[type]}}</span>
+          </div>
+      </div>
+
+      <div class="form-group dataRefLabel-wrap" v-if="type=='dataRefLabel'">
+          <label for="erf_field_ref_label">
+              <?php _e('Reference Name','erforms'); ?>*
+              <erf_field_helptext v-bind:message="helptext" />
+          </label>
+          <div class="input-wrap">
+              <input id="erf_field_ref_label" maxlength="40"  v-on:input="onUpdate($event.target.value,type)" v-bind:value="value" type="text" class="fld-dataRefLabel form-control">
+              <span class="field-option-error" v-if="errors && errors[type]">{{errors[type]}}</span>
+          </div>
+       </div>
+
+
+      <div class="form-group value-wrap" v-if="type=='value'">
+          <label for="erf_field_value">
+              <?php _e('Default Value', 'erforms'); ?>
+              <erf_field_helptext v-bind:message="helptext" />
+          </label>
+
+          <div class="input-wrap">
+              <input id="erf_field_value" v-bind:value="value" v-on:input="onUpdate($event.target.value,type)" type="text" class="fld-label form-control">
+          </div>
+      </div>
+
+        <div class="form-group button-type-wrap" v-if="type=='button_type'">
+          <label for="erf_button_type">
+              <?php _e('Type', 'erforms'); ?>
+          </label>
+
+          <div class="input-wrap">
+              <select id="erf_button_type" v-on:input="onUpdate($event.target.value,'subtype')" v-bind:value="value" class="fld-subtype form-control">
+                   <option label="Button" value="button"><?php _e('Button','erforms'); ?></option>
+                   <option label="Reset" value="reset"><?php _e('Reset','erforms'); ?></option>
+               </select>
+          </div>
+        </div>    
+
+        <div class="form-group formula-type-wrap" v-if="type=='expression'">
+            <label for="erf_button_type">
+              <?php _e('Expression', 'erforms'); ?>
+            </label>
+            <div class="input-wrap erf-formula-exp-container">
+                <div class="erf-formula-main">
+                    <select v-on:input="updateExpression($event.target.value,type,true)" class="fld-expr-operator form-control">
+                        <option value="" selected="selected">Operator</option>
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                        <option value="=">=</option>
+                        <option value="<>">&lt;&gt;</option>
+                        <option value=">">&gt;</option>
+                        <option value="<">&lt;</option>
+                        <option value=">=">&gt;=</option>
+                        <option value="<=">&lt;=</option>
+                        <option value="&amp;&amp;">&amp;&amp;</option>
+                        <option value="||">||</option><option label="()" value="string:()">()</option>
+                    </select>
+                    <textarea ref="expression" class="form-control expression" rows="5" columns="50" v-bind:value="value" v-on:input="updateExpression($event.target.value,type,false)"></textarea>
+                    <span class="field-option-error" v-if="errors && errors[type]">{{errors[type]}}</span>
+                </div>
+
+                <div class="erf-formula-expression-wrap">
+                    <label class="erf-formula-label">
+                        <?php _e('Functions', 'erforms'); ?>
+                    </label>
+                    <div class="erf-formula-expression">
+                        <div v-for="expression in expressions" :key="expression" style="white-space: nowrap;" @click="updateExpression(expression,type,true)">{{expression}}</div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+
+      <div class="form-group description-wrap" v-if="type=='description'">
+          <label for="erf_field_desc">
+              <?php _e('Help Text', 'erforms'); ?>
+              <erf_field_helptext v-bind:message="helptext" />
+          </label>
+          <div class="input-wrap">
+              <input id="erf_field_desc" type="text" v-bind:value="value" v-on:input="onUpdate($event.target.value,type)" class="fld-description form-control">
+          </div>
+      </div>
+
+      <div class="form-group placeholder-wrap"  v-if="type=='placeholder'">
+          <label for="erf_field_placeholder">
+              <?php _e('Placeholder', 'erforms'); ?>
+              <erf_field_helptext v-bind:message="helptext" />
+          </label>
+          <div class="input-wrap">
+              <input id="erf_field_placeholder" v-on:input="onUpdate($event.target.value,type)" v-bind:value="value" type="text" class="fld-placeholder form-control">
+          </div>
+      </div>
+
+      <div class="form-group class-wrap" v-if="type=='className'">
+          <label for="erf_field_class">
+              <?php _e('Class','erforms'); ?>
+              <erf_field_helptext v-bind:message="helptext" />
+          </label>
+          <div class="input-wrap">
+              <input id="erf_field_class" v-on:input="onUpdate($event.target.value,type)" v-bind:value="value" type="text" class="fld-class form-control">
+          </div>
+      </div>
+
+      <div class="form-group class-wrap" v-if="type=='width'">
+          <label for="erf_field_class">
+              <?php _e('Width','erforms'); ?>
+              <erf_field_helptext v-bind:message="helptext" />
+          </label>
+          <div class="input-wrap">
+              <input type="range" step="1" min="1" max="12" id="erf_field_width" 
+              v-on:input="onUpdate($event.target.value,type)" v-on:mouseup="onMouseup($event.target)" v-bind:value="value" class="fld-width" />
+              <span class="range-indicator">{{value}}</span>
+          </div>
+
+      </div>
+
+      <div class="form-group maxlength-wrap" v-if="type=='maxlength'">
+          <label for="erf_field_maxlength">
+              <?php _e('Max Length','erforms'); ?>
+              <erf_field_helptext v-bind:message="helptext" />
+          </label>
+          <div class="input-wrap">
+              <input id="erf_field_maxlength" v-on:input="onUpdate($event.target.value,type)" v-bind:value="value" type="number" class="fld-maxlength form-control">
+          </div>
+      </div>
+
+      <div class="form-group pattern-wrap" v-if="type=='pattern'">
+          <label for="erf_field_pattern">
+              <?php _e('Input Pattern', 'erforms'); ?>
+              <erf_field_helptext v-bind:message="helptext" />
+          </label>
+          <div class="input-wrap">
+              <input type="text" id="erf_field_pattern" v-on:input="onUpdate($event.target.value,type)" v-bind:value="value" class="fld-pattern form-control">
+          </div>
+      </div>
+
+      <div class="form-group masking-wrap" v-if="type=='masking'">
+          <label for="erf_field_masking">
+              <?php _e('Masking Format', 'erforms'); ?>
+              <erf_field_helptext v-bind:message="helptext" />
+          </label>
+          <div class="input-wrap">
+              <input type="text" v-on:input="onUpdate($event.target.value,type)" v-bind:value="value" placeholder="(99) 9999-999" id="erf_field_masking" class="fld-masking form-control">
+          </div>
+      </div>
+
+      <div class="form-group hidden-wrap" v-if="type=='hide'">
+          <label for="erf_field_masking">
+              <?php _e('Hide', 'erforms'); ?>
+              <erf_field_helptext v-bind:message="helptext" />
+          </label>
+          <div class="input-wrap">
+              <input type="checkbox" :checked="value" v-on:input="onUpdate($event.target.checked,type)" v-bind:value="value" id="erf_field_hide" class="fld-hide">
+          </div>
+      </div>
+
+      <div class="form-group required-wrap" v-if="type=='required'">
+          <label for="erf_field_required">
+              <?php _e('Required', 'erforms'); ?>
+              <erf_field_helptext v-bind:message="helptext" />
+          </label>
+          <div class="input-wrap">
+              <input id="erf_field_required" :checked="value" v-on:input="onUpdate($event.target.checked,type)" v-bind:value="value"  type="checkbox"  class="fld-required">
+              <?php _e('Yes', 'erforms'); ?>
+          </div>
+      </div>
+
+      <div class="form-group enableUnique-wrap" v-if="type=='enableUnique'">
+          <label for="erf_field_en_unique">
+              <?php _e('Only Unique', 'erforms'); ?>
+              <erf_field_helptext v-bind:message="helptext" />
+          </label>
+          <div class="input-wrap">
+              <input type="checkbox" :checked="value" v-on:input="onUpdate($event.target.checked,type)" v-bind:value="value" id="erf_field_en_unique" class="fld-enableUnique">
+          </div>
+      </div>
+
+      <div class="form-group rows-wrap" v-if="type=='rows'">
+          <label for="erf_field_textarea_rows">Rows</label>
+          <div class="input-wrap">
+              <input value="" id="erf_field_textarea_rows" v-on:input="onUpdate($event.target.value,type)" v-bind:value="value" type="number" class="fld-rows form-control">
+          </div>
+      </div>
+
+      <div class="form-group rows-wrap" v-if="type=='cols'">
+          <label for="erf_field_textarea_cols">Cols</label>
+          <div class="input-wrap">
+              <input value="" id="erf_field_textarea_cols" v-on:input="onUpdate($event.target.value,type)" v-bind:value="value" type="number" class="fld-cols form-control">
+          </div>
+      </div>
+
+      <div class="form-group enableIntl-wrap" v-if="type=='enableIntl'">
+          <label for="erf_enable_intel">
+              <?php _e('International','erforms'); ?>
+              <erf_field_helptext v-bind:message="helptext" />
+          </label>
+          <div class="input-wrap">
+              <input type="checkbox" id="erf_enable_intel" v-on:input="onUpdate($event.target.checked,type)" :checked="value" v-bind:value="value" class="fld-enableIntl">
+          </div>
+      </div>
+
+      <div class="form-group icon-wrap" v-if="type=='icon'">
+          <label for="erf_field_icon">
+              <?php _e('Icon','erforms'); ?>
+              <erf_field_helptext v-bind:message="helptext" />
+          </label>
+          <div class="input-wrap">
+              <erf_font_awesome_option   v-on:update="onUpdate" v-bind:value="value" />
+          </div>
+      </div>
+
+       <div class="form-group min-wrap" v-if="type=='minDate'">
+           <label for="erf_minimum_date">
+               <?php _e('Minimum Date','erforms'); ?>
+               <erf_field_helptext v-bind:message="helptext" />
+           </label>
+           <div class="input-wrap">
+               <erf_date_picker @update="onUpdate" v-once date-format="mm/dd/yy" v-bind:attr="'min'" v-bind:value="value"></erf_date_picker>
+           </div>
+       </div>
+
+       <div class="form-group max-wrap" v-if="type=='maxDate'">
+           <label for="erf_maximum_date">
+               <?php _e('Maximum Date','erforms'); ?>
+               <erf_field_helptext v-bind:message="helptext" />
+           </label>
+           <div class="input-wrap">
+               <erf_date_picker @update="onUpdate" v-once date-format="mm/dd/yy" v-bind:attr="'max'" v-bind:value="value"></erf_date_picker>
+           </div>
+       </div>
+
+       <div class="form-group min-wrap" v-if="type=='min'">
+           <label for="erf_min_value">
+               <?php _e('Minimum','erforms'); ?>
+               <erf_field_helptext v-bind:message="helptext" />
+           </label>
+           <div class="input-wrap">
+               <input type="number" id="erf_min_value"  v-on:input="onUpdate($event.target.value,type)" v-bind:value="value" class="fld-max form-control">
+           </div>
+       </div>
+
+       <div class="form-group max-wrap" v-if="type=='max'">
+           <label for="erf_max_value">
+               <?php _e('Maximum','erforms'); ?>
+               <erf_field_helptext v-bind:message="helptext" />
+           </label>
+           <div class="input-wrap">
+               <input type="number" id="erf_max_value" v-on:input="onUpdate($event.target.value,type)" v-bind:value="value" class="fld-max form-control">
+           </div>
+       </div>
+
+       <div class="form-group name-wrap" v-if="type=='name'">
+           <label for="erf_field_name">
+               <?php _e('Name', 'erforms'); ?>
+               <erf_field_helptext v-bind:message="helptext" />
+            </label>
+           <div class="input-wrap">
+               <input id="erf_field_name" v-on:input="onUpdate($event.target.value,type)" v-bind:value="value" type="text" class="fld-name form-control">
+           </div>
+           <div class="form-element-help"></div>
+       </div>
+
+
+       <div class="form-group accept-wrap" v-if="type=='accept'">
+           <label for="erf_accepted_files">
+               <?php _e('Allowed Files','erforms'); ?>
+               <erf_field_helptext v-bind:message="helptext" />
+           </label>
+           <div class="input-wrap">
+               <input type="text" id="erf_accepted_files" v-on:input="onUpdate($event.target.value,type)" v-bind:value="value" class="fld-accept form-control">
+           </div>
+       </div>
+
+       <div class="form-group subtype-wrap" v-if="type=='headerType'">
+           <label for="erf_field_type">
+               <?php _e('Type','erforms'); ?>
+               <erf_field_helptext v-bind:message="helptext" />
+           </label>
+           <div class="input-wrap">
+               <select id="erf_field_type" v-on:input="onUpdate($event.target.value,'subtype')" v-bind:value="value" class="fld-subtype form-control">
+                   <option label="h1" value="h1">h1</option>
+                   <option label="h2" value="h2">h2</option>
+                   <option label="h3" value="h3">h3</option>
+                   <option label="h4" value="h4">h4</option>
+               </select>
+           </div>
+       </div>
+
+       <div class="form-group inline-wrap" v-if="type=='inline'">
+           <label for="erf_field_inline">
+               <?php _e('Display inline', 'erforms'); ?>
+               <erf_field_helptext v-bind:message="helptext" />
+           </label>
+           <div class="input-wrap">
+               <input type="checkbox" v-on:input="onUpdate($event.target.checked,type)" :checked="value" v-bind:value="value" id="erf_field_inline" class="fld-inline">
+           </div>
+       </div>
+
+       <div class="form-group dataDateFormat-wrap" v-if="type=='dataDateFormat'">
+           <label for="erf_field_date_format"><?php _e('Date Format','erforms'); ?></label>
+           <erf_field_helptext v-bind:message="helptext" />
+           <div class="input-wrap">
+              <select id="erf_field_date_format" class="fld-dataDateFormat form-control" v-on:input="onUpdate($event.target.value,type)" v-bind:value="value" >
+                 <option value="mm/dd/yy">mm/dd/yy</option>
+                 <option value="dd/mm/yy">dd/mm/yy</option>
+                 <option value="mm-dd-yy">mm-dd-yy</option>
+                 <option value="dd-mm-yy">dd-mm-yy</option>
+                 <option value="dd.mm.yy">dd.mm.yy</option>
+              </select>
+           </div>
+       </div>
+
+       <div class="form-group dataErfBtnPos-wrap" v-if="type=='dataErfBtnPos'">
+           <label for="erf_field_btn_pos"><?php _e('Position','erforms'); ?> <erf_field_helptext v-bind:message="helptext" /></label>
+           <div class="input-wrap">
+              <select id="erf_field_btn_pos" class="fld-dataErfBtnPos form-control" v-on:input="onUpdate($event.target.value,type)" v-bind:value="value" >
+                 <option value="left"><?php _e('Left','erforms'); ?></option>
+                 <option value="right"><?php _e('Right','erforms'); ?></option>
+                 <option value="center"><?php _e('Center','erforms'); ?></option>
+              </select>
+           </div>
+       </div>
+
+       <div class="form-group other-wrap" v-if="type=='other'">
+           <label for="erf_field_other">
+               <?php _e('Enable Other', 'erforms'); ?>
+               <erf_field_helptext v-bind:message="helptext" />
+           </label>
+           <div class="input-wrap">
+               <input type="checkbox" v-on:input="onUpdate($event.target.checked,type)" v-bind:value="value" :checked="value" id="erf_field_other" class="fld-other">
+           </div>
+       </div>
+       
+  </div>
+</script>
+
+<script type="text/x-template" id="erf_select_options">
+  <div class="erf-full-width">
+      <div class="form-group multiple-wrap" v-if="type=='select'">
+           <label for="erf_field_multiple">
+               <?php _e('Allow multiple selections', 'erforms'); ?>
+           </label>
+           <div class="input-wrap">
+               <input type="checkbox" :checked="multiple" v-on:input="onMultipleUpdate($event.target.checked,'multiple')" v-bind:value="multiple" id="erf_field_multiple" class="fld-multiple">
+           </div>
+       </div>
+
+       <div class="form-group field-options">
+             <label class="false-label"><?php _e('Options','erforms'); ?></label>
+             <div class="sortable-options-wrap" v-if="!showValuesEditor">
+              <div>
+                 <div class="sortable-option-titles clearfix">
+                      <span>&nbsp;</span>
+                      <span class="sortable-title"><?php _e('Label','erforms'); ?></span>
+                      <span class="sortable-title"><?php _e('Value','erforms'); ?></span>
+                      <span>&nbsp;</span>
+                 </div>
+                 <vuedraggable draggable=".option-value-container" :list="options">
+                    <div v-for="option, index in options" class="option-value-container" v-bind:key="option.uniqueID">
+                      <div class="option-selected" v-if="!allowMultiple"><input type="radio" v-bind:value="option.selected" name="option_selected" :checked="option.selected" v-on:input="onOptionDefaultUpdate($event.target.checked,index,'single')"></div>
+                      <div class="option-selected" v-if="allowMultiple"><input type="checkbox" v-bind:value="option.selected"  :checked="option.selected" v-on:input="onOptionDefaultUpdate($event.target.checked,index,'multiple')"></div>
+                      <div class="option-label"><input type="text" class="form-control" v-bind:value="option.label" v-on:input="onLabelUpdate($event.target.value,index)" placeholder="<?php __('Label','erforms'); ?>"></div>
+                      <div class="option-value"><input type="text" class="form-control" v-bind:value="option.value" v-on:input="onValueUpdate($event.target.value,index)"" placeholder="<?php __('Value','erforms'); ?>"></div>
+                      <div  class="option-remove"><a v-if="true" class="remove btn" title="<?php _e('Remove Element','erforms'); ?>" @click="removeValue(index)">×</a></div>
+                    </div>
+                 </vuedraggable>
+              </div>
+              <div class="option-actions">
+                 <a class="add add-opt" @click="addValue()"><?php _e('Add Option +','erforms'); ?></a>
+                 <a class="add add-opt" @click="showValuesEditor=true"><?php _e('Import Options','erforms'); ?></a>
+              </div>
+          </div>
+
+           <div v-if="showValuesEditor">
+              <textarea placeholder="<?php esc_attr_e('Separate option values with newline. Label and value can be separated using comma(,).','erforms'); ?>" rows="10" columns="200" v-bind:value="sourceValues" v-on:input="onBulkValuesImport($event.target.value)"></textarea>
+              <a class="add add-opt import-option-btn" @click="importBulkValues()"><?php _e('Import','erforms'); ?></a>
+           </div>
+       </div>
+  </div>
+</script>
+
+<script type="text/x-template" id="erf_meta_options">
+  <div class="erf-half-width">
+      <div class="form-group addUserField-wrap">
+          <label for="erf_add_user_field">
+              <?php _e('Map To UserMeta', 'erforms'); ?>
+              <erf_field_helptext v-bind:message="addUserFieldHelptext" />
+          </label>
+          <div class="input-wrap">
+              <input type="checkbox" :checked="addUserField" id="erf_add_user_field" v-on:input="onAddUserFieldUpdate($event.target.checked)" v-bind:value="addUserField" class="fld-addUserField">
+          </div>
+      </div>
+
+      <div class="form-group addUserFieldMap-wrap" v-if="showMapField">
+          <label for="erf_field_user_field_map">
+              <?php _e('Meta Key', 'erforms'); ?>
+              <erf_field_helptext v-bind:message="addUserFieldMapHelptext" />
+          </label>
+          <div class="input-wrap">
+              <input type="text" v-on:input="onAddUserFieldMapUpdate($event.target.value)" v-bind:value="addUserFieldMap"  id="erf_field_user_field_map" class="fld-addUserFieldMap form-control">
+          </div>
+      </div>
+  </div>
+</script>
+
+<script type="text/x-template" id="erf_richtext_options">
+  <div class="form-group label-wrap erf-full-width">
+      <label for="erf_field_label">
+          <?php _e('Content', 'erforms'); ?>
+          <erf_field_helptext v-bind:message="helptext" />
+      </label>
+      <div class="input-wrap">
+          <textarea  v-bind:value="value" v-bind:id="uid"></textarea>
+      </div>
+  </div>
+</script>
+
+<script type="text/x-template" id="erf_conf_pwd_options">
+  <div class="erf-half-width">
+      <div class="form-group confirmPassword-wrap">
+          <label for="erf_confirm_password">
+              <?php _e('Confirm Password', 'erforms'); ?>
+              <erf_field_helptext v-bind:message="helptext" />
+          </label>
+          <div class="input-wrap">
+              <input type="checkbox" id="erf_confirm_password" v-on:input="onConfirmPassword($event.target.checked)" v-bind:value="confirmPassword" :checked="confirmPassword"><?php _e('Yes', 'erforms'); ?>
+          </div>
+      </div>
+
+      <div class="form-group confirmPasswordLabel-wrap" v-if="showLabel">
+          <label for="erf_confirm_pass_label"><?php _e('Label', 'erforms'); ?></label>
+          <div class="input-wrap">
+              {{confirmPasswordLabel}}
+              <input id="erf_confirm_pass_label" v-on:input="onLabelUpdate($event.target.value)" v-bind:value="confirmPasswordLabel" type="text" class="form-control">
+          </div>
+     </div>
+  </div>
+</script>
+
+<script type="text/x-template" id="erf_field_actions">
+  <div class="erf-field-actions">
+      <span class="erf-field-type">{{attrs.type.replace('_',' ')}}</span>
+      <span class="erf-field-action erf-edit" v-if="editAllowed" @click="editField()">
+         <span class="dashicons dashicons-edit"></span>
+       </span>
+      <span v-if="duplicateAllowed" class="erf-field-action erf-duplicate" @click="duplicateField()">
+       <span class="dashicons dashicons-admin-page"></span>
+     </span>
+     <span v-if="deletionAllowed" class="erf-field-action erf-delete"  @click="deleteField()">
+       <span class="dashicons dashicons-trash"></span>
+     </span>
+  </div>
+</script>
+
+<script type="text/x-template" id="erf_btn_style_options">
+  <div class="btn-group erf-half-width" role="group">
+      <button @click="changeButtonStyle('btn btn-default')" type="button" class="btn-xs btn btn-default">Default</button>
+      <button @click="changeButtonStyle('btn btn-danger')" type="button" class="btn-xs btn btn-danger">Danger</button>
+      <button @click="changeButtonStyle('btn btn-info')" type="button" class="btn-xs btn btn-info selected">Info</button>
+      <button @click="changeButtonStyle('btn btn-primary')" type="button" class="btn-xs btn btn-primary">Primary</button>
+      <button @click="changeButtonStyle('btn btn-success')" type="button" class="btn-xs btn btn-success">Success</button>
+      <button @click="changeButtonStyle('btn btn-warning')" type="button" class="btn-xs btn btn-warning">Warning</button>
+  </div>
+</script>
+
+<script type="text/x-template" id="erf_field_helptext">
+  <div class="form-element-help">
+      <span @mouseover="showMessage=true" @mouseleave="showMessage=true" class="label-info"></span>
+      <span class="erf-help-text" v-if="showMessage" v-html="message"> </span>
+  </div>
+</script>
+
+<script type="text/x-template" id="erf_user_role_option">
+  <div class="form-group user_roles-wrap">
+      <label for="user_roles_field">
+        <?php _e('User Roles','erforms'); ?>
+        <erf_field_helptext v-bind:message="helptext" />
+      </label>
+      <div class="input-wrap">
+          <input type="checkbox" v-on:input="onUpdate($event.target.checked)" :checked="value" v-bind:value="value" id="user_roles_field" class="fld-user_roles">
+      </div>
+  </div>
+</script>
+
+<script type="text/x-template" id="erf_display_options">
+  <div class="erf-element-group">
+        <legend><?php _e('Display', 'erforms'); ?></legend>
+        <erf_conf_pwd_options v-if="showConfirmPassword" v-on:update="onUpdate" v-bind:confirmPassword="attrs.confirmPassword" v-bind:confirmPasswordLabel="attrs.confirmPasswordLabel" />
+        <erf_field_option type="placeholder" v-bind:value="attrs.placeholder" v-on:update="onUpdate"></erf_field_option>
+        <erf_field_option
+          type="rows"
+          v-if="showRows"
+          v-bind:value="attrs.rows"
+          v-on:update="onUpdate" />
+        <erf_field_option
+          v-if="showCols"
+          type="cols"
+          v-bind:value="attrs.cols"
+          v-on:update="onUpdate" />
+        <erf_field_option
+          v-if="showIntl"
+          type="enableIntl"
+          v-bind:value="attrs.enableIntl"
+          v-on:update="onUpdate" />
+        <erf_field_option
+          type="dataDateFormat"
+          v-if="showDateFormat"
+          v-bind:value="attrs.dataDateFormat"
+          v-on:update="onUpdate" />
+        <erf_field_option
+          type="value"
+          v-if="showDefValue"
+          v-bind:value="attrs.value"
+          v-on:update="onUpdate" />  
+        <erf_field_option
+          type="className"
+          v-bind:value="attrs.className"
+          v-on:update="onUpdate" />
+        <erf_field_option
+          type="width"
+          v-bind:value="attrs.width ? attrs.width : 12"
+          v-on:update="onUpdate" />  
+        <erf_field_option
+          type="icon"
+          v-bind:value="attrs.icon"
+          v-on:update="onUpdate" />
+
+  </div>
+</script>
+
+<script type="text/x-template" id="erf_validation_options">
+  <div class="erf-element-group">
+      <legend><?php _e('Validations', 'erforms'); ?> </legend>
+        <erf_field_option
+            v-if="showRequired"
+            type="required"
+            v-bind:value="attrs.required"
+            v-on:update="onUpdate" />
+        <erf_field_option
+            v-if="showMaxlength"
+            type="maxlength"
+            v-bind:value="attrs.maxlength"
+            v-on:update="onUpdate" />
+        <erf_field_option
+            v-if="showMinDate"
+            type="minDate"
+            v-bind:value="attrs.min"
+            v-on:update="onUpdate" />
+        <erf_field_option
+            v-if="showMaxDate"
+            type="maxDate"
+            v-bind:value="attrs.max"
+            v-on:update="onUpdate" />
+        <erf_field_option
+            v-if="showMin"
+            v-bind:value="attrs.min"
+            type="min"
+            v-on:update="onUpdate" />
+        <erf_field_option
+            v-if="showMax"
+            v-bind:value="attrs.max"
+            type="max"
+            v-on:update="onUpdate" />
+        <erf_field_option
+            v-if="showAccept"
+            type="accept"
+            v-bind:value="attrs.accept"
+            v-on:update="onUpdate" />
+        <erf_field_option
+            v-if="showPattern"
+            type="pattern"
+            v-bind:value="attrs.pattern"
+            v-on:update="onUpdate" />
+        <erf_field_option
+            v-if="showMasking"
+            type="masking"
+            v-bind:value="attrs.masking"
+            v-on:update="onUpdate" />
+  </div>
+</script>
+
+<script type="text/x-template" id="erf_administrator_options">
+  <div class="erf-element-group" v-if="showMeta || showUnique || showHidden">
+      <legend><?php _e('Administration', 'erforms'); ?></legend>
+        <erf_meta_options
+            v-if="showMeta"
+            v-on:update="onUpdate"
+            v-bind:addUserField="attrs.addUserField"
+            v-bind:addUserFieldMap="attrs.addUserFieldMap" />
+        <erf_field_option
+            v-if="showUnique"
+            type="enableUnique"
+            v-bind:value="attrs.enableUnique"
+            v-on:update="onUpdate" />
+
+        <erf_field_option
+          v-if="showHidden"
+          type="hide"
+          v-bind:value="attrs.hide"
+          v-on:update="onUpdate" />
+  </div>
+</script>

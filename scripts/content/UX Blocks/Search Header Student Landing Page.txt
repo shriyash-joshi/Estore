@@ -1,0 +1,31 @@
+[section class="sc-search-header"]
+
+[row h_align="center"]
+
+[col span__sm="12" align="center"]
+
+<label>What Do You Need Help With?&lt;l/abel&gt;</label>
+
+[/col]
+
+[/row]
+[row style="small" col_bg="rgb(255, 255, 255)" width="custom" custom_width="800px" class="student-central"]
+
+[col span__sm="12" align="center"]
+
+[search]
+
+[/col]
+
+[/row]
+[row h_align="center"]
+
+[col span__sm="12" align="center"]
+
+Most Searched: Online internships, career guidance, course selection, college selection, career counselling, profile building, college application assistance
+
+[/col]
+
+[/row]
+
+[/section]

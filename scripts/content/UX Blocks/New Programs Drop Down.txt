@@ -1,0 +1,83 @@
+[section label="Category Dropdown" bg="3389" padding="8px" class="categories-dropdown"]
+
+[button text="X" style="link" radius="99" class="program-close"]
+
+[row label="Categories" v_align="equal" h_align="center" padding="20px 30px 20px 30px" class="categories-row"]
+
+[col span="3" span__sm="12" span__md="8" align="left" class="pg-menu-col-1"]
+
+<h3 class="title">Subject / Stream Selection</h3>
+[gap height="10px"]
+
+[gap height="15px"]
+
+<ul class="dilemmas-list">
+<li >How to choose the right curriculum?</li>
+<li >Which subject to choose in Class 9 & Class 10?</li>
+<li >Which subject to choose in Class 11 & Class 12?</li>
+<li >Which stream is the right one after Class 10?</li>
+</ul>
+[button text="Show Related Programs" style="link" class="programs-link"]
+
+
+[/col]
+[col span="3" span__sm="12" span__md="8" align="left" class="pg-menu-col-2"]
+
+<h3 class="title">Course / Career Selection</h3>
+[gap height="10px"]
+
+[gap height="15px"]
+
+<ul class="dilemmas-list">
+<li >How to discover the Ideal Career choice?</li>
+<li >Which branch is the right-fit in Engineering?</li>
+<li >Which branch is the right-fit in Humanities?</li>
+<li >Which branch is the right-fit in Commerce?</li>
+</ul>
+[button text="Show Related Programs" style="link" class="programs-link"]
+
+
+[/col]
+[col span="3" span__sm="12" span__md="8" align="left" class="pg-menu-col-3"]
+
+<h3 class="title">Skill Building / Internships</h3>
+[gap height="10px"]
+
+[gap height="15px"]
+
+<ul class="dilemmas-list">
+<li >Which online internships will help in the future?</li>
+<li >How to be productive during summers?</li>
+<li >How to build skills the right way?</li>
+<li >How to nurture creativity?</li>
+</ul>
+[button text="Show Related Programs" style="link" class="programs-link"]
+
+
+[/col]
+[col span="3" span__sm="12" span__md="8" align="left" class="pg-menu-col-4"]
+
+<h3 class="title">College Admission Guidance</h3>
+[gap height="10px"]
+
+[gap height="15px"]
+
+<ul class="dilemmas-list">
+<li >How to set a career goal?</li>
+<li >How to choose the right college?</li>
+<li >How to apply for top colleges?</li>
+<li >How to secure a scholarship?</li>
+<li>How to increase admission chances in TOP colleges?</li>
+</ul>
+[button text="Show Related Programs" style="link" class="programs-link"]
+
+
+[/col]
+
+[/row]
+[gap]
+
+[ux_image id="3398" class="pg-dropdown-img"]
+
+
+[/section]

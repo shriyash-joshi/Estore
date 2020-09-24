@@ -1,0 +1,12 @@
+form p.submit {
+    display: none;
+}
+
+#wpbody-content > div.wrap > form > h2 {
+ display: none;
+}
+
+#feedbackFormContainer{
+    width: 100%;
+    height: 95vh;
+}

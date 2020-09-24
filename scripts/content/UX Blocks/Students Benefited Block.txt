@@ -1,0 +1,18 @@
+[row]
+
+[col span="6" span__sm="12"]
+<div class="product-section-bg student-benefits " style="font-size: 14px;">
+<p class="icon-students" style="margin-bottom: 0;"><img class="alignnone size-full wp-image-855" src="../../wp-content/uploads/2020/07/icons8-user-account-48.png" alt="" width="37" height="37" /></p>
+[acf field='student_benifited'] Students Benefited
+
+</div>
+[/col]
+[col span="6" span__sm="12"]
+<div class="product-section-bg student-benefits " style="font-size: 14px;">
+<p class="icon-students" style="margin-bottom: 0;"><img class="alignnone size-full wp-image-647" src="../../wp-content/uploads/2020/07/icons8-facebook-like-48.png" alt="" width="37" height="37" /></p>
+[acf field='found_this_useful'] Students found this
+
+</div>
+[/col]
+
+[/row]

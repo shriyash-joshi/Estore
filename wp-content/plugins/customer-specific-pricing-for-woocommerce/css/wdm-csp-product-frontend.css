@@ -1,0 +1,111 @@
+/* CSS for the product front end */
+.qty-discount-li {
+    font-size: 1em !important;
+    list-style-type: none;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.qty-fieldset {
+    border: 2px groove threedface;
+    border-top: none;
+    padding: 0.5em;
+    margin: 1em 2px;
+    width: 270px;
+}
+
+.qty-fieldset > h1 {
+    font-size: 1em;
+    margin: -1em -0.5em 0 !important;
+}
+
+.qty-fieldset > h1 > span {
+    float: left;
+    font-weight: bold;
+}
+
+.qty-fieldset > h1:before {
+    border-top: 2px groove threedface;
+    content: ' ';
+    float: left;
+    margin: 0.5em 2px 0 -1px;
+    width: 0.75em;
+}
+
+.qty-fieldset > h1:after {
+    border-top: 2px groove threedface;
+    content: ' ';
+    display: block;
+    height: 1.5em;
+    left: 2px;
+    margin: 0 1px 0 0;
+    overflow: hidden;
+    position: relative;
+    top: 0.5em;
+}
+
+#product_total_price {
+    margin-bottom: 20px;
+}
+
+.min-qty-span {
+    text-align: right;
+}
+
+.qty_table p.price {
+    display: inline-block;
+    font-size: 1em !important;
+    border: 0 solid;
+    vertical-align: top;
+}
+
+.qty_table {
+    border: 0 solid;
+    border-bottom-width: 0px !important;
+    margin-bottom: 0 !important;
+    font-size: 1em !important;
+    margin: 0 auto;
+}
+
+.qty_table_container {
+    max-height: 120px;
+    overflow-y: scroll;
+}
+
+
+
+.qty_table th,
+.qty_table td {
+    border: 0 solid;
+    padding: 3%;
+}
+
+.qty-colon {
+    text-indent: 10px !important;
+    display: inline-block;
+}
+
+.qty-num {
+    text-align: right;  /*padding-right: 0.3em;*/
+    width: auto;
+}
+
+.qty-text {
+    width: 50%;
+    text-indent: 5px !important;    /*text-align: center;*/
+    text-align: left;
+    /*padding-right: 0.3em;*/
+}
+
+.qty-price {
+    text-align: left;
+}
+
+.qty-discount-li p.price {
+    display: inline-block;
+    margin-bottom: 0;    /*font-size: 0.8em !important;*/
+}
+
+.csp-hide-product-total {
+    display: none;
+}

@@ -1,0 +1,192 @@
+div.wdm-form-container
+{
+    display: none;
+}
+
+div.wdmSingleForm {
+    border-style: solid;
+    border-color: #d3d3d333;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #f0f0f0;
+    margin-bottom: 10%;
+}
+
+.wdm-form-step {
+    margin: 2%; 
+}
+
+.wdmFormRadioWrapper {
+    margin: 2%;
+    align-content: center;
+    border-style: solid;
+    border-color: #d3d3d347;
+    background-color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.wdmFormCheckboxWrapper {
+    padding-inline-start: 5px;
+    margin: 2%;
+    align-content: center;
+    border-style: solid;
+    border-color: #d3d3d347;
+    background-color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.radio-discription{
+    margin-left: 5px;
+    color: #808080cc;
+}
+
+.checkbox-discription{
+    margin-left: 5px;
+    color: #808080cc;
+}
+
+.wdmSingleFormScheduleAvailability{
+    display: none;
+}
+
+.wdmSingleFormScheduleTypeWholeDay{
+display: none;
+}
+
+.wdmSingleFormScheduleSpecificTime{
+    display: none;
+}
+
+.wdmSingleFormScheduleTimer{
+    display: none;
+}
+
+.wdmSingleFormScheduleLaunch{
+    display: none;
+}
+
+.wdmNextPrev{
+    text-align: right;
+    margin: 10px;
+    float: right;
+}
+
+.finalized-msg {
+    display: none;
+}
+
+.hidden{
+    display:none;
+}
+
+.btn-checkbox-style{
+    margin:2px;
+}
+
+.woocommerce_options_panel label.wdmFormLabel{
+    float: none;
+    margin: initial;
+}
+
+.woocommerce_options_panel input[type=text].wdmDatePicker,
+.woocommerce_options_panel input[type=text].wdmTimePicker{
+    width: auto;
+    float: none;
+}
+
+.wdm-row {
+    display: flex;
+    grid-template-columns: repeat(13, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+  }
+
+.text-center{
+    text-align:center;
+}
+
+  .wdm-days-row {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-column-gap: 0.8rem;
+    grid-row-gap: 1rem;
+  }
+  .wdm-col-1 {
+    grid-column: span 1;
+  }
+  
+  .wdm-col-2 {
+    grid-column: span 2;
+  }
+  
+  .wdm-col-3 {
+    grid-column: span 3;
+  }
+  
+  .wdm-col-4 {
+    grid-column: span 4;
+  }
+   
+  .wdm-col-5 {
+    grid-column: span 5;
+  }
+
+  .wdm-col-6 {
+    grid-column: span 6;
+  }
+
+  .wdm-col-7 {
+    grid-column: span 7;
+  }
+
+  .wdm-col-8 {
+    grid-column: span 8;
+  }
+
+  .wdm-col-9 {
+    grid-column: span 9;
+  }
+
+  .wdm-col-10 {
+    grid-column: span 10;
+  }
+
+  .wdm-col-11 {
+    grid-column: span 11;
+  }
+
+  .wdm-col-12 {
+    grid-column: span 12;
+  }
+
+.wdm-form-status{
+    margin: 10%;
+    text-align: center;
+}
+
+.wdm-form-status table.table-status {
+    border-style: solid;
+    padding: 0 !important;
+    position: unset;
+    border-top: inset !important;
+    min-width: 90%;
+    border-color: gray;
+    text-align: center;
+    margin:auto;
+    border-radius: 5px;
+}
+
+.wdm-form-status table.table-status td{
+    border: 1px solid gray !important;
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu.bottom table td,
+.bootstrap-datetimepicker-widget.dropdown-menu.bottom table td span,
+.bootstrap-datetimepicker-widget.dropdown-menu.bottom table td a span
+{height: 30px; line-height: 30px; width: 30px; padding:0px;}
+
+.table-status tr td del{
+ opacity: 0.6;
+}
