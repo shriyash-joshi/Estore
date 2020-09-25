@@ -201,17 +201,17 @@ class InventoryModel extends CFormModel {
 
         if($this->date_from || $this->date_to){
             if($this->date_from && $this->date_to){
-                $command->andWhere('DATE(o.date_added) BETWEEN :from AND :to', [
+                $command->andWhere('DATE(opl.date_created) BETWEEN :from AND :to', [
                     ':from' => date('Y-m-d', strtotime($this->date_from)),
                     ':to' => date('Y-m-d', strtotime($this->date_to)),
                 ]);
             }else{
                 if($this->date_from){
-                    $command->andWhere('DATE(o.date_added) >= :from', [':from' => date('Y-m-d', strtotime($this->date_from))]);
+                    $command->andWhere('DATE(opl.date_created) >= :from', [':from' => date('Y-m-d', strtotime($this->date_from))]);
                 }
 
                 if($this->date_to){
-                    $command->andWhere('DATE(o.date_added) <= :to', [':to' => date('Y-m-d', strtotime($this->date_to))]);
+                    $command->andWhere('DATE(opl.date_created) <= :to', [':to' => date('Y-m-d', strtotime($this->date_to))]);
                 }
             }
         }
@@ -245,17 +245,17 @@ class InventoryModel extends CFormModel {
 
         if($this->date_from || $this->date_to){
             if($this->date_from && $this->date_to){
-                $Command->andWhere('DATE(o.date_added) BETWEEN :from AND :to', [
+                $Command->andWhere('DATE(opl.date_created) BETWEEN :from AND :to', [
                     ':from' => date('Y-m-d', strtotime($this->date_from)),
                     ':to' => date('Y-m-d', strtotime($this->date_to)),
                 ]);
             }else{
                 if($this->date_from){
-                    $Command->andWhere('DATE(o.date_added) >= :from', [':from' => date('Y-m-d', strtotime($this->date_from))]);
+                    $Command->andWhere('DATE(opl.date_created) >= :from', [':from' => date('Y-m-d', strtotime($this->date_from))]);
                 }
 
                 if($this->date_to){
-                    $Command->andWhere('DATE(o.date_added) <= :to', [':to' => date('Y-m-d', strtotime($this->date_to))]);
+                    $Command->andWhere('DATE(opl.date_created) <= :to', [':to' => date('Y-m-d', strtotime($this->date_to))]);
                 }
             }
         }
@@ -277,17 +277,17 @@ class InventoryModel extends CFormModel {
 
         if($this->date_from || $this->date_to){
             if($this->date_from && $this->date_to){
-                $Command->andWhere('DATE(o.date_added) BETWEEN :from AND :to', [
+                $Command->andWhere('DATE(opl.date_created) BETWEEN :from AND :to', [
                     ':from' => date('Y-m-d', strtotime($this->date_from)),
                     ':to' => date('Y-m-d', strtotime($this->date_to)),
                 ]);
             }else{
                 if($this->date_from){
-                    $Command->andWhere('DATE(o.date_added) >= :from', [':from' => date('Y-m-d', strtotime($this->date_from))]);
+                    $Command->andWhere('DATE(opl.date_created) >= :from', [':from' => date('Y-m-d', strtotime($this->date_from))]);
                 }
 
                 if($this->date_to){
-                    $Command->andWhere('DATE(o.date_added) <= :to', [':to' => date('Y-m-d', strtotime($this->date_to))]);
+                    $Command->andWhere('DATE(opl.date_created) <= :to', [':to' => date('Y-m-d', strtotime($this->date_to))]);
                 }
             }
         }
